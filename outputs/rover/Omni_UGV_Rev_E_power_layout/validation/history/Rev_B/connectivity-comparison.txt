@@ -1,0 +1,3 @@
+Baseline: 111 components, 96 nets. Final: 111 components, 96 nets.
+PASS: exact match of component identity, named nets and all 365 pin memberships.
+Compared using schematic-humanizer compare_connectivity.py against native KiCad XML exports.

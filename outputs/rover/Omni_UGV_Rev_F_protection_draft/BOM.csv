@@ -1,0 +1,15 @@
+Reference,Value,Candidate MPN,Draft footprint,Datasheet
+J1,1S raw cell,,,
+Q1,CSD17308Q3,CSD17308Q3,,
+Q2,CSD17308Q3,CSD17308Q3,,
+J2,Rev E interface,,,
+R1,10m 1% Kelvin draft,WSK2512R0100FEA,,
+U1,MAX17301G+T,MAX17301G+T,,https://www.analog.com/media/en/technical-documentation/data-sheets/max17300-max17313.pdf
+R2,10R,,Resistor_SMD:R_0603_1608Metric,
+C1,100n X7R,,Capacitor_SMD:C_0603_1608Metric,
+C2,100n X7R,,Capacitor_SMD:C_0603_1608Metric,
+C3,470n X7R,,Capacitor_SMD:C_0603_1608Metric,
+SW1,Momentary wake,,,
+J3,Fixture I2C,,,
+J4,Cell NTC 10k,,,
+External NTC,"10k at 25 C, cell mounted",103AT-2,,

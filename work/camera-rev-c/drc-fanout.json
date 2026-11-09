@@ -1,0 +1,475 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-06T13:06:52",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 126.899999,
+                        "y": 65.5
+                    },
+                    "uuid": "3ed23acd-c8a5-4672-9518-6a7d69781745"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 71.65
+                    },
+                    "uuid": "0998017b-ddfa-447e-904f-226f24c0af7c"
+                },
+                {
+                    "description": "Track [+3V3] on F.Cu, length 2.0959 mm",
+                    "pos": {
+                        "x": 121.193,
+                        "y": 83.9821
+                    },
+                    "uuid": "0bb2a94d-d96d-461b-8613-af72ba0d7c32"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets +3V3 and CAM_1V3)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                },
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 129.899999,
+                        "y": 70.3
+                    },
+                    "uuid": "8c2beefc-76ed-4647-acdc-629fee69b96b"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0500 mm)",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 71.65
+                    },
+                    "uuid": "0998017b-ddfa-447e-904f-226f24c0af7c"
+                },
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 129.599999,
+                        "y": 70.7
+                    },
+                    "uuid": "09aed60e-240c-4c46-b3f3-a84c81d3e893"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets +3V3 and CAM_D7)",
+            "items": [
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                },
+                {
+                    "description": "Track [CAM_D7] on In2.Cu, length 2.5000 mm",
+                    "pos": {
+                        "x": 127.999999,
+                        "y": 70.6
+                    },
+                    "uuid": "c9fa5567-feca-4ffe-af71-9766468ee62f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_1V3 and +3V3)",
+            "items": [
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 129.899999,
+                        "y": 70.2
+                    },
+                    "uuid": "74760c4b-8528-4b87-9fe2-e5c976620ba7"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_1V3 and +3V3)",
+            "items": [
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 129.999999,
+                        "y": 70.1
+                    },
+                    "uuid": "73f3f0e7-09e8-4e1e-b669-508ca8a897a4"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_1V3 and +3V3)",
+            "items": [
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 129.799999,
+                        "y": 70.4
+                    },
+                    "uuid": "1b3930b3-2b9d-48a7-819d-bc40f3f4d4cf"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1250 mm)",
+            "items": [
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 129.599999,
+                        "y": 70.8
+                    },
+                    "uuid": "7ce83186-35a6-43ae-acfa-4fa3dad241f1"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_1V3 and +3V3)",
+            "items": [
+                {
+                    "description": "Track [CAM_1V3] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 129.599999,
+                        "y": 70.7
+                    },
+                    "uuid": "09aed60e-240c-4c46-b3f3-a84c81d3e893"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_D7 and +3V3)",
+            "items": [
+                {
+                    "description": "Via [CAM_D7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.499999,
+                        "y": 70.6
+                    },
+                    "uuid": "3ce3e50f-2900-4fe6-b41e-1f6b15200e36"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_D7 and +3V3)",
+            "items": [
+                {
+                    "description": "Via [CAM_D7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.499999,
+                        "y": 70.6
+                    },
+                    "uuid": "3ce3e50f-2900-4fe6-b41e-1f6b15200e36"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_D7 and +3V3)",
+            "items": [
+                {
+                    "description": "Via [CAM_D7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.499999,
+                        "y": 70.6
+                    },
+                    "uuid": "3ce3e50f-2900-4fe6-b41e-1f6b15200e36"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CAM_D7 and +3V3)",
+            "items": [
+                {
+                    "description": "Via [CAM_D7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.499999,
+                        "y": 70.6
+                    },
+                    "uuid": "3ce3e50f-2900-4fe6-b41e-1f6b15200e36"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.2385 mm)",
+            "items": [
+                {
+                    "description": "Via [CAM_D7] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.499999,
+                        "y": 70.6
+                    },
+                    "uuid": "3ce3e50f-2900-4fe6-b41e-1f6b15200e36"
+                },
+                {
+                    "description": "Via [+3V3] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 70.4
+                    },
+                    "uuid": "8181933c-d298-4485-b8df-bec5d95654dd"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.2810 mm",
+                    "pos": {
+                        "x": 113.32,
+                        "y": 84.7583
+                    },
+                    "uuid": "664b089b-7830-4399-a2db-1b6e02003dd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Segment of J5 on F.Silkscreen",
+                    "pos": {
+                        "x": 139.19,
+                        "y": 84.41
+                    },
+                    "uuid": "543ce353-903b-48f1-83b3-28d715b2618a"
+                },
+                {
+                    "description": "Reference field of U9",
+                    "pos": {
+                        "x": 140.25,
+                        "y": 84.6
+                    },
+                    "uuid": "6dac6834-afb9-4226-ba75-610aa0f3c6b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R44",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 85.07
+                    },
+                    "uuid": "2701101b-6a2a-4c70-859a-5a5ae5f14bbb"
+                },
+                {
+                    "description": "Segment of SW2 on F.Silkscreen",
+                    "pos": {
+                        "x": 125.8,
+                        "y": 85.05
+                    },
+                    "uuid": "81a41024-f05b-48f6-8c76-549327b48f69"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R44",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 85.07
+                    },
+                    "uuid": "2701101b-6a2a-4c70-859a-5a5ae5f14bbb"
+                },
+                {
+                    "description": "Pad 2 [GND] of SW2 on F.Cu",
+                    "pos": {
+                        "x": 130.05,
+                        "y": 84.3
+                    },
+                    "uuid": "d7ad62d3-9378-41fb-b591-781cb4c66a14"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

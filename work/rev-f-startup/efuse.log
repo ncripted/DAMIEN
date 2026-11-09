@@ -1,0 +1,12 @@
+PROTECTED_RAW 10 local transfer sites
+Route PROTECTED_RAW (122.25, 126.0, 'B.Cu') (124.25, 126.2, 'B.Cu') 0.26
+  done 0.05 s 601 nodes
+Route PROTECTED_RAW (124.25, 126.2, 'B.Cu') (124.299999, 126.699999, 'B.Cu') 0.75
+Blocked endpoint ('PROTECTED_RAW', (124.299999, 126.699999, 'B.Cu'))
+Route PROTECTED_RAW (124.25, 126.2, 'In2.Cu') (124.299999, 126.699999, 'B.Cu') 0.75
+Blocked endpoint ('PROTECTED_RAW', (124.299999, 126.699999, 'B.Cu'))
+Route PROTECTED_RAW (124.25, 126.2, 'B.Cu') (124.299999, 124.499999, 'B.Cu') 0.75
+  done 0.71 s 105 nodes
+VBAT 2 local transfer sites
+Route VBAT (122.75, 126.0, 'B.Cu') (120.35, 125.2, 'B.Cu') 0.26
+Route VBAT (122.75, 126.0, 'B.Cu') (125.15, 126.2, 'B.Cu') 0.26

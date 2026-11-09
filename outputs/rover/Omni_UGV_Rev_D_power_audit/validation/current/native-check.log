@@ -1,0 +1,17 @@
+16:21:26: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+16:21:26: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+Found 0 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to C:/Users/nates/Documents/Codex/2026-11-03/continue-developing-my-miniature-three-wheel/outputs/rover/Omni_UGV_Rev_D_power_audit/validation/current/drc.json
+16:21:29: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+16:21:29: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+Found 0 violations
+Saved ERC Report to C:/Users/nates/Documents/Codex/2026-11-03/continue-developing-my-miniature-three-wheel/outputs/rover/Omni_UGV_Rev_D_power_audit/validation/current/erc.json
+
+DrcErrors     : 0
+DrcWarnings   : 0
+Unconnected   : 0
+ParityIssues  : 0
+ErcViolations : 0
+

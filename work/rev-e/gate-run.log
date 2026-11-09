@@ -1,0 +1,27 @@
+Route PROT_CHG (119.0, 123.65, 'B.Cu') (118.5, 124.15, 'B.Cu') 0.15
+  done 0.13 s 51 nodes
+Reserved PROT_CHG (118.5, 124.15)
+Route PROT_PACK (119.675, 123.0, 'B.Cu') (119.675, 121.8, 'B.Cu') 0.15
+  done 0.11 s 242 nodes
+Reserved PROT_PACK (119.675, 121.8)
+Route PROT_DSG (119.675, 123.5, 'B.Cu') (119.675, 124.1, 'B.Cu') 0.15
+  done 0.13 s 42 nodes
+Reserved PROT_DSG (119.675, 124.1)
+Route PROT_DSG (119.675, 124.1, 'In2.Cu') (114.615, 137.025, 'B.Cu') 0.15
+  done 5.01 s 41897 nodes
+Route PROT_CHG (118.5, 124.15, 'In2.Cu') (122.435, 138.975, 'B.Cu') 0.15
+  done 4.73 s 50156 nodes
+Route PROT_PACK (119.675, 121.8, 'In2.Cu') (122.675, 124.5, 'B.Cu') 0.15
+  done 3.51 s 3388 nodes
+Route PROT_DSG (114.175, 133.5, 'B.Cu') (114.615, 137.025, 'B.Cu') 0.15
+Traceback (most recent call last):
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\step3_gate_finish.py", line 124, in <module>
+    rr('PROT_DSG','R41',2,'Q8',4,.15,True);save()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\step3_gate_finish.py", line 104, in rr
+    def rr(net,r1,p1,r2,p2,w=.2,via=True):route(net,endpoint(r1,p1),endpoint(r2,p2),w,via)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\step3_gate_finish.py", line 61, in route
+    if not free[n]:raise RuntimeError('Blocked endpoint '+str((net,pt)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Blocked endpoint ('PROT_DSG', (114.175, 133.5, 'B.Cu'))

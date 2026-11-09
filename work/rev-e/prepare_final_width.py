@@ -1,0 +1,3 @@
+from pathlib import Path
+s=Path('work/rev-e/step2_width_plan.py').read_text().replace("'SYS_RAW':.8}","'SYS_RAW':.8,'PROTECTED_RAW':1.5,'M1_SENSE':.45,'M2_SENSE':.45,'M3_SENSE':.45}").replace("if t['width']<.45 and t['net']!='VMOTOR':continue","if t['net'] not in ['M1_SENSE','M2_SENSE','M3_SENSE'] and (t['width']<.8 or t['net'] not in ['CELL_P','PROTECTED_RAW']):continue").replace('step2-width-changes.json','final-width-changes.json');Path('work/rev-e/final_width_plan.py').write_text(s)
+s=Path('work/rev-e/step2_width_apply.py').read_text().replace('step2-width-changes.json','final-width-changes.json');Path('work/rev-e/final_width_apply.py').write_text(s)

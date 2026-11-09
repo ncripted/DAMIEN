@@ -1,0 +1,132 @@
+{
+  "board_diameter_mm": 100,
+  "thickness_mm": 1.6,
+  "motor_slot_inner_radius_mm": 24,
+  "motor_slot_width_mm": 13.2,
+  "motor_angles_degrees": [
+    0,
+    120,
+    240
+  ],
+  "clamp_and_accessory_holes_mm": [
+    [
+      134.0,
+      110.0
+    ],
+    [
+      134.0,
+      90.0
+    ],
+    [
+      91.66025403784438,
+      65.55513627132908
+    ],
+    [
+      74.33974596215562,
+      75.55513627132908
+    ],
+    [
+      74.3397459621556,
+      124.4448637286709
+    ],
+    [
+      91.66025403784437,
+      134.4448637286709
+    ],
+    [
+      98,
+      96
+    ],
+    [
+      88,
+      80
+    ],
+    [
+      125,
+      93
+    ],
+    [
+      122,
+      143
+    ]
+  ],
+  "motor_terminal_pitch_mm": 6,
+  "terminal_slots_mm": [
+    0.8,
+    2.2
+  ],
+  "battery_envelope_mm": [
+    62,
+    34,
+    6
+  ],
+  "review_status": "PROVISIONAL_FIT_NOT_VALIDATED",
+  "robot_coordinate_transform": {
+    "x": "PCB_X-100",
+    "y": "100-PCB_Y"
+  },
+  "motor_terminal_reference_radius_mm": 22,
+  "clamp_pair_center_radius_mm": 34,
+  "clamp_pair_pitch_mm": 20,
+  "motor_terminal_drawing_review": {
+    "source": "https://www.pololu.com/file/0J949/micro-metal-gearmotors-dimensions.pdf",
+    "page_1_based": 3,
+    "drawing_label_pitch_mm": 6.2,
+    "implemented_pitch_mm": 6,
+    "status": "overlay and physical fit required before pad movement"
+  },
+  "battery_candidates": [
+    {
+      "name": "Rokland 1100mAh",
+      "size_nominal_mm": [
+        49,
+        28,
+        7.8
+      ],
+      "size_tolerance_mm": 2,
+      "mass_g": 19,
+      "adopted_for_driving": false,
+      "reason": "1C and 1.8-2.1A cutoff below motor+logic budget"
+    },
+    {
+      "name": "JLJLUP ASIN B0FR8XSXX6",
+      "size_nominal_mm": [
+        65,
+        36,
+        10
+      ],
+      "mass_listing_g": 49,
+      "adopted_for_driving": false,
+      "reason": "seller explicitly limits operating current to about 1.5A"
+    }
+  ],
+  "overall_envelope_status": "unconfirmed: terminal bend datum, axle radius/height, coupling engagement and wheel width required",
+  "provisional_envelope_example": {
+    "wheel_midplane_radius_mm": 60,
+    "wheel_axial_width_mm": 10,
+    "circumscribed_diameter_mm": 135.4400236266961
+  },
+  "rev_b_protection_notes": [
+    "Backside protection parts need cover clearance and thermal qualification; missing package models make renders incomplete.",
+    "TH1 and TH2: separate insulated 103AT-2 probes bonded to actual cell pouch, with harness strain relief.",
+    "Battery dimensions and exact cell rating remain unselected; cradle and supports remain provisional."
+  ],
+  "outline_revision_2026_11_06": {
+    "diameter_mm": 100,
+    "esp32_substrate_cutout": false,
+    "motor_openings": "unchanged",
+    "antenna_copper_keepout": "all 4 copper layers; unchanged",
+    "rf_status": "substrate change requires assembled range/throughput test"
+  },
+  "battery_design_basis": {
+    "mpn": "PHB1S100020CJST",
+    "status": "PROVISIONAL_ASSUMPTIONS_AUTHORIZED",
+    "capacity_mah": 1000,
+    "advertised_c_rating": 20,
+    "envelope_source": "assumed from separate 30C model; measure actual pack",
+    "side_clearance_mm": 1,
+    "top_allowance_mm": 2,
+    "placement_collision_check": "NOT_PERFORMED",
+    "review": "engineering/BATTERY_ASSUMPTIONS.md"
+  }
+}

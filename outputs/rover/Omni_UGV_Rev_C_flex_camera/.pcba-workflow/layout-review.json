@@ -1,0 +1,27 @@
+{
+  "schema": "pcb-layout-review-v1",
+  "status": "BLOCKED",
+  "board_revision": "C",
+  "drc": {
+    "errors": 0,
+    "warnings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0
+  },
+  "configured_rule_check_status": "PASS",
+  "mechanical_status": "UNVERIFIED",
+  "critical_nets": [
+    "CAM_XCLK",
+    "CAM_PCLK",
+    "CAM_D0..7",
+    "CAM_1V3",
+    "CAM_2V8",
+    "+3V3"
+  ],
+  "new_In1_signal_tracks": 0,
+  "unresolved": "engineering/UNRESOLVED.md",
+  "renders": [
+    "preview/rev-c-top.png",
+    "preview/rev-c-bottom.png"
+  ]
+}

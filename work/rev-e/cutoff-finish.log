@@ -1,0 +1,20 @@
+Route CELL_P (67.475, 108.75, 'F.Cu') (71.8625, 108.75, 'F.Cu') 0.15
+  done 0.55 s 682 nodes
+Route CELL_P (73.925, 104.75, 'F.Cu') (71.8625, 108.75, 'F.Cu') 0.15
+  done 0.8 s 2047 nodes
+Route CELL_P (132.9375, 130.95, 'B.Cu') (129.5, 134.525, 'B.Cu') 0.15
+  done 0.26 s 1102 nodes
+Route CELL_P (135.825, 129.0, 'B.Cu') (132.9375, 130.95, 'B.Cu') 0.15
+  done 0.12 s 613 nodes
+Route CELL_UV_RESET_N (135.825, 126.0, 'B.Cu') (75.575, 104.75, 'F.Cu') 0.15
+  done 14.64 s 280442 nodes
+Route CUT_PNP_B (134.175, 126.0, 'B.Cu') (132.9375, 129.05, 'B.Cu') 0.15
+  done 0.32 s 898 nodes
+Route CUT_PNP_B (134.175, 129.0, 'B.Cu') (132.9375, 129.05, 'B.Cu') 0.15
+  done 0.28 s 73 nodes
+Route CUT_GATE (131.0625, 130.0, 'B.Cu') (129.5, 136.475, 'B.Cu') 0.15
+  done 0.62 s 8052 nodes
+Route CUT_GATE (132.825, 133.5, 'B.Cu') (129.5, 136.475, 'B.Cu') 0.15
+  done 0.46 s 530 nodes
+Route CELL_N (131.175, 133.5, 'B.Cu') (116.135, 125.615, 'B.Cu') 0.15
+  done 2.34 s 25095 nodes

@@ -1,0 +1,162 @@
+Reference,Value,MPN,Footprint,Notes
+U1,ESP32-S3-WROOM-1-N8R8,ESP32-S3-WROOM-1-N8R8,UGV:RF_Module__ESP32-S3-WROOM-1,
+R1,10k,,UGV:Resistor_SMD__R_0603_1608Metric,
+C1,1u/10V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+R2,10k,,UGV:Resistor_SMD__R_0603_1608Metric,
+C2,10u/10V,,UGV:Capacitor_SMD__C_0805_2012Metric,
+C3,100n/16V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+SW1,RESET,KMR221GLFS,UGV:Button_Switch_SMD__SW_Push_1P1T_NO_CK_KMR2,
+SW2,BOOT,KMR221GLFS,UGV:Button_Switch_SMD__SW_Push_1P1T_NO_CK_KMR2,
+R3,1k,,UGV:Resistor_SMD__R_0603_1608Metric,
+D1,STATUS GREEN,0603 green LED,UGV:LED_SMD__LED_0603_1608Metric,
+R4,10k,,UGV:Resistor_SMD__R_0603_1608Metric,
+C4,100n/16V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+C5,10u/10V,,UGV:Capacitor_SMD__C_0805_2012Metric,
+U2,DRV8833PWP,DRV8833PWPR,UGV:Package_SO__HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm,
+C6,10u/10V,,UGV:Capacitor_SMD__C_0805_2012Metric,
+C7,2.2u/10V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+C8,10n/25V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+R5,10k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R6,0.25R/0.5W,,UGV:Resistor_SMD__R_1206_3216Metric,
+R7,0.25R/0.5W,,UGV:Resistor_SMD__R_1206_3216Metric,
+U3,DRV8833PWP,DRV8833PWPR,UGV:Package_SO__HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm,
+C9,10u/10V,,UGV:Capacitor_SMD__C_0805_2012Metric,
+C10,2.2u/10V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+C11,10n/25V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+R8,10k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R9,0.25R/0.5W,,UGV:Resistor_SMD__R_1206_3216Metric,
+M1,POLOLU 3065 MOTOR 1,Pololu 3065,UGV:Pololu_HPCB_Solder,Terminal slots require physical fit check; use separate printed clamps
+C12,100n/25V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+M2,POLOLU 3065 MOTOR 2,Pololu 3065,UGV:Pololu_HPCB_Solder,Terminal slots require physical fit check; use separate printed clamps
+C13,100n/25V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+M3,POLOLU 3065 MOTOR 3,Pololu 3065,UGV:Pololu_HPCB_Solder,Terminal slots require physical fit check; use separate printed clamps
+C14,100n/25V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+C90,220u/10V,Panasonic EEEFT1A221AP,UGV:CP_Elec_6.3x5.8_HandAssembly,"6.3mm diameter, 5.8mm high; oversized hand-assembly lands; approved 220-470uF bulk range; check actual PWM ripple"
+J1,USB-C,GCT USB4105-GF-A,UGV:Connector_USB__USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,
+R10,5.1k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R11,5.1k,,UGV:Resistor_SMD__R_0603_1608Metric,
+U6,USBLC6-2SC6,USBLC6-2SC6,UGV:Package_TO_SOT_SMD__SOT-23-6,
+R12,22R,,UGV:Resistor_SMD__R_0603_1608Metric,
+R13,22R,,UGV:Resistor_SMD__R_0603_1608Metric,
+U5,BQ24074RGT,BQ24074RGTR,UGV:Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,
+R14,3.57k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R15,3.24k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R16,46.4k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R17,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+C15,1u/10V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+C16,10u/10V,,UGV:Capacitor_SMD__C_0805_2012Metric,
+C17,10u/10V,,UGV:Capacitor_SMD__C_0805_2012Metric,
+J2,RAW 1S CELL 4.2V MAX,Molex 43650-0215,UGV:Connector_Molex__Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical,"Raw cell input, pin1 positive; protection now onboard. Cell itself must support >=4A continuous / >=5A peak. No CELL_N-to-GND bypass."
+J4,CELL NTC - CHARGER,JST B2B-PH-K-S,UGV:Connector_JST__JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,"Independent insulated 103AT-2 bonded to actual cell. Analog U12 window controls U5 CE; pin1 CELL_CHG_TEMP, pin2 GND. Never attach to raw CELL_N."
+D2,CHARGE AMBER,,UGV:LED_SMD__LED_0603_1608Metric,
+R18,2.2k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R19,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+U4,TPS63802DLA,TPS63802DLAR,UGV:TPS63802_DLA0010A,
+L1,0.47uH/5.4A,Coilcraft XFL4015-471MEC,UGV:L_XFL4015,
+C18,22u/10V X5R 20%,C2012X5R1A226M125AB,UGV:Capacitor_SMD__C_0805_2012Metric,"TDK production 0805, 22uF 10V +/-20% X5R. DC-bias/temperature/aging verification required; nominal capacitance is not effective capacitance."
+C19,22u/10V X5R 20%,C2012X5R1A226M125AB,UGV:Capacitor_SMD__C_0805_2012Metric,"TDK production 0805, 22uF 10V +/-20% X5R. DC-bias/temperature/aging verification required; nominal capacitance is not effective capacitance."
+C20,22u/10V X5R 20%,C2012X5R1A226M125AB,UGV:Capacitor_SMD__C_0805_2012Metric,"TDK production 0805, 22uF 10V +/-20% X5R. DC-bias/temperature/aging verification required; nominal capacitance is not effective capacitance."
+R20,511k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R21,91k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R22,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R23,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+SW3,POWER,C&K JS102011SAQN,UGV:Button_Switch_SMD__SW_SPDT_CK_JS102011SAQN,
+Q1,DMP2035U-7,DMP2035U-7,UGV:Package_TO_SOT_SMD__SOT-23,"Lower-loss P-FET, same G1/S2/D3 SOT23. Thermal/braking qualification remains required."
+Q2,DMP2035U-7,DMP2035U-7,UGV:Package_TO_SOT_SMD__SOT-23,"Lower-loss P-FET, same G1/S2/D3 SOT23. Thermal/braking qualification remains required."
+Q5,AO3401A,AO3401A,UGV:Package_TO_SOT_SMD__SOT-23,
+Q3,MMBT3904,MMBT3904,UGV:Package_TO_SOT_SMD__SOT-23,
+Q4,MMBT3904,MMBT3904,UGV:Package_TO_SOT_SMD__SOT-23,
+Q6,MMBT3904,MMBT3904,UGV:Package_TO_SOT_SMD__SOT-23,
+R24,22k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R25,56k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R26,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R27,1k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R28,1M,,UGV:Resistor_SMD__R_0603_1608Metric,
+R29,10k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R30,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+C21,1u/10V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+C22,100n/16V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+R31,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R32,47k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R33,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R34,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+R35,100k,,UGV:Resistor_SMD__R_0603_1608Metric,
+C23,100n/16V,,UGV:Capacitor_SMD__C_0603_1608Metric,
+TP1,GND,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP2,+3V3,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP3,VBAT,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP4,VMOTOR,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP5,SYS_RAW,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP6,ESP_EN,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP7,LED_STATUS,,UGV:TestPoint__TestPoint_Pad_D1.0mm,GPIO43 status LED test point; UART0 TX no longer exposed. Programming remains native USB.
+TP8,DRIVE_ENABLE,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP9,FAULT_U2,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP10,FAULT_U3,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+TP11,REG_PG,,UGV:TestPoint__TestPoint_Pad_D1.0mm,
+U7,BQ298217RUGR,BQ298217RUGR,UGV:BQ298217_RUG0008A,Primary BQ298217: factory UV 2.6V; cold-start/wake compatibility open. CS/VSS use R36 voltage contacts. PACK senses PROTECTED_RAW before Q13.
+Q7,CSD17308Q3,CSD17308Q3,UGV:CSD17308Q3_TI,"Primary charge FET: source CELL_P, common drain PROT_DRAIN."
+Q8,CSD17308Q3,CSD17308Q3,UGV:CSD17308Q3_TI,Primary discharge FET: source PROTECTED_RAW. Source pad1 intersects a through-via: filled/copper-capped processing or reroute required.
+R36,10m 1% 1W KELVIN,WSK2512R0100FEA,UGV:WSK2512_T1p19_Kelvin,"4-terminal Vishay WSK2512 10mΩ. Current pads1/2, independent sense3/4. Native numbering explicitly mapped to manufacturer land drawing."
+R37,100R 1%,,UGV:Resistor_SMD__R_0603_1608Metric,
+R38,20R 1%,,UGV:Resistor_SMD__R_0603_1608Metric,
+R39,1k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"U7 PACK sense from PROTECTED_RAW, upstream of secondary Q13."
+C24,100n/16V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"U7 VDD decoupling returns to PROT_VSS_SENSE, not the main GND plane."
+R40,10M,,UGV:Resistor_SMD__R_0603_1608Metric,Q7 gate-source bias to raw CELL_P.
+R41,10M,,UGV:Resistor_SMD__R_0603_1608Metric,Q8 gate-source bias to PROTECTED_RAW.
+J5,CELL NTC - DRIVE,B2B-PH-K-S,UGV:Connector_JST__JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,Second electrically isolated103AT-2 probe bonded to same cell; not shared with J4
+R42,10k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,
+R43,1k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,
+C25,100n/16V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,
+TH1,10k NTC 1% B25/85=3435K,103AT-2,OFFBOARD,Independent 103AT-2 bonded to cell and insulated; J4 analog charging window. Never PCB mounted.
+TH2,10k NTC 1% B25/85=3435K,103AT-2,OFFBOARD,Cell-bonded drive monitoring probe -> J5; separate insulated two-wire harness; strain relief; never attach to PCB as temperature proxy
+BAT1,1S 3.7V 1000mAh 20C PROVISIONAL,PHB1S100020CJST,OFFBOARD,Assumptions authorized 2026-11-06; 62x34x6mm UNVERIFIED for 20C pack; connector/polarity/wire and cell limits require qualification. See engineering/BATTERY_ASSUMPTIONS.md. External assembly item; not a PCB-mounted symbol.
+J3,M0031 CAMERA FPC24,FH12-24S-0.5SH(55),UGV:Camera_FH12_24,Rev C camera redesign; qualification pending
+U8,TLV75513PDBVR,TLV75513PDBVR,UGV:Camera_SOT23_5,Rev C camera redesign; qualification pending
+U9,TLV75528PDBVR,TLV75528PDBVR,UGV:Camera_SOT23_5,Rev C camera redesign; qualification pending
+C26,2.2u/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,Rev C camera redesign; qualification pending
+C27,2.2u/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,Rev C camera redesign; qualification pending
+C28,2.2u/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,Rev C camera redesign; qualification pending
+C29,2.2u/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,Rev C camera redesign; qualification pending
+R44,4.7k,,UGV:Resistor_SMD__R_0603_1608Metric,Rev C camera redesign; qualification pending
+R45,4.7k,,UGV:Resistor_SMD__R_0603_1608Metric,Rev C camera redesign; qualification pending
+CAM1,OV2640 24-pin DVP flex camera,Arducam M0031,OFFBOARD,Manufacturer pinout basis; confirm supplied module revision/contact orientation; bracket dimensions require measurement.
+U10,TPS3840DL31DBVR,TPS3840DL31DBVR,UGV:Camera_SOT23_5,"Rev D power audit; engineering prototype, qualification required"
+Q9,MMBT3906,MMBT3906-7-F,UGV:Package_TO_SOT_SMD__SOT-23,"Rev D power audit; engineering prototype, qualification required"
+Q10,MMBT3904,MMBT3904-7-F,UGV:Package_TO_SOT_SMD__SOT-23,"Rev D power audit; engineering prototype, qualification required"
+Q11,MMBT3904,MMBT3904-7-F,UGV:Package_TO_SOT_SMD__SOT-23,"Rev D power audit; engineering prototype, qualification required"
+R46,100k,,UGV:Resistor_SMD__R_0603_1608Metric,Raw-cell pullup is required to operate the independent discharge cutoff after protected VBAT collapses.
+R47,22k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R48,100k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R49,1M,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R50,33k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R51,1M,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R52,3.3k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R53,1M,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R54,10k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C30,100n/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C31,100n/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+U11,TLV75533PDBVR,TLV75533PDBVR,UGV:Camera_SOT23_5,"Rev D power audit; engineering prototype, qualification required"
+U12,TLV6700DDCR,TLV6700DDCR,UGV:Power_SOT23_6,"Rev D power audit; engineering prototype, qualification required"
+U13,SN74LVC1G14DBVR,SN74LVC1G14DBVR,UGV:Camera_SOT23_5,"Rev D power audit; engineering prototype, qualification required"
+R55,10k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R56,200k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R57,100k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R58,442k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R59,100k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R60,10k 1%,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R61,100k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R62,1k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+R63,100k,,UGV:Resistor_SMD__R_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C32,2.2u/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C33,2.2u/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C34,100n/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C35,220n/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+C36,100n/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,"Rev D power audit; engineering prototype, qualification required"
+U14,SN74LVC1G17DBVR,SN74LVC1G17DBVR,UGV:Camera_SOT23_5,Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor
+R64,100k,,UGV:Resistor_SMD__R_0603_1608Metric,Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor
+C37,100n/10V X7R,,UGV:Capacitor_SMD__C_0603_1608Metric,Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor
+Q12,MMBT3906,MMBT3906-7-F,UGV:Package_TO_SOT_SMD__SOT-23,Raw-cell PNP inverter: U10 reset low raises Q13 gate to inhibit discharge.
+Q13,DMP2008UFG-7,DMP2008UFG-7,UGV:Discharge_PowerDI3333_8,"Secondary discharge-only PFET: sources1-3 PROTECTED_RAW, merged drain5 represents physical5-8 and connects VBAT. Body diode permits charge recovery. Source pad1 via requires filled/capped processing or reroute."
+R65,47k,,UGV:Resistor_SMD__R_0603_1608Metric,Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.
+R66,1M,,UGV:Resistor_SMD__R_0603_1608Metric,Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.
+R67,56k,,UGV:Resistor_SMD__R_0603_1608Metric,Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.

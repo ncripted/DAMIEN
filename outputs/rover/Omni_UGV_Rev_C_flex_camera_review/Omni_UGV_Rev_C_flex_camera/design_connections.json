@@ -1,0 +1,2359 @@
+[
+  {
+    "ref": "U1",
+    "value": "ESP32-S3-WROOM-1-N8R8",
+    "fp": "RF_Module:ESP32-S3-WROOM-1",
+    "nets": {
+      "1": "GND",
+      "2": "+3V3",
+      "3": "ESP_EN",
+      "4": "CAM_D0",
+      "5": "CAM_D1",
+      "6": "CAM_D2",
+      "7": "CAM_D3",
+      "8": "CAM_XCLK",
+      "9": "CAM_SDA",
+      "10": "CAM_SCL",
+      "11": "M1_IN1",
+      "12": "CAM_D4",
+      "13": "USB_DM",
+      "14": "USB_DP",
+      "15": null,
+      "16": null,
+      "17": "CAM_D5",
+      "18": "CAM_D6",
+      "19": "CAM_D7",
+      "20": "CAM_PCLK",
+      "21": "CAM_VSYNC",
+      "22": "CAM_HREF",
+      "23": "M1_IN2",
+      "24": "FAULT_U2",
+      "25": "FAULT_U3",
+      "26": null,
+      "27": "ESP_BOOT",
+      "28": null,
+      "29": null,
+      "30": null,
+      "31": "M2_IN1",
+      "32": "M2_IN2",
+      "33": "M3_IN1",
+      "34": "M3_IN2",
+      "35": "DRIVE_REQ",
+      "36": "USB_500_ENABLE",
+      "37": "LED_STATUS",
+      "38": "CELL_TEMP_ADC",
+      "39": "VBAT_ADC",
+      "40": "GND",
+      "41": "GND"
+    },
+    "x": 111.0,
+    "y": 68.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "RF_Module:ESP32-S3-WROOM-1",
+    "mpn": "ESP32-S3-WROOM-1-N8R8",
+    "note": "",
+    "uuid": "9380c1f1-12c4-5aee-ab6f-c45896a878ca",
+    "localfp": "UGV:RF_Module__ESP32-S3-WROOM-1"
+  },
+  {
+    "ref": "R1",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "ESP_EN"
+    },
+    "x": 96.0,
+    "y": 66.7,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "c0fe939b-c1de-5879-b2c9-356841df5c25",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "rotation": 0
+  },
+  {
+    "ref": "C1",
+    "value": "1u/10V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "ESP_EN",
+      "2": "GND"
+    },
+    "x": 99.0,
+    "y": 65.8,
+    "a": 180.0,
+    "group": "Controller",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "966f159b-cccd-5a40-a8e9-11549edd80b6",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "rotation": 180
+  },
+  {
+    "ref": "R2",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "ESP_BOOT"
+    },
+    "x": 123.5,
+    "y": 82.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "88f7201d-98a4-5670-874d-0317111a03f8",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "C2",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 95.7,
+    "y": 63.5,
+    "a": 180.0,
+    "group": "Controller",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "d3053137-8a3a-5313-a5f3-4d0ecbaf3c6f",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric",
+    "rotation": 180
+  },
+  {
+    "ref": "C3",
+    "value": "100n/16V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 99.0,
+    "y": 63.5,
+    "a": 180.0,
+    "group": "Controller",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "d930cae7-d8c2-5705-86a9-33b6cbb1fdc5",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "rotation": 180
+  },
+  {
+    "ref": "SW1",
+    "value": "RESET",
+    "fp": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+    "nets": {
+      "1": "ESP_EN",
+      "2": "GND"
+    },
+    "x": 70.5,
+    "y": 70.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Switch:SW_Push",
+    "mpn": "KMR221GLFS",
+    "note": "",
+    "uuid": "b91f2d8f-915b-599a-a6a9-438943314d57",
+    "localfp": "UGV:Button_Switch_SMD__SW_Push_1P1T_NO_CK_KMR2"
+  },
+  {
+    "ref": "SW2",
+    "value": "BOOT",
+    "fp": "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2",
+    "nets": {
+      "1": "ESP_BOOT",
+      "2": "GND"
+    },
+    "x": 128.0,
+    "y": 83.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Switch:SW_Push",
+    "mpn": "KMR221GLFS",
+    "note": "",
+    "uuid": "f98e7f67-d19d-592e-8d54-e9fe2b6b66f2",
+    "localfp": "UGV:Button_Switch_SMD__SW_Push_1P1T_NO_CK_KMR2"
+  },
+  {
+    "ref": "R3",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "LED_STATUS",
+      "2": "LED_A"
+    },
+    "x": 120.0,
+    "y": 82.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "25196f0e-39b6-53a3-815d-c95546e9fdec",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "D1",
+    "value": "STATUS GREEN",
+    "fp": "LED_SMD:LED_0603_1608Metric",
+    "nets": {
+      "1": "GND",
+      "2": "LED_A"
+    },
+    "x": 132.5,
+    "y": 82.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:LED",
+    "mpn": "0603 green LED",
+    "note": "",
+    "uuid": "bedf06af-35af-5cbd-a5b7-28cf31d2b8a4",
+    "localfp": "UGV:LED_SMD__LED_0603_1608Metric"
+  },
+  {
+    "ref": "R4",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CAM_RESET"
+    },
+    "x": 117.0,
+    "y": 86.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "cfa5cf7a-f255-5325-bc9a-8d6019a5c829",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "C4",
+    "value": "100n/16V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "CAM_RESET",
+      "2": "GND"
+    },
+    "x": 120.5,
+    "y": 86.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "6cb1d187-71e5-5bdb-845a-fbbe35814783",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "C5",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 85.0,
+    "y": 85.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "64c87d7c-9ff1-59ef-ab8f-7fd8a93e6938",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "U2",
+    "value": "DRV8833PWP",
+    "fp": "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm",
+    "nets": {
+      "3": "M1_SENSE",
+      "4": "M1_B",
+      "5": "M2_B",
+      "6": "M2_SENSE",
+      "7": "M2_A",
+      "8": "FAULT_U2",
+      "9": "M2_IN1",
+      "10": "M2_IN2",
+      "11": "U2_VCP",
+      "12": "VMOTOR",
+      "13": "GND",
+      "14": "U2_VINT",
+      "15": "M1_IN2",
+      "16": "M1_IN1",
+      "1": "DRIVE_ENABLE",
+      "2": "M1_A",
+      "17": "GND"
+    },
+    "x": 116.0,
+    "y": 108.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Driver_Motor:DRV8833PWP",
+    "mpn": "DRV8833PWPR",
+    "note": "",
+    "uuid": "7443734d-7d59-562e-ac3f-684d2c33605b",
+    "localfp": "UGV:Package_SO__HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm"
+  },
+  {
+    "ref": "C6",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VMOTOR",
+      "2": "GND"
+    },
+    "x": 122.0,
+    "y": 110.0,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "a3456d54-fc5b-5b2f-8244-f4ff544b1a72",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "C7",
+    "value": "2.2u/10V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "U2_VINT",
+      "2": "GND"
+    },
+    "x": 122.0,
+    "y": 106.5,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "76707a42-d054-5ae5-9105-828bb460e2f2",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "C8",
+    "value": "10n/25V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "U2_VCP",
+      "2": "VMOTOR"
+    },
+    "x": 122.0,
+    "y": 113.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "955b6d9c-e7f6-5c62-9573-97ea13844930",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "R5",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "FAULT_U2"
+    },
+    "x": 110.0,
+    "y": 101.5,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "da6d38e8-60d2-5fc6-bda2-a3c494103f0e",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R6",
+    "value": "0.25R/0.5W",
+    "fp": "Resistor_SMD:R_1206_3216Metric",
+    "nets": {
+      "1": "M1_SENSE",
+      "2": "GND"
+    },
+    "x": 110.0,
+    "y": 105.5625,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "31359c09-10fc-5eb8-8ca0-7f38da245bc7",
+    "localfp": "UGV:Resistor_SMD__R_1206_3216Metric"
+  },
+  {
+    "ref": "R7",
+    "value": "0.25R/0.5W",
+    "fp": "Resistor_SMD:R_1206_3216Metric",
+    "nets": {
+      "1": "M2_SENSE",
+      "2": "GND"
+    },
+    "x": 110.0,
+    "y": 110.4375,
+    "a": -90.0,
+    "group": "Motors",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "4a1ef948-8a20-5d09-81fa-c768fb6be40e",
+    "localfp": "UGV:Resistor_SMD__R_1206_3216Metric"
+  },
+  {
+    "ref": "U3",
+    "value": "DRV8833PWP",
+    "fp": "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm",
+    "nets": {
+      "3": "M3_SENSE",
+      "4": "M3_B",
+      "5": null,
+      "6": "GND",
+      "7": null,
+      "8": "FAULT_U3",
+      "9": "GND",
+      "10": "GND",
+      "11": "U3_VCP",
+      "12": "VMOTOR",
+      "13": "GND",
+      "14": "U3_VINT",
+      "15": "M3_IN2",
+      "16": "M3_IN1",
+      "1": "DRIVE_ENABLE",
+      "2": "M3_A",
+      "17": "GND"
+    },
+    "x": 84.0,
+    "y": 108.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Driver_Motor:DRV8833PWP",
+    "mpn": "DRV8833PWPR",
+    "note": "",
+    "uuid": "28d5ace5-9f58-5e01-944c-cc8e200b1bef",
+    "localfp": "UGV:Package_SO__HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm"
+  },
+  {
+    "ref": "C9",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VMOTOR",
+      "2": "GND"
+    },
+    "x": 90.0,
+    "y": 110.0,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "91a2395d-de2f-5e66-a63a-d8159cd95952",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "C10",
+    "value": "2.2u/10V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "U3_VINT",
+      "2": "GND"
+    },
+    "x": 90.0,
+    "y": 106.0,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "c2c4ba6f-c569-536b-bcf5-446ecb171215",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "C11",
+    "value": "10n/25V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "U3_VCP",
+      "2": "VMOTOR"
+    },
+    "x": 87.5,
+    "y": 113.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "a577bd1f-e680-5beb-9e8b-12f3aedab2ce",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "R8",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "FAULT_U3"
+    },
+    "x": 78.0,
+    "y": 102.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "d06df272-2c84-5a21-81c2-3f44419dba75",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R9",
+    "value": "0.25R/0.5W",
+    "fp": "Resistor_SMD:R_1206_3216Metric",
+    "nets": {
+      "1": "M3_SENSE",
+      "2": "GND"
+    },
+    "x": 78.0,
+    "y": 105.5625,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "f3b9a4ca-345f-5335-831b-61328981758b",
+    "localfp": "UGV:Resistor_SMD__R_1206_3216Metric"
+  },
+  {
+    "ref": "M1",
+    "value": "POLOLU 3065 MOTOR 1",
+    "fp": "UGV:Pololu_HPCB_Solder",
+    "nets": {
+      "1": "M1_A",
+      "2": "M1_B"
+    },
+    "x": 122.0,
+    "y": 100.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "mpn": "Pololu 3065",
+    "note": "Terminal slots require physical fit check; use separate printed clamps",
+    "uuid": "539117cf-4a4b-589d-bd69-9fd85a69b550",
+    "localfp": "UGV:Pololu_HPCB_Solder"
+  },
+  {
+    "ref": "C12",
+    "value": "100n/25V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "M1_A",
+      "2": "M1_B"
+    },
+    "x": 118.0,
+    "y": 100.0,
+    "a": 90.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "8bbef702-f909-5ac0-a65a-0bcbad41a059",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "M2",
+    "value": "POLOLU 3065 MOTOR 2",
+    "fp": "UGV:Pololu_HPCB_Solder",
+    "nets": {
+      "1": "M2_A",
+      "2": "M2_B"
+    },
+    "x": 89.0,
+    "y": 80.9474,
+    "a": 120.0,
+    "group": "Motors",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "mpn": "Pololu 3065",
+    "note": "Terminal slots require physical fit check; use separate printed clamps",
+    "uuid": "e6990b88-6b08-5105-b235-1b22af2aafcf",
+    "localfp": "UGV:Pololu_HPCB_Solder"
+  },
+  {
+    "ref": "C13",
+    "value": "100n/25V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "M2_A",
+      "2": "M2_B"
+    },
+    "x": 89.0,
+    "y": 85.9115,
+    "a": -150.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "d1553a57-eeba-5730-9c31-be07f6117762",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "M3",
+    "value": "POLOLU 3065 MOTOR 3",
+    "fp": "UGV:Pololu_HPCB_Solder",
+    "nets": {
+      "1": "M3_A",
+      "2": "M3_B"
+    },
+    "x": 89.0,
+    "y": 119.0526,
+    "a": -120.0,
+    "group": "Motors",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "mpn": "Pololu 3065",
+    "note": "Terminal slots require physical fit check; use separate printed clamps",
+    "uuid": "07fb09a0-7b72-5ba3-84dc-f85c1f3fcda5",
+    "localfp": "UGV:Pololu_HPCB_Solder"
+  },
+  {
+    "ref": "C14",
+    "value": "100n/25V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "M3_A",
+      "2": "M3_B"
+    },
+    "x": 91.0,
+    "y": 114.0885,
+    "a": -30.0,
+    "group": "Motors",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "493c14a4-cf8c-5a19-b393-ca16d84a3585",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "C90",
+    "value": "220u/10V",
+    "fp": "Capacitor_SMD:CP_Elec_6.3x5.4",
+    "nets": {
+      "1": "VMOTOR",
+      "2": "GND"
+    },
+    "x": 108.0,
+    "y": 124.0,
+    "a": 0,
+    "group": "Motors",
+    "symbol": "Device:C_Polarized",
+    "mpn": "Panasonic EEEFT1A221AP",
+    "note": "6.3mm diameter, 5.8mm high; oversized hand-assembly lands; approved 220-470uF bulk range; check actual PWM ripple",
+    "uuid": "b7769516-a9a1-55f8-9efd-6edc6102b62d",
+    "localfp": "UGV:CP_Elec_6.3x5.8_HandAssembly"
+  },
+  {
+    "ref": "J1",
+    "value": "USB-C",
+    "fp": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "nets": {
+      "A1": "GND",
+      "A4": "USB_5V",
+      "A5": "USB_CC1",
+      "A6": "USB_DP_EXT",
+      "A7": "USB_DM_EXT",
+      "A8": null,
+      "A9": "USB_5V",
+      "A12": "GND",
+      "B1": "GND",
+      "B4": "USB_5V",
+      "B5": "USB_CC2",
+      "B6": "USB_DP_EXT",
+      "B7": "USB_DM_EXT",
+      "B8": null,
+      "B9": "USB_5V",
+      "B12": "GND",
+      "S1": "GND"
+    },
+    "x": 99.0,
+    "y": 146.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Connector:USB_C_Receptacle_USB2.0_16P",
+    "mpn": "GCT USB4105-GF-A",
+    "note": "",
+    "uuid": "2f33800d-7867-53ea-bfd7-5a201807b3e6",
+    "localfp": "UGV:Connector_USB__USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+  },
+  {
+    "ref": "R10",
+    "value": "5.1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_CC1",
+      "2": "GND"
+    },
+    "x": 95.5,
+    "y": 138.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "bf66a8e4-94f4-51c6-ac73-c2456f88e0ae",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R11",
+    "value": "5.1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_CC2",
+      "2": "GND"
+    },
+    "x": 104.0,
+    "y": 138.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "a442e98a-8232-5d83-b594-787e3f0526a2",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "U6",
+    "value": "USBLC6-2SC6",
+    "fp": "Package_TO_SOT_SMD:SOT-23-6",
+    "nets": {
+      "1": "USB_DM_EXT",
+      "2": "GND",
+      "3": "USB_DP_EXT",
+      "4": "USB_DP_EXT",
+      "5": "USB_5V",
+      "6": "USB_DM_EXT"
+    },
+    "x": 109.0,
+    "y": 137.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Power_Protection:USBLC6-2SC6",
+    "mpn": "USBLC6-2SC6",
+    "note": "",
+    "uuid": "03eaf1dd-3fd1-5612-a10b-749fd06a6e82",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23-6"
+  },
+  {
+    "ref": "R12",
+    "value": "22R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_DM_EXT",
+      "2": "USB_DM"
+    },
+    "x": 113.0,
+    "y": 137.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "7fa1ecd7-cd98-526e-988e-9504f3d05aeb",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R13",
+    "value": "22R",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_DP_EXT",
+      "2": "USB_DP"
+    },
+    "x": 113.0,
+    "y": 139.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "e9990099-dd8c-5dce-b7e4-69066734c731",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "U5",
+    "value": "BQ24074RGT",
+    "fp": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+    "nets": {
+      "1": "BAT_NTC",
+      "2": "VBAT",
+      "3": "VBAT",
+      "4": "GND",
+      "5": "GND",
+      "6": "USB_500_ENABLE",
+      "7": "CHG_PGOOD",
+      "8": "GND",
+      "9": "CHG_STATUS",
+      "10": "SYS_RAW",
+      "11": "SYS_RAW",
+      "12": "CHG_ILIM",
+      "13": "USB_5V",
+      "14": "CHG_TIMER",
+      "15": null,
+      "16": "CHG_ISET",
+      "17": "GND"
+    },
+    "x": 96.0,
+    "y": 128.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Battery_Management:BQ24074RGT",
+    "mpn": "BQ24074RGTR",
+    "note": "",
+    "uuid": "229e1778-9f67-5b9d-90c5-e592ac15e7bb",
+    "localfp": "UGV:Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+  },
+  {
+    "ref": "R14",
+    "value": "3.57k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_ISET",
+      "2": "GND"
+    },
+    "x": 96.0,
+    "y": 124.5,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "9e995fea-57fb-51ca-b118-8b0c44c06584",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R15",
+    "value": "3.24k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_ILIM",
+      "2": "GND"
+    },
+    "x": 96.0,
+    "y": 131.5,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "67a2a26d-7589-56ba-a4ef-258bf4c27e1a",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R16",
+    "value": "46.4k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_TIMER",
+      "2": "GND"
+    },
+    "x": 96.0,
+    "y": 133.5,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "90e5a886-da86-55a3-8e3a-08cfcff84fd6",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R17",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_500_ENABLE",
+      "2": "GND"
+    },
+    "x": 101.0,
+    "y": 131.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "83896b08-daf1-5fa0-abcf-5f63a4f203ac",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "C15",
+    "value": "1u/10V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "x": 100.0,
+    "y": 135.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "de2d1e51-82c2-548d-af40-58e55b43fc42",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "C16",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "x": 100.0,
+    "y": 124.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "706f3ff4-3b6d-5877-8ef6-c7766874480a",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "C17",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "SYS_RAW",
+      "2": "GND"
+    },
+    "x": 100.5,
+    "y": 128.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "05eb3715-c8a7-51a0-ac54-e16177f91ae2",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "J2",
+    "value": "RAW 1S CELL 4.2V MAX",
+    "fp": "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical",
+    "nets": {
+      "1": "CELL_P",
+      "2": "CELL_N"
+    },
+    "x": 116.0,
+    "y": 132.0,
+    "a": 90.0,
+    "group": "Charging",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "mpn": "Molex 43650-0215",
+    "note": "Raw cell input, pin1 positive; protection now onboard. Cell itself must support >=4A continuous / >=5A peak. No CELL_N-to-GND bypass.",
+    "uuid": "17b2d26d-854d-5717-a53b-b9fec5363d9d",
+    "localfp": "UGV:Connector_Molex__Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+  },
+  {
+    "ref": "J4",
+    "value": "CELL NTC - CHARGER",
+    "fp": "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "nets": {
+      "1": "BAT_NTC",
+      "2": "GND"
+    },
+    "x": 89.0,
+    "y": 140.5,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Connector_Generic:Conn_01x02",
+    "mpn": "JST B2B-PH-K-S",
+    "note": "Independent 103AT-2 probe bonded to cell; both leads isolated from cell terminals. Pin1 TS, pin2 system GND. Do not share with J5.",
+    "uuid": "777db4a5-855e-57bb-b288-65b8f40a18c4",
+    "localfp": "UGV:Connector_JST__JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+  },
+  {
+    "ref": "D2",
+    "value": "CHARGE AMBER",
+    "fp": "LED_SMD:LED_0603_1608Metric",
+    "nets": {
+      "1": "CHG_STATUS",
+      "2": "CHG_LED_A"
+    },
+    "x": 96.0,
+    "y": 135.5,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:LED",
+    "mpn": "",
+    "note": "",
+    "uuid": "8d98d0ec-dd7a-56e8-9c0c-8b4b4e3ec431",
+    "localfp": "UGV:LED_SMD__LED_0603_1608Metric"
+  },
+  {
+    "ref": "R18",
+    "value": "2.2k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "SYS_RAW",
+      "2": "CHG_LED_A"
+    },
+    "x": 83.0,
+    "y": 116.0,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "555cffd7-e74d-51ce-88f8-872d95819e4e",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R19",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CHG_PGOOD"
+    },
+    "x": 104.0,
+    "y": 128.5,
+    "a": 0,
+    "group": "Charging",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "41168970-b8a1-5dc6-8392-6d691bb9511e",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "U4",
+    "value": "TPS63802DLA",
+    "fp": "UGV:TPS63802_DLA0010A",
+    "nets": {
+      "1": "SYS_ON",
+      "2": "GND",
+      "3": "GND",
+      "4": "REG_FB",
+      "5": "REG_PG",
+      "6": "+3V3",
+      "7": "REG_L2",
+      "8": "GND",
+      "9": "REG_L1",
+      "10": "SYS_RAW"
+    },
+    "x": 96.0,
+    "y": 114.0,
+    "a": 0,
+    "group": "Regulator",
+    "symbol": null,
+    "mpn": "TPS63802DLAR",
+    "note": "",
+    "uuid": "78880d9c-d2fa-5f9e-95dc-0e60eed708a5",
+    "localfp": "UGV:TPS63802_DLA0010A"
+  },
+  {
+    "ref": "L1",
+    "value": "0.47uH/5.4A",
+    "fp": "UGV:L_XFL4015",
+    "nets": {
+      "1": "REG_L1",
+      "2": "REG_L2"
+    },
+    "x": 101.0,
+    "y": 114.0,
+    "a": -90.0,
+    "group": "Regulator",
+    "symbol": "Device:L",
+    "mpn": "Coilcraft XFL4015-471MEC",
+    "note": "",
+    "uuid": "04bbe806-e19d-5e9f-971e-c8cc639b71ee",
+    "localfp": "UGV:L_XFL4015"
+  },
+  {
+    "ref": "C18",
+    "value": "10u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "SYS_RAW",
+      "2": "GND"
+    },
+    "x": 96.0,
+    "y": 110.0,
+    "a": 0,
+    "group": "Regulator",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "8d64a941-926b-509b-a567-aea9447c5b2d",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "C19",
+    "value": "22u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 96.0,
+    "y": 118.0,
+    "a": 0,
+    "group": "Regulator",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "6583992b-ad0d-5246-a14a-5642aa0877c5",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "C20",
+    "value": "22u/10V",
+    "fp": "Capacitor_SMD:C_0805_2012Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 96.0,
+    "y": 121.0,
+    "a": 0,
+    "group": "Regulator",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "21bbbf8d-7a20-5055-bfc9-62abd94b75d2",
+    "localfp": "UGV:Capacitor_SMD__C_0805_2012Metric"
+  },
+  {
+    "ref": "R20",
+    "value": "511k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "REG_FB"
+    },
+    "x": 92.0,
+    "y": 111.0,
+    "a": 90.0,
+    "group": "Regulator",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "8bf5ec6e-d579-57c5-93db-c1f223b746a2",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R21",
+    "value": "91k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "REG_FB",
+      "2": "GND"
+    },
+    "x": 85.0,
+    "y": 113.5,
+    "a": 90.0,
+    "group": "Regulator",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "47edee6b-1246-5a47-804b-b9c356de7ba1",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R22",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "REG_PG"
+    },
+    "x": 93.0,
+    "y": 108.0,
+    "a": 0,
+    "group": "Regulator",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "1382a088-83a9-52f4-9759-62b75f1f877d",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R23",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "SYS_ON",
+      "2": "GND"
+    },
+    "x": 87.5,
+    "y": 115.0,
+    "a": 0,
+    "group": "Regulator",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "0e9112dd-b2ea-5cc5-99a2-ea16e1f72a55",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "SW3",
+    "value": "POWER",
+    "fp": "Button_Switch_SMD:SW_SPDT_CK_JS102011SAQN",
+    "nets": {
+      "1": "GND",
+      "2": "SYS_ON",
+      "3": "SYS_RAW"
+    },
+    "x": 130.0,
+    "y": 126.0,
+    "a": 90.0,
+    "group": "Regulator",
+    "symbol": "Switch:SW_SPDT",
+    "mpn": "C&K JS102011SAQN",
+    "note": "",
+    "uuid": "12d01980-601a-56cf-b943-2b0ab7a02fa1",
+    "localfp": "UGV:Button_Switch_SMD__SW_SPDT_CK_JS102011SAQN"
+  },
+  {
+    "ref": "Q1",
+    "value": "AO3401A",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "MOTOR_GATE",
+      "2": "MOTOR_MID",
+      "3": "VBAT"
+    },
+    "x": 126.0,
+    "y": 116.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Transistor_FET:AO3401A",
+    "mpn": "AO3401A",
+    "note": "",
+    "uuid": "2b57d998-a8fd-511b-9010-395ec9a42168",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23"
+  },
+  {
+    "ref": "Q2",
+    "value": "AO3401A",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "MOTOR_GATE",
+      "2": "MOTOR_MID",
+      "3": "VMOTOR"
+    },
+    "x": 123.0,
+    "y": 121.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Transistor_FET:AO3401A",
+    "mpn": "AO3401A",
+    "note": "",
+    "uuid": "0e1ec3d0-edcf-52d7-b4f1-8413bdd3b474",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23"
+  },
+  {
+    "ref": "Q5",
+    "value": "AO3401A",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "MEAS_GATE",
+      "2": "VBAT",
+      "3": "VBAT_MEAS"
+    },
+    "x": 77.5,
+    "y": 119.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Transistor_FET:AO3401A",
+    "mpn": "AO3401A",
+    "note": "",
+    "uuid": "e6efac2f-213e-5fb6-bc95-6f461693df98",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23"
+  },
+  {
+    "ref": "Q3",
+    "value": "MMBT3904",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "MOTOR_BASE",
+      "2": "GND",
+      "3": "MOTOR_GATE"
+    },
+    "x": 132.0,
+    "y": 115.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Transistor_BJT:MMBT3904",
+    "mpn": "MMBT3904",
+    "note": "",
+    "uuid": "35a2a88f-c523-5ed6-88b7-a35793cd82ef",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23"
+  },
+  {
+    "ref": "Q4",
+    "value": "MMBT3904",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "USB_DETECT_BASE",
+      "2": "GND",
+      "3": "DRIVE_ENABLE"
+    },
+    "x": 129.0,
+    "y": 109.5,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Transistor_BJT:MMBT3904",
+    "mpn": "MMBT3904",
+    "note": "",
+    "uuid": "36b3cad7-1bd7-50d1-9348-607154e5615a",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23"
+  },
+  {
+    "ref": "Q6",
+    "value": "MMBT3904",
+    "fp": "Package_TO_SOT_SMD:SOT-23",
+    "nets": {
+      "1": "MEAS_BASE",
+      "2": "GND",
+      "3": "MEAS_GATE"
+    },
+    "x": 71.5,
+    "y": 129.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Transistor_BJT:MMBT3904",
+    "mpn": "MMBT3904",
+    "note": "",
+    "uuid": "cb47649c-5a0c-5787-8d3f-46a9d5fcf8d2",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23"
+  },
+  {
+    "ref": "R24",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "MOTOR_MID",
+      "2": "MOTOR_GATE"
+    },
+    "x": 130.0,
+    "y": 120.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "57c2f0e8-1123-501e-9df8-ec647afe0dc0",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R25",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DRIVE_ENABLE",
+      "2": "MOTOR_BASE"
+    },
+    "x": 132.0,
+    "y": 118.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "75d7314c-fc71-5e98-a728-ecee44df4d0c",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R26",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "MOTOR_BASE",
+      "2": "GND"
+    },
+    "x": 136.0,
+    "y": 117.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "74b99991-402a-5531-a61d-f32ed94204b2",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R27",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DRIVE_REQ",
+      "2": "DRIVE_ENABLE"
+    },
+    "x": 125.0,
+    "y": 108.5,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "8e2cc6f3-4b89-5b4f-a9a2-39a141ba427d",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R28",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "DRIVE_ENABLE",
+      "2": "GND"
+    },
+    "x": 138.5,
+    "y": 108.5,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "4de585ef-1c92-5485-b885-81175a5a9061",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R29",
+    "value": "10k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "USB_DETECT_BASE"
+    },
+    "x": 137.5,
+    "y": 111.0,
+    "a": 90.0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "9bccc702-38d1-5def-b098-89d77610677e",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R30",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_DETECT_BASE",
+      "2": "GND"
+    },
+    "x": 137.0,
+    "y": 114.5,
+    "a": 90.0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "0f984edd-b86b-54d1-a84e-24b9d187da2b",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "C21",
+    "value": "1u/10V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "x": 121.5,
+    "y": 127.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "80325cc4-0f18-5fc2-a73b-1b290a0d938b",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "C22",
+    "value": "100n/16V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VMOTOR",
+      "2": "GND"
+    },
+    "x": 133.5,
+    "y": 120.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "511a8b00-4ad5-5411-b81e-adb4342a5a72",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "R31",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "MEAS_GATE"
+    },
+    "x": 74.5,
+    "y": 120.0,
+    "a": 90.0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "b8144a6e-5eb2-5c86-a536-09f3b5bb12c6",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R32",
+    "value": "47k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "MEAS_BASE"
+    },
+    "x": 70.5,
+    "y": 125.5,
+    "a": 90.0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "319599e6-3efa-5fe2-a752-6cc608943a3e",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R33",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "MEAS_BASE",
+      "2": "GND"
+    },
+    "x": 71.0,
+    "y": 132.5,
+    "a": 90.0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "8cd4c567-5db2-50fa-a94d-2152b2ed90af",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R34",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT_MEAS",
+      "2": "VBAT_ADC"
+    },
+    "x": 79.5,
+    "y": 116.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "2ac84012-40aa-514b-b794-835ead31cac3",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "R35",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT_ADC",
+      "2": "GND"
+    },
+    "x": 76.0,
+    "y": 116.0,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:R",
+    "mpn": "",
+    "note": "",
+    "uuid": "fd34606c-f2e0-5cf6-b199-b8ea00628bd3",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric"
+  },
+  {
+    "ref": "C23",
+    "value": "100n/16V",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT_ADC",
+      "2": "GND"
+    },
+    "x": 78.0,
+    "y": 113.5,
+    "a": 0,
+    "group": "Interlock",
+    "symbol": "Device:C",
+    "mpn": "",
+    "note": "",
+    "uuid": "00ec9940-4085-5fd3-bf0e-3eb3fd8b0376",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric"
+  },
+  {
+    "ref": "TP1",
+    "value": "GND",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "GND"
+    },
+    "x": 104.0,
+    "y": 96.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "40eeac2e-33a8-5c72-a13b-9ef00150ee47",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP2",
+    "value": "+3V3",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "+3V3"
+    },
+    "x": 107.0,
+    "y": 96.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "173d5bda-747e-565c-91f4-47214ff6b182",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP3",
+    "value": "VBAT",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "VBAT"
+    },
+    "x": 110.0,
+    "y": 96.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "91b62c2f-bd1e-5964-9fa5-6ad934699aac",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP4",
+    "value": "VMOTOR",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "VMOTOR"
+    },
+    "x": 113.0,
+    "y": 96.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "8062963a-582f-5350-b9f7-5f7c3e445ac3",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP5",
+    "value": "SYS_RAW",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "SYS_RAW"
+    },
+    "x": 116.0,
+    "y": 96.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "9a46f822-1784-5c60-873b-2b3a5c5ce9c3",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP6",
+    "value": "ESP_EN",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "ESP_EN"
+    },
+    "x": 119.0,
+    "y": 96.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "dc3c0480-38a6-54dd-9492-1df634ec5f69",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP7",
+    "value": "LED_STATUS",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "LED_STATUS"
+    },
+    "x": 121.0,
+    "y": 93.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "GPIO43 status LED test point; UART0 TX no longer exposed. Programming remains native USB.",
+    "uuid": "3ccb45ed-a41a-5f82-8e88-63a876eaf273",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP8",
+    "value": "DRIVE_ENABLE",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "DRIVE_ENABLE"
+    },
+    "x": 129.0,
+    "y": 91.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "15536de4-6ea4-5b8c-9615-5b2cca709fff",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP9",
+    "value": "FAULT_U2",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "FAULT_U2"
+    },
+    "x": 128.0,
+    "y": 89.0,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "7bd13de7-bf84-56f6-810d-c9960c0aab59",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP10",
+    "value": "FAULT_U3",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "FAULT_U3"
+    },
+    "x": 138.0,
+    "y": 91.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "c77ade6e-db9c-52aa-b32b-11d12057ea46",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "TP11",
+    "value": "REG_PG",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "REG_PG"
+    },
+    "x": 140.5,
+    "y": 91.5,
+    "a": 0,
+    "group": "Controller",
+    "symbol": "Connector:TestPoint",
+    "mpn": "",
+    "note": "",
+    "uuid": "1c94fd2e-9c45-527a-b0a4-5586a0125272",
+    "localfp": "UGV:TestPoint__TestPoint_Pad_D1.0mm"
+  },
+  {
+    "ref": "U7",
+    "value": "BQ298217RUGR",
+    "symbol": "UGV:BQ298217",
+    "localfp": "UGV:BQ298217_RUG0008A",
+    "fp": "UGV:BQ298217_RUG0008A",
+    "nets": {
+      "1": "PROT_BAT",
+      "2": "PROT_VDD",
+      "3": "CELL_N",
+      "4": "GND",
+      "5": "CELL_N",
+      "6": "PROT_PACK",
+      "7": "PROT_DSG",
+      "8": "PROT_CHG"
+    },
+    "x": 119,
+    "y": 123,
+    "a": 180,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "28b78317-d90c-5769-90b4-252bd087ecf3",
+    "mpn": "BQ298217RUGR",
+    "note": "4.25V OV / 2.6V UV / 60mV OCD; exact suffix required; zero-volt charging disabled",
+    "sx": 69.85,
+    "sy": 64.77,
+    "key": "BQ298217"
+  },
+  {
+    "ref": "Q7",
+    "value": "CSD17308Q3",
+    "symbol": "UGV:CSD17308Q3",
+    "localfp": "UGV:CSD17308Q3_TI",
+    "fp": "UGV:CSD17308Q3_TI",
+    "nets": {
+      "1": "CELL_P",
+      "2": "CELL_P",
+      "3": "CELL_P",
+      "4": "PROT_CHG",
+      "5": "PROT_DRAIN",
+      "6": "PROT_DRAIN",
+      "7": "PROT_DRAIN",
+      "8": "PROT_DRAIN",
+      "9": "PROT_DRAIN"
+    },
+    "x": 121.0,
+    "y": 138.0,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "78b436ef-d204-526b-be90-f3b663e12fd8",
+    "mpn": "CSD17308Q3",
+    "note": "30V NFET; common-drain pair; source pins1-3 gate4 drain5-9",
+    "sx": 144.78,
+    "sy": 64.77,
+    "key": "CSD17308Q3"
+  },
+  {
+    "ref": "Q8",
+    "value": "CSD17308Q3",
+    "symbol": "UGV:CSD17308Q3",
+    "localfp": "UGV:CSD17308Q3_TI",
+    "fp": "UGV:CSD17308Q3_TI",
+    "nets": {
+      "1": "VBAT",
+      "2": "VBAT",
+      "3": "VBAT",
+      "4": "PROT_DSG",
+      "5": "PROT_DRAIN",
+      "6": "PROT_DRAIN",
+      "7": "PROT_DRAIN",
+      "8": "PROT_DRAIN",
+      "9": "PROT_DRAIN"
+    },
+    "x": 116.05,
+    "y": 138,
+    "a": 180,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "29e49997-da38-5e97-bc1e-10fdab9936cd",
+    "mpn": "CSD17308Q3",
+    "note": "30V NFET; common-drain pair; source pins1-3 gate4 drain5-9",
+    "sx": 219.71,
+    "sy": 64.77,
+    "key": "CSD17308Q3"
+  },
+  {
+    "ref": "R36",
+    "value": "10m 1% 1W",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_2512_6332Metric",
+    "fp": "UGV:Resistor_SMD__R_2512_6332Metric",
+    "nets": {
+      "1": "CELL_N",
+      "2": "GND"
+    },
+    "x": 113.0,
+    "y": 126.25,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "e15cd769-ae1a-5271-95d5-ca9cfa997ba1",
+    "mpn": "WSL2512R0100FEA",
+    "note": "Current shunt, Kelvin sense endpoints. Nominal6A OCD; do not substitute resistance.",
+    "sx": 54.61,
+    "sy": 115.57,
+    "key": "Device__R"
+  },
+  {
+    "ref": "R37",
+    "value": "100R 1%",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_P",
+      "2": "PROT_VDD"
+    },
+    "x": 114.5,
+    "y": 122,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "8e3bce4d-336c-52eb-a595-21413e385e27",
+    "mpn": "",
+    "note": "",
+    "sx": 105.41,
+    "sy": 115.57,
+    "key": "Device__R"
+  },
+  {
+    "ref": "R38",
+    "value": "20R 1%",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_P",
+      "2": "PROT_BAT"
+    },
+    "x": 117.5,
+    "y": 120.75,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "098606f4-c54c-5970-b9c3-6d4153953fb8",
+    "mpn": "",
+    "note": "",
+    "sx": 149.86,
+    "sy": 115.57,
+    "key": "Device__R"
+  },
+  {
+    "ref": "R39",
+    "value": "1k 1%",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "PROT_PACK"
+    },
+    "x": 123.5,
+    "y": 124.5,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "6db45dcb-a7d0-5d81-abaa-dd78576e95e4",
+    "mpn": "",
+    "note": "",
+    "sx": 195.58,
+    "sy": 115.57,
+    "key": "Device__R"
+  },
+  {
+    "ref": "C24",
+    "value": "100n/16V X7R",
+    "symbol": "UGV:Device__C",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "fp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "PROT_VDD",
+      "2": "CELL_N"
+    },
+    "x": 119,
+    "y": 125.5,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "fc81e66d-a30f-55c3-82e3-07cb17014787",
+    "mpn": "",
+    "note": "",
+    "sx": 240.03,
+    "sy": 115.57,
+    "key": "Device__C"
+  },
+  {
+    "ref": "R40",
+    "value": "10M",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "PROT_CHG",
+      "2": "CELL_P"
+    },
+    "x": 122.0,
+    "y": 134.0,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "a22f0cbb-6d8a-5622-be6f-0a018767f31b",
+    "mpn": "",
+    "note": "Gate discharge path; <1uA loading at normal gate drive",
+    "sx": 54.61,
+    "sy": 154.94,
+    "key": "Device__R"
+  },
+  {
+    "ref": "R41",
+    "value": "10M",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "PROT_DSG",
+      "2": "VBAT"
+    },
+    "x": 115.0,
+    "y": 133.5,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "45e27110-753e-5314-b280-7036250affc4",
+    "mpn": "",
+    "note": "",
+    "sx": 105.41,
+    "sy": 154.94,
+    "key": "Device__R"
+  },
+  {
+    "ref": "J5",
+    "value": "CELL NTC - DRIVE",
+    "symbol": "UGV:Connector_Generic__Conn_01x02",
+    "localfp": "UGV:Connector_JST__JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "fp": "UGV:Connector_JST__JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical",
+    "nets": {
+      "1": "CELL_TEMP_DIV",
+      "2": "GND"
+    },
+    "x": 141.25,
+    "y": 81.5,
+    "a": 0,
+    "side": "F",
+    "group": "Battery protection",
+    "uuid": "171feb42-96fb-57a9-bf1b-9ea4b5ca582c",
+    "mpn": "B2B-PH-K-S",
+    "note": "Second electrically isolated103AT-2 probe bonded to same cell; not shared with J4",
+    "sx": 149.86,
+    "sy": 154.94,
+    "key": "Connector_Generic__Conn_01x02"
+  },
+  {
+    "ref": "R42",
+    "value": "10k 1%",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CELL_TEMP_DIV"
+    },
+    "x": 125.3,
+    "y": 88,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "b570a7dc-2a40-59d5-8ef5-6a3abc87d6c3",
+    "mpn": "",
+    "note": "",
+    "sx": 195.58,
+    "sy": 154.94,
+    "key": "Device__R"
+  },
+  {
+    "ref": "R43",
+    "value": "1k 1%",
+    "symbol": "UGV:Device__R",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "fp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_TEMP_DIV",
+      "2": "CELL_TEMP_ADC"
+    },
+    "x": 129.75,
+    "y": 92.0,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "3e333042-44a2-523b-ba7e-0b616fc4f1f8",
+    "mpn": "",
+    "note": "",
+    "sx": 240.03,
+    "sy": 154.94,
+    "key": "Device__R"
+  },
+  {
+    "ref": "C25",
+    "value": "100n/16V X7R",
+    "symbol": "UGV:Device__C",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "fp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CELL_TEMP_ADC",
+      "2": "GND"
+    },
+    "x": 133.25,
+    "y": 92.0,
+    "a": 0,
+    "side": "B",
+    "group": "Battery protection",
+    "uuid": "06f42669-0efc-539e-8f92-1c8fb87fc6f1",
+    "mpn": "",
+    "note": "",
+    "sx": 240.03,
+    "sy": 185.42,
+    "key": "Device__C"
+  },
+  {
+    "ref": "J3",
+    "value": "M0031 CAMERA FPC24",
+    "key": "Camera_FPC24",
+    "symbol": "UGV:Camera_FPC24",
+    "fp": "Camera_FH12_24",
+    "localfp": "UGV:Camera_FH12_24",
+    "nets": {
+      "1": null,
+      "2": "GND",
+      "3": "CAM_SDA",
+      "4": "CAM_2V8",
+      "5": "CAM_SCL",
+      "6": "CAM_RESET",
+      "7": "CAM_VSYNC",
+      "8": "GND",
+      "9": "CAM_HREF",
+      "10": "CAM_1V3",
+      "11": "+3V3",
+      "12": "CAM_D7",
+      "13": "CAM_XCLK",
+      "14": "CAM_D6",
+      "15": "GND",
+      "16": "CAM_D5",
+      "17": "CAM_PCLK",
+      "18": "CAM_D4",
+      "19": "CAM_D0",
+      "20": "CAM_D3",
+      "21": "CAM_D1",
+      "22": "CAM_D2",
+      "23": null,
+      "24": null
+    },
+    "sx": 90.17,
+    "sy": 90.17,
+    "x": 130.75,
+    "y": 73.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "FH12-24S-0.5SH(55)",
+    "uuid": "a30207ef-c817-4775-a655-5f0a1eb9bfd9",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "U8",
+    "value": "TLV75513PDBVR",
+    "key": "TLV755P_DBV",
+    "symbol": "UGV:TLV755P_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "+3V3",
+      "4": null,
+      "5": "CAM_1V3"
+    },
+    "sx": 180.34,
+    "sy": 50.8,
+    "x": 128.0,
+    "y": 64.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "TLV75513PDBVR",
+    "uuid": "c77d4e6d-2a12-4786-914c-62187b9b9e53",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "U9",
+    "value": "TLV75528PDBVR",
+    "key": "TLV755P_DBV",
+    "symbol": "UGV:TLV755P_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "+3V3",
+      "4": null,
+      "5": "CAM_2V8"
+    },
+    "sx": 180.34,
+    "sy": 101.6,
+    "x": 140.25,
+    "y": 87.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "TLV75528PDBVR",
+    "uuid": "6d2745e9-25f7-4367-963b-58d239d205db",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "C26",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sx": 144.78,
+    "sy": 76.2,
+    "x": 123.5,
+    "y": 62.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "aa9a5317-763a-4132-a71a-4770436d7bd6",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "C27",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CAM_1V3",
+      "2": "GND"
+    },
+    "sx": 215.9,
+    "sy": 76.2,
+    "x": 132.75,
+    "y": 65.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "8e9b3396-c1ab-467d-8ff4-1f5888124d48",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "C28",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sx": 144.78,
+    "sy": 127,
+    "x": 135.25,
+    "y": 86.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "d8a84ce1-50e7-4d17-b92b-274317e557fc",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "C29",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CAM_2V8",
+      "2": "GND"
+    },
+    "sx": 215.9,
+    "sy": 127,
+    "x": 145.0,
+    "y": 87.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "1ab1383d-de0a-42e3-b53a-9f86204c79d2",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "R44",
+    "value": "4.7k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CAM_SDA"
+    },
+    "sx": 270.51,
+    "sy": 50.8,
+    "x": 129.5,
+    "y": 86.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "082266a1-997d-4701-98ff-ba733ae97bdd",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  },
+  {
+    "ref": "R45",
+    "value": "4.7k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CAM_SCL"
+    },
+    "sx": 270.51,
+    "sy": 101.6,
+    "x": 143.5,
+    "y": 90.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "fa43b1fe-b58f-45d4-9763-bd86022d0b3e",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending"
+  }
+]

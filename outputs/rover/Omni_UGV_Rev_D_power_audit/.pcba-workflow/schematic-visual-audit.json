@@ -1,0 +1,16 @@
+{
+  "revision": "D",
+  "status": "INSPECTED",
+  "pages": 10,
+  "source": "Schematic.pdf",
+  "native_3D_top": "preview/rev-d-top.png",
+  "native_3D_bottom": "preview/rev-d-bottom.png",
+  "limitations": [
+    "Missing custom 3D protection packages and offboard assembly; renders are not fit checks.",
+    "All pages regenerated; full-sheet overview and changed functional/power details inspected; no automatic readability guarantee."
+  ],
+  "notes": [
+    "Connected functional diagrams replace the temporary component-grid presentation.",
+    "Corrected property/power-label overlap and checked source parsing with native export and parity."
+  ]
+}

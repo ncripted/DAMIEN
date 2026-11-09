@@ -1,0 +1,1 @@
+Rev F layout checkpoint. All 33 added footprints placed. No deferred footprint. See drc.json for remaining routing.

@@ -1,0 +1,1957 @@
+                                                                                    BQ2980, BQ2982
+                                                                 SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+BQ298xx Voltage, Current, Temperature Protectors with an Integrated High-Side NFET
+      Driver for Fast/Flash Charging Single-Cell Li-Ion and Li-Polymer Batteries
+
+1 Features                              3 Description
+
+•  Voltage protection:                            The BQ298xx family of devices, featuring integrated
+   –  Overvoltage (OV): ±10mV                     charge-pump FET drivers, provides high-side primary
+   –  Undervoltage (UV): ±20mV                         battery  cell  protection  for  1-series  Li-ion and  Li-
+•  Current protection:                                polymer batteries, enabling consistent Rdson across
+   –  Overcurrent in charge (OCC): ±1mV                   cell voltages. For better system thermal performance,
+   –  Overcurrent in discharge (OCD): ±1mV            the BQ298xx device's accuracy enables the use of a
+   –  Short circuit in discharge (SCD): ±5mV           sense resistor as low as 1mΩ.
+•  Temperature protection:                        The CTR  pin  in  the BQ298xx  device  can  be
+   –  Overtemperature (OT)                            configured to override the FET driver by host control
+•  Additional features:                                      to  create a system  reset  or shutdown  function.
+   –  Supports as low as a 1mΩ sense resistor            Alternatively,  the CTR  pin can be  configured  to
+      (RSNS)                                        connect an external Positive Temperature Coefficient
+   –  High-side protection                          (PTC) thermistor for FET OT protection in addition to
+   –  High Vgs FET drive                               the internal die temperature sensor. The BQ2980xx
+   – 0V charging (only BQ2980)                       devices support zero-volt (0V) charging, while the
+   – CTR pin for FET override control for system      BQ2982xx devices have this disabled.
+      reset/shutdown
+                                                         Package Information
+   –  Configure CTR for second OT protection
+                                                     PART
+      through an external PTC thermistor                         PACKAGE      BODY SIZE (NOM)                                                         NUMBER(1)
+•  Current consumption:
+                                                        BQ2980xx     X2QFN     1.50mm × 1.50mm × 0.37mm
+   – NORMAL mode: 4µA
+                                                        BQ2982xx     X2QFN     1.50mm × 1.50mm × 0.37mm
+   – SHUTDOWN mode: 0.1µA maximum
+•  Package:                                                              (1)   For all available packages, see the orderable addendum and
+   –  8pin X2QFN: 1.50 × 1.50 × 0.37mm                       Device Comparison Table.
+
+2 Applications
+
+•  Smartphones
+•  Tablets
+•  Power bank
+•  Wearables
+
+
+                                                                                          PACK+
+
+                                      RVDD   RBAT                                                             Option to configure for PTC protection
+                                                                                                 RPACK
+                                                BAT            CHG                                    CTR
+                                           VDD            DSG                                                       PTC     VSS
+                                             VSS             PACK                                               PACK–
+                                                                                      RCTR      System
+                                           CS              CTR
+                                                                                                           Reset
+                                     CVDD                                                 Scale RC values for
+                                                                                             system reset timing
+                                                                                           PACK–
+                                          RSNS
+
+                                          Simplified Schematic
+
+
+
+
+
+     An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+        intellectual property matters and other important disclaimers. PRODUCTION DATA.
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+                                 Table of Contents
+
+ 1 Features............................................................................1    8 Application and Implementation..................................15
+ 2 Applications.....................................................................1      8.1 Application Information............................................. 15
+ 3 Description.......................................................................1      8.2 Typical Applications.................................................. 18
+ 4 Device Comparison Table...............................................3    9 Power Supply Recommendations................................21
+ 5 Pin Configuration and Functions...................................4    10 Layout...........................................................................22
+ 6 Specifications.................................................................. 5      10.1 Layout Guidelines................................................... 22
+   6.1 Absolute Maximum Ratings........................................ 5      10.2 Layout Example...................................................... 22
+   6.2 ESD Ratings............................................................... 5    11 Device and Documentation Support..........................23
+   6.3 Recommended Operating Conditions.........................5      11.1 Third-Party Products Disclaimer............................. 23
+   6.4 Thermal Information....................................................6      11.2 Receiving Notification of Documentation Updates..23
+   6.5 Electrical Characteristics.............................................6      11.3 Support Resources................................................. 23
+   6.6 Typical Characteristics................................................9      11.4 Trademarks............................................................. 23
+ 7 Detailed Description......................................................10      11.5 Electrostatic Discharge Caution..............................23
+   7.1 Overview...................................................................10      11.6 Glossary..................................................................23
+   7.2 Functional Block Diagram......................................... 11    12 Revision History.......................................................... 23
+   7.3 Feature Description...................................................11    13 Mechanical, Packaging, and Orderable
+   7.4 Device Functional Modes..........................................14          Information.................................................................... 25
+
+
+
+
+
+2     Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+4 Device Comparison Table
+
+                  BQ298xx Device Family (BQ2980xx with ZVCHG [0V Charging] Enabled, BQ2982xx with ZVCHG Disabled)
+
+                    OVP         UVP         OCC         OCD
+    PART                   UVP        OCC         OCD         SCD    SCD                CTR/
+            OVP (V)  DELAY        DELAY        DELAY         DELAY                 OT (°C)              UV_Shut
+   NUMBER                            (V)            (mV)            (mV)            (mV)  DELAY (µs)         PTC Config
+                                    (s)             (ms)             (ms)             (ms)
+
+   BQ298000     4.475     1.25    2.600   144     –8       8       8       8      20    250 Fixed     85      CTR      Enabled
+
+   BQ298006     4.475     1.00    2.500    20     –12      16      14      16      40    250 Fixed     75      CTR      Enabled
+
+   BQ298009     4.500     1.00    2.900    20     –18      8       30      16      40    250 Fixed    Disable     CTR      Enabled
+
+   BQ298010     4.500     1.00    2.900    20     –10      8       20      16      30    250 Fixed    Disable     CTR      Enabled
+
+   BQ298012     4.300     1.00    2.750   144     –4       8       14      20      30    250 Fixed    Disable     CTR      Enabled
+
+   BQ298014     4.250     1.00    2.600    96      -30      8       10      20      30    250 Fixed    Disable     CTR      Enabled
+
+   BQ298015     4.440     1.25    2.800   144     –8       8       8       8      20    250 Fixed     85      CTR      Enabled
+
+   BQ298018     4.400     1.00    2.700   144     –8       8       20      48      60    250 Fixed     85      CTR      Enabled
+
+   BQ298019     4.425     1.25    2.800   144     –30      48       8       48      40    250 Fixed     85      CTR      Enabled
+
+   BQ298023     4.520     1.25    2.800   144     –12      8       12       8      30    250 Fixed     85      CTR      Enabled
+
+   BQ298215     4.440     1.25    2.800   144     –8       8       8       8      20    250 Fixed     85      CTR      Enabled
+
+   BQ298216     4.300     1.00    2.500   144     –4       8       14      20      30    250 Fixed   Disabled    CTR      Enabled
+
+   BQ298217     4.250     1.25    2.600   125      -36      8       60      16     200    250 Fixed   Disabled    CTR      Enabled
+
+                  4.200     1.25    2.500   125      -18      20      40      20     120    250 Fixed     75     PTC 5MΩ    Enabled
+   BQ298218                                                                                                                     Pullup
+                                                                                                                    Enabled
+
+                  3.750 –  0.25, 1.0,  2.200   20, 96,  4 – 64    8, 16,   4 – 64     8, 16,   10, 20,   250 Fixed     75, 85    CTR, PTC    Enabled,
+                  5.200   1.25, 4.5    –      125,              20, 48              20, 48   30, 40,                            with 1.5MΩ,   Disabled
+    BQ298xx(1)                       3.000   144                                            60,                        5MΩ, or
+                                                                                            120,                  8MΩ Pullup
+                                                                                 200                           Enabled
+
+ (1)   Contact TI for orderable device information.
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback     3
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+5 Pin Configuration and Functions
+
+                                                                                                      CHG
+
+
+                                        BAT         1         7       DSG
+
+
+
+                                  8
+
+
+                                   VDD         2         6        PACK
+
+
+
+
+                                  4
+
+                                     VSS         3         5       CTR
+
+                                                                    CS      Not to scale
+
+                            Figure 5-1. RUG Package8-Pin X2QFNTop View
+
+                                      Table 5-1. Pin Functions
+  NUMBER    NAME      TYPE                               DESCRIPTION
+      1         BAT                  I(1)     BAT voltage sensing input (connected to the battery side)
+
+      2        VDD        P       Supply voltage
+
+      3        VSS     —      Device ground
+
+      4         CS                      I        Current sensing input (connect to PACK– side of the sense resistor)
+
+                                               Active high control pin to open FET drivers and shut down the device. It can be configured to
+      5        CTR                     I
+                                           enable an internal pull-up and connect the CTR pin to an external PTC for OT protection.
+
+                                      Pack voltage sensing pin (connected to the charger side, typically referred to as PACK+ and
+      6        PACK                    I
+                                    PACK–)
+
+      7        DSG       O     DSG FET driver
+
+      8       CHG       O     CHG FET driver
+
+ (1)     I = input, O = output, P = power
+
+
+
+
+
+4     Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+6 Specifications
+ 6.1 Absolute Maximum Ratings
+
+ over operating free-air temperature range (unless otherwise noted)(1)
+
+                                                                    MIN          MAX          UNIT
+
+ Supply voltage              VDD                                              –0.3               6           V
+
+                          PACK                                             –0.3               24
+
+                            BAT                                              –0.3               6
+ Input voltage                                                                                V
+                         CS                                               –0.3                 0.3
+
+                         CTR                                              –0.3               5
+
+                       CHG                                             –0.3               20
+ Output voltage                                                                               V
+                        DSG                                              –0.3               20
+ Storage temperature, Tstg                                                      –55               150            °C
+
+ (1)   Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply
+       functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions. If
+      outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully functional, and
+        this may affect device reliability, functionality, performance, and shorten the device lifetime.
+
+ 6.2 ESD Ratings
+
+                                                                               VALUE      UNIT
+                             Human-body model (HBM), per ANSI/ESDA/JEDEC JS-001(1)               ±1000
+ V(ESD)    Electrostatic discharge                                                                   V
+                                 Charged-device model (CDM), per JEDEC specification JESD22-C101(2)       ±250
+
+ (1)  JEDEC document JEP155 states that 500V HBM allows safe manufacturing with a standard ESD control process.
+ (2)  JEDEC document JEP157 states that 250V CDM allows safe manufacturing with a standard ESD control process.
+
+ 6.3 Recommended Operating Conditions
+
+ over operating free-air temperature range (unless otherwise noted)
+
+                                                                 MIN            MAX            UNIT
+
+ Supply voltage            VDD                                                1.5                    5.5            V
+
+                       PACK                                       0                  20
+
+                         BAT                                                1.5                    5.5
+ Input voltage                                                                                V
+                      CS                                            –0.25                 0.25
+
+                       CTR                                         0                  5
+                     CHG                                       VSS       VDD + VDD × AFETON
+ Output voltage                                                                               V
+                      DSG                                       VSS       VDD + VDD × AFETON
+ Operating temperature, TA                                                 –40                 85              °C
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback     5
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+ 6.4 Thermal Information
+
+                                                                                BQ2980xx/BQ2982xx
+                          THERMAL METRIC(1)                            RUG (X2QFN)       UNIT
+
+                                                                                          8 PINS
+ RθJA           Junction-to-ambient thermal resistance                                                   171.8          °C/W
+  RθJC(top)        Junction-to-case (top) thermal resistance                                              75            °C/W
+ RθJB           Junction-to-board thermal resistance                                                       94.7           °C/W
+ ψJT             Junction-to-top characterization parameter                                                     2.5           °C/W
+ ψJB            Junction-to-board characterization parameter                                                94.9           °C/W
+
+ (1)   For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+       report.
+
+ 6.5 Electrical Characteristics
+ Typical values stated at TA = 25°C and VDD = 3.6V. MIN/MAX values stated with TA = –40°C to +85°C and VDD = 3 to 5V
+ unless otherwise noted.
+
+          PARAMETER                       TEST CONDITIONS                MIN    TYP   MAX  UNIT
+
+ SUPPLY CURRENT CONSUMPTION
+                                   VCHG and VDSG > 5V, CLOAD = 8nF (typical 20nA(1)),                                                                                               5       8   µA
+                             VDD > 4.0V
+ INORMAL      Normal mode supply current
+                                   VCHG and VDSG > 5V, CLOAD = 8nF (typical 20 nA(1)),                                                                                               4       6   µA
+                              UVP < VDD < 3.9V
+
+              Supply current with both
+ IFETOFF                             VCHG = VDSG ≤ 0.2V                                          2       4   µA            FET drivers off
+ ISHUT        Shutdown current          VPACK < VBAT, VDD = 1.5V                                                   0.1   µA
+ N-CH FET DRIVER, CHG and DSG
+                                   VCHG or VDSG = VDD + VDD × AFETON
+                              UVP < VDD < 3.9V                                     1.65     1.75     1.81   V/V
+            FET driver gain factor, the   CLOAD = 8nF
+ AFETON
+             Vgs voltage to FET        VCHG or VDSG = VDD + VDD × AFETON
+                             VDD > 4.0 V                                           1.45     1.55     1.68   V/V
+                                     CLOAD = 8 nF
+                                        VFETOFF = VCHG – VSS or VDSG – VSS VFETOFF     FET driver off output voltage                                                                               0.2   V                                     CLOAD = 8nF
+            FET driver charge pump     Charge pump enabled when VDD rises to
+ VDRIVER_SHUT                                                                                   1.95       2       2.1   V               shut down voltage           VDRIVER_SHUT
+            FET driver charge pump
+ VDRIVER_SHUT                          Charge pump disabled when VDD falls to               shut down voltage                                                                   50        mV
+ _HYS                                    VDRIVER_SHUT – VDRIVER_SHUT_HYS                hysteresis
+                                     CLOAD = 8nF,  trise(2)       FET driver rise time                                                                400     800    µs                                   VCHG or VDSG rises from VDD to (2 × VDD)
+                                     CLOAD = 8nF,  tfall         FET driver fall time                                                                  50     200    µs                                   VCHG or VDSG fall to VFETOFF
+ ILOAD       FET driver maximum loading                                                                  10   µA
+ VOLTAGE PROTECTION
+ VOVP         Overvoltage detection range  Factory configured, 50mV step                       3750            5200  mV
+                                     TA = 25°C, CHG/DSG CLOAD < 1µA                    –10              10
+               Overvoltage detection
+ VOVP_ACC                            TA = 0°C to 60°C, CHG/DSG CLOAD < 1µA              –15              15  mV               accuracy
+                                     TA = –40°C to +85°C, CHG/DSG CLOAD < 1µA           –25              25
+               Overvoltage release
+ VOVP_HYS                                Fixed at 200mV                                    150     200     250  mV                hysteresis voltage
+
+
+
+6     Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+ 6.5 Electrical Characteristics (continued)
+ Typical values stated at TA = 25°C and VDD = 3.6V. MIN/MAX values stated with TA = –40°C to +85°C and VDD = 3 to 5V
+ unless otherwise noted.
+
+          PARAMETER                       TEST CONDITIONS                MIN    TYP   MAX  UNIT
+
+               Undervoltage detection
+ VUVP                                     Factory configured, 50mV step                       2200            3000  mV              range
+                                     TA = 25°C                                        –20              20  mV
+               Undervoltage detection
+ VUVP_ACC                            TA = 0°C to 60°C                                   –30              30  mV               accuracy
+                                     TA = –40°C to +85°C                               –50              50  mV
+               Undervoltage release
+ VUVP_HYS                                Fixed at 200mV                                    150     200     250  mV                hysteresis voltage
+
+               Resistance between PACK
+ RPACK-VSS                                                                            100     300     550   kΩ             and VSS during UV fault
+
+ CURRENT PROTECTION
+
+               Overcurrent in charge
+                                           Factory configured, 2mV step. For OCC, the range is
+ VOC        (OCC) and discharge (OCD)                                                   4              64  mV                                            negative (min = –64, max = –4).
+              range
+
+                                                                                              10
+
+                                                                                              20
+
+                                                                                              30
+               Short circuit in discharge
+ VSCD                                     Factory configured                                          40        mV                threshold
+                                                                                              60
+
+                                                                                             120
+
+                                                                                             200
+
+                                   < 20mV                                           –1               1
+               Overcurrent (OCC, OCD1,   20 to approximately 5 mV                             –3       2       3
+ VOC_ACC     OCD2, SCD) detection                                                        mV
+               accuracy                 56 to approximately 100mV                           –5               5
+                                   > 100mV                                         –12              12
+
+               Current sink between PACK
+             and VDD during current
+ IPACK-VDD                                                                               8              24   µA                    fault. Used for load removal
+                detection
+
+            OCD, SCD recovery      Sum of current from VDD and BAT during OCD or
+ IOCD_REC                                                                                              55   µA                detection current        SCD fault
+ VOC_REL    OCC fault release threshold  (VBAT – VPACK)                                            100        mV
+            OCD, SCD fault release
+                                         (VPACK – VBAT)                                           –400        mV                threshold
+ OVERTEMPERATURE PROTECTION(2)
+                 Internal overtemperature                                                             75
+ TOT                                       Factory configured                                                       °C
+                threshold                                                                          85
+
+                 Internal overtemperature
+ TOT_ACC                                                                              –10              10   °C                detection accuracy
+
+                 Internal overtemperature
+ TOT_HYS                                                                                8      15      22   °C                hysteresis
+ PROTECTION DELAY(2)
+
+                                                                                                       0.2     0.25       0.3
+
+                                                                                                       0.8       1       1.2
+ tOVP          Overvoltage detection delay  Factory configured                                                               s
+                                                                                       1     1.25       1.5
+
+                                                                                                       3.6       4.5       5.4
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback     7
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+ 6.5 Electrical Characteristics (continued)
+ Typical values stated at TA = 25°C and VDD = 3.6V. MIN/MAX values stated with TA = –40°C to +85°C and VDD = 3 to 5V
+ unless otherwise noted.
+
+          PARAMETER                       TEST CONDITIONS                MIN    TYP   MAX  UNIT
+
+                                                                                      16      20      24
+               Undervoltage detection                                                             76.8      96    115.2
+ tUVP                                      Factory configured                                              ms
+               delay                                                                    100     125     150
+
+                                                                                                115.2     144    172.8
+
+                                                                                                       5.6       8     10.5
+               Overcurrent (OCC, OCD)                                                           12.4      16     19.6
+ tOC                                       Factory configured                                              ms
+                detection delay                                                             16      20      24
+
+                                                                                                 38.4      48     57.6
+
+               Short circuit discharge
+ tSCD                                     Fixed configuration                                 125     250     375    µs                detection delay
+
+              Overtemperature detection
+ tOT                                      Fixed configuration                                        3.6       4.5       5.4    s               delay
+
+ FET OVERRIDE/DEVICE SHUTDOWN CONTROL, CTR
+ VIH            High-level input                                                              1                 V
+ VIL           Low-level input                                                                                            0.4   V
+ VHYS          Hysteresis for VIH and VIL                                                    200              mV
+                                                                                                                1.5                 Effective Internal pull-up
+ RPULL_UP      resistance (to use with       Factory configured if enabled                                   5        MΩ
+                external PTC)                                                                                               8
+
+ ZVCHG (0V Charging)
+
+              Charger voltage requires to
+ V0CHGR                   start 0V charging          BQ2980xx only (ZVCHG is disabled in BQ2982xx).          2                 V
+                                    The CHG driver becomes high impedance when VDD
+                Battery voltage that inhibits  < V0INH.                                                            1   V V0INH            0V charging
+
+ (1)   INORMAL is impacted by the efficiency of the charge pump driving the CHG and DSG FETs. An ultra-low-gate-leakage FET may be
+       required. INORMAL can be significantly higher with FETs with typical IGSS values of 10µA. See Selection of Power FET for more details.
+ (2)   Specified by design.
+
+
+
+
+
+8     Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+ 6.6 Typical Characteristics
+
+
+
+                        6                                                                                                8
+
+                                                                                                                                               7.5
+                        5
+                                                                                                                                                                                                 (V)   7
+                        4
+                                                                                                                                                                                                                                                                                                                                                                                                  Output  6.5
+                                                                                                                        6                                             (PA) 3
+                               IDD                                                                                                                                                                                                                                                                                                                                                                                                  Driver  5.5                                                      -40                        2
+                                                                                                                                                                                                 FET   5                                                      -200
+                        1                                     Normal at < 3.8V                                                                                              25
+                                                              Normal at > 3.9V                                                      4.5                                              60
+                                                        FETs off                                                                                                     85
+                        0                                                                                                4
+                            -60    -40    -20    0     20    40    60    80    100                                              3                  3.5               4                  4.5
+                                              Temperature (qC)                     D002                                                               VDD (V)                           S001
+   Figure 6-1. Normal and FET Off Current Across    Figure 6-2. CHG and DSG Output (Loading with an
+                  Temperature                     8-nF Capacitor on CHG and DSG) Across VDD
+
+
+                        10                                                                                               1
+                                                                                                                        OCC (8 mV)
+                                                                                                                        OCD (8 mV)
+                                                                                                                              SCD (20 mV)
+                                             (mV)   5                                                                                                                                                                                                       (mV)  0.5
+
+
+                         0                                                                                               0                                                                                         Accuracy                                                                                                                                                                                                                                                                                                                                                                                                                                Accuracy
+                                                                              Voltage   -5                                                                                                                                                                                                                                                                                                                                                             Current  -0.5
+
+
+                                                        OVP
+                                                         UVP
+                           -10                                                                                                                      -1
+                             -60    -40    -20    0     20    40    60    80    100                                                   -60    -40    -20    0     20    40    60    80    100
+                                               Temperature (qC)                     D003                                                                  Temperature (qC)                     D004
+      Figure 6-3. Overvoltage and Undervoltage          Figure 6-4. Overcurrent Accuracy Across
+          Accuracy Across Temperature                           Temperature
+
+
+                       12                                                                                             12
+                                                                                  1.5 M:                                                                                                            1.5 M:
+                                                                    5 M:                                                                                           5 M:
+                       10                                           8 M:                                              10                                           8 M:
+                                    (M:)                                                                                                                                                                         (M:)
+                                                                               Pull-up  8                                                                                                                                                                                                                                                                                                                                                                Pull-Up  8
+                                                                                                     Effective  64                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Effective  64
+                                  CTR                                                                                                                                                            CTR
+                        2                                                                                               2
+
+
+                        0                                                                                               0
+                          2        2.5      3        3.5      4        4.5      5                                                    -60    -40    -20    0     20    40    60    80    100
+                                             VDD (V)                          D005                                                                  Temperature (qC)                     D006
+     Figure 6-5. CTR Internal Pull-Up Resistor (if         Figure 6-6. CTR Internal Pull-Up Resistor (if
+             Configured) Across VDD                Configured) Across Temperature (VDD at 3.6V)
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback     9
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+7 Detailed Description
+ 7.1 Overview
+
+The BQ298xx devices are high-side single-cell protectors designed to improve thermal performance by reducing
+power dissipation across the protection FETs. This is achieved with high-side protection with a built-in charge
+pump to provide higher Vgs to the FET gate voltage to reduce FET Rdson. Additionally, the device supports as
+ low as a 1mΩ sense resistor with ±1mV accuracy, resulting in lower heat dissipation at the sense resistor without
+ compromising current accuracy.
+
+The BQ298xx device implements a CTR pin that allows external control to open the power FETs, as well as shut
+down the device for low power storage. Optionally, the CTR pin can be configured to connect to a PTC and be
+used for overtemperature protection.
+
+ 7.1.1 Device Configurability
+
+ Table 7-1 provides guidance on possible configurations of the BQ2980 and BQ2982 devices.
+
+                                           Note
+
+     Texas Instruments preprograms devices: Devices are not intended to be further customized by the
+     customer.
+
+                                Table 7-1. Device Configuration Range
+                                    STEP            DELAY                  RECOVERY DESCRIPTION
+           FAULT           RANGE             UNIT              CHG, DSG STATUS
+                                           SIZE           SELECTION                         (Non-Configurable)
+
+                                                                                          (200-mV hysteresis AND
+                                3750 –                           0.25, 1, 1.25,                      charger removal) OR
+ OV       Overvoltage                        50     mV               CHG OFF
+                                 5200                               4.5 s                          (below OV threshold AND
+                                                                                                       discharge load is detected)
+
+                                                                                          (200-mV hysteresis AND
+                                                                                 Option 1:            discharge load is removed
+                                                           UV_SHUT enable    before device shuts down)
+                                                                     The device goes into OR
+                                                          SHUTDOWN.       (above UV threshold AND
+                                                                                                      charger connection)
+                                2200 –                          20, 96, 125,
+ UV        Undervoltage                                            50     mV
+                                 3000                                                             144 ms     Option 2:
+                                                           UV_SHUT disable
+                                                       DSG off, power      (200-mV hysteresis) OR
+                                                                             consumption drops   (above UV threshold AND
+                                                                                               to IFETOFF, and the    charger connection)
+                                                                                  device does not shut
+                                                                          down.
+
+                                                                                                       Detect a charger removal
+ OCC      Overcurrent in Charge   –64 – –4      2     mV               CHG OFF      (VBAT – VPACK) > 100-mV
+                                                                               8, 16, 20, 48                           typical
+                                                     ms
+            Overcurrent in
+ OCD                                4 – 64       2     mV                                       Detect a discharge load           Discharge
+                                                                                                  removal
+                                     10, 20, 30,                            DSG OFF                                                                                                       (VBAT – VPACK) < 400-mV            Short circuit in
+ SCD                                    40, 60, 120,   —     mV    Fixed 250 µs                           typical            discharge
+                                 200
+
+           Overtemperature
+ OT        (through internal           75, 85    —       °C      Fixed 4.5 s  CHG and DSG OFF  Fixed 15°C hysteresis
+            temperature sensor)
+
+              Internal pull-up resistor
+ OT          for OT with PTC                                                                             Voltage on CTR pin drops
+                                          1.5, 5, 8   —     MΩ     —     CHG and DSG OFF
+ (PTC)     (through external PTC                                                                 below CTR VIL level
+          on CTR pin)
+
+
+
+
+
+10    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+ 7.2 Functional Block Diagram
+
+
+                        BAT            VDD                         PACK
+
+
+
+                                                                                                  0-V
+                                              Power       IPACK-VDD                      Charging
+                                                                                            (BQ2980)                                                Module
+
+                                                                                       RPACK-VSS
+
+
+                                                                 Super                     Digital             Charge        CHG
+                                                               Comparator                            Pump and
+                                                                                            nFET Driver       DSG
+                            Internal Temp Sensor         MUX      OCD,(OV, UV,SCD,OCC,OT
+               BATSNS Current Sensing
+                                                          BATSNS_Prot)
+                           PACK                                                                    Internal
+         CS                                                                              Temperature
+                                                                                              Sensor
+                                                      VDD
+
+                                  CTR Logic                                 OTP
+                                                        RPULL_UP
+
+                  VSS               CTR
+                                                                                           Copyright © 2020, Texas Instruments Incorporated
+
+ 7.3 Feature Description
+ 7.3.1 Overvoltage (OV) Status
+
+The device detects an OV fault when VBAT > VOVP (OV threshold) during charging. If this condition exists for
+ longer than the OV delay (tOVP), the CHG output is driven to VFETOFF to turn off the CHG FET.
+The OV status is released and the CHG output rises to HIGH, that is, VCHG = VDD × (1 + AFETON), if one of the
+ following conditions occurs:
+
+ •  When VBAT is < (VOVP – VOVP_HYS) and the charger is removed or
+ •  When VBAT is < VOVP and a discharge load is detected.
+The device detects the charger is removed if (VPACK – VBAT) < 100mv typical. To detect if a load is attached, the
+ device checks if (VBAT – VPACK) > 400mv typical.
+ 7.3.2 Undervoltage (UV) Status
+
+The device detects a UV fault when the battery voltage measured is below the UV threshold (VUVP).  If this
+ condition exists for longer than the UV delay (tUVP), the DSG output is driven to VFETOFF to turn off the DSG FET.
+The device includes a UV_SHUT option which may be enabled during factory configuration.  If this option
+ is enabled, during the UV fault state the device goes into SHUTDOWN mode to preserve the battery. In
+SHUTDOWN mode, the BQ2980 will drive the CHG output to the PACK voltage, putting the device into ZVCHG
+mode (the BQ2982 does not enable this ZVCHG mode). That means, the CHG FET can be turned on  if a
+ charger is connected and both VDD and PACK meet the ZVCHG turn-on conditions (see Section 7.3.9 for more
+ details). The PACK pin is internally pulled to VSS through RPACK-VSS. This is to determine  if the charger is
+ disconnected on the PACK+ terminal before shutting down the device. It is also to ensure the device does not
+ falsely wake up from SHUTDOWN mode due to noise.
+
+The UV status is released and the DSG output rises to HIGH, that is, VDSG = VDD × (1 + AFETON), if one of the
+ following conditions occurs:
+
+ •  When VBAT is > (VUVP + VUVP_HYS) and the discharge load is removed or
+ •  When VBAT is > VUVP and a charger is connected.
+The device detects that the charger is attached if (VPACK – VBAT) > 700mV typical. To detect for load removal, the
+ device checks if (VBAT – VPACK) < 400mV typical.
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    11
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+ If the UV_SHUT option is disabled, during a UV fault DSG is turned off and the device does not go into
+SHUTDOWN. The power consumption is reduced to IFETOFF. The PACK pin is  still internally pulled to VSS
+ through RPACK-VSS. To recover UV with this option, one of the following conditions must occur:
+ •  When VBAT is > (VUVP + VUVP_HYS) or
+ •  When VBAT is > VUVP and a charger is connected.
+ 7.3.3 Overcurrent in Charge (OCC) Status
+
+The BQ298xx device detects a current fault by monitoring the voltage drop across an external sense resistor
+ (RSNS) between the CS and VSS pins. The device detects an OCC fault when (VCS – VSS) < OCC threshold
+ (–VOC). If this condition exists for longer than the OCC delay (tOC), the CHG output is driven to VFETOFF to turn
+ off the CHG FET.
+
+The OCC status is released and the CHG output rises to HIGH, that is VCHG = VDD × (1 + AFETON), if (VBAT –
+ VPACK) > 100mV, indicating a charger is removed.
+ 7.3.4 Overcurrent in Discharge (OCD) and Short Circuit in Discharge (SCD) Status
+
+The BQ298xx device detects a current fault by monitoring the voltage drop across an external sense resistor
+ (RSNS) between the CS and VSS pins. The device applies the same method to detect OCD and SCD faults and
+ applies the same recovery scheme to release the OCD and SCD faults.
+
+The device detects an OCD fault when (VCS – VSS) > OCD threshold (+VOC). If this condition exists for longer
+ than the OCD delay (tOC), the DSG output is driven to VFETOFF to turn off the DSG FET. The SCD detection is
+ similar to OCD, but uses the SCD threshold (VSCD) and SCD delay (tSCD) time.
+ During an OCD or SCD state, the device turns on the recovery detection circuit. An internal current sink
+ (IPACK – VDD) is connected between the PACK and VDD pins, and the device consumes IOC_REC during the OCD
+and SCD fault until recovery is detected.
+
+The OCD or SCD status is released and the DSG output rises to HIGH, that is VDSG = VDD × (1 + AFETON), if
+ (VBAT – VPACK) < 400mV, indicating a discharge load is removed.
+ 7.3.5 Overtemperature (OT) Status
+
+The device has a built-in internal temperature sensor for OT protection. The sensor detects OT when the internal
+ temperature measurement is above the internal overtemperature threshold (TOT).  If this condition exists for
+ longer than the OT delay (tOT), both CHG and DSG outputs are driven to VFETOFF to turn off the CHG and DSG
+ FETs.
+
+The OT state is released and the CHG and DSG outputs rise to HIGH, that is VCHG and VDSG = VDD × (1 +
+ AFETON), if the internal temperature measurement falls below (TOT – TOT_HYS).
+ 7.3.6 Charge and Discharge Driver
+
+The device has a built-in charge pump to support high-side protection using an NFET. When the drivers are on,
+ the CHG and DSG pins are driven to the VDD × (1 + AFETON) voltage level. This means the Vgs across the CHG
+ or DSG FET is about (VDD × AFETON). When the drivers are turned off and VDD ≥ V0INH, the CHG and/or DSG
+ output is driven to VFETOFF.
+The  charge pump  requires VDD >  VDRIVER_SHUT  to  operate. When VDD  falls  below  VDRIVER_SHUT-
+ VDRIVER_SHUT_HYS, the DSG output is off. The CHG output can be turned on in BQ2980 if the ZVCHG charging
+ condition is met. See Section 7.3.9 for more details.
+
+ 7.3.7 CTR for FET Override and Device Shutdown
+
+The CTR pin is an active-high input pin, which can be controlled by the host system to turn off both CHG and
+DSG outputs momentarily to reset the system, shut down the system for low-power storage, or as a necessary
+ shutdown if the host detects a critical system error.
+
+The CTR pin uses a 4.5s timer (same specification tolerance as the tOVP delay 4.5s option) to differentiate a
+ reset and shutdown signal. CHG and DSG are off when VCTR > CTR VIH for > 200µs. Counting from the start of
+
+
+12    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+VCTR > VIH, if VCTR drops below VIL within 3.6s, CHG and DSG simply turn back on. If CTR remains HIGH for >
+ 5.4s, the device enters SHUTDOWN mode.
+
+ With this timing control, the system designer can use an RC circuit to implement either a host-controlled
+ power-on-reset or a system shutdown.
+
+                             On a rising direction of the CTR                                   On a falling direction of CTR signal,
+                                      signal,CTR                                              must                                                 be above VIH       CTR VIH                      CTR remains as “HIGH” when the CTR VIH                                                   “HIGH”.                                              to become a
+                                                                                                                                                                      IH – VHYS).                                                       CTR VIH –VHYS       VHYS             signal level is above ( V
+
+ CTR VIL                       On a rising direction of the CTR signal,  CTR VIL
+                            CTR remains as “LOW” when the                                  On a falling direction of the CTR
+                                            signal level is below VIL.                                                                signal, CTR must be below VIL
+                                                                                                                                        to become a “LOW”.
+
+                         Figure 7-1. CTR Level in Rising and Falling Direction
+
+                                           Note
+       •  CTR shuts down the device only when VCTR is HIGH for > 5.4s AND when there is no OV or OT
+           fault present.
+       •  The CTR VIH level is the voltage level at which the CTR pin is considered HIGH in the positive
+         direction as voltage increases. There is a minimum hysteresis designed into the logic level;
+         therefore, as voltage decreases, CTR is considered HIGH at the (VIH – VHYS) level.
+       •  The FET override and the shutdown functions are not available if the CTR pull-up is enabled. See
+        Section 7.3.8 for details.
+
+
+
+                                                                           Host pulls up the        CHG/DSG are off ,
+                                                              GPIO connecting             cutting off power to
+                                                                                             to CTR pin.                 the system.
+
+                                                                                                                        Capacitor connects to CTR, depletes below
+                                                        Host keeps CRT low                200-µs delay            VIL level within 3.6 s.
+                                                              during normal operation.
+                                                                                                         CTR V IH
+ CTR                    System host GPIO
+
+                                                                                                          CTR V IL
+
+                                        CTR signal
+
+
+
+
+                                                  CHG & DSG on                 CHG &        CHG & DSG on
+                                                                  (assuming no fault is detected)            DSG off     (assuming no fault is detected )
+
+                          Figure 7-2. System Reset Function Implementation
+
+                                                                    Host signals a shutdown.                                        Can also implement the shutdown function
+                                                                                                                                          with RC circuit using RC constant > 5.4 s
+                                                                        Pack-side gauge drives CRT high       Pack-side gauge continues to drive
+                                                                                            200-µs        the CTR signal high
+                                                                                                  delay          > 5.4-s delay
+
+                 Pack side gauge/
+   bq2980              monitor                               Host keeps CRT low                                                         CTR VIH
+                                                                    during normal operation
+                                                                                                                                 CTR VHYS
+        CTR        GPIO      GPIO         System host     CTR signal
+                                                   control
+
+
+
+                                                                    CHG and DSG on              CHG and DSG off                Device shuts down
+                                                                                             (assuming no fault is detected)
+
+                  Figure 7-3. Potential System- Controlled Shutdown Implementation
+
+ 7.3.8 CTR for PTC Connection
+
+ If any of the CTR pull-up resistors are selected, the device assumes a PTC is connected to the CTR pin. There
+ are three internal pull-up options: 1.5MΩ, 5MΩ, or 8MΩ. The internal pull-up allows a PTC to be connected
+between the CTR pin and VSS. This turns the CTR pin to detect an overtemperature fault through an external
+PTC, as shown in Figure 7-4.
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    13
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+                                                        bq2980
+
+                                                   VDD
+
+
+
+
+
+                                                                                   RPULL_UP
+
+
+                                                                   CTR
+
+                                                           VCTR            PTC
+                                                                                        detection
+                                                                                                            circuit
+
+
+                                                          Copyright © 2017, Texas Instruments Incorporated
+
+                Figure 7-4. Connecting PTC to CTR Pin for Overtemperature Protection
+
+When any of the CTR internal pull-up resistors are selected (factory configured), an active-high signal (VCTR >
+CTR VIH) on CTR turns off both CHG and DSG outputs, but it does not shut down the device.
+As temperature goes up, the PTC resistance increases and when the voltage divided by the internal RPULL_UP
+and the RPTC is > CTR VIH, the CHG and DSG outputs are turned off. As temperature falls and the PTC
+ resistance decreases, the CHG and DSG outputs turn back on when (VCTR < CTR VIL).
+ 7.3.9 ZVCHG (0V Charging)
+
+ZVCHG (0-V charging) is a special function that allows charging a severely depleted battery that is below
+ the FET driver charge pump shutdown voltage (VDRIVER_SHUT). The BQ2980 has ZVCHG enabled, while the
+BQ2982 device has it disabled.
+
+ In BQ2980, if VBAT > V0INH and VDD < VDRIVER_SHUT-VDRIVER_SHUT_HYS and the charger voltage at PACK+ is >
+ V0CHGR, then the CHG output will be driven to the voltage of the PACK pin, allowing charging. ZVCHG mode
+ in the BQ2980 is exited when VBAT > VDRIVER_SHUT, at which point the charge pump is enabled, and CHG
+ transitions to being driven by the charge pump. In the BQ2982, ZVCHG is entirely disabled, so charging is
+ disabled whenever VDD < VDRIVER_SHUT–VDRIVER_SHUT_HYS.
+ For BQ2980 and BQ2982, when the voltage on VDD is below V0INH, the CHG output becomes high impedance,
+and any leakage current flowing through the CHG FET may cause this voltage to rise and reenable charging.
+ If this is undesired, a high impedance resistor can be included between the CHG FET gate and source to
+overcome any leakage and ensure the FET remains disabled in this case. This resistance should be as high as
+ possible while still ensuring the FET is disabled, since it will increase the device operating current when the CHG
+ driver is enabled. Because gate leakage is typically extremely low, a gate-source resistance of 50 MΩ to 100 MΩ
+may be sufficient to overcome the leakage.
+
+ 7.4 Device Functional Modes
+ 7.4.1 Power Modes
+ 7.4.1.1 Power-On-Reset (POR)
+
+The device powers up in SHUTDOWN mode, assuming a UV fault. To enter NORMAL mode, both VBAT and
+ VPACK must meet the UV recovery requirement. In summary, if UV_SHUT is enabled, (VBAT > VUVP) and VPACK
+ detecting a charger connection are required to enter NORMAL mode. If UV_SHUT is disabled, (VBAT > VUVP)
+and (VPACK > the minimum value of VDD) are required to enter NORMAL mode. See Section 7.4.1.4 for more
+ details.
+
+ During the ZVCHG operation mode (only available in BQ2980), the CHG pin is internally connected to PACK
+when the device is in SHUTDOWN mode. If both VBAT and VPACK meet the ZVCHG condition (see Section 7.3.9
+ for details), CHG is on, even if UV recovery conditions are not met.
+
+
+
+
+
+14    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+ 7.4.1.2 NORMAL Mode
+
+ In NORMAL mode, all configured protections are active. No fault is detected, and both CHG and DSG drivers
+ are enabled. For the BQ298xx device, if none of the internal CTR pull-up resistor options is selected, VCTR must
+be < CTR VIL for CHG and DSG to be on.
+
+ 7.4.1.3 FAULT Mode
+
+ If a protection fault is detected, the device enters FAULT mode. In this mode, the CHG or DSG driver is pulled to
+ VFETOFF to turn off the CHG or DSG FETs.
+
+ 7.4.1.4 SHUTDOWN Mode
+
+ This mode is the lowest power-consumption state of the device, with both CHG and DSG turned off.
+
+The two conditions to enter SHUTDOWN mode are as follows:
+
+ •  Undervoltage (UV): If the device is configured with UV_SHUT enabled, when UV protection is triggered, the
+    device enters SHUTDOWN mode. See Section 7.3.2 for details.
+ •  CTR control: When CTR is HIGH for > 5.4s, the device enters SHUTDOWN mode. See Section 7.3.7 for
+    details.
+
+                                           Note
+
+         If the internal CTR pull-up is enabled, a HIGH at CTR does not activate the shutdown process. This is
+     because when the internal pull-up is enabled, the CTR pin is configured for use with an external PTC
+       for overtemperature protection, and the CTR functionality is disabled.
+
+8 Application and Implementation
+
+ Application Information Disclaimer
+
+                                           Note
+
+      Information in the following applications sections  is not part of the TI component specification,
+     and  TI does  not  warrant  its accuracy  or completeness.  TI’s customers  are  responsible  for
+     determining suitability of components for their purposes, as well as validating and testing their design
+     implementation to confirm system functionality.
+
+ 8.1 Application Information
+ 8.1.1 Test Circuits for Device Evaluation
+
+ 1.  Test Power Consumption (Test Circuit 1)
+
+    This setup is suitable to test for device power consumption at different power modes. VS1 is a voltage
+    source that simulates a battery cell. VS2 is used to simulate a charger and load under different power mode
+     conditions.
+
+     I1 is a current meter that monitors the device power consumption at different modes. I2 is a current meter
+     that monitors the PACK pin current. The IPACK current is insignificant in most operation modes. If a charger
+      is connected (VS2 has a positive voltage), but the device is still in SHUTDOWN mode, I2 reflects the IPACK
+     current drawing from the charger due to the internal RPACK-VSS resistor.
+ 2.  Test CHG and DSG Voltage and Status (Test Circuit 2)
+
+    This setup is suitable to test VCHG and VDSG levels or monitor the CHG and DSG status at different operation
+    modes. It is not suitable to measure power consumption of the device, because the meters (or scope
+    probes) connected to CHG and/or DSG increase the charge pump loading beyond the normal application
+     condition. Therefore, the current consumption of the device under this setup is greatly increased.
+ 3.  Test for Fault Protection (Test Circuit 3)
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    15
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+    This setup is suitable to test OV, UV, OCD, OCD, and SCD protections.
+
+    Voltage protection:
+
+    Adjust VS1 to simulation OV and UV. TI recommends having 0V on VS3 during the voltage test to avoid
+    generating multiple faults. Adjust VS2 to simulate the charger/load connection or disconnection. Combine
+     with test circuit 1 to monitor power consumption, or combine with test circuit 2 to monitor CHG and DSG
+     status.
+
+    Test example for OV fault and OV recovery by charger removal:
+     a.  Adjust both VS1 and VS2 > OVP threshold.
+     b.  As the device triggers for OVP and CHG is open, VS2 can be set to a maximum expected charger
+        voltage as if in an actual application when CHG is open, and charger voltage may regulate to the
+      maximum setting.
+     c.  To test for OV recovery, adjust VS1 below (VOVP – VOVP_Hys). Reduce the VS2 voltage so that (VS2 –
+       VS1) < 100 mV (to emulate removal of a charger).
+
+    Current protection:
+
+     Similar to the voltage protection test, adjust VS3 to simulate OCC, OCD, and SCD thresholds. Use VS2 to
+    simulate a charger/load status. TI recommends setting VS1 to the normal level to avoid triggering multiple
+     faults.
+
+                                           Note
+
+        It is normal to observe CHG or DSG flipping on and off if VS2 is not set up properly to simulate
+    a charger or load connection/disconnection, especially when the voltage source is used to simulate
+      fault conditions. It is because an improper VS2 setting may mislead the device to sense a recovery
+     condition immediately after a fault protection is triggered.
+ 4.  Test for CTR Control (Test Circuit 4)
+
+    This setup is suitable to test for CTR control. Adjust VS4 above or below the CTR VIH or VIL level. Combine
+     with test circuit 1 to observe the power consumption, or combine with test circuit 2 to observe the CHG and
+   DSG status.
+
+ 8.1.2 Test Circuit Diagrams
+
+
+
+
+
+              RVDD                                                                       RVDD
+                                                                      8 nF
+       I1  A               BAT            CHG                                                 BAT            CHG
+
+                      VDD            DSG                                             VDD            DSG
+                                                                      8 nF
+   VS1                                                           VS1
+                       VSS            PACK                                               VSS            PACK
+
+                      CS              CTR                 A I2                            CS              CTR
+                                                                                                              V2     V1
+             CVDD                                         VS2                  CVDD                                          V   V      VS2
+
+
+
+
+
+                                                    Copyright © 2017, Texas Instruments Incorporated                                                 Copyright © 2017, Texas Instruments Incorporated
+              Figure 8-1. Test Circuit 1                          Figure 8-2. Test Circuit 2
+
+
+
+
+
+16    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+
+
+
+
+             RVDD                                                                    RVDD
+                                                                     8 nF                                                                                         8 nF
+                        BAT            CHG                                              BAT            CHG
+
+                      VDD            DSG                                          VDD            DSG
+                                                                      8 nF                                                                                         8 nF
+   VS1                                                         VS1
+                       VSS            PACK                                             VSS            PACK
+
+                      CS              CTR                                           CS              CTR
+
+            CVDD                                         VS2               CVDD                           VS4           VS2
+
+
+                  VS3
+
+                                          Copyright © 2017, Texas Instruments Incorporated                                                   Copyright © 2017, Texas Instruments Incorporated
+              Figure 8-3. Test Circuit 3                          Figure 8-4. Test Circuit 4
+
+
+ 8.1.3 Using CTR as FET Driver On/Off Control
+
+ Normally, CTR  is not designed as a purely on/off control of the FET drivers, because there  is a timing
+ constriction on the pin. The following is a  list of workarounds to implement the CTR as an on/off switch to
+ the FET drivers.
+
+ 1.  Switching CTR from high to low with less than 3.6s:
+
+       If the application only requires turning off the FET drivers in < 3.6s, then the CTR pin can simply be viewed
+    as an on/off switch of the FET drivers. That means, after the CTR pin is pulled high, the application will pull
+    the CTR pin back low in < 3.6s.
+ 2.  Applying a voltage on PACK to prevent the device from entering SHUTDOWN mode:
+
+   When the CTR pin is be pulled high for > 3.6s, there is a chance the device may go into SHUTDOWN mode.
+       If the CTR pin is high for > 5.4s, the device will be in SHUTDOWN mode. For applications that may use the
+   CTR to keep the FET drivers off for > 3.6s, the workaround is to keep VPACK within the VDD recommended
+    operating range while the CTR is pulled high to prevent the device from entering SHUTDOWN mode. The
+    device is forced to stay in NORMAL mode with this method.
+
+    Because the PACK pin is also connected to the PACK terminal, the system designer should have a blocking
+    diode to protect the GPIO (that controls the CTR pin) from high voltage.
+
+
+                                  During the time CTR is high, voltage on PACK must be
+                                       applied. Otherwise, device will enter SHUTDOWN mode.
+                                                              ….
+                                         V     V                                             CTR >  IH
+               V                     V                  CTR <                                      IL                                        VCTR < V IL        CTR
+
+
+
+                                                              ….
+                                        VPACK > Min VDD       PACK
+                                       3.6 s
+
+When CTR is pulled high (FETs off),the system ensures:               When CTR is pulled low (FET on), the system ensures:
+ 1. Voltage on PACK is applied before pulling CTR high or                    Voltage on PACK is still applied before pulling CTR low.
+ 2. Voltage on PACK is applied within 3.6 s after CTR is pulled high.
+
+                                                                                        Copyright ©2017, Texas Instruments Incorporated
+
+         Figure 8-5. PACK Voltage Timing with Switching CTR as On/Off Control of FET Drivers
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    17
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+ 8.2 Typical Applications
+ 8.2.1 BQ298xx Configuration 1: System-Controlled Reset/Shutdown Function
+
+
+                                                     CHG FET DSG FET
+
+                                                                                PACK+
+
+
+                             RVDD   RBAT
+                                                                                      RPACK
+                                      BAT            CHG
+
+                                   VDD            DSG
+
+                                     VSS            PACK                             External
+                                                                             RCTR      FET Override
+                                   CS              CTR                            Control
+
+                            CVDD                                                 Scale RC values for
+                                                                                  system reset timing
+                                                       Configuration 1
+                                                                                 PACK±
+                                 RSNS
+
+                      Figure 8-6. BQ298xx Reference Schematic Configuration 1
+
+ 8.2.1.1 Design Requirements
+
+ For this design example, use the parameters listed Table 8-1.
+
+                           Table 8-1. Recommended Component Selection
+          PARAMETER             TYP     MAX      UNIT                COMMENT
+
+                                                                               This resistor is used to protect the PACK pin from a
+ RPACK  PACK resistor            —          2        kΩ                                                                               reserve charging current condition.
+ RVDD  VDD filter resistor          —         300      Ω
+ CVDD  VDD filter capacitor                   0.1         1        µF
+                                                                               This resistor limits current if the BAT pin is shorted to
+       BAT resistor (for safety. To limit
+                                                                        ground internally. BAT is used for voltage measurement
+ RBAT    current if BAT pin is shorted          20     —      Ω                                                                                                for OV and UV. A larger resistor value can impact the
+           internally)
+                                                                                 voltage measurement accuracy.
+
+                                                                               This is optional for ESD protection and is highly
+ RCTR  CTR resistor (optional for ESD)       100     —      Ω                                                                       dependent on the PCB layout.
+
+ 8.2.1.2 Detailed Design Procedure
+
+ •  Determine if a CTR for FET override or an improved voltage measurement function is required in the battery
+   pack design.
+ •  See Figure 8-6 for the schematic design.
+ •  Check the cell specification and system requirement to determine OV and UV levels.
+ •  Define the sense resistor value and system requirement to determine OCC, OCD, and SCD levels. For
+   example, with a 1mΩ sense resistor and OCC, OCD, and SCD, the requirement is 6A, 8A, and 20A,
+    respectively. The OCC threshold should be set to 6mV, the OCD threshold should be at 8mV, and the SCD
+    threshold should be at 20mV.
+ •  Determine the required OT protection threshold. The OT fault turns off the CHG and the DSG, so the
+    threshold must account for the highest allowable charge and discharge temperature range.
+ •  When a decision is made on the various thresholds, search for whether a device configuration is available or
+    contact the local sales office for more information.
+
+ 8.2.1.3 Selection of Power FET
+
+The high-side driver of the BQ298xx device limits the Vgs below 8V with a 4.4V battery cell. This means the
+ device can work with a power FET with an absolute maximum rating as low as ±8V Vgs, which is common in
+ smartphone applications.
+
+
+
+18    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+ Additionally, TI highly recommends using a low gate leakage FET around 6V to 7V Vgs range. The power FET
+on the BQ298xx evaluation module has the following typical gate leakage. TI recommends selecting a similar
+ gate leakage FET for the design.
+
+
+                                                                                0.06
+
+
+                                                                                0.05
+
+
+                                                                                0.04
+                                                                                                                                                 (PA)
+                                                                                                                                     IGSS 0.03
+
+                                                                                0.02
+
+
+                                                                                0.01
+
+
+                                                                         0
+                                                                          0         2         4         6         8        10
+                                                                                           VGS (V)                          D007
+
+                  Figure 8-7. Power FET (on BQ2980 EVM) Gate Leakage Versus Vgs
+
+ 8.2.1.4 Application Curves
+
+
+
+
+                                                                                                  DSG
+                        Note: CHG and DSG voltages                                                                                                                                      After ~144ms UVP delay
+                             increased because VBAT                                                                                      Note: CHG and DSG voltages                                DSG turned off
+                                                                                                                              decreased because VBAT decreased
+        CHG
+                                                                   After ~1.25s OVP delay                              CHG
+
+        DSG                                                                                                                                     CHG turned off too because device
+                                                                                                              BAT                                                     went to Shutdown at UV protection
+                                                                  CHG turned off
+
+                                                                                                                                                   Set VBAT below UVP
+
+                                           Set VBAT above OVP                                                        PACK
+
+         BAT   PACK
+
+                                                                                                                                                        PACK dropped to ground because internal
+                                                                                                                                                          PACK pull-down resistor was connected
+                                                                                                                                                  when device went into Shutdown
+
+
+
+
+
+       Figure 8-8. Overvoltage (OV) Protection            Figure 8-9. Undervoltage (UV) Protection
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    19
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+
+
+        CHG                                                                                                      Connect CTR to PACK+              CTR voltage dropped
+                                                                                                                                      (3.6V) for very short period          below VIL in < 3.6. both
+                                                                                                 PACK+    of time. FETs turned off               FETs turned back on.
+                                    After ~250s SCD delay                                                                                               PACK+ voltage went
+        DSG                                        DSG turned off                                                                                  back up
+
+                                                                                      CHG
+
+
+                                                                PACK dropped because of
+         PACK                                                           the load was connted
+
+                 Current settled at
+              SCD threshold                                                                          CTR
+
+           Current
+                                                                      Current dropped to 0A                                           CTR cap started to deplete.
+                                                                                                                        Both FETs remained off
+                                                                                                                 PACK+ started falling to
+                                                                                                                         ground
+
+
+
+     Figure 8-10. Short Circuit (SCD) Protection
+                                                           The RC values used in this example are for reference only.
+                                                             System designers should depend on their pull-up voltage
+                                                             and RC tolerance to add any additional margin. TI also
+                                                           recommends users keep the delay time below 3.6s, if possible,
+                                                                                        for the reset function.
+
+                                                    Figure 8-11. Setup CTR for System Reset (Using
+                                              5MΩ and 1µF RC)
+
+
+
+
+
+                                                           Connect CTR to PACK+ (3.6V) for very
+                                                                  short period of time. FETs turned off
+
+
+
+
+
+                                                                 CTR cap started to deplete. FET reamined off.
+                                                                   The RC time kept the CTR voltage above VIH for
+
+
+
+
+
+    The RC values used in this example are for reference only. System designers should depend on their pull-up voltage and RC tolerance
+      to add any additional margin. TI also recommends users keep the delay time below 5.4s, if possible, for the shutdown function.
+
+                 Figure 8-12. Setup CTR for System Shutdown (Using 5MΩ and 1µF RC)
+
+
+
+
+
+20    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+ 8.2.2 BQ298xx Configuration 2: CTR Function Disabled
+
+
+                                                     CHG FET DSG FET
+
+                                                                                 PACK+
+
+
+                              RVDD   RBAT
+                                                                                        RPACK
+                                       BAT            CHG
+
+                                    VDD            DSG
+
+                                      VSS            PACK
+
+                                    CS              CTR
+                                                                  No FET
+                             CVDD                                               Override
+                                                                                       Function
+                                                        Configuration 2
+                                                                                 PACK±
+                                  RSNS
+
+                      Figure 8-13. BQ298xx Reference Schematic Configuration 2
+
+ 8.2.3 BQ298xx Configuration 3: PTC Thermistor Protection
+
+
+                                                     CHG FET DSG FET
+
+                                                                                 PACK+
+
+
+                              RVDD   RBAT
+                                                                                        RPACK
+                                       BAT            CHG
+
+                                    VDD            DSG
+
+                                      VSS            PACK
+
+                                    CS              CTR
+                                                                             2nd Overtemperature
+                             CVDD                                                     protection level via PTC
+
+                                                        Configuration 3
+                                                                                 PACK±
+                                  RSNS
+
+
+                      Figure 8-14. BQ298xx Reference Schematic Configuration 3
+
+9 Power Supply Recommendations
+
+The device supports single-cell li-ion and li-polymer batteries of various chemistries with a maximum VDD below
+ 5.5V.
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    21
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+10 Layout
+ 10.1 Layout Guidelines
+
+ 1.  Place the components to optimize the layout. For example, group the high-power components like cell pads,
+   PACK+ and PACK– pads, power FETs, and RSNS together, allowing the layout to optimize the power traces
+     for the best thermal heat spreading.
+ 2.  Separate the device's VSS and low-power components to a low-current ground plane. Both grounds can
+    meet at RSNS.
+ 3.  Place the VDD RC filter close to the device's VDD pin.
+
+ 10.2 Layout Example
+
+                                                            High-current ground
+                              High-current traces          plane
+
+
+
+            PACK+                PACK–
+                                                                                  Connect low power
+               Pad                    Pad
+                                                                                components (for example,
+                                                            RC filter) close to the IC pin
+                                                                              and use a low current plane for
+                                                                                    ground connection.
+
+                                   BAT–                                         RS             bq298xy       BAT+                   FET             Pad        Pad
+
+
+                                                                 Low current (IC ground)
+
+ Group components along the high-current path together to
+  optimize layout.                                     Use Rs to connect the high-current
+                                                     and low-current grounds.
+
+                  Figure 10-1. Component Placement and Grounding Pattern Example
+
+
+
+
+
+22    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+11 Device and Documentation Support
+ 11.1 Third-Party Products Disclaimer
+
+ TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+
+ 11.2 Receiving Notification of Documentation Updates
+
+ To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+ Notifications to register and receive a weekly digest of any product information that has changed. For change
+ details, review the revision history included in any revised document.
+
+ 11.3 Support Resources
+
+ TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+ from the experts. Search existing answers or ask your own question to get the quick design help you need.
+
+ Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+ not necessarily reflect TI's views; see TI's Terms of Use.
+
+ 11.4 Trademarks
+ TI E2E™ is a trademark of Texas Instruments.
+ All trademarks are the property of their respective owners.
+ 11.5 Electrostatic Discharge Caution
+                  This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+                   with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+
+            ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+               be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+                    specifications.
+
+ 11.6 Glossary
+
+ TI Glossary      This glossary lists and explains terms, acronyms, and definitions.
+
+12 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+
+Changes from Revision L (March 2025) to Revision M (November 2026)                       Page
+ •  Added the BQ298014 device to the Device Comparison Table ........................................................................ 3
+
+
+
+Changes from Revision K (July 2024) to Revision L (March 2025)                            Page
+ •  Added the BQ298023 device to the Device Comparison Table ........................................................................ 3
+
+
+
+Changes from Revision J (December 2022) to Revision K (July 2024)                         Page
+ •  Added the BQ298218 device to the Device Comparison Table ........................................................................ 3
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    23
+
+                                              Product Folder Links: BQ2980 BQ2982
+BQ2980, BQ2982
+SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026                                                            www.ti.com
+
+Changes from Revision I (November 2021) to Revision J (December 2022)                     Page
+ •  Added the BQ298217 device to the Device Comparison Table ........................................................................ 3
+
+
+
+Changes from Revision H (July 2021) to Revision I (November 2021)                          Page
+ •  Changed the Device Comparison Table ............................................................................................................3
+
+
+
+Changes from Revision G (May 2021) to Revision H (July 2021)                              Page
+ •  Changed the BQ298019 device from PRODUCT PREVIEW to Production Data in the Device
+   Comparison Table...............................................................................................................................................3
+
+
+
+Changes from Revision F (December 2020) to Revision G (May 2021)                         Page
+ •  Removed "Product Preview" footnote from BQ2982 in Description................................................................... 1
+ •  Changed the Device Comparison Table ............................................................................................................3
+ •  Removed PRODUCT PREVIEW footnote from BQ2982xy in Thermal Information ..........................................6
+ •   Clarified CHG driver at low VDD in Electrical Characteristics............................................................................ 6
+ •   Clarified VDD condition in Charge and Discharge Driver.................................................................................12
+ •   Clarified ZVCHG in Section 7.3.9.....................................................................................................................14
+
+
+
+Changes from Revision E (January 2020) to Revision F (December 2020)                      Page
+ •  Added BQ2982xy in the title and throughout the document text .......................................................................1
+ •  Added the note that only BQ2980 supports 0-V charging to Features...............................................................1
+ •  Added the description of the difference between the BQ2980 and BQ2982 in Description............................... 1
+ •  Added the BQ2982 device family to the Device Information Table.................................................................... 1
+ •  Added the BQ298018 and BQ298215 devices to the Device Comparison Table; changed BQ298006,
+   BQ298009, and BQ298015 devices from custom to catalog devices; added a table footnote for clarity
+    regarding the CTR RPULL_UP ............................................................................................................................. 3
+ •  Included BQ2982xy in Thermal Information ...................................................................................................... 6
+ •  Added clarification that ZVCHG and associated specifications only apply to BQ2980xy, not to BQ2982xy in
+    Electrical Characteristics.................................................................................................................................... 6
+ •  Changed specification for VUVP_ACC in Electrical Characteristics.......................................................................6
+ •  Corrected units for VUVP_HYS specification in Electrical Characteristics.............................................................6
+ •   Clarified description of VDRIVER_SHUT_HYS and added VDRIVER_SHUT_HYS specification in
+    Electrical Characteristics.................................................................................................................................... 6
+ •  Corrected error in Device Configuration Range table.......................................................................................10
+ •  Added clarification on UV_SHUT and ZVCHG options in Undervoltage (UV) Status.......................................11
+ •  Added clarification regarding ZVCHG in Charge and Discharge Driver...........................................................12
+ •   Clarified ZVCHG in Section 7.3.9.....................................................................................................................14
+ •  Added clarification regarding ZVCHG in the BQ2980 device in Power-On-Reset (POR)................................ 14
+
+
+
+
+
+24    Submit Document Feedback                                                                   Copyright © 2026 Texas Instruments Incorporated
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                                                    BQ2980, BQ2982
+www.ti.com                                                        SLUSCS3M – OCTOBER 2017 – REVISED NOVEMBER 2026
+
+Changes from Revision D (August 2019) to Revision E (January 2020)                        Page
+ •  Deleted Undertemperature (UT).........................................................................................................................1
+ •  Changed the Device Comparison Table ............................................................................................................3
+ •  Changed BQ298010 and BQ298012 devices from custom to catalog devices .................................................3
+
+
+
+Changes from Revision C (May 2018) to Revision D (August 2019)                           Page
+ •  Replaced the battery icon with the battery schematic symbol in the Simplified Schematic ...............................1
+ •  Added the battery schematic symbol in BQ298xx Reference Schematic Configuration 1............................... 18
+ •  Added the battery schematic symbol in Figure 8-13........................................................................................ 21
+ •  Added the battery schematic symbol in Figure 8-14........................................................................................ 21
+
+
+
+Changes from Revision B (February 2018) to Revision C (May 2018)                          Page
+ •  Added 0-V charging to Features ........................................................................................................................1
+ •  Changed the Device Comparison Table ............................................................................................................3
+ •  Changed Undervoltage (UV) Status ................................................................................................................ 11
+
+
+
+Changes from Revision A (January 2018) to Revision B (February 2018)                       Page
+ •  Changed the Device Comparison Table ............................................................................................................3
+
+
+
+Changes from Revision * (October 2017) to Revision A (January 2018)                        Page
+ •  Changed the Device Comparison Table ............................................................................................................3
+ •  Changed INORMAL test conditions in Electrical Characteristics .......................................................................... 6
+ •  Changed VOC test conditions in Electrical Characteristics................................................................................. 6
+ •  Changed IOCD_REC in Electrical Characteristics .................................................................................................6
+
+
+13 Mechanical, Packaging, and Orderable Information
+
+The following pages include mechanical, packaging, and orderable information. This information is the most
+ current data available for the designated devices. This data is subject to change without notice and revision of
+ this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+
+Copyright © 2026 Texas Instruments Incorporated                                                      Submit Document Feedback    25
+
+                                              Product Folder Links: BQ2980 BQ2982
+                                                         PACKAGE OPTION ADDENDUM
+
+
+    www.ti.com                                                                                                                                                                         29-Oct-2026
+
+
+PACKAGING INFORMATION
+
+   Orderable part number     Status   Material type    Package | Pins    Package qty | Carrier    RoHS        Lead finish/       MSL rating/       Op temp (°C)           Part marking
+                                                      (1)                 (2)                                                                                          (3)            Ball material        Peak reflow                                                              (6)
+                                                                                                                                                                                                    (4)                                (5)
+     BQ298000RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+    BQ298000RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+     BQ298000RUGT          Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+     BQ298000RUGT.A         Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+     BQ298006RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      06
+    BQ298006RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      06
+     BQ298006RUGT          Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      06
+     BQ298006RUGT.A         Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      06
+     BQ298009RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      09
+    BQ298009RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      09
+     BQ298009RUGT          Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      09
+     BQ298009RUGT.A         Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      09
+     BQ298010RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      10
+    BQ298010RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      10
+     BQ298010RUGT          Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      10
+     BQ298010RUGT.A         Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      10
+     BQ298012RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      12
+    BQ298012RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                      12
+
+
+
+                                                                               Addendum-Page 1
+                                                       PACKAGE OPTION ADDENDUM
+
+
+www.ti.com                                                                                                                                                                         29-Oct-2026
+
+
+
+
+Orderable part number     Status   Material type    Package | Pins    Package qty | Carrier    RoHS        Lead finish/       MSL rating/       Op temp (°C)           Part marking
+                                                (1)                 (2)                                                                                          (3)            Ball material        Peak reflow                                                              (6)
+                                                                                                                                                                                              (4)                                (5)
+   BQ298012RUGT          Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   12
+  BQ298012RUGT.A         Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   12
+  BQ298015RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   15
+  BQ298015RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   15
+   BQ298015RUGT          Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   15
+  BQ298015RUGT.A         Active     Production    X2QFN (RUG) | 8     250 | SMALL T&R       Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   15
+  BQ298018RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   18
+  BQ298018RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   18
+  BQ298019RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   19
+  BQ298019RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   19
+  BQ298023RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   23
+  BQ298023RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                      5I
+                                                                                                                                                                   23
+  BQ298215RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                   15
+  BQ298215RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                   15
+  BQ298216RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                   16
+  BQ298216RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                   16
+  BQ298217RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                   17
+
+
+
+                                                                            Addendum-Page 2
+                                                         PACKAGE OPTION ADDENDUM
+
+
+    www.ti.com                                                                                                                                                                         29-Oct-2026
+
+
+
+
+   Orderable part number     Status   Material type    Package | Pins    Package qty | Carrier    RoHS        Lead finish/       MSL rating/       Op temp (°C)           Part marking
+                                                      (1)                 (2)                                                                                          (3)            Ball material        Peak reflow                                                              (6)
+                                                                                                                                                                                                    (4)                                (5)
+    BQ298217RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                      17
+     BQ298218RUGR          Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                      18
+    BQ298218RUGR.A         Active     Production    X2QFN (RUG) | 8    3000 | LARGE T&R      Yes          NIPDAU        Level-1-260C-UNLIM        -40 to 85                82
+                                                                                                                                                                      18
+
+(1) Status: For more details on status, see our product life cycle.
+
+(2) Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3) RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4) Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5) MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6) Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+
+                                                                               Addendum-Page 3
+                         PACKAGE MATERIALS INFORMATION
+
+
+www.ti.com                                                                                                                           29-Oct-2026
+
+TAPE AND REEL INFORMATION
+
+     REEL DIMENSIONS                                  TAPE DIMENSIONS
+                                                       K0    P1
+
+
+                                                   W                                                                               B0
+                                      Reel
+                                    Diameter
+                                                                         Cavity       A0
+                                         A0  Dimension designed to accommodate the component width
+                                           B0  Dimension designed to accommodate the component length
+                                         K0  Dimension designed to accommodate the component thickness
+                           W   Overall width of the carrier tape
+                                               P1   Pitch between successive cavity centers
+
+                                      Reel Width (W1)
+                  QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+                                                                                         Sprocket Holes
+
+
+                                  Q1  Q2     Q1  Q2
+
+                                  Q3  Q4     Q3  Q4             User Direction of Feed
+
+
+                                                      Pocket Quadrants
+
+
+*All dimensions are nominal
+        Device        Package Package Pins  SPQ     Reel     Reel    A0    B0    K0    P1   W     Pin1
+                       Type   Drawing               Diameter  Width  (mm)  (mm)  (mm)  (mm)  (mm) Quadrant
+                                                 (mm)  W1 (mm)
+   BQ298000RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+    BQ298000RUGT    X2QFN  RUG    8     250     180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298006RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+    BQ298006RUGT    X2QFN  RUG    8     250     180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298009RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+    BQ298009RUGT    X2QFN  RUG    8     250     180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298010RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+    BQ298010RUGT    X2QFN  RUG    8     250     180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298012RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+    BQ298012RUGT    X2QFN  RUG    8     250     180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298015RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+    BQ298015RUGT    X2QFN  RUG    8     250     180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298018RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298019RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298023RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298215RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+
+
+
+
+
+                                                  Pack Materials-Page 1
+                         PACKAGE MATERIALS INFORMATION
+
+
+www.ti.com                                                                                                                           29-Oct-2026
+
+
+        Device        Package Package Pins  SPQ     Reel     Reel    A0    B0    K0    P1   W     Pin1
+                       Type   Drawing               Diameter  Width  (mm)  (mm)  (mm)  (mm)  (mm) Quadrant
+                                                 (mm)  W1 (mm)
+   BQ298216RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298217RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+   BQ298218RUGR    X2QFN  RUG    8    3000    180.0      9.5     1.69   1.69   0.63    4.0     8.0    Q2
+
+
+
+
+
+                                                  Pack Materials-Page 2
+                         PACKAGE MATERIALS INFORMATION
+
+
+www.ti.com                                                                                                                           29-Oct-2026
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+
+                                                                                                   Width (mm)     H
+
+
+
+
+
+     W             L
+
+
+
+
+
+*All dimensions are nominal
+         Device          Package Type  Package Drawing  Pins   SPQ    Length (mm)  Width (mm)   Height (mm)
+    BQ298000RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298000RUGT        X2QFN        RUG         8      250        189.0         185.0          36.0
+    BQ298006RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298006RUGT        X2QFN        RUG         8      250        189.0         185.0          36.0
+    BQ298009RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298009RUGT        X2QFN        RUG         8      250        189.0         185.0          36.0
+    BQ298010RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298010RUGT        X2QFN        RUG         8      250        189.0         185.0          36.0
+    BQ298012RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298012RUGT        X2QFN        RUG         8      250        189.0         185.0          36.0
+    BQ298015RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298015RUGT        X2QFN        RUG         8      250        189.0         185.0          36.0
+    BQ298018RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298019RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298023RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298215RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298216RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+    BQ298217RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+
+
+
+
+                                                  Pack Materials-Page 3
+                         PACKAGE MATERIALS INFORMATION
+
+
+www.ti.com                                                                                                                           29-Oct-2026
+
+
+         Device          Package Type  Package Drawing  Pins   SPQ    Length (mm)  Width (mm)   Height (mm)
+    BQ298218RUGR        X2QFN        RUG         8     3000        189.0         185.0          36.0
+
+
+
+
+
+                                                  Pack Materials-Page 4
+
+
+                 IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+
+TI objects to and rejects any additional or different terms you may propose.
+
+IMPORTANT NOTICE
+
+                                         Copyright © 2026, Texas Instruments Incorporated
+
+                                                       Last updated 10/2025

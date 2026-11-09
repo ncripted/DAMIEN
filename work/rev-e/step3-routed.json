@@ -1,0 +1,337 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T00:40:48",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0495 mm",
+                    "pos": {
+                        "x": 122.275,
+                        "y": 127.0
+                    },
+                    "uuid": "6b3bc41a-e5a7-4ef4-8c50-6566ece87c9e"
+                },
+                {
+                    "description": "Track [GND] on B.Cu, length 1.2000 mm",
+                    "pos": {
+                        "x": 123.199999,
+                        "y": 125.299999
+                    },
+                    "uuid": "4d9e36ef-6315-43ad-b9ff-b5ee5de3a25f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [CELL_N] on B.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 120.899999,
+                        "y": 121.299999
+                    },
+                    "uuid": "0c4948ed-e0dd-49f3-88ee-6c2f7a853fbc"
+                },
+                {
+                    "description": "Track [CELL_N] on F.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 117.099999,
+                        "y": 125.199999
+                    },
+                    "uuid": "0c4dfce6-a135-4ebc-9ee2-42d6d003c829"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "ca08c96f-0b0e-4d83-b461-1d1b86305eaa"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 131.65
+                    },
+                    "uuid": "ecb43a30-9bbd-4ca9-8cef-bf5630f6d3e0"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [PROT_VSS_SENSE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.125,
+                        "y": 129.4
+                    },
+                    "uuid": "0db9bd4a-29ff-4fb4-82cf-a43ef2ad1773"
+                },
+                {
+                    "description": "Via [PROT_VSS_SENSE] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.099999,
+                        "y": 129.399999
+                    },
+                    "uuid": "c6132c57-51e4-4605-a7c8-75bcf044c18b"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [PROT_PACK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.199999,
+                        "y": 129.999999
+                    },
+                    "uuid": "04466e90-683a-4491-b5b1-03a1a6a18cc7"
+                },
+                {
+                    "description": "Via [PROT_PACK] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.175,
+                        "y": 130.0
+                    },
+                    "uuid": "a441d948-baa6-4230-acee-b3e75610849c"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 117.299999,
+                        "y": 129.999999
+                    },
+                    "uuid": "08403ab3-696a-4337-a2f3-e4fb5cef3614"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 1.2000 mm",
+                    "pos": {
+                        "x": 123.199999,
+                        "y": 125.299999
+                    },
+                    "uuid": "4d9e36ef-6315-43ad-b9ff-b5ee5de3a25f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.2828 mm",
+                    "pos": {
+                        "x": 120.499999,
+                        "y": 121.099999
+                    },
+                    "uuid": "705871b4-1b9f-4bf1-8ddf-b39b643121c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CELL_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.7,
+                        "y": 121.0
+                    },
+                    "uuid": "0393b2cb-a899-43e4-abf0-985bdee854d5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R40",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 132.57
+                    },
+                    "uuid": "31199e92-e916-431c-a949-01c1e28baa83"
+                },
+                {
+                    "description": "Segment of C24 on B.Silkscreen",
+                    "pos": {
+                        "x": 123.14058,
+                        "y": 132.51
+                    },
+                    "uuid": "61397918-d2ab-4489-9578-437e976e7d3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R40",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 132.57
+                    },
+                    "uuid": "31199e92-e916-431c-a949-01c1e28baa83"
+                },
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 133.2
+                    },
+                    "uuid": "a28847fc-3fc8-4dc0-8c52-db4108a8dd90"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 133.2
+                    },
+                    "uuid": "a28847fc-3fc8-4dc0-8c52-db4108a8dd90"
+                },
+                {
+                    "description": "Segment of R40 on B.Silkscreen",
+                    "pos": {
+                        "x": 122.237258,
+                        "y": 133.4775
+                    },
+                    "uuid": "c0e6f9e1-f71c-4510-903e-2758f091a06f"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R40",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 132.57
+                    },
+                    "uuid": "31199e92-e916-431c-a949-01c1e28baa83"
+                },
+                {
+                    "description": "Pad 2 [PROT_VSS_SENSE] of C24 on B.Cu",
+                    "pos": {
+                        "x": 122.225,
+                        "y": 132.0
+                    },
+                    "uuid": "2ebd5265-f0dc-410e-90ae-d9541fbebe10"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of C24",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 133.2
+                    },
+                    "uuid": "a28847fc-3fc8-4dc0-8c52-db4108a8dd90"
+                },
+                {
+                    "description": "Pad 1 [PROT_CHG] of R40 on B.Cu",
+                    "pos": {
+                        "x": 122.825,
+                        "y": 134.0
+                    },
+                    "uuid": "e23d64d0-1444-4133-8011-6f2428a18db2"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

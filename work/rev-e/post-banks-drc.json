@@ -1,0 +1,781 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T01:18:29",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [CELL_P] on B.Cu, length 1.1000 mm",
+                    "pos": {
+                        "x": 122.999999,
+                        "y": 139.499999
+                    },
+                    "uuid": "6553ca69-0e22-42ca-a035-dcaf23575bbc"
+                },
+                {
+                    "description": "Track [PROT_CHG] on B.Cu, length 1.5491 mm",
+                    "pos": {
+                        "x": 122.435,
+                        "y": 138.975
+                    },
+                    "uuid": "82a500dd-d78f-4b5e-9ae0-675b36f71a28"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets CELL_P and PROT_DSG)",
+            "items": [
+                {
+                    "description": "Track [CELL_P] on B.Cu, length 4.3841 mm",
+                    "pos": {
+                        "x": 116.499999,
+                        "y": 132.399999
+                    },
+                    "uuid": "97c914db-76f0-4179-9e46-dc6f0beacb1e"
+                },
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.2,
+                        "y": 134.0
+                    },
+                    "uuid": "9852d271-c62b-4c1d-b181-d8d256ee954e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_CHG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 132.099999
+                    },
+                    "uuid": "89c75e1d-d2d5-4c87-976d-b84bf1b32246"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "9ef6afe6-aea0-4d23-89ee-8d7f561ebe60"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [PROT_CHG] on B.Cu, length 1.1750 mm",
+                    "pos": {
+                        "x": 122.825,
+                        "y": 134.0
+                    },
+                    "uuid": "2580cbe2-0c94-4f4e-bed3-f86d6e0107c3"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 4.6000 mm",
+                    "pos": {
+                        "x": 123.599999,
+                        "y": 137.899999
+                    },
+                    "uuid": "ebd36787-202f-44fb-86c3-17335094816f"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Tracks crossing",
+            "items": [
+                {
+                    "description": "Track [PROT_CHG] on B.Cu, length 1.5491 mm",
+                    "pos": {
+                        "x": 122.435,
+                        "y": 138.975
+                    },
+                    "uuid": "82a500dd-d78f-4b5e-9ae0-675b36f71a28"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 123.299999,
+                        "y": 139.899999
+                    },
+                    "uuid": "e80e217f-3b4c-4de3-b457-872c205b45c0"
+                }
+            ],
+            "severity": "error",
+            "type": "tracks_crossing"
+        },
+        {
+            "description": "Items shorting two nets (nets PROT_CHG and PROTECTED_RAW)",
+            "items": [
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 140.1
+                    },
+                    "uuid": "dcdd929a-dc6c-420f-bfef-227955f9e617"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 123.299999,
+                        "y": 139.899999
+                    },
+                    "uuid": "e80e217f-3b4c-4de3-b457-872c205b45c0"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0099 mm)",
+            "items": [
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "9ef6afe6-aea0-4d23-89ee-8d7f561ebe60"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 121.199999,
+                        "y": 132.199999
+                    },
+                    "uuid": "da805cd1-8ff2-4f51-a407-a01c06133734"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0890 mm)",
+            "items": [
+                {
+                    "description": "Track [PROT_CHG] on B.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 130.65
+                    },
+                    "uuid": "116636cf-19cd-4f43-9455-848d92605888"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 132.099999
+                    },
+                    "uuid": "89c75e1d-d2d5-4c87-976d-b84bf1b32246"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROT_CHG and PROTECTED_RAW)",
+            "items": [
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 131.65
+                    },
+                    "uuid": "4a7d6f47-7830-4bed-a62a-53be2cd2aa56"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 132.099999
+                    },
+                    "uuid": "89c75e1d-d2d5-4c87-976d-b84bf1b32246"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets PROT_CHG and PROTECTED_RAW)",
+            "items": [
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 134.0
+                    },
+                    "uuid": "6b7016be-2ee5-42f2-a323-924ddc54b4f6"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 4.6000 mm",
+                    "pos": {
+                        "x": 123.599999,
+                        "y": 137.899999
+                    },
+                    "uuid": "ebd36787-202f-44fb-86c3-17335094816f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets PROT_DSG and PROTECTED_RAW)",
+            "items": [
+                {
+                    "description": "Track [PROT_DSG] on B.Cu, length 2.0371 mm",
+                    "pos": {
+                        "x": 114.615,
+                        "y": 137.025
+                    },
+                    "uuid": "62903f2a-1fe9-4130-853d-c73e16736948"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 113.299999,
+                        "y": 136.399999
+                    },
+                    "uuid": "9e19a7d5-21b9-4297-8cf4-df562d4050d8"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets PROT_DSG and VBAT)",
+            "items": [
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.2,
+                        "y": 134.0
+                    },
+                    "uuid": "9852d271-c62b-4c1d-b181-d8d256ee954e"
+                },
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 116.499999,
+                        "y": 134.499999
+                    },
+                    "uuid": "fad81e87-ca25-408f-b5c7-cd0f3a070e0a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets PROT_DSG and PROTECTED_RAW)",
+            "items": [
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 136.1
+                    },
+                    "uuid": "c95bef05-c650-47c6-a59c-a28d855f2cde"
+                },
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 112.699999,
+                        "y": 135.699999
+                    },
+                    "uuid": "f6a0cc2c-68b3-46b4-8d4b-180646c7cbbd"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0373 mm)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 112.599999,
+                        "y": 135.599999
+                    },
+                    "uuid": "c1d3f2f5-1212-496f-81e2-2f818fb635b5"
+                },
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 136.1
+                    },
+                    "uuid": "c95bef05-c650-47c6-a59c-a28d855f2cde"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_CHG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 2.5000 mm",
+                    "pos": {
+                        "x": 120.899999,
+                        "y": 131.999999
+                    },
+                    "uuid": "96aba055-bb16-4daf-bdee-86a8e66b7f9c"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "9ef6afe6-aea0-4d23-89ee-8d7f561ebe60"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1325 mm)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 121.199999,
+                        "y": 132.299999
+                    },
+                    "uuid": "898041f1-e0aa-41f8-8fb8-3a349c91e8f6"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "9ef6afe6-aea0-4d23-89ee-8d7f561ebe60"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_CHG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 121.099999,
+                        "y": 132.099999
+                    },
+                    "uuid": "8a129ff5-3184-417a-b4bb-51c0ab18db07"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "9ef6afe6-aea0-4d23-89ee-8d7f561ebe60"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1403 mm)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 123.999999,
+                        "y": 139.699999
+                    },
+                    "uuid": "722372b7-ed13-4506-b56c-b244e0132e9c"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 140.1
+                    },
+                    "uuid": "dcdd929a-dc6c-420f-bfef-227955f9e617"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_CHG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 123.199999,
+                        "y": 139.999999
+                    },
+                    "uuid": "5f65b24f-4d6c-461a-be65-d06e0a45b311"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 140.1
+                    },
+                    "uuid": "dcdd929a-dc6c-420f-bfef-227955f9e617"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0230 mm)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 113.399999,
+                        "y": 136.599999
+                    },
+                    "uuid": "43854d00-158b-432a-9b35-48b2261de741"
+                },
+                {
+                    "description": "Track [PROT_DSG] on B.Cu, length 2.0371 mm",
+                    "pos": {
+                        "x": 114.615,
+                        "y": 137.025
+                    },
+                    "uuid": "62903f2a-1fe9-4130-853d-c73e16736948"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_CHG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 123.899999,
+                        "y": 139.799999
+                    },
+                    "uuid": "24fbe48c-c440-4385-9de2-489aec31dd07"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 140.1
+                    },
+                    "uuid": "dcdd929a-dc6c-420f-bfef-227955f9e617"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_DSG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.8485 mm",
+                    "pos": {
+                        "x": 112.699999,
+                        "y": 135.799999
+                    },
+                    "uuid": "07d013e3-0fcb-432c-b324-dbf0d2e4a5c6"
+                },
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 136.1
+                    },
+                    "uuid": "c95bef05-c650-47c6-a59c-a28d855f2cde"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0846 mm)",
+            "items": [
+                {
+                    "description": "Track [PROT_DSG] on In2.Cu, length 2.9698 mm",
+                    "pos": {
+                        "x": 122.699999,
+                        "y": 130.599999
+                    },
+                    "uuid": "00b8c533-1b67-44e8-a3ca-fe829fa4b54f"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 131.65
+                    },
+                    "uuid": "4a7d6f47-7830-4bed-a62a-53be2cd2aa56"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_CHG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.4000 mm",
+                    "pos": {
+                        "x": 123.499999,
+                        "y": 139.799999
+                    },
+                    "uuid": "07844340-8ed3-49c9-bb4e-221e0f0df648"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 140.1
+                    },
+                    "uuid": "dcdd929a-dc6c-420f-bfef-227955f9e617"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.1114 mm)",
+            "items": [
+                {
+                    "description": "Track [PROT_DSG] on B.Cu, length 1.4631 mm",
+                    "pos": {
+                        "x": 115.825,
+                        "y": 133.5
+                    },
+                    "uuid": "9245af39-2245-49dd-afbb-0e1e78924dc3"
+                },
+                {
+                    "description": "Track [CELL_P] on B.Cu, length 4.3841 mm",
+                    "pos": {
+                        "x": 116.499999,
+                        "y": 132.399999
+                    },
+                    "uuid": "97c914db-76f0-4179-9e46-dc6f0beacb1e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets PROTECTED_RAW and PROT_DSG)",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 113.299999,
+                        "y": 136.499999
+                    },
+                    "uuid": "057710fd-66f3-4156-b59d-cfbb9b08475b"
+                },
+                {
+                    "description": "Track [PROT_DSG] on B.Cu, length 2.0371 mm",
+                    "pos": {
+                        "x": 114.615,
+                        "y": 137.025
+                    },
+                    "uuid": "62903f2a-1fe9-4130-853d-c73e16736948"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets USB_DM and PROT_DSG)",
+            "items": [
+                {
+                    "description": "Track [USB_DM] on F.Cu, length 10.9488 mm",
+                    "pos": {
+                        "x": 113.825,
+                        "y": 137.0
+                    },
+                    "uuid": "67f56b4a-7a24-482a-b0bd-00b52b06b4e7"
+                },
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 112.8,
+                        "y": 136.1
+                    },
+                    "uuid": "c95bef05-c650-47c6-a59c-a28d855f2cde"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0602 mm)",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.9899 mm",
+                    "pos": {
+                        "x": 115.799999,
+                        "y": 135.199999
+                    },
+                    "uuid": "42f34dbd-dac9-431b-a03e-7023291ad95b"
+                },
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.2,
+                        "y": 134.0
+                    },
+                    "uuid": "9852d271-c62b-4c1d-b181-d8d256ee954e"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets VBAT and PROT_DSG)",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 1.5556 mm",
+                    "pos": {
+                        "x": 116.499999,
+                        "y": 134.399999
+                    },
+                    "uuid": "1e098c53-4a83-413c-aa32-75d4608fc5f0"
+                },
+                {
+                    "description": "Via [PROT_DSG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 117.2,
+                        "y": 134.0
+                    },
+                    "uuid": "9852d271-c62b-4c1d-b181-d8d256ee954e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Drilled hole too close to other hole (board setup constraints min 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 131.65
+                    },
+                    "uuid": "4a7d6f47-7830-4bed-a62a-53be2cd2aa56"
+                },
+                {
+                    "description": "Via [PROT_CHG] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 120.999999,
+                        "y": 131.599999
+                    },
+                    "uuid": "9ef6afe6-aea0-4d23-89ee-8d7f561ebe60"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CELL_P] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 123.999999,
+                        "y": 139.099999
+                    },
+                    "uuid": "08bd1e4d-50fa-400b-b948-99ff7c06a963"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on F.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 134.5
+                    },
+                    "uuid": "39a2a2ca-a532-4c04-a9c3-d8b9aa9b22bc"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [PROTECTED_RAW] on In2.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 114.899999,
+                        "y": 138.799999
+                    },
+                    "uuid": "2c07433b-89be-4d4d-a560-eaa92dbfdb05"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

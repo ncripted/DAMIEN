@@ -1,0 +1,17 @@
+{
+  "revision": "E",
+  "preserved_Rev_D_files": 272,
+  "original_zip_sha256": "b98c896f4cad7e2c9cc6c30c1111b8cb07aa9229da0994c1721cee39b67e5380",
+  "outline_exactly_preserved": true,
+  "motor_and_mount_pad_geometry_preserved": true,
+  "antenna_footprint_rule_area_preserved": true,
+  "custom_rules_unchanged": true,
+  "board_design_settings_unchanged": true,
+  "In1_non_ground_track_count": 0,
+  "limitations": [
+    "Configured rules include inherited ignored checks and the J1-specific hole-clearance rule.",
+    "This evidence is not thermal, RF, structural, assembly-process or cell qualification."
+  ],
+  "global_antenna_keepout_exactly_preserved": true,
+  "global_rule_area_count": 1
+}

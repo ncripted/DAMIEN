@@ -1,0 +1,121 @@
+[
+  {
+    "ref": "Q12",
+    "value": "MMBT3906",
+    "key": "PNP_123",
+    "symbol": "UGV:PNP_123",
+    "fp": "Package_TO_SOT_SMD__SOT-23",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23",
+    "nets": {
+      "1": "CUT_PNP_B",
+      "2": "CELL_P",
+      "3": "CUT_GATE"
+    },
+    "x": 132,
+    "y": 130,
+    "a": 0,
+    "side": "B",
+    "mpn": "MMBT3906-7-F",
+    "uuid": "06346ec4-330d-472f-9545-2c0ea983d3c6",
+    "group": "Independent discharge cutoff",
+    "note": "Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.",
+    "sheet_uuid": "149847e2-56fb-4325-93ee-59d89adc0718",
+    "sx": 50.8,
+    "sy": 63.5
+  },
+  {
+    "ref": "Q13",
+    "value": "DMP2008UFG-7",
+    "key": "PFET_3333",
+    "symbol": "UGV:PFET_3333",
+    "fp": "Discharge_PowerDI3333_8",
+    "localfp": "UGV:Discharge_PowerDI3333_8",
+    "nets": {
+      "1": "CELL_P",
+      "2": "CELL_P",
+      "3": "CELL_P",
+      "4": "CUT_GATE",
+      "5": "CELL_SWITCHED"
+    },
+    "x": 128,
+    "y": 135.5,
+    "a": 0,
+    "side": "B",
+    "mpn": "DMP2008UFG-7",
+    "uuid": "a2719dcc-b7b1-4b74-9555-54dc19d35ff5",
+    "group": "Independent discharge cutoff",
+    "note": "Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.",
+    "sheet_uuid": "149847e2-56fb-4325-93ee-59d89adc0718",
+    "sx": 111.75999999999999,
+    "sy": 63.5
+  },
+  {
+    "ref": "R65",
+    "value": "47k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_RESET_N",
+      "2": "CUT_PNP_B"
+    },
+    "x": 135,
+    "y": 126,
+    "a": 0,
+    "side": "B",
+    "mpn": "",
+    "uuid": "ee76bb0a-51b0-47cc-8abd-7f90249f512d",
+    "group": "Independent discharge cutoff",
+    "note": "Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.",
+    "sheet_uuid": "149847e2-56fb-4325-93ee-59d89adc0718",
+    "sx": 172.72,
+    "sy": 63.5
+  },
+  {
+    "ref": "R66",
+    "value": "1M",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_P",
+      "2": "CUT_PNP_B"
+    },
+    "x": 135,
+    "y": 129,
+    "a": 0,
+    "side": "B",
+    "mpn": "",
+    "uuid": "78eebd5b-b130-413b-9574-0b824cb5918f",
+    "group": "Independent discharge cutoff",
+    "note": "Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.",
+    "sheet_uuid": "149847e2-56fb-4325-93ee-59d89adc0718",
+    "sx": 233.68,
+    "sy": 63.5
+  },
+  {
+    "ref": "R67",
+    "value": "56k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CUT_GATE",
+      "2": "CELL_N"
+    },
+    "x": 132,
+    "y": 133.5,
+    "a": 0,
+    "side": "B",
+    "mpn": "",
+    "uuid": "765109b2-1b96-47f3-adfe-a2031d50a068",
+    "group": "Independent discharge cutoff",
+    "note": "Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.",
+    "sheet_uuid": "149847e2-56fb-4325-93ee-59d89adc0718",
+    "sx": 294.64,
+    "sy": 63.5
+  }
+]

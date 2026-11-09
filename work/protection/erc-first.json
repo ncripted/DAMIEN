@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-03T22:57:59",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365",
+            "violations": []
+        },
+        {
+            "path": "/1. Controller/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365/7e5b72a6-e69a-5d61-93ac-9752d47868e3",
+            "violations": []
+        },
+        {
+            "path": "/4. Regulator/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365/c87223e1-6621-5c4c-82e6-3da1791ace66",
+            "violations": []
+        },
+        {
+            "path": "/2. Motors/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365/8835b7ca-592e-5809-8122-b7e48a936a17",
+            "violations": []
+        },
+        {
+            "path": "/5. Interlock/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365/bf1fb3b6-1d3a-5a3a-9ea3-ad65a097dd35",
+            "violations": []
+        },
+        {
+            "path": "/3. Charging/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365/b07535ac-8238-53fe-9970-3024ab930b89",
+            "violations": []
+        },
+        {
+            "path": "/Battery protection/",
+            "uuid_path": "/ced0a0df-fe17-5a4a-b0e5-4ae92852d365/b9c92597-ef34-5450-bce8-b7ddcef5cdaf",
+            "violations": []
+        }
+    ],
+    "source": "omni_ugv.kicad_sch"
+}

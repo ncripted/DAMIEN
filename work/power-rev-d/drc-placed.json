@@ -1,0 +1,230 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-06T16:05:44",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of U14 on F.Cu",
+                    "pos": {
+                        "x": 64.8625,
+                        "y": 97.95
+                    },
+                    "uuid": "d7576ed1-24c4-4fbd-8ef0-bd30418c068d"
+                },
+                {
+                    "description": "Pad 2 [GND] of C37 on F.Cu",
+                    "pos": {
+                        "x": 66.775,
+                        "y": 101.0
+                    },
+                    "uuid": "0a31665e-0451-470d-b2a8-592c7f6ffbf5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [GND] of U14 on F.Cu",
+                    "pos": {
+                        "x": 64.8625,
+                        "y": 97.95
+                    },
+                    "uuid": "d7576ed1-24c4-4fbd-8ef0-bd30418c068d"
+                },
+                {
+                    "description": "Pad 2 [GND] of R64 on F.Cu",
+                    "pos": {
+                        "x": 63.825,
+                        "y": 94.0
+                    },
+                    "uuid": "2d901104-cb12-4c26-bd72-a6aa0d9a1eb1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C37 on F.Cu",
+                    "pos": {
+                        "x": 66.775,
+                        "y": 101.0
+                    },
+                    "uuid": "0a31665e-0451-470d-b2a8-592c7f6ffbf5"
+                },
+                {
+                    "description": "Track [GND] on F.Cu, length 2.9000 mm",
+                    "pos": {
+                        "x": 71.0,
+                        "y": 98.999999
+                    },
+                    "uuid": "6f8dae9a-df61-480c-8a5b-3e0afaf271cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 5 [+3V3] of U14 on F.Cu",
+                    "pos": {
+                        "x": 67.1375,
+                        "y": 96.05
+                    },
+                    "uuid": "0e214a62-36d7-4ebb-b1f9-6f2bbb0eb3f3"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of C37 on F.Cu",
+                    "pos": {
+                        "x": 65.225,
+                        "y": 101.0
+                    },
+                    "uuid": "278c544e-ef4b-4d12-9e8f-e49191b4d5fc"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [+3V3] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 77.15,
+                        "y": 102.05
+                    },
+                    "uuid": "4d94bff0-e3cc-4dfb-ac67-1196cc4b3905"
+                },
+                {
+                    "description": "Pad 5 [+3V3] of U14 on F.Cu",
+                    "pos": {
+                        "x": 67.1375,
+                        "y": 96.05
+                    },
+                    "uuid": "0e214a62-36d7-4ebb-b1f9-6f2bbb0eb3f3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [DRIVE_REQ] of U14 on F.Cu",
+                    "pos": {
+                        "x": 67.1375,
+                        "y": 97.95
+                    },
+                    "uuid": "9a8ba611-6edc-4ee7-8002-16129c516c1e"
+                },
+                {
+                    "description": "Pad 1 [DRIVE_REQ] of R27 on F.Cu",
+                    "pos": {
+                        "x": 124.175,
+                        "y": 108.5
+                    },
+                    "uuid": "10c9ab0f-5c22-46c7-8061-b50905722feb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [DRIVE_REQ_RAW] of R64 on F.Cu",
+                    "pos": {
+                        "x": 62.175,
+                        "y": 94.0
+                    },
+                    "uuid": "f3b115b6-2f10-4e78-b40d-c604c5e48ac2"
+                },
+                {
+                    "description": "Pad 2 [DRIVE_REQ_RAW] of U14 on F.Cu",
+                    "pos": {
+                        "x": 64.8625,
+                        "y": 97.0
+                    },
+                    "uuid": "43509bb6-979c-4137-abdb-1b95c52c4648"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [DRIVE_REQ_RAW] of U14 on F.Cu",
+                    "pos": {
+                        "x": 64.8625,
+                        "y": 97.0
+                    },
+                    "uuid": "43509bb6-979c-4137-abdb-1b95c52c4648"
+                },
+                {
+                    "description": "Pad 35 [DRIVE_REQ_RAW] of U1 on F.Cu",
+                    "pos": {
+                        "x": 119.75,
+                        "y": 69.09
+                    },
+                    "uuid": "0b083812-633d-474d-b65e-740cc058c612"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

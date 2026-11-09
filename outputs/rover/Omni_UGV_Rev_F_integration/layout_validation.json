@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED - placement and routing in progress",
+  "outline_and_motor_mount_pads_match_E1": true,
+  "board_layers": 4,
+  "board_pad_power_split_verified": true,
+  "in1_signal_tracks": 0,
+  "drc_by_type": {
+    "track_dangling": 6,
+    "via_dangling": 1
+  },
+  "drc_errors": 0,
+  "unconnected_items": 22,
+  "schematic_parity_issues": 0
+}

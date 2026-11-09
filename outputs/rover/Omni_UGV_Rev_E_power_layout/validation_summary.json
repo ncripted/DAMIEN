@@ -1,0 +1,50 @@
+{
+  "revision": "E",
+  "date": "2026-11-07",
+  "KiCad": "10.0.8",
+  "DrcErrors": 0,
+  "DrcWarnings": 0,
+  "Unconnected": 0,
+  "ParityIssues": 0,
+  "ErcViolations": 0,
+  "zones_refilled_and_saved": true,
+  "physical_tests_performed": false,
+  "fabrication_gate": "BLOCKED",
+  "source_pad_vias_requiring_process_review": 2,
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "PTH inside courtyard",
+      "key": "pth_inside_courtyard"
+    },
+    {
+      "description": "NPTH inside courtyard",
+      "key": "npth_inside_courtyard"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "primary_artifacts": [
+    "omni_ugv.kicad_pro",
+    "omni_ugv.kicad_pcb",
+    "Schematic.pdf",
+    "engineering/SIX_STEP_REVIEW.md"
+  ]
+}

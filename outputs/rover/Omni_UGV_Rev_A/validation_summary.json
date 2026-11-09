@@ -1,0 +1,16 @@
+{
+  "status": "UNBUILT_ENGINEERING_PROTOTYPE_AUDIT_INCOMPLETE",
+  "kicad_version": "10.0.8",
+  "erc_violations": 0,
+  "drc": {
+    "errors": 0,
+    "warnings": 1,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0
+  },
+  "functional_net_assigned_pins": 302,
+  "explicit_no_connect_pins": 11,
+  "local_manufacturing_exception": "J1 internal hole clearance 0.19mm requires fab acceptance; global 0.25mm unchanged",
+  "release_blockers": "engineering/AUDIT.md",
+  "original_zip_sha256": "b98c896f4cad7e2c9cc6c30c1111b8cb07aa9229da0994c1721cee39b67e5380"
+}

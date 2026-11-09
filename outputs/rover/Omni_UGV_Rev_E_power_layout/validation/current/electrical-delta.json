@@ -1,0 +1,152 @@
+[
+  {
+    "Reference": "R67",
+    "Physical_pin": "2",
+    "Before": null,
+    "After": "CELL_N"
+  },
+  {
+    "Reference": "Q12",
+    "Physical_pin": "2",
+    "Before": null,
+    "After": "CELL_P"
+  },
+  {
+    "Reference": "R46",
+    "Physical_pin": "1",
+    "Before": "VBAT",
+    "After": "CELL_P"
+  },
+  {
+    "Reference": "R66",
+    "Physical_pin": "1",
+    "Before": null,
+    "After": "CELL_P"
+  },
+  {
+    "Reference": "R65",
+    "Physical_pin": "1",
+    "Before": null,
+    "After": "CELL_UV_RESET_N"
+  },
+  {
+    "Reference": "Q12",
+    "Physical_pin": "3",
+    "Before": null,
+    "After": "CUT_GATE"
+  },
+  {
+    "Reference": "Q13",
+    "Physical_pin": "4",
+    "Before": null,
+    "After": "CUT_GATE"
+  },
+  {
+    "Reference": "R67",
+    "Physical_pin": "1",
+    "Before": null,
+    "After": "CUT_GATE"
+  },
+  {
+    "Reference": "Q12",
+    "Physical_pin": "1",
+    "Before": null,
+    "After": "CUT_PNP_B"
+  },
+  {
+    "Reference": "R65",
+    "Physical_pin": "2",
+    "Before": null,
+    "After": "CUT_PNP_B"
+  },
+  {
+    "Reference": "R66",
+    "Physical_pin": "2",
+    "Before": null,
+    "After": "CUT_PNP_B"
+  },
+  {
+    "Reference": "Q13",
+    "Physical_pin": "1",
+    "Before": null,
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "Q13",
+    "Physical_pin": "2",
+    "Before": null,
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "Q13",
+    "Physical_pin": "3",
+    "Before": null,
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "Q8",
+    "Physical_pin": "1",
+    "Before": "VBAT",
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "Q8",
+    "Physical_pin": "2",
+    "Before": "VBAT",
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "Q8",
+    "Physical_pin": "3",
+    "Before": "VBAT",
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "R39",
+    "Physical_pin": "1",
+    "Before": "VBAT",
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "R41",
+    "Physical_pin": "2",
+    "Before": "VBAT",
+    "After": "PROTECTED_RAW"
+  },
+  {
+    "Reference": "R36",
+    "Physical_pin": "4",
+    "Before": null,
+    "After": "PROT_CS_SENSE"
+  },
+  {
+    "Reference": "U7",
+    "Physical_pin": "4",
+    "Before": "GND",
+    "After": "PROT_CS_SENSE"
+  },
+  {
+    "Reference": "C24",
+    "Physical_pin": "2",
+    "Before": "CELL_N",
+    "After": "PROT_VSS_SENSE"
+  },
+  {
+    "Reference": "R36",
+    "Physical_pin": "3",
+    "Before": null,
+    "After": "PROT_VSS_SENSE"
+  },
+  {
+    "Reference": "U7",
+    "Physical_pin": "3",
+    "Before": "CELL_N",
+    "After": "PROT_VSS_SENSE"
+  },
+  {
+    "Reference": "Q13",
+    "Physical_pin": "5",
+    "Before": null,
+    "After": "VBAT"
+  }
+]

@@ -1,0 +1,954 @@
+[
+  {
+    "ref": "U10",
+    "value": "TPS3840DL31DBVR",
+    "key": "TPS3840_DL_DBV",
+    "symbol": "UGV:TPS3840_DL_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": "CELL_UV_RESET_N",
+      "2": "CELL_P",
+      "3": "CELL_N",
+      "4": "CELL_P",
+      "5": "CELL_UV_CT"
+    },
+    "x": 73.0,
+    "y": 108.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "TPS3840DL31DBVR",
+    "uuid": "72195077-4ca8-4846-af10-154e7a6b6711",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 45.72,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -7.0,
+      -1.25
+    ]
+  },
+  {
+    "ref": "Q9",
+    "value": "MMBT3906",
+    "key": "PNP_123",
+    "symbol": "UGV:PNP_123",
+    "fp": "Package_TO_SOT_SMD__SOT-23",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23",
+    "nets": {
+      "1": "CELL_UV_PNP_B",
+      "2": "VBAT",
+      "3": "CELL_UV_FAULT"
+    },
+    "x": 71.5,
+    "y": 116.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "MMBT3906-7-F",
+    "uuid": "8374fbaf-c50d-486b-98a0-b1051d8478d4",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 45.72,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -13.5,
+      6.0
+    ]
+  },
+  {
+    "ref": "Q10",
+    "value": "MMBT3904",
+    "key": "NPN_123",
+    "symbol": "UGV:NPN_123",
+    "fp": "Package_TO_SOT_SMD__SOT-23",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23",
+    "nets": {
+      "1": "CELL_UV_EN_B",
+      "2": "CELL_N",
+      "3": "SYS_ON"
+    },
+    "x": 70.5,
+    "y": 120.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "MMBT3904-7-F",
+    "uuid": "2abfdbb9-60b0-4a4b-bbb3-7145ce687bf8",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 45.72,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -16.5,
+      4.25
+    ]
+  },
+  {
+    "ref": "Q11",
+    "value": "MMBT3904",
+    "key": "NPN_123",
+    "symbol": "UGV:NPN_123",
+    "fp": "Package_TO_SOT_SMD__SOT-23",
+    "localfp": "UGV:Package_TO_SOT_SMD__SOT-23",
+    "nets": {
+      "1": "CELL_UV_MOTOR_B",
+      "2": "CELL_N",
+      "3": "DRIVE_ENABLE"
+    },
+    "x": 99.25,
+    "y": 89.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "MMBT3904-7-F",
+    "uuid": "5fd83101-5a63-4ca1-a709-010f0ade6244",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 45.72,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      2.5,
+      -17.25
+    ]
+  },
+  {
+    "ref": "R46",
+    "value": "100k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "CELL_UV_RESET_N"
+    },
+    "x": 74.75,
+    "y": 104.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "1323b7a0-f0ad-45c3-89ff-82dcfe03b27b",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 91.44,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -3.25,
+      -1.25
+    ]
+  },
+  {
+    "ref": "R47",
+    "value": "22k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_RESET_N",
+      "2": "CELL_UV_PNP_B"
+    },
+    "x": 77.5,
+    "y": 110.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "3cca4912-93ea-4030-b7f7-83fa4e564a64",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 91.44,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -5.5,
+      4.75
+    ]
+  },
+  {
+    "ref": "R48",
+    "value": "100k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "CELL_UV_PNP_B"
+    },
+    "x": 74.25,
+    "y": 102.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "ad13d306-f885-42f8-8e6b-05ab8416fa50",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 91.44,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -10.75,
+      -0.75
+    ]
+  },
+  {
+    "ref": "R49",
+    "value": "1M",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_FAULT",
+      "2": "CELL_N"
+    },
+    "x": 96.75,
+    "y": 107.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "57fc8671-9be7-48d1-8fa3-4b8ccd19b2cb",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 91.44,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      8.75,
+      1.0
+    ]
+  },
+  {
+    "ref": "R50",
+    "value": "33k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_FAULT",
+      "2": "CELL_UV_EN_B"
+    },
+    "x": 68.75,
+    "y": 112.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "47e8e989-b78a-4b0f-a5a8-1791783bab5b",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 137.16,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -15.25,
+      -3.25
+    ]
+  },
+  {
+    "ref": "R51",
+    "value": "1M",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_EN_B",
+      "2": "CELL_N"
+    },
+    "x": 103.5,
+    "y": 134.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "831243c7-840f-4b09-9b4f-10ec5a3744c5",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 137.16,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      5.25,
+      11.75
+    ]
+  },
+  {
+    "ref": "R52",
+    "value": "3.3k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_FAULT",
+      "2": "CELL_UV_MOTOR_B"
+    },
+    "x": 100.0,
+    "y": 110.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "7694dcaa-ae8b-4041-9378-d1ff50b1c65c",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 137.16,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      11.0,
+      0.0
+    ]
+  },
+  {
+    "ref": "R53",
+    "value": "1M",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_MOTOR_B",
+      "2": "CELL_N"
+    },
+    "x": 104.25,
+    "y": 118.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "5abbc9a8-a611-4cfa-a051-2aea305b9d7f",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 137.16,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      12.25,
+      4.0
+    ]
+  },
+  {
+    "ref": "R54",
+    "value": "10k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "SYS_ON_REQ",
+      "2": "SYS_ON"
+    },
+    "x": 109.0,
+    "y": 119.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "cf9b9718-86b1-4b5c-a3d8-72876b84f237",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 182.88,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      14.25,
+      0.5
+    ]
+  },
+  {
+    "ref": "C30",
+    "value": "100n/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CELL_P",
+      "2": "CELL_N"
+    },
+    "x": 68.25,
+    "y": 108.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "7e78986c-f308-4b7a-94d6-f3f85a6f7be6",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 182.88,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -8.75,
+      -1.25
+    ]
+  },
+  {
+    "ref": "C31",
+    "value": "100n/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CELL_UV_CT",
+      "2": "CELL_N"
+    },
+    "x": 72.75,
+    "y": 112.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "d2374038-84e1-4b23-8e82-ea6fcb2775fe",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 182.88,
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "shift": [
+      -7.25,
+      -1.25
+    ]
+  },
+  {
+    "ref": "U11",
+    "value": "TLV75533PDBVR",
+    "key": "TLV755P_DBV",
+    "symbol": "UGV:TLV755P_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND",
+      "3": "USB_5V",
+      "4": null,
+      "5": "CHG_3V3"
+    },
+    "x": 75.0,
+    "y": 99.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "TLV75533PDBVR",
+    "uuid": "b6fe6cfd-5e64-4f6f-ba30-93b3cb9228f1",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 45.72,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "ref": "U12",
+    "value": "TLV6700DDCR",
+    "key": "TLV6700_DDC",
+    "symbol": "UGV:TLV6700_DDC",
+    "fp": "Power_SOT23_6",
+    "localfp": "UGV:Power_SOT23_6",
+    "nets": {
+      "1": "CHG_TEMP_OK_OD",
+      "2": "GND",
+      "3": "CHG_HOT_SENSE",
+      "4": "CHG_COLD_SENSE",
+      "5": "USB_5V",
+      "6": "CHG_TEMP_OK_OD"
+    },
+    "x": 83.0,
+    "y": 93.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "TLV6700DDCR",
+    "uuid": "b679565c-4bca-4d5d-9860-28fde6a680b7",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 45.72,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -1.0,
+      -0.75
+    ]
+  },
+  {
+    "ref": "U13",
+    "value": "SN74LVC1G14DBVR",
+    "key": "LVC1G14_DBV",
+    "symbol": "UGV:LVC1G14_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": null,
+      "2": "CHG_TEMP_ALLOW_RC",
+      "3": "GND",
+      "4": "CHG_DISABLE",
+      "5": "USB_5V"
+    },
+    "x": 89.75,
+    "y": 100.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "SN74LVC1G14DBVR",
+    "uuid": "68070610-17e3-4355-b73b-45fe8895a4e0",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 45.72,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -0.25,
+      2.25
+    ]
+  },
+  {
+    "ref": "R55",
+    "value": "10k 1%",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_3V3",
+      "2": "CELL_CHG_TEMP"
+    },
+    "x": 77.0,
+    "y": 94.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "1ef271a6-0c26-4482-a00f-cf088787dd45",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 45.72,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "ref": "R56",
+    "value": "200k 1%",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_CHG_TEMP",
+      "2": "CHG_HOT_SENSE"
+    },
+    "x": 81.0,
+    "y": 90.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "653f23f1-d5da-4c4e-a157-607f3038a51b",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 91.44,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      0.0,
+      -1.0
+    ]
+  },
+  {
+    "ref": "R57",
+    "value": "100k 1%",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_HOT_SENSE",
+      "2": "GND"
+    },
+    "x": 84.25,
+    "y": 97.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "2821666b-fc00-4576-bf18-258aacbd7673",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 91.44,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      3.25,
+      0.75
+    ]
+  },
+  {
+    "ref": "R58",
+    "value": "442k 1%",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CELL_CHG_TEMP",
+      "2": "CHG_COLD_SENSE"
+    },
+    "x": 84.75,
+    "y": 88.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "08e0463d-7882-4fbd-a217-7b037d650abd",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 91.44,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -0.25,
+      -2.75
+    ]
+  },
+  {
+    "ref": "R59",
+    "value": "100k 1%",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_COLD_SENSE",
+      "2": "GND"
+    },
+    "x": 88.5,
+    "y": 97.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "48072e36-f4c9-48dd-ade3-49b3f6a88ca0",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 91.44,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      3.5,
+      0.0
+    ]
+  },
+  {
+    "ref": "R60",
+    "value": "10k 1%",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_TS_BIAS",
+      "2": "GND"
+    },
+    "x": 92.25,
+    "y": 131.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "0437a3a8-cab3-4c40-a9f2-b03c38d3ad85",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 137.16,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -2.25,
+      12.25
+    ]
+  },
+  {
+    "ref": "R61",
+    "value": "100k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "CHG_TEMP_ALLOW_RC"
+    },
+    "x": 89.75,
+    "y": 94.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "72476a4b-c61b-433e-8da3-9eff32e15ef8",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 137.16,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -1.25,
+      0.5
+    ]
+  },
+  {
+    "ref": "R62",
+    "value": "1k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_TEMP_OK_OD",
+      "2": "CHG_TEMP_ALLOW_RC"
+    },
+    "x": 89.0,
+    "y": 91.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "628ec6a1-0457-4016-9799-f95beebe787b",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 137.16,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      1.0,
+      -3.0
+    ]
+  },
+  {
+    "ref": "R63",
+    "value": "100k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "CHG_DISABLE"
+    },
+    "x": 94.5,
+    "y": 99.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "e8f636cc-c6cf-4192-b03a-348c1784ee0f",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 137.16,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      1.5,
+      1.25
+    ]
+  },
+  {
+    "ref": "C32",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "x": 70.25,
+    "y": 99.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "73908fd1-aa4d-4cc9-99ef-3dc31c09ffc2",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 182.88,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -1.75,
+      0.0
+    ]
+  },
+  {
+    "ref": "C33",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CHG_3V3",
+      "2": "GND"
+    },
+    "x": 79.75,
+    "y": 97.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "80c80f9a-9fb8-4fad-9fff-931bef3021d5",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 142.24,
+    "sy": 182.88,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      1.75,
+      -1.25
+    ]
+  },
+  {
+    "ref": "C34",
+    "value": "100n/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "x": 83.0,
+    "y": 100.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "fecc888f-d1a0-4417-8fd9-dd1c19ab280e",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 233.68,
+    "sy": 182.88,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -1.0,
+      -0.75
+    ]
+  },
+  {
+    "ref": "C35",
+    "value": "220n/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CHG_TEMP_ALLOW_RC",
+      "2": "GND"
+    },
+    "x": 85.25,
+    "y": 103.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "5a3d3726-98c8-4ab2-abf2-b421fe80f3dc",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 325.12,
+    "sy": 182.88,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      -4.75,
+      1.25
+    ]
+  },
+  {
+    "ref": "C36",
+    "value": "100n/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "USB_5V",
+      "2": "GND"
+    },
+    "x": 95.5,
+    "y": 103.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "135d8770-b5b6-4a33-8ce6-c4de12c9733e",
+    "group": "Independent charging temperature",
+    "note": "Rev D power audit; engineering prototype, qualification required",
+    "sx": 50.8,
+    "sy": 228.6,
+    "sheet_uuid": "c261e7a4-80fb-4a89-ac30-6eb5d110a845",
+    "shift": [
+      2.5,
+      1.25
+    ]
+  },
+  {
+    "ref": "U14",
+    "value": "SN74LVC1G17DBVR",
+    "key": "LVC1G17_DBV",
+    "symbol": "UGV:LVC1G17_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": null,
+      "2": "DRIVE_REQ_RAW",
+      "3": "GND",
+      "4": "DRIVE_REQ",
+      "5": "+3V3"
+    },
+    "x": 66,
+    "y": 97,
+    "a": 0,
+    "side": "F",
+    "mpn": "SN74LVC1G17DBVR",
+    "uuid": "c288c9bb-6e41-4637-83e7-4b17dec2568f",
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor",
+    "sx": 101.6,
+    "sy": 177.8
+  },
+  {
+    "ref": "R64",
+    "value": "100k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "DRIVE_REQ_RAW",
+      "2": "GND"
+    },
+    "x": 63,
+    "y": 94,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "b831de81-5d38-4a7a-80b3-c7f46d5add87",
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor",
+    "sx": 38.1,
+    "sy": 177.8
+  },
+  {
+    "ref": "C37",
+    "value": "100n/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "x": 66,
+    "y": 101,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "2ad0b430-1579-4981-bfc9-b37d20988fa6",
+    "sheet_uuid": "7dde3ab3-2d9f-4bc1-aa9d-23e5c830c64d",
+    "group": "Cell undervoltage shutdown",
+    "note": "Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor",
+    "sx": 69.85,
+    "sy": 203.2
+  }
+]

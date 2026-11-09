@@ -1,0 +1,162 @@
+Reference,Value,Functional_block,Role,Nets
+U1,ESP32-S3-WROOM-1-N8R8,Controller,,+3V3; CAM_D0; CAM_D1; CAM_D2; CAM_D3; CAM_D4; CAM_D5; CAM_D6; CAM_D7; CAM_HREF; CAM_PCLK; CAM_SCL; CAM_SDA; CAM_VSYNC; CAM_XCLK; CELL_TEMP_ADC; DRIVE_REQ_RAW; ESP_BOOT; ESP_EN; FAULT_U2; FAULT_U3; GND; LED_STATUS; M1_IN1; M1_IN2; M2_IN1; M2_IN2; M3_IN1; M3_IN2; USB_500_ENABLE; USB_DM; USB_DP; VBAT_ADC
+R1,10k,Controller,,+3V3; ESP_EN
+C1,1u/10V,Controller,,ESP_EN; GND
+R2,10k,Controller,,+3V3; ESP_BOOT
+C2,10u/10V,Controller,,+3V3; GND
+C3,100n/16V,Controller,,+3V3; GND
+SW1,RESET,Controller,,ESP_EN; GND
+SW2,BOOT,Controller,,ESP_BOOT; GND
+R3,1k,Controller,,LED_A; LED_STATUS
+D1,STATUS GREEN,Controller,,GND; LED_A
+R4,10k,Controller,,+3V3; CAM_RESET
+C4,100n/16V,Controller,,CAM_RESET; GND
+C5,10u/10V,Controller,,+3V3; GND
+U2,DRV8833PWP,Motors,,DRIVE_ENABLE; FAULT_U2; GND; M1_A; M1_B; M1_IN1; M1_IN2; M1_SENSE; M2_A; M2_B; M2_IN1; M2_IN2; M2_SENSE; U2_VCP; U2_VINT; VMOTOR
+C6,10u/10V,Motors,,GND; VMOTOR
+C7,2.2u/10V,Motors,,GND; U2_VINT
+C8,10n/25V,Motors,,U2_VCP; VMOTOR
+R5,10k,Motors,,+3V3; FAULT_U2
+R6,0.25R/0.5W,Motors,,GND; M1_SENSE
+R7,0.25R/0.5W,Motors,,GND; M2_SENSE
+U3,DRV8833PWP,Motors,,DRIVE_ENABLE; FAULT_U3; GND; M3_A; M3_B; M3_IN1; M3_IN2; M3_SENSE; U3_VCP; U3_VINT; VMOTOR
+C9,10u/10V,Motors,,GND; VMOTOR
+C10,2.2u/10V,Motors,,GND; U3_VINT
+C11,10n/25V,Motors,,U3_VCP; VMOTOR
+R8,10k,Motors,,+3V3; FAULT_U3
+R9,0.25R/0.5W,Motors,,GND; M3_SENSE
+M1,POLOLU 3065 MOTOR 1,Motors,Terminal slots require physical fit check; use separate printed clamps,M1_A; M1_B
+C12,100n/25V,Motors,,M1_A; M1_B
+M2,POLOLU 3065 MOTOR 2,Motors,Terminal slots require physical fit check; use separate printed clamps,M2_A; M2_B
+C13,100n/25V,Motors,,M2_A; M2_B
+M3,POLOLU 3065 MOTOR 3,Motors,Terminal slots require physical fit check; use separate printed clamps,M3_A; M3_B
+C14,100n/25V,Motors,,M3_A; M3_B
+C90,220u/10V,Motors,"6.3mm diameter, 5.8mm high; oversized hand-assembly lands; approved 220-470uF bulk range; check actual PWM ripple",GND; VMOTOR
+J1,USB-C,Charging,,GND; USB_5V; USB_CC1; USB_CC2; USB_DM_EXT; USB_DP_EXT
+R10,5.1k,Charging,,GND; USB_CC1
+R11,5.1k,Charging,,GND; USB_CC2
+U6,USBLC6-2SC6,Charging,,GND; USB_5V; USB_DM_EXT; USB_DP_EXT
+R12,22R,Charging,,USB_DM; USB_DM_EXT
+R13,22R,Charging,,USB_DP; USB_DP_EXT
+U5,BQ24074RGT,Charging,,CHG_DISABLE; CHG_ILIM; CHG_ISET; CHG_PGOOD; CHG_STATUS; CHG_TIMER; CHG_TS_BIAS; GND; SYS_RAW; USB_500_ENABLE; USB_5V; VBAT
+R14,3.57k,Charging,,CHG_ISET; GND
+R15,3.24k,Charging,,CHG_ILIM; GND
+R16,46.4k,Charging,,CHG_TIMER; GND
+R17,100k,Charging,,GND; USB_500_ENABLE
+C15,1u/10V,Charging,,GND; USB_5V
+C16,10u/10V,Charging,,GND; VBAT
+C17,10u/10V,Charging,,GND; SYS_RAW
+J2,RAW 1S CELL 4.2V MAX,Charging,"Raw cell input, pin1 positive; protection now onboard. Cell itself must support >=4A continuous / >=5A peak. No CELL_N-to-GND bypass.",CELL_N; CELL_P
+J4,CELL NTC - CHARGER,Charging,"Independent insulated 103AT-2 bonded to actual cell. Analog U12 window controls U5 CE; pin1 CELL_CHG_TEMP, pin2 GND. Never attach to raw CELL_N.",CELL_CHG_TEMP; GND
+D2,CHARGE AMBER,Charging,,CHG_LED_A; CHG_STATUS
+R18,2.2k,Charging,,CHG_LED_A; SYS_RAW
+R19,100k,Charging,,+3V3; CHG_PGOOD
+U4,TPS63802DLA,Regulator,,+3V3; GND; REG_FB; REG_L1; REG_L2; REG_PG; SYS_ON; SYS_RAW
+L1,0.47uH/5.4A,Regulator,,REG_L1; REG_L2
+C18,22u/10V X5R 20%,Regulator,"TDK production 0805, 22uF 10V +/-20% X5R. DC-bias/temperature/aging verification required; nominal capacitance is not effective capacitance.",GND; SYS_RAW
+C19,22u/10V X5R 20%,Regulator,"TDK production 0805, 22uF 10V +/-20% X5R. DC-bias/temperature/aging verification required; nominal capacitance is not effective capacitance.",+3V3; GND
+C20,22u/10V X5R 20%,Regulator,"TDK production 0805, 22uF 10V +/-20% X5R. DC-bias/temperature/aging verification required; nominal capacitance is not effective capacitance.",+3V3; GND
+R20,511k,Regulator,,+3V3; REG_FB
+R21,91k,Regulator,,GND; REG_FB
+R22,100k,Regulator,,+3V3; REG_PG
+R23,100k,Regulator,,GND; SYS_ON
+SW3,POWER,Regulator,,GND; SYS_ON_REQ; SYS_RAW
+Q1,DMP2035U-7,Interlock,"Lower-loss P-FET, same G1/S2/D3 SOT23. Thermal/braking qualification remains required.",MOTOR_GATE; MOTOR_MID; VBAT
+Q2,DMP2035U-7,Interlock,"Lower-loss P-FET, same G1/S2/D3 SOT23. Thermal/braking qualification remains required.",MOTOR_GATE; MOTOR_MID; VMOTOR
+Q5,AO3401A,Interlock,,MEAS_GATE; VBAT; VBAT_MEAS
+Q3,MMBT3904,Interlock,,GND; MOTOR_BASE; MOTOR_GATE
+Q4,MMBT3904,Interlock,,DRIVE_ENABLE; GND; USB_DETECT_BASE
+Q6,MMBT3904,Interlock,,GND; MEAS_BASE; MEAS_GATE
+R24,22k,Interlock,,MOTOR_GATE; MOTOR_MID
+R25,56k,Interlock,,DRIVE_ENABLE; MOTOR_BASE
+R26,100k,Interlock,,GND; MOTOR_BASE
+R27,1k,Interlock,,DRIVE_ENABLE; DRIVE_REQ
+R28,1M,Interlock,,DRIVE_ENABLE; GND
+R29,10k,Interlock,,USB_5V; USB_DETECT_BASE
+R30,100k,Interlock,,GND; USB_DETECT_BASE
+C21,1u/10V,Interlock,,GND; VBAT
+C22,100n/16V,Interlock,,GND; VMOTOR
+R31,100k,Interlock,,MEAS_GATE; VBAT
+R32,47k,Interlock,,+3V3; MEAS_BASE
+R33,100k,Interlock,,GND; MEAS_BASE
+R34,100k,Interlock,,VBAT_ADC; VBAT_MEAS
+R35,100k,Interlock,,GND; VBAT_ADC
+C23,100n/16V,Interlock,,GND; VBAT_ADC
+TP1,GND,Controller,,GND
+TP2,+3V3,Controller,,+3V3
+TP3,VBAT,Controller,,VBAT
+TP4,VMOTOR,Controller,,VMOTOR
+TP5,SYS_RAW,Controller,,SYS_RAW
+TP6,ESP_EN,Controller,,ESP_EN
+TP7,LED_STATUS,Controller,GPIO43 status LED test point; UART0 TX no longer exposed. Programming remains native USB.,LED_STATUS
+TP8,DRIVE_ENABLE,Controller,,DRIVE_ENABLE
+TP9,FAULT_U2,Controller,,FAULT_U2
+TP10,FAULT_U3,Controller,,FAULT_U3
+TP11,REG_PG,Controller,,REG_PG
+U7,BQ298217RUGR,Battery protection,Primary BQ298217: factory UV 2.6V; cold-start/wake compatibility open. CS/VSS use R36 voltage contacts. PACK senses PROTECTED_RAW before Q13.,CELL_N; PROT_BAT; PROT_CHG; PROT_CS_SENSE; PROT_DSG; PROT_PACK; PROT_VDD; PROT_VSS_SENSE
+Q7,CSD17308Q3,Battery protection,"Primary charge FET: source CELL_P, common drain PROT_DRAIN.",CELL_P; PROT_CHG; PROT_DRAIN
+Q8,CSD17308Q3,Battery protection,Primary discharge FET: source PROTECTED_RAW. Source pad1 intersects a through-via: filled/copper-capped processing or reroute required.,PROTECTED_RAW; PROT_DRAIN; PROT_DSG
+R36,10m 1% 1W KELVIN,Battery protection,"4-terminal Vishay WSK2512 10mΩ. Current pads1/2, independent sense3/4. Native numbering explicitly mapped to manufacturer land drawing.",CELL_N; GND; PROT_CS_SENSE; PROT_VSS_SENSE
+R37,100R 1%,Battery protection,,CELL_P; PROT_VDD
+R38,20R 1%,Battery protection,,CELL_P; PROT_BAT
+R39,1k 1%,Battery protection,"U7 PACK sense from PROTECTED_RAW, upstream of secondary Q13.",PROTECTED_RAW; PROT_PACK
+C24,100n/16V X7R,Battery protection,"U7 VDD decoupling returns to PROT_VSS_SENSE, not the main GND plane.",PROT_VDD; PROT_VSS_SENSE
+R40,10M,Battery protection,Q7 gate-source bias to raw CELL_P.,CELL_P; PROT_CHG
+R41,10M,Battery protection,Q8 gate-source bias to PROTECTED_RAW.,PROTECTED_RAW; PROT_DSG
+J5,CELL NTC - DRIVE,Battery protection,Second electrically isolated103AT-2 probe bonded to same cell; not shared with J4,CELL_TEMP_DIV; GND
+R42,10k 1%,Battery protection,,+3V3; CELL_TEMP_DIV
+R43,1k 1%,Battery protection,,CELL_TEMP_ADC; CELL_TEMP_DIV
+C25,100n/16V X7R,Battery protection,,CELL_TEMP_ADC; GND
+TH1,10k NTC 1% B25/85=3435K,Cell-mounted probe,Independent 103AT-2 bonded to cell and insulated; J4 analog charging window. Never PCB mounted.,
+TH2,10k NTC 1% B25/85=3435K,Cell-mounted probe,Cell-bonded drive monitoring probe -> J5; separate insulated two-wire harness; strain relief; never attach to PCB as temperature proxy,
+BAT1,1S 3.7V 1000mAh 20C PROVISIONAL,Existing circuit,Assumptions authorized 2026-11-06; 62x34x6mm UNVERIFIED for 20C pack; connector/polarity/wire and cell limits require qualification. See engineering/BATTERY_ASSUMPTIONS.md. External assembly item; not a PCB-mounted symbol.,
+J3,M0031 CAMERA FPC24,Flex camera,Rev C camera redesign; qualification pending,+3V3; CAM_1V3; CAM_2V8; CAM_D0; CAM_D1; CAM_D2; CAM_D3; CAM_D4; CAM_D5; CAM_D6; CAM_D7; CAM_HREF; CAM_PCLK; CAM_RESET; CAM_SCL; CAM_SDA; CAM_VSYNC; CAM_XCLK; GND
+U8,TLV75513PDBVR,Flex camera,Rev C camera redesign; qualification pending,+3V3; CAM_1V3; GND
+U9,TLV75528PDBVR,Flex camera,Rev C camera redesign; qualification pending,+3V3; CAM_2V8; GND
+C26,2.2u/10V X7R,Flex camera,Rev C camera redesign; qualification pending,+3V3; GND
+C27,2.2u/10V X7R,Flex camera,Rev C camera redesign; qualification pending,CAM_1V3; GND
+C28,2.2u/10V X7R,Flex camera,Rev C camera redesign; qualification pending,+3V3; GND
+C29,2.2u/10V X7R,Flex camera,Rev C camera redesign; qualification pending,CAM_2V8; GND
+R44,4.7k,Flex camera,Rev C camera redesign; qualification pending,+3V3; CAM_SDA
+R45,4.7k,Flex camera,Rev C camera redesign; qualification pending,+3V3; CAM_SCL
+CAM1,OV2640 24-pin DVP flex camera,Existing circuit,Manufacturer pinout basis; confirm supplied module revision/contact orientation; bracket dimensions require measurement.,
+U10,TPS3840DL31DBVR,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_P; CELL_UV_CT; CELL_UV_RESET_N
+Q9,MMBT3906,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_UV_FAULT; CELL_UV_PNP_B; VBAT
+Q10,MMBT3904,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_UV_EN_B; SYS_ON
+Q11,MMBT3904,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_UV_MOTOR_B; DRIVE_ENABLE
+R46,100k,Cell undervoltage shutdown,Raw-cell pullup is required to operate the independent discharge cutoff after protected VBAT collapses.,CELL_P; CELL_UV_RESET_N
+R47,22k,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_UV_PNP_B; CELL_UV_RESET_N
+R48,100k,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_UV_PNP_B; VBAT
+R49,1M,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_UV_FAULT
+R50,33k,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_UV_EN_B; CELL_UV_FAULT
+R51,1M,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_UV_EN_B
+R52,3.3k,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_UV_FAULT; CELL_UV_MOTOR_B
+R53,1M,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_UV_MOTOR_B
+R54,10k,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",SYS_ON; SYS_ON_REQ
+C30,100n/10V X7R,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_P
+C31,100n/10V X7R,Cell undervoltage shutdown,"Rev D power audit; engineering prototype, qualification required",CELL_N; CELL_UV_CT
+U11,TLV75533PDBVR,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_3V3; GND; USB_5V
+U12,TLV6700DDCR,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_COLD_SENSE; CHG_HOT_SENSE; CHG_TEMP_OK_OD; GND; USB_5V
+U13,SN74LVC1G14DBVR,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_DISABLE; CHG_TEMP_ALLOW_RC; GND; USB_5V
+R55,10k 1%,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CELL_CHG_TEMP; CHG_3V3
+R56,200k 1%,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CELL_CHG_TEMP; CHG_HOT_SENSE
+R57,100k 1%,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_HOT_SENSE; GND
+R58,442k 1%,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CELL_CHG_TEMP; CHG_COLD_SENSE
+R59,100k 1%,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_COLD_SENSE; GND
+R60,10k 1%,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_TS_BIAS; GND
+R61,100k,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_TEMP_ALLOW_RC; USB_5V
+R62,1k,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_TEMP_ALLOW_RC; CHG_TEMP_OK_OD
+R63,100k,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_DISABLE; USB_5V
+C32,2.2u/10V X7R,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",GND; USB_5V
+C33,2.2u/10V X7R,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_3V3; GND
+C34,100n/10V X7R,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",GND; USB_5V
+C35,220n/10V X7R,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",CHG_TEMP_ALLOW_RC; GND
+C36,100n/10V X7R,Independent charging temperature,"Rev D power audit; engineering prototype, qualification required",GND; USB_5V
+U14,SN74LVC1G17DBVR,Cell undervoltage shutdown,Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor,+3V3; DRIVE_REQ; DRIVE_REQ_RAW; GND
+R64,100k,Cell undervoltage shutdown,Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor,DRIVE_REQ_RAW; GND
+C37,100n/10V X7R,Cell undervoltage shutdown,Rev D drive-request buffer; input defaults low; USB/UV clamp remains after series resistor,+3V3; GND
+Q12,MMBT3906,Independent discharge cutoff,Raw-cell PNP inverter: U10 reset low raises Q13 gate to inhibit discharge.,CELL_P; CUT_GATE; CUT_PNP_B
+Q13,DMP2008UFG-7,Independent discharge cutoff,"Secondary discharge-only PFET: sources1-3 PROTECTED_RAW, merged drain5 represents physical5-8 and connects VBAT. Body diode permits charge recovery. Source pad1 via requires filled/capped processing or reroute.",CUT_GATE; PROTECTED_RAW; VBAT
+R65,47k,Independent discharge cutoff,Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.,CELL_UV_RESET_N; CUT_PNP_B
+R66,1M,Independent discharge cutoff,Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.,CELL_P; CUT_PNP_B
+R67,56k,Independent discharge cutoff,Rev E 3.1V discharge-only cutoff. Prototype; transient and thermal qualification required.,CELL_N; CUT_GATE

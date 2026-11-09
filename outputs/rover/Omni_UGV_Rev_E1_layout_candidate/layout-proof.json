@@ -1,0 +1,34 @@
+{
+  "board_sha256": "8108ae0511d0551b7d4bb4aeb5639faec0b08d3faf2f7b3f9b6c9fa9cd2bc6df",
+  "removed_source_pad_vias": [
+    "16b9183a-32ab-48a7-88be-f34b132c3188",
+    "2187a600-0b00-458c-bf8c-aea0675c044a"
+  ],
+  "new_vias_mm": [
+    [
+      112.1,
+      138.0
+    ],
+    [
+      112.8,
+      135.1
+    ],
+    [
+      130.2,
+      134.1
+    ]
+  ],
+  "new_vias_outside_smd_copper": true,
+  "all_footprint_pads_and_board_outline_match_rev_e": true,
+  "other_track_geometry_preserved": true,
+  "new_in1_signal_tracks": 0,
+  "via_drill_count_by_mm": {
+    "0.3": 438
+  },
+  "native_netlist_pin_count": 498,
+  "native_drc": 0,
+  "native_opens": 0,
+  "schematic_parity_issues": 0,
+  "native_erc": 0,
+  "manufacturing_release": "BLOCKED"
+}

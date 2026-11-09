@@ -1,0 +1,8 @@
+{
+  "status": "PASS for readable presentation; physical qualification pending",
+  "pages": 8,
+  "existing_sheets": "controller header island removed and MCU/other net map preserved; root adds camera sheet",
+  "new_sheet": "camera supplies wired locally, FPC pin map explicit; full-page and power crop inspected",
+  "source": "Schematic.pdf",
+  "notes": "No manufacturer fit or hardware validation implied"
+}

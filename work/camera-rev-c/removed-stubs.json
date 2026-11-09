@@ -1,0 +1,7 @@
+[
+  "(segment\n\t\t(start 113.32 85.96)\n\t\t(end 113.9209 85.96)\n\t\t(width 0.4)\n\t\t(layer \"In2.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"a3f72cbf-e5e3-44f3-91ec-b3f0205abc33\")\n\t)",
+  "(segment\n\t\t(start 139.899999 80.199999)\n\t\t(end 139.899999 80.199999)\n\t\t(width 0.15)\n\t\t(layer \"B.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"d2e4ddec-6ddb-433c-a545-495e95a893e6\")\n\t)",
+  "(segment\n\t\t(start 137.099999 86.499999)\n\t\t(end 137.099999 86.499999)\n\t\t(width 0.15)\n\t\t(layer \"B.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"a822264f-94b5-47ff-b7a6-c43773a3d777\")\n\t)",
+  "(segment\n\t\t(start 113.32 85.96)\n\t\t(end 113.32 84.7583)\n\t\t(width 0.4)\n\t\t(layer \"B.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"97d3e7fc-aff9-4944-a1c0-3ef39bf1765f\")\n\t)",
+  "(segment\n\t\t(start 139.999999 80.099999)\n\t\t(end 139.999999 79.999999)\n\t\t(width 0.2)\n\t\t(layer \"B.Cu\")\n\t\t(net \"GND\")\n\t\t(uuid \"01f35775-2761-4711-9653-a80411702f7d\")\n\t)"
+]

@@ -1,0 +1,347 @@
+[
+  {
+    "net": "PROT_BAT",
+    "a": [
+      120.325,
+      130.5
+    ],
+    "z": [
+      119.325,
+      130.5
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_VDD",
+    "a": [
+      120.325,
+      130.0
+    ],
+    "z": [
+      119.325,
+      130.0
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_VSS_SENSE",
+    "a": [
+      120.325,
+      129.5
+    ],
+    "z": [
+      119.325,
+      129.5
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_CS_SENSE",
+    "a": [
+      121.0,
+      129.35
+    ],
+    "z": [
+      121.0,
+      128.35
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "CELL_N",
+    "a": [
+      121.675,
+      129.5
+    ],
+    "z": [
+      122.675,
+      129.5
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_PACK",
+    "a": [
+      121.675,
+      130.0
+    ],
+    "z": [
+      122.675,
+      130.0
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_DSG",
+    "a": [
+      121.675,
+      130.5
+    ],
+    "z": [
+      122.675,
+      130.5
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_CHG",
+    "a": [
+      121.0,
+      130.65
+    ],
+    "z": [
+      121.0,
+      131.65
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_CS_SENSE",
+    "a": [
+      121.0,
+      128.35
+    ],
+    "z": [
+      121.1,
+      128.45
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_CS_SENSE",
+    "a": [
+      121.1,
+      128.45
+    ],
+    "z": [
+      121.1,
+      128.45
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "PROT_CHG",
+    "a": [
+      121.0,
+      131.65
+    ],
+    "z": [
+      121.0,
+      131.65
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "PROT_BAT",
+    "a": [
+      119.325,
+      130.5
+    ],
+    "z": [
+      119.525,
+      130.7
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_BAT",
+    "a": [
+      119.525,
+      130.7
+    ],
+    "z": [
+      119.525,
+      130.7
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "PROT_VSS_SENSE",
+    "a": [
+      119.325,
+      129.5
+    ],
+    "z": [
+      120.125,
+      129.4
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_VSS_SENSE",
+    "a": [
+      120.125,
+      129.4
+    ],
+    "z": [
+      120.125,
+      129.4
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "CELL_N",
+    "a": [
+      122.675,
+      129.5
+    ],
+    "z": [
+      122.675,
+      129.4
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "CELL_N",
+    "a": [
+      122.675,
+      129.4
+    ],
+    "z": [
+      122.675,
+      129.4
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "PROT_DSG",
+    "a": [
+      122.675,
+      130.5
+    ],
+    "z": [
+      122.675,
+      130.6
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_DSG",
+    "a": [
+      122.675,
+      130.6
+    ],
+    "z": [
+      122.675,
+      130.6
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "PROT_VDD",
+    "a": [
+      119.325,
+      130.0
+    ],
+    "z": [
+      117.825,
+      128.4
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_VDD",
+    "a": [
+      117.825,
+      128.4
+    ],
+    "z": [
+      117.825,
+      128.4
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  },
+  {
+    "net": "PROT_PACK",
+    "a": [
+      122.675,
+      130.0
+    ],
+    "z": [
+      123.175,
+      130.0
+    ],
+    "width": 0.15,
+    "via": false,
+    "drill": 0,
+    "layer": "B.Cu"
+  },
+  {
+    "net": "PROT_PACK",
+    "a": [
+      123.175,
+      130.0
+    ],
+    "z": [
+      123.175,
+      130.0
+    ],
+    "width": 0.6,
+    "via": true,
+    "drill": 0.3,
+    "layer": "F.Cu"
+  }
+]

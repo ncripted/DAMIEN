@@ -1,0 +1,148 @@
+Route CHG_BAT (94.5625, 127.75, 'F.Cu') (94.5625, 128.25, 'F.Cu') 0.4
+Blocked endpoint ('CHG_BAT', (94.5625, 127.75, 'F.Cu'))
+Route CHG_OUT (97.4375, 127.75, 'F.Cu') (97.4375, 128.25, 'F.Cu') 0.5
+Blocked endpoint ('CHG_OUT', (97.4375, 127.75, 'F.Cu'))
+Route PROTECTED_RAW (98.4, 100.25, 'B.Cu') (98.4, 100.75, 'B.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (98.4, 100.25, 'B.Cu'))
+Route VBAT (98.9, 121.8, 'In2.Cu') (100.364, 122.517, 'F.Cu') 0.85
+Blocked endpoint ('VBAT', (98.9, 121.8, 'In2.Cu'))
+Route VBAT (96.65, 121.8, 'In2.Cu') (100.364, 122.517, 'F.Cu') 0.85
+No route ('VBAT', (96.65, 121.8, 'In2.Cu'), (100.364, 122.517, 'F.Cu'), 0.85, 1132)
+Route PROTECTED_RAW (94.225, 97.0, 'B.Cu') (94.1375, 94.95, 'B.Cu') 0.85
+  done 0.12 s 113 nodes
+Route CHG_OUT (99.55, 128.0, 'F.Cu') (97.4375, 127.75, 'F.Cu') 0.5
+Blocked endpoint ('CHG_OUT', (97.4375, 127.75, 'F.Cu'))
+Route PROTECTED_RAW (124.325, 124.5, 'B.Cu') (124.725, 122.0, 'B.Cu') 0.85
+  done 0.13 s 225 nodes
+Route PROTECTED_RAW (98.4, 100.25, 'B.Cu') (95.6, 100.25, 'B.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (98.4, 100.25, 'B.Cu'))
+Route PROTECTED_RAW (122.799999, 132.199999, 'F.Cu') (125.6, 132.5, 'B.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (122.799999, 132.199999, 'F.Cu'))
+Route PROTECTED_RAW (122.799999, 131.499999, 'F.Cu') (125.6, 132.5, 'B.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (122.799999, 131.499999, 'F.Cu'))
+Route USB_5V (91.8625, 94.0, 'B.Cu') (89.299999, 95.299999, 'F.Cu') 0.5
+  done 0.12 s 681 nodes
+Route SYS_RAW (100.85, 117.65, 'B.Cu') (99.1, 120.5, 'F.Cu') 0.55
+  done 0.32 s 1066 nodes
+Route PROTECTED_RAW (94.225, 97.0, 'B.Cu') (95.6, 100.25, 'B.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (95.6, 100.25, 'B.Cu'))
+Route VBAT (131.225, 134.5, 'B.Cu') (127.545, 135.5, 'B.Cu') 0.85
+  done 0.2 s 6561 nodes
+Route PROTECTED_RAW (128.4875, 129.199999, 'B.Cu') (124.399999, 129.899999, 'F.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (128.4875, 129.199999, 'B.Cu'))
+Route PROTECTED_RAW (128.4875, 129.199999, 'B.Cu') (122.799999, 131.499999, 'F.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (128.4875, 129.199999, 'B.Cu'))
+Route PROTECTED_RAW (106.225, 100.0, 'B.Cu') (106.1375, 95.45, 'B.Cu') 0.85
+  done 0.16 s 1868 nodes
+Route SYS_RAW (106.05, 113.5, 'F.Cu') (107.6, 118.0, 'B.Cu') 0.55
+  done 0.23 s 908 nodes
+Route PROTECTED_RAW (106.1375, 95.45, 'B.Cu') (103.225, 91.5, 'B.Cu') 0.85
+  done 0.13 s 1216 nodes
+Route VBAT (107.051, 122.517, 'F.Cu') (110.4, 118.0, 'B.Cu') 0.85
+  done 0.33 s 3409 nodes
+Route CHG_BAT (99.05, 124.0, 'F.Cu') (94.5625, 127.75, 'F.Cu') 0.4
+No route ('CHG_BAT', (99.05, 124.0, 'F.Cu'), (94.5625, 127.75, 'F.Cu'), 0.4, 4058)
+Route PROTECTED_RAW (72.15, 87.6, 'F.Cu') (65.85, 87.6, 'F.Cu') 0.85
+  done 0.04 s 326 nodes
+Route PROTECTED_RAW (98.4, 100.75, 'B.Cu') (102.8625, 107.0, 'B.Cu') 0.85
+No route ('PROTECTED_RAW', (98.4, 100.75, 'B.Cu'), (102.8625, 107.0, 'B.Cu'), 0.85, 135)
+Route PROTECTED_RAW (106.225, 100.0, 'B.Cu') (102.8625, 107.0, 'B.Cu') 0.85
+  done 0.4 s 5620 nodes
+Route CHG_OUT (99.55, 128.0, 'F.Cu') (101.9, 120.5, 'F.Cu') 0.5
+No route ('CHG_OUT', (99.55, 128.0, 'F.Cu'), (101.9, 120.5, 'F.Cu'), 0.5, 3760)
+Route USB_5V (122.1204, 133.4348, 'In2.Cu') (128.175, 126.0, 'B.Cu') 0.5
+  done 0.47 s 11603 nodes
+Route PROTECTED_RAW (87.725, 107.5, 'B.Cu') (95.6, 100.25, 'B.Cu') 0.85
+Blocked endpoint ('PROTECTED_RAW', (95.6, 100.25, 'B.Cu'))
+Route PROTECTED_RAW (72.15, 87.6, 'F.Cu') (94.1375, 94.95, 'B.Cu') 0.85
+  done 1.09 s 46180 nodes
+Route PROTECTED_RAW (124.725, 122.0, 'B.Cu') (102.8625, 107.0, 'B.Cu') 0.85
+  done 1.72 s 39907 nodes
+Route CHG_BAT (128.4, 132.5, 'B.Cu') (99.05, 124.0, 'F.Cu') 0.4
+No route ('CHG_BAT', (128.4, 132.5, 'B.Cu'), (99.05, 124.0, 'F.Cu'), 0.4, 62127)
+Route PROT_VSS_SENSE (127.0, 129.199999, 'B.Cu') (125.5125, 128.799999, 'B.Cu') 0.2
+  done 0.13 s 71 nodes
+Route USB_INHIBIT (130.175, 128.0, 'B.Cu') (129.825, 126.0, 'B.Cu') 0.2
+  done 0.12 s 429 nodes
+Route ARM_FILTER (106.825, 104.0, 'B.Cu') (105.175, 102.0, 'B.Cu') 0.2
+  done 0.23 s 148 nodes
+Route BATT_F (123.775, 132.0, 'B.Cu') (125.5125, 129.599999, 'B.Cu') 0.2
+  done 0.33 s 13809 nodes
+Route EF_SLEW (123.225, 125.125, 'B.Cu') (126.225, 124.0, 'B.Cu') 0.2
+  done 0.22 s 1926 nodes
+Route PROT_CS_SENSE (121.099999, 128.399999, 'In2.Cu') (125.5125, 128.399999, 'B.Cu') 0.2
+No route ('PROT_CS_SENSE', (121.099999, 128.399999, 'In2.Cu'), (125.5125, 128.399999, 'B.Cu'), 0.2, 12215)
+Route PROT_CS_SENSE (119.899999, 127.199999, 'In2.Cu') (125.5125, 128.399999, 'B.Cu') 0.2
+No route ('PROT_CS_SENSE', (119.899999, 127.199999, 'In2.Cu'), (125.5125, 128.399999, 'B.Cu'), 0.2, 16836)
+Route PROT_VSS_SENSE (122.225, 132.0, 'B.Cu') (125.5125, 128.799999, 'B.Cu') 0.2
+No route ('PROT_VSS_SENSE', (122.225, 132.0, 'B.Cu'), (125.5125, 128.799999, 'B.Cu'), 0.2, 16652)
+Route PROT_VSS_SENSE (122.199999, 131.999999, 'B.Cu') (125.5125, 128.799999, 'B.Cu') 0.2
+No route ('PROT_VSS_SENSE', (122.199999, 131.999999, 'B.Cu'), (125.5125, 128.799999, 'B.Cu'), 0.2, 16851)
+Route CELL_UV_RESET_N (75.575, 104.75, 'F.Cu') (71.8625, 107.8, 'F.Cu') 0.2
+  done 0.29 s 662 nodes
+Route BATT_F (119.275, 130.3, 'B.Cu') (123.775, 132.0, 'B.Cu') 0.2
+  done 0.28 s 870 nodes
+Route CELL_UV_RESET_N (71.8625, 107.8, 'F.Cu') (76.675, 110.75, 'F.Cu') 0.2
+  done 0.41 s 4661 nodes
+Route PROT_VSS_SENSE (125.5125, 128.799999, 'B.Cu') (122.775, 123.3, 'B.Cu') 0.2
+No route ('PROT_VSS_SENSE', (125.5125, 128.799999, 'B.Cu'), (122.775, 123.3, 'B.Cu'), 0.2, 490)
+Route ARM_FILTER (105.225, 110.0, 'B.Cu') (106.825, 104.0, 'B.Cu') 0.2
+  done 0.55 s 1220 nodes
+Route ARM_SWITCH (72.15, 91.4, 'F.Cu') (65.85, 91.4, 'F.Cu') 0.2
+  done 0.1 s 326 nodes
+Route WAKE (72.15, 81.1, 'F.Cu') (65.85, 81.1, 'F.Cu') 0.2
+  done 0.09 s 312 nodes
+Route PROT_VSS_SENSE (72.15, 84.9, 'F.Cu') (65.85, 84.9, 'F.Cu') 0.2
+  done 0.08 s 326 nodes
+Route REG_1V8 (121.225, 123.3, 'B.Cu') (125.5125, 127.999999, 'B.Cu') 0.2
+No route ('REG_1V8', (121.225, 123.3, 'B.Cu'), (125.5125, 127.999999, 'B.Cu'), 0.2, 20178)
+Route ARM_FILTER (103.8625, 94.5, 'B.Cu') (105.175, 102.0, 'B.Cu') 0.2
+  done 0.61 s 11692 nodes
+Route CP (117.725, 130.3, 'B.Cu') (125.5125, 129.999999, 'B.Cu') 0.2
+No route ('CP', (117.725, 130.3, 'B.Cu'), (125.5125, 129.999999, 'B.Cu'), 0.2, 16571)
+Route USB_INHIBIT (129.825, 126.0, 'B.Cu') (121.6, 126.225, 'B.Cu') 0.2
+  done 0.62 s 16106 nodes
+Route EF_EN (123.675, 135.0, 'B.Cu') (121.775, 126.875, 'B.Cu') 0.2
+  done 0.73 s 10684 nodes
+Route EF_TIMER (123.225, 126.875, 'B.Cu') (131.725, 126.0, 'B.Cu') 0.2
+  done 0.61 s 4819 nodes
+Route EF_ILM (123.4, 126.225, 'B.Cu') (130.675, 131.0, 'B.Cu') 0.2
+No route ('EF_ILM', (123.4, 126.225, 'B.Cu'), (130.675, 131.0, 'B.Cu'), 0.2, 14)
+Route ARM_CLR_N (98.4, 99.75, 'B.Cu') (102.8625, 107.95, 'B.Cu') 0.2
+  done 0.88 s 15044 nodes
+Route BATT_F (113.675, 122.0, 'B.Cu') (119.275, 130.3, 'B.Cu') 0.2
+  done 0.95 s 8295 nodes
+Route PROT_CHG (122.435, 138.975, 'B.Cu') (128.4875, 130.399999, 'B.Cu') 0.2
+No route ('PROT_CHG', (122.435, 138.975, 'B.Cu'), (128.4875, 130.399999, 'B.Cu'), 0.2, 33180)
+Route PROT_VSS_SENSE (72.15, 84.9, 'F.Cu') (77.345, 94.96, 'B.Cu') 0.2
+  done 0.61 s 21195 nodes
+Route USB_ABSENT (91.675, 104.5, 'B.Cu') (94.1375, 93.05, 'B.Cu') 0.2
+No route ('USB_ABSENT', (91.675, 104.5, 'B.Cu'), (94.1375, 93.05, 'B.Cu'), 0.2, 448)
+Route ARM_RESET_N (93.325, 104.5, 'B.Cu') (105.1375, 106.05, 'B.Cu') 0.2
+No route ('ARM_RESET_N', (93.325, 104.5, 'B.Cu'), (105.1375, 106.05, 'B.Cu'), 0.2, 516)
+Route ARM_RESET_N (85.345, 95.27, 'B.Cu') (93.325, 104.5, 'B.Cu') 0.2
+No route ('ARM_RESET_N', (85.345, 95.27, 'B.Cu'), (93.325, 104.5, 'B.Cu'), 0.2, 37658)
+Route ARM_CLK (95.6, 100.75, 'B.Cu') (106.1375, 93.55, 'B.Cu') 0.2
+No route ('ARM_CLK', (95.6, 100.75, 'B.Cu'), (106.1375, 93.55, 'B.Cu'), 0.2, 3305)
+Route RESET_CT (92.225, 102.5, 'B.Cu') (105.1375, 107.95, 'B.Cu') 0.2
+  done 1.47 s 15109 nodes
+Route PROT_DSG (114.615, 137.025, 'B.Cu') (128.4875, 129.599999, 'B.Cu') 0.2
+No route ('PROT_DSG', (114.615, 137.025, 'B.Cu'), (128.4875, 129.599999, 'B.Cu'), 0.2, 44896)
+Route PROT_VSS_SENSE (67.0, 110.85, 'B.Cu') (77.345, 94.96, 'B.Cu') 0.2
+  done 1.26 s 14013 nodes
+Route ARM_SWITCH (105.175, 104.0, 'B.Cu') (72.15, 91.4, 'F.Cu') 0.2
+No route ('ARM_SWITCH', (105.175, 104.0, 'B.Cu'), (72.15, 91.4, 'F.Cu'), 0.2, 8025)
+Route EF_EN (121.775, 126.875, 'B.Cu') (98.4, 99.25, 'B.Cu') 0.2
+  done 6.98 s 82701 nodes
+Route PROT_VSS_SENSE (116.399999, 127.499999, 'B.Cu') (77.345, 94.96, 'B.Cu') 0.2
+No route ('PROT_VSS_SENSE', (116.399999, 127.499999, 'B.Cu'), (77.345, 94.96, 'B.Cu'), 0.2, 122571)
+Route PROT_VSS_SENSE (116.43, 127.52, 'B.Cu') (77.345, 94.96, 'B.Cu') 0.2
+No route ('PROT_VSS_SENSE', (116.43, 127.52, 'B.Cu'), (77.345, 94.96, 'B.Cu'), 0.2, 123583)
+Route PROG_SCL (80.655, 97.5, 'B.Cu') (128.4875, 128.399999, 'B.Cu') 0.2
+No route ('PROG_SCL', (80.655, 97.5, 'B.Cu'), (128.4875, 128.399999, 'B.Cu'), 0.2, 63695)
+Route PROG_SDA (77.345, 100.04, 'B.Cu') (128.4875, 127.999999, 'B.Cu') 0.2
+No route ('PROG_SDA', (77.345, 100.04, 'B.Cu'), (128.4875, 127.999999, 'B.Cu'), 0.2, 73492)
+Route NTC_TH (65.0, 110.85, 'B.Cu') (125.5125, 130.399999, 'B.Cu') 0.2
+No route ('NTC_TH', (65.0, 110.85, 'B.Cu'), (125.5125, 130.399999, 'B.Cu'), 0.2, 117792)
+Route WAKE (128.4875, 128.799999, 'B.Cu') (72.15, 81.1, 'F.Cu') 0.2
+No route ('WAKE', (128.4875, 128.799999, 'B.Cu'), (72.15, 81.1, 'F.Cu'), 0.2, 7)

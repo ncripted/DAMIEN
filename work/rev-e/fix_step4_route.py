@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/rev-e/step4_route.py');s=p.read_text().replace("rr('REG_L1','U4',9,'L1',1,.4,False)","addtrack('REG_L1',(96.75,113.5),(97.4,113.5),.25,'F.Cu');route('REG_L1',(97.4,113.5,'F.Cu'),endpoint('L1',1),.4,False)").replace("rr('REG_L2','U4',7,'L1',2,.4,False)","addtrack('REG_L2',(96.75,114.5),(97.4,114.5),.25,'F.Cu');route('REG_L2',(97.4,114.5,'F.Cu'),endpoint('L1',2),.4,False)");p.write_text(s)

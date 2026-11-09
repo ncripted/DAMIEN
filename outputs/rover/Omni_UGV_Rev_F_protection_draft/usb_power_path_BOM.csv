@@ -1,0 +1,30 @@
+Reference,Value,Draft footprint,Datasheet
+J10,Charger and USB,,
+D10,PMEG3020ER,Diode_SMD:Nexperia_CFP3_SOD-123W,https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf
+D11,PMEG3020ER,Diode_SMD:Nexperia_CFP3_SOD-123W,https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf
+D12,PMEG3020ER,Diode_SMD:Nexperia_CFP3_SOD-123W,https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf
+U10,TPS259474LRPW,,https://www.ti.com/lit/ds/symlink/tps25947.pdf
+R10,25.2k 0.1%,Resistor_SMD:R_0603_1608Metric,
+R11,10k 0.1%,Resistor_SMD:R_0603_1608Metric,
+R13,100k,Resistor_SMD:R_0603_1608Metric,
+R14,750R 1%,Resistor_SMD:R_0603_1608Metric,
+C10,2.2n 25V,Capacitor_SMD:C_0603_1608Metric,
+C11,1n 16V,Capacitor_SMD:C_0603_1608Metric,
+C12,100n 16V,Capacitor_SMD:C_0603_1608Metric,
+C13,1u 16V,Capacitor_SMD:C_0603_1608Metric,
+J11,Rover loads,,
+U11,SN74LVC1G14DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf
+U12,TPS3840PL31DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/tps3840.pdf
+U13,SN74LVC1G74DCUR,,https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf
+R15,4.7k,Resistor_SMD:R_0603_1608Metric,
+C14,100n X7R,Capacitor_SMD:C_0603_1608Metric,
+J12,Open-drain fault input,,
+SW10,Momentary rearm,,
+R16,10k,Resistor_SMD:R_0603_1608Metric,
+U14,SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf
+R17,100k,Resistor_SMD:R_0603_1608Metric,
+C15,100n X7R,Capacitor_SMD:C_0603_1608Metric,
+C16,100n X7R,Capacitor_SMD:C_0603_1608Metric,
+C17,100n X7R,Capacitor_SMD:C_0603_1608Metric,
+C18,100n X7R,Capacitor_SMD:C_0603_1608Metric,
+C19,100n X7R,Capacitor_SMD:C_0603_1608Metric,

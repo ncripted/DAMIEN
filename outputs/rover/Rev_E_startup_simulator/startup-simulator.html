@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rev E | Battery startup simulator</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101923;color:#e9f1f8;font:16px system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:28px}h1{margin:.25em 0}h2{font-size:1.15rem}p{line-height:1.5;color:#bed0de}header small{color:#70ddd0;letter-spacing:.12em}section{padding:18px;border:1px solid #35495b;border-radius:12px;background:#172431;margin:16px 0}.grid,.settings,.actions{display:flex;flex-wrap:wrap;gap:10px}.grid>*{flex:1;min-width:165px;background:#101923;padding:12px;border-radius:8px}.grid strong{display:block;font-size:1.4rem;margin-top:5px;color:#84eadc}label{display:flex;flex-direction:column;gap:5px;font-size:.9rem}input,button{color:inherit;background:#223446;border:1px solid #526d83;border-radius:6px;padding:8px;font:inherit}input{width:135px}button{cursor:pointer}button:hover{background:#304a61}button:focus-visible,input:focus-visible{outline:2px solid #84eadc}a{color:#84eadc}.warning{color:#ffc677}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left}th,td{padding:8px;border-bottom:1px solid #35495b}caption{text-align:left;margin-bottom:8px}
+</style>
+<main>
+<header><small>OMNI ROVER · REV E</small><h1>Battery startup simulator</h1><p>Explore how the BQ298217 responds to cell insertion, charger voltage at PACK, and a simulated discharge fault. Settings use millivolts.</p></header>
+<section>
+<h2>Scenario</h2>
+<div class="actions">
+<button data-preset="full">Full cell + USB</button>
+<button data-preset="low">Lower cell + USB</button>
+<button data-preset="short">Wake pulse during a short</button>
+<button id="reset">Reset events</button>
+</div>
+<h2>Model inputs</h2>
+<div class="settings" id="settings"></div>
+<p>Editing an input resets the event history. Defaults use typical protector thresholds and the charger's upper regulated BAT voltage. USB path loss is an adjustable estimate.</p>
+</section>
+<section>
+<h2>Apply an event</h2>
+<div class="actions" id="events"></div>
+<p class="warning">The isolated PACK pulse is a model input for evaluating a fixture concept. It is not a wiring or bench-test procedure.</p>
+<div class="grid" id="readout" aria-live="polite"></div>
+<p id="detail" aria-live="polite"></p>
+</section>
+<section class="scroll">
+<table><caption>Event history</caption><thead><tr><th>Event</th><th>State after event</th><th>PACK used</th><th>Comparison and result</th></tr></thead><tbody id="history"></tbody></table>
+</section>
+<section>
+<h2>Rev F candidate · MAX17301 load-removal check</h2>
+<p>A configured wake button uses ALRT/PIO. PCKP stays connected to the protected output. Sweep the effective charger current reaching PCKP to see whether it could raise the sense voltage past the load-removal threshold.</p>
+<div class="settings">
+<label>Residual resistance to pack ground (kΩ)
+<input id="fault-resistance" type="number" min="0" max="100" step="any" value="0" required></label>
+<label>Effective charger contribution (µA)
+<input id="charger-leakage" type="number" min="0" max="30000" step="any" value="0" required></label>
+</div>
+<p id="candidate-result" aria-live="polite"></p>
+<p>Nominal DC comparison using the protector's 30 µA test current and a 1 V threshold. The charger contribution is a sensitivity input at 1 V. The model assumes this current can reach PCKP at that voltage. It excludes charger detection cycling, diode dynamics, active loads, and the protector's separate charging-detection logic. <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/max17300-max17313.pdf">Analog Devices datasheet, p. 36</a> · <a href="https://www.ti.com/lit/ds/symlink/bq24074.pdf">TI charger datasheet, §9.3.5.4</a></p>
+</section>
+<section>
+<h2>Rev F candidate · Separate charge and discharge paths</h2>
+<p>Try Insert cell → Wake → Arm motors → Trip load fault → Connect USB. The model keeps USB programming and the charge path available while the battery-to-load path is open. Trip represents an assumed hardware trip, and the wake event assumes the protector accepted the request.</p>
+<label><span><input id="split-healthy" type="checkbox" checked style="width:auto"> Cell above the operating cutoff</span></label>
+<div class="actions" id="split-actions"></div>
+<p id="split-result" aria-live="polite"></p>
+<p>This logic check assumes a functioning one-way charge branch, a hardware USB inhibit on the discharge switch and a fault latch that persists across USB changes. It excludes diode leakage, switching timing, cold power-on reset, shorts on the protected pack node itself, and actual charge acceptance.</p>
+</section>
+<section>
+<h2>Rev F fixture · Hardware rearm latch</h2>
+<p>Hold the arm button while reset is active, then release reset. The drive switch stays off until the button is released and pressed again.</p>
+<div class="settings">
+<label><span><input id="arm-reset-released" type="checkbox" style="width:auto"> Supervisor reset released</span></label>
+<label><span><input id="arm-button" type="checkbox" style="width:auto"> Arm button held</span></label>
+</div>
+<p id="arm-result" aria-live="polite"></p>
+<p>These inputs represent the signals at the flip-flop after filtering. Button bounce, brownout detection and real hardware timing are outside this model.</p>
+</section>
+<section>
+<h2>Model boundaries</h2>
+<p>Each click evaluates a steady-state condition. In shutdown, the assumed USB contribution at PACK is charger BAT voltage minus the configured path drop. In normal operation PACK is approximated by cell voltage. A cleared fault is modeled with PACK pulled toward the cell by the protector's recovery circuit. “Trip discharge fault” imposes a persistent short. Restoring the real sense path under that short models an eventual retrip.</p>
+<p>This model excludes MOSFET dynamics, charger startup, threshold tolerance distributions, fault timing, and actual short-circuit current. It does not qualify a wake fixture or predict bench waveforms.</p>
+<p><a href="https://www.ti.com/lit/ds/symlink/bq2980.pdf">TI BQ298x datasheet, §§7.3.4 and 7.4.1.1</a> · <a href="https://www.ti.com/lit/ds/symlink/bq24074.pdf">TI BQ24074 datasheet, §8.5</a></p>
+</section>
+</main>
+<script id="model">
+const model = {
+  hardwareRearm(previous, {resetReleased, button}) {
+    const risingEdge = button && !previous?.button;
+    return {button, enabled:resetReleased && (risingEdge || Boolean(previous?.enabled))};
+  },
+  splitStep(previous, event, {cellHealthy}) {
+    const s = previous ? {...previous} :
+      {cell:false, awake:false, usb:false, armed:false, loadFault:false, latched:false};
+    switch (event) {
+      case "insert": s.cell = true; s.awake = false; s.armed = false; break;
+      case "wake": s.awake = s.cell && cellHealthy; break;
+      case "arm": s.armed = s.cell && s.awake && !s.usb && !s.latched && !s.loadFault && cellHealthy; break;
+      case "trip": s.loadFault = true; s.latched = true; s.armed = false; break;
+      case "clear": s.loadFault = false; break;
+      case "reset": if (!s.usb && !s.loadFault) s.latched = false; break;
+      case "usb": s.usb = true; s.armed = false; break;
+      case "removeUsb": s.usb = false; break;
+    }
+    if (!cellHealthy) {
+      s.awake = false;
+      s.armed = false;
+    }
+    const batteryToLoad = s.cell && s.awake && !s.usb && !s.latched && !s.loadFault;
+    s.paths = {
+      logic:s.usb ? "USB" : (batteryToLoad ? "battery" : "off"),
+      charge:s.usb && s.cell,
+      batteryToLoad,
+      motors:batteryToLoad && s.armed
+    };
+    return s;
+  },
+  recoveryTest(resistanceKohm, chargerMicroamps = 0) {
+    const totalCurrent = 30 + chargerMicroamps;
+    return {
+      pack:totalCurrent * resistanceKohm / 1000,
+      released:resistanceKohm > 1000 / totalCurrent,
+      requiredCurrent:resistanceKohm === 0 ? Infinity : 1000 / resistanceKohm
+    };
+  },
+  initial() {
+    return {mode:"absent", usb:false, injected:false, short:false, pack:0, unsafe:false, note:"Insert a cell to start."};
+  },
+  step(previous, event, p) {
+    const s = {...previous, unsafe:false};
+    switch (event) {
+      case "insert": Object.assign(s, model.initial(), {mode:"shutdown", usb:previous.usb}); break;
+      case "usb": s.usb = true; break;
+      case "unplug": s.usb = false; break;
+      case "pulse": s.injected = s.mode !== "absent"; break;
+      case "restore": s.injected = false; break;
+      case "trip": s.short = s.mode !== "absent"; break;
+      case "clear": s.short = false; break;
+    }
+    if (s.mode === "absent") {
+      s.note = "No cell is connected.";
+      return s;
+    }
+    if (s.injected) s.pack = p.pulse;
+    else if (s.short) s.pack = 0;
+    else if (s.mode === "normal" || s.mode === "fault") s.pack = p.cell;
+    else s.pack = s.usb ? Math.max(0, p.charger - p.drop) : 0;
+    if (s.mode === "normal" && s.short && (event === "trip" || !s.injected)) {
+      s.mode = "fault";
+      s.note = "Discharge fault imposed or retripped under the persistent short.";
+      return s;
+    }
+    if (s.mode === "shutdown") {
+      const delta = s.pack - p.cell;
+      const awake = p.cell > p.uv && delta > p.wake;
+      if (awake) s.mode = "normal";
+      s.note = "Cell " + p.cell + " mV > " + p.uv + " mV and PACK − BAT " + delta + " mV > " + p.wake + " mV? " + (awake ? "Yes. Protector wakes." : "No. Protector stays shut down.");
+    } else if (s.mode === "fault") {
+      const delta = p.cell - s.pack;
+      const recovered = delta < p.release;
+      if (recovered) s.mode = "normal";
+      s.note = "BAT − PACK " + delta + " mV < " + p.release + " mV? " + (recovered ? "Yes. Protector releases the fault." : "No. Fault stays latched.");
+    } else {
+      s.note = "Protector remains in normal operation.";
+    }
+    s.unsafe = s.mode === "normal" && s.short;
+    if (s.unsafe) s.note += " Output can re-enable while the physical short is still present.";
+    return s;
+  }
+};
+</script>
+<script>
+const fields = {
+  cell:["Cell voltage",4200,4500],
+  charger:["Charger BAT",4230,4500],
+  drop:["USB path drop",0,4500],
+  wake:["POR wake threshold",700,2000],
+  uv:["Cell UV threshold",2600,4500],
+  release:["Fault release threshold",400,2000],
+  pulse:["Isolated PACK pulse",5941,8000]
+};
+const events = {insert:"Insert cell",usb:"Connect USB",unplug:"Disconnect USB",pulse:"Inject PACK sense",restore:"Restore PACK sense",trip:"Trip discharge fault",clear:"Remove short"};
+const names = {absent:"Cell absent",shutdown:"Shutdown",normal:"Normal",fault:"Discharge fault"};
+const get = id => document.getElementById(id);
+let state = model.initial();
+
+for (const [key, [title, value, max]] of Object.entries(fields)) {
+  const label = document.createElement("label");
+  label.textContent = title;
+  const input = document.createElement("input");
+  Object.assign(input, {id:key, type:"number", value, min:0, max, step:1, required:true});
+  input.addEventListener("change", reset);
+  label.append(input);
+  get("settings").append(label);
+}
+for (const [event, title] of Object.entries(events)) {
+  const button = document.createElement("button");
+  button.textContent = title;
+  button.addEventListener("click", () => run(event));
+  get("events").append(button);
+}
+
+function render() {
+  const values = {
+    "Protector":names[state.mode],
+    "PACK at evaluation":state.mode === "absent" ? "—" : state.pack + " mV",
+    "Sense path":state.injected ? "Isolated pulse" : "Board path",
+    "Short":state.short ? "Present" : "Absent"
+  };
+  get("readout").replaceChildren();
+  for (const [label, value] of Object.entries(values)) {
+    const tile = document.createElement("div");
+    const reading = document.createElement("strong");
+    reading.textContent = value;
+    tile.append(label, reading);
+    get("readout").append(tile);
+  }
+  get("detail").textContent = state.note;
+  get("detail").classList.toggle("warning", state.unsafe);
+}
+function reset() {
+  state = model.initial();
+  get("history").replaceChildren();
+  render();
+}
+function run(event) {
+  const options = {};
+  for (const key of Object.keys(fields)) {
+    const input = get(key);
+    if (!input.reportValidity()) return;
+    options[key] = input.valueAsNumber;
+  }
+  state = model.step(state, event, options);
+  render();
+  const row = get("history").insertRow(0);
+  for (const value of [events[event], names[state.mode], state.mode === "absent" ? "—" : state.pack + " mV", state.note]) {
+    row.insertCell().textContent = value;
+  }
+  row.classList.toggle("warning", state.unsafe);
+}
+const presets = {
+  full:{cell:4200,drop:0,events:["insert","usb"]},
+  low:{cell:3100,drop:300,events:["insert","usb"]},
+  short:{cell:4200,drop:0,events:["insert","pulse","restore","trip","pulse"]}
+};
+for (const button of document.querySelectorAll("[data-preset]")) {
+  button.addEventListener("click", () => {
+    const preset = presets[button.dataset.preset];
+    for (const [key, [, value]] of Object.entries(fields)) get(key).value = preset[key] ?? value;
+    reset();
+    preset.events.forEach(run);
+  });
+}
+get("reset").addEventListener("click", reset);
+function renderRecovery() {
+  const resistance = get("fault-resistance");
+  const charger = get("charger-leakage");
+  const result = get("candidate-result");
+  if (!resistance.validity.valid || !charger.validity.valid) {
+    result.textContent = "Use 0–100 kΩ and 0–30,000 µA.";
+    return;
+  }
+  const {released, requiredCurrent} = model.recoveryTest(resistance.valueAsNumber, charger.valueAsNumber);
+  if (requiredCurrent === Infinity) {
+    result.textContent = "An ideal hard short holds PCKP at zero.";
+    return;
+  }
+  result.textContent = "Current needed to reach 1 V: " + requiredCurrent.toPrecision(4) + " µA. " +
+    (released ? "The assumed sources exceed that threshold." : "The assumed sources do not exceed that threshold.");
+}
+get("fault-resistance").addEventListener("input", renderRecovery);
+get("charger-leakage").addEventListener("input", renderRecovery);
+renderRecovery();
+const splitEvents = {
+  insert:"Insert cell", wake:"Wake", arm:"Arm motors", trip:"Trip load fault",
+  usb:"Connect USB", removeUsb:"Disconnect USB", clear:"Remove fault", reset:"Reset fault latch"
+};
+let splitState = null;
+function runSplit(event) {
+  splitState = model.splitStep(splitState, event, {cellHealthy:get("split-healthy").checked});
+  const {logic, charge, motors} = splitState.paths;
+  get("split-result").textContent = "Logic supply: " + logic + " · Charge path: " + (charge ? "available" : "inactive") +
+    " · Motor drive: " + (motors ? "enabled" : "disabled") +
+    " · Fault latch: " + (splitState.latched ? "set" : "clear");
+}
+for (const [event, label] of Object.entries(splitEvents)) {
+  const button = document.createElement("button");
+  button.textContent = label;
+  button.addEventListener("click", () => runSplit(event));
+  get("split-actions").append(button);
+}
+get("split-healthy").addEventListener("change", () => runSplit("observe"));
+runSplit("observe");
+let armState = null;
+function renderArm() {
+  armState = model.hardwareRearm(armState, {
+    resetReleased:get("arm-reset-released").checked,
+    button:get("arm-button").checked
+  });
+  get("arm-result").textContent = "Battery discharge switch: " + (armState.enabled ? "armed" : "disarmed");
+}
+get("arm-reset-released").addEventListener("change", renderArm);
+get("arm-button").addEventListener("change", renderArm);
+renderArm();
+render();
+</script>
+</html>

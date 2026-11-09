@@ -1,0 +1,98 @@
+{
+  "schema": "schematic-visual-audit-v1",
+  "status": "PASS",
+  "source_type": "native KiCad",
+  "adapter": "Native S-expression presentation generator; KiCad 10.0.8 PDF/ERC/XML exports; exact schematic-connectivity-v1 comparison",
+  "authoritative_sources": [
+    "battery_protection.kicad_sch",
+    "charging.kicad_sch",
+    "controller.kicad_sch",
+    "interlock.kicad_sch",
+    "motors.kicad_sch",
+    "omni_ugv.kicad_sch",
+    "regulator.kicad_sch"
+  ],
+  "baseline_connectivity": "validation/current/before_readability.net.xml",
+  "final_connectivity": "schematic.net.xml",
+  "connectivity_result": "PASS",
+  "erc_or_lint": {
+    "before": 0,
+    "after": 0
+  },
+  "protected_artifacts_unchanged": false,
+  "protected_artifacts_note": "Schematic cleanup preserved electrical identities and connectivity. Separately authorized board changes: R42 moved 0.2 mm left; U1 keepout expanded to explicit four-layer scope, with library coordinates corrected. See board-change-proof.json.",
+  "sheets": [
+    {
+      "name": "Overview",
+      "full_page_render": "preview/schematics/sheet-1.png",
+      "status": "PASS"
+    },
+    {
+      "name": "Controller",
+      "full_page_render": "preview/schematics/sheet-2.png",
+      "status": "PASS"
+    },
+    {
+      "name": "Regulator",
+      "full_page_render": "preview/schematics/sheet-3.png",
+      "status": "PASS"
+    },
+    {
+      "name": "Motors",
+      "full_page_render": "preview/schematics/sheet-4.png",
+      "status": "PASS"
+    },
+    {
+      "name": "Interlock",
+      "full_page_render": "preview/schematics/sheet-5.png",
+      "status": "PASS"
+    },
+    {
+      "name": "Charging",
+      "full_page_render": "preview/schematics/sheet-6.png",
+      "status": "PASS"
+    },
+    {
+      "name": "Protection",
+      "full_page_render": "preview/schematics/sheet-7.png",
+      "status": "PASS"
+    }
+  ],
+  "dense_crops": [
+    {
+      "region": "controller",
+      "render": "preview/schematics/detail-controller.png",
+      "status": "PASS"
+    },
+    {
+      "region": "regulator",
+      "render": "preview/schematics/detail-regulator.png",
+      "status": "PASS"
+    },
+    {
+      "region": "drivers",
+      "render": "preview/schematics/detail-drivers.png",
+      "status": "PASS"
+    },
+    {
+      "region": "interlock",
+      "render": "preview/schematics/detail-interlock.png",
+      "status": "PASS"
+    },
+    {
+      "region": "usb-charge",
+      "render": "preview/schematics/detail-usb-charge.png",
+      "status": "PASS"
+    },
+    {
+      "region": "protection",
+      "render": "preview/schematics/detail-protection.png",
+      "status": "PASS"
+    }
+  ],
+  "remaining_limitations": [
+    "Readability and configured rule-check success are not functional, thermal, footprint-manufacturer or mechanical approval.",
+    "Pin-explicit Q7/Q8 symbols stack electrically common package pads; the exported pin map includes every physical pad."
+  ],
+  "final_snapshot": "Schematic.pdf"
+}

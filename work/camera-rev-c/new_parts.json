@@ -1,0 +1,264 @@
+[
+  {
+    "ref": "J3",
+    "value": "M0031 CAMERA FPC24",
+    "key": "Camera_FPC24",
+    "symbol": "UGV:Camera_FPC24",
+    "fp": "Camera_FH12_24",
+    "localfp": "UGV:Camera_FH12_24",
+    "nets": {
+      "1": null,
+      "2": "GND",
+      "3": "CAM_SDA",
+      "4": "CAM_2V8",
+      "5": "CAM_SCL",
+      "6": "CAM_RESET",
+      "7": "CAM_VSYNC",
+      "8": "GND",
+      "9": "CAM_HREF",
+      "10": "CAM_1V3",
+      "11": "+3V3",
+      "12": "CAM_D7",
+      "13": "CAM_XCLK",
+      "14": "CAM_D6",
+      "15": "GND",
+      "16": "CAM_D5",
+      "17": "CAM_PCLK",
+      "18": "CAM_D4",
+      "19": "CAM_D0",
+      "20": "CAM_D3",
+      "21": "CAM_D1",
+      "22": "CAM_D2",
+      "23": null,
+      "24": null
+    },
+    "sx": 90.17,
+    "sy": 90.17,
+    "x": 130.75,
+    "y": 73.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "FH12-24S-0.5SH(55)",
+    "uuid": "a30207ef-c817-4775-a655-5f0a1eb9bfd9",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      1.75,
+      1.5
+    ]
+  },
+  {
+    "ref": "U8",
+    "value": "TLV75513PDBVR",
+    "key": "TLV755P_DBV",
+    "symbol": "UGV:TLV755P_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "+3V3",
+      "4": null,
+      "5": "CAM_1V3"
+    },
+    "sx": 180.34,
+    "sy": 50.8,
+    "x": 128.0,
+    "y": 64.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "TLV75513PDBVR",
+    "uuid": "c77d4e6d-2a12-4786-914c-62187b9b9e53",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "ref": "U9",
+    "value": "TLV75528PDBVR",
+    "key": "TLV755P_DBV",
+    "symbol": "UGV:TLV755P_DBV",
+    "fp": "Camera_SOT23_5",
+    "localfp": "UGV:Camera_SOT23_5",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND",
+      "3": "+3V3",
+      "4": null,
+      "5": "CAM_2V8"
+    },
+    "sx": 180.34,
+    "sy": 101.6,
+    "x": 140.25,
+    "y": 87.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "TLV75528PDBVR",
+    "uuid": "6d2745e9-25f7-4367-963b-58d239d205db",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      0.25,
+      0.0
+    ]
+  },
+  {
+    "ref": "C26",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sx": 144.78,
+    "sy": 76.2,
+    "x": 123.5,
+    "y": 62.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "aa9a5317-763a-4132-a71a-4770436d7bd6",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      -1.0,
+      -0.5
+    ]
+  },
+  {
+    "ref": "C27",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CAM_1V3",
+      "2": "GND"
+    },
+    "sx": 215.9,
+    "sy": 76.2,
+    "x": 132.75,
+    "y": 65.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "8e9b3396-c1ab-467d-8ff4-1f5888124d48",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      1.25,
+      1.0
+    ]
+  },
+  {
+    "ref": "C28",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "GND"
+    },
+    "sx": 144.78,
+    "sy": 127,
+    "x": 135.25,
+    "y": 86.75,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "d8a84ce1-50e7-4d17-b92b-274317e557fc",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      -1.25,
+      -0.25
+    ]
+  },
+  {
+    "ref": "C29",
+    "value": "2.2u/10V X7R",
+    "key": "Device__C",
+    "symbol": "UGV:Device__C",
+    "fp": "Capacitor_SMD__C_0603_1608Metric",
+    "localfp": "UGV:Capacitor_SMD__C_0603_1608Metric",
+    "nets": {
+      "1": "CAM_2V8",
+      "2": "GND"
+    },
+    "sx": 215.9,
+    "sy": 127,
+    "x": 145.0,
+    "y": 87.0,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "1ab1383d-de0a-42e3-b53a-9f86204c79d2",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      1.5,
+      0.0
+    ]
+  },
+  {
+    "ref": "R44",
+    "value": "4.7k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CAM_SDA"
+    },
+    "sx": 270.51,
+    "sy": 50.8,
+    "x": 129.5,
+    "y": 86.5,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "082266a1-997d-4701-98ff-ba733ae97bdd",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      -3.0,
+      -2.5
+    ]
+  },
+  {
+    "ref": "R45",
+    "value": "4.7k",
+    "key": "Device__R",
+    "symbol": "UGV:Device__R",
+    "fp": "Resistor_SMD__R_0603_1608Metric",
+    "localfp": "UGV:Resistor_SMD__R_0603_1608Metric",
+    "nets": {
+      "1": "+3V3",
+      "2": "CAM_SCL"
+    },
+    "sx": 270.51,
+    "sy": 101.6,
+    "x": 143.5,
+    "y": 90.25,
+    "a": 0,
+    "side": "F",
+    "mpn": "",
+    "uuid": "fa43b1fe-b58f-45d4-9763-bd86022d0b3e",
+    "group": "Flex camera",
+    "note": "Rev C camera redesign; qualification pending",
+    "shift": [
+      5.5,
+      0.25
+    ]
+  }
+]

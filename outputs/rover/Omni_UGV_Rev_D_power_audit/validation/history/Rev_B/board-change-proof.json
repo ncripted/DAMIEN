@@ -1,0 +1,18 @@
+{
+  "before_board_sha256": "2b74f6fd2498dd3ee5ee95aaa3b31786e873267ffcf8b716108afcd921a6d594",
+  "after_board_sha256": "9a650cdf274122f60b05fbbbb9075c30d62b2a97e59bcd79dd62a10e5ead7f5f",
+  "tracks_vias_unchanged": true,
+  "board_graphics_outline_unchanged": true,
+  "changed_footprints": [
+    "U1",
+    "R42"
+  ],
+  "footprint_count_before": 119,
+  "footprint_count_after": 119,
+  "allowed_changes": [
+    "R42 position and associated fields translated -0.2 mm X",
+    "U1 explicit four-layer keepout/stackup; all pad blocks unchanged",
+    "Refilled zone data"
+  ],
+  "u1_pads_unchanged": true
+}

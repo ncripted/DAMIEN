@@ -1,0 +1,455 @@
+Bank PROTECTED_RAW (129.5, 134.5) (129.5, 133.7)
+Bank PROTECTED_RAW (129.5, 134.5) (130.3, 134.5)
+Bank PROTECTED_RAW (129.5, 134.5) (128.7, 133.9)
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.2, 138.0, 'B.Cu') 0.3
+  done 0.09 s 247 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.2, 138.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.1, 138.0, 'B.Cu') 0.3
+  done 0.09 s 223 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.1, 138.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.2, 140.0, 'B.Cu') 0.3
+  done 0.08 s 212 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.2, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.0, 138.0, 'B.Cu') 0.3
+  done 0.1 s 226 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.0, 138.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.1, 140.0, 'B.Cu') 0.3
+  done 0.09 s 200 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.1, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.1, 140.1, 'B.Cu') 0.3
+  done 0.08 s 218 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.1, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.1, 140.2, 'B.Cu') 0.3
+  done 0.09 s 235 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.1, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.2, 140.4, 'B.Cu') 0.3
+  done 0.08 s 261 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.2, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.0, 140.0, 'B.Cu') 0.3
+  done 0.08 s 193 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.0, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.1, 140.3, 'B.Cu') 0.3
+  done 0.08 s 248 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.1, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.0, 140.1, 'B.Cu') 0.3
+  done 0.08 s 205 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.0, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.2, 140.5, 'B.Cu') 0.3
+  done 0.1 s 267 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.2, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.0, 140.2, 'B.Cu') 0.3
+  done 0.08 s 225 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.0, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.1, 140.4, 'B.Cu') 0.3
+  done 0.08 s 261 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.1, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (111.9, 140.0, 'B.Cu') 0.3
+  done 0.1 s 197 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (111.9, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (112.2, 140.6, 'B.Cu') 0.3
+  done 0.09 s 277 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (112.2, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (114.9, 138.8, 'B.Cu') (117.0, 136.3, 'B.Cu') 0.3
+  done 0.14 s 945 nodes
+Route PROTECTED_RAW (114.9, 138.8, 'F.Cu') (117.0, 136.3, 'F.Cu') 0.3
+  done 0.08 s 162 nodes
+Bank PROTECTED_RAW (114.9, 138.8) (117.0, 136.3)
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 138.0, 'B.Cu') 0.3
+  done 0.15 s 1004 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 138.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 138.0, 'B.Cu') 0.3
+  done 0.14 s 993 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 138.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 140.0, 'B.Cu') 0.3
+  done 0.14 s 693 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 138.0, 'B.Cu') 0.3
+  done 0.14 s 1002 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 138.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.0, 'B.Cu') 0.3
+  done 0.14 s 679 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.1, 'B.Cu') 0.3
+  done 0.14 s 704 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.2, 'B.Cu') 0.3
+  done 0.16 s 723 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 140.4, 'B.Cu') 0.3
+  done 0.16 s 758 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.0, 'B.Cu') 0.3
+  done 0.14 s 657 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.3, 'B.Cu') 0.3
+  done 0.14 s 742 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.1, 'B.Cu') 0.3
+  done 0.14 s 689 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 140.5, 'B.Cu') 0.3
+  done 0.14 s 778 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.2, 'B.Cu') 0.3
+  done 0.13 s 714 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.4, 'B.Cu') 0.3
+  done 0.12 s 759 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.0, 'B.Cu') 0.3
+  done 0.13 s 650 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 140.6, 'B.Cu') 0.3
+  done 0.16 s 793 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.3, 'B.Cu') 0.3
+  done 0.14 s 734 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.1, 'B.Cu') 0.3
+  done 0.14 s 662 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.5, 'B.Cu') 0.3
+  done 0.15 s 775 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.7, 142.0, 'B.Cu') 0.3
+  done 0.13 s 1242 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.7, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 140.7, 'B.Cu') 0.3
+  done 0.15 s 809 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 140.7, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.2, 'B.Cu') 0.3
+  done 0.14 s 696 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.4, 'B.Cu') 0.3
+  done 0.16 s 753 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.8, 142.0, 'B.Cu') 0.3
+  done 0.15 s 1218 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.8, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.0, 'B.Cu') 0.3
+  done 0.15 s 655 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.6, 'B.Cu') 0.3
+  done 0.16 s 797 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.9, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1191 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.9, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.3, 'B.Cu') 0.3
+  done 0.14 s 723 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 140.8, 'B.Cu') 0.3
+  done 0.15 s 821 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 140.8, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.5, 'B.Cu') 0.3
+  done 0.14 s 773 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.1, 'B.Cu') 0.3
+  done 0.14 s 656 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.6, 142.1, 'B.Cu') 0.3
+  done 0.13 s 1262 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.6, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.0, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1158 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.0, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.7, 'B.Cu') 0.3
+  done 0.16 s 814 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.7, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.7, 142.1, 'B.Cu') 0.3
+  done 0.12 s 1252 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.7, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.4, 'B.Cu') 0.3
+  done 0.16 s 744 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.2, 'B.Cu') 0.3
+  done 0.14 s 667 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.6, 'B.Cu') 0.3
+  done 0.16 s 790 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.1, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1137 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.1, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.0, 'B.Cu') 0.3
+  done 0.14 s 667 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.8, 142.1, 'B.Cu') 0.3
+  done 0.13 s 1226 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.8, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.4, 142.2, 'B.Cu') 0.3
+  done 0.14 s 1304 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.4, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.8, 'B.Cu') 0.3
+  done 0.15 s 829 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.8, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.3, 'B.Cu') 0.3
+  done 0.14 s 703 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.9, 142.1, 'B.Cu') 0.3
+  done 0.13 s 1196 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.9, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.5, 'B.Cu') 0.3
+  done 0.14 s 766 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.5, 142.2, 'B.Cu') 0.3
+  done 0.13 s 1287 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.5, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.2, 142.0, 'B.Cu') 0.3
+  done 0.13 s 1131 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.2, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.1, 'B.Cu') 0.3
+  done 0.16 s 663 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.7, 'B.Cu') 0.3
+  done 0.15 s 815 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.7, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.6, 142.2, 'B.Cu') 0.3
+  done 0.13 s 1273 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.6, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.0, 142.1, 'B.Cu') 0.3
+  done 0.15 s 1163 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.0, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.4, 'B.Cu') 0.3
+  done 0.15 s 729 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.7, 142.2, 'B.Cu') 0.3
+  done 0.12 s 1261 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.7, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.3, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1146 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.3, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.2, 'B.Cu') 0.3
+  done 0.14 s 663 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.6, 'B.Cu') 0.3
+  done 0.15 s 787 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 140.9, 'B.Cu') 0.3
+  done 0.14 s 843 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 140.9, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.1, 142.1, 'B.Cu') 0.3
+  done 0.12 s 1143 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.1, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.6, 140.0, 'B.Cu') 0.3
+  done 0.16 s 686 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.6, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.8, 142.2, 'B.Cu') 0.3
+  done 0.15 s 1232 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.8, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.8, 'B.Cu') 0.3
+  done 0.15 s 831 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.8, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.4, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1159 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.4, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.3, 'B.Cu') 0.3
+  done 0.14 s 671 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.4, 142.3, 'B.Cu') 0.3
+  done 0.14 s 1308 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.4, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.5, 'B.Cu') 0.3
+  done 0.13 s 754 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.9, 142.2, 'B.Cu') 0.3
+  done 0.13 s 1201 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.9, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.2, 142.1, 'B.Cu') 0.3
+  done 0.14 s 1140 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.2, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.6, 140.1, 'B.Cu') 0.3
+  done 0.14 s 673 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.6, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.7, 'B.Cu') 0.3
+  done 0.15 s 808 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.7, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.5, 142.3, 'B.Cu') 0.3
+  done 0.14 s 1298 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.5, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 141.0, 'B.Cu') 0.3
+  done 0.14 s 858 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 141.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.6, 142.3, 'B.Cu') 0.3
+  done 0.14 s 1283 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.6, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.0, 142.2, 'B.Cu') 0.3
+  done 0.13 s 1171 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.0, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.5, 139.9, 'B.Cu') 0.3
+  done 0.14 s 767 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.5, 139.9, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.5, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1171 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.5, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.4, 'B.Cu') 0.3
+  done 0.15 s 710 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 140.9, 'B.Cu') 0.3
+  done 0.15 s 848 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 140.9, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.3, 142.1, 'B.Cu') 0.3
+  done 0.13 s 1153 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.3, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.6, 'B.Cu') 0.3
+  done 0.15 s 778 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.6, 140.2, 'B.Cu') 0.3
+  done 0.14 s 669 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.6, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.7, 142.3, 'B.Cu') 0.3
+  done 0.14 s 1269 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.7, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.1, 142.2, 'B.Cu') 0.3
+  done 0.13 s 1149 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.1, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.8, 'B.Cu') 0.3
+  done 0.15 s 831 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.8, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.5, 140.0, 'B.Cu') 0.3
+  done 0.15 s 728 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.5, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.0, 'B.Cu') 0.3
+  done 0.33 s 921 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 141.2, 'B.Cu') 0.3
+  done 0.15 s 863 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 141.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.1, 'B.Cu') 0.3
+  done 0.14 s 924 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.8, 142.3, 'B.Cu') 0.3
+  done 0.14 s 1239 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.8, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.3, 142.4, 'B.Cu') 0.3
+  done 0.14 s 1330 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.3, 142.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.2, 'B.Cu') 0.3
+  done 0.15 s 924 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.6, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1178 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.6, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.5, 'B.Cu') 0.3
+  done 0.15 s 738 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 141.1, 'B.Cu') 0.3
+  done 0.17 s 868 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 141.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.4, 142.1, 'B.Cu') 0.3
+  done 0.14 s 1167 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.4, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.6, 140.3, 'B.Cu') 0.3
+  done 0.14 s 671 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.6, 140.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.4, 142.4, 'B.Cu') 0.3
+  done 0.15 s 1320 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.4, 142.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.3, 'B.Cu') 0.3
+  done 0.15 s 923 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.7, 'B.Cu') 0.3
+  done 0.17 s 800 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.7, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.2, 142.2, 'B.Cu') 0.3
+  done 0.14 s 1146 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.2, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 141.0, 'B.Cu') 0.3
+  done 0.15 s 864 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 141.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.5, 140.1, 'B.Cu') 0.3
+  done 0.15 s 690 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.5, 140.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.4, 139.8, 'B.Cu') 0.3
+  done 0.16 s 825 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.4, 139.8, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.9, 142.3, 'B.Cu') 0.3
+  done 0.14 s 1209 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.9, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.5, 142.4, 'B.Cu') 0.3
+  done 0.14 s 1309 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.5, 142.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.4, 'B.Cu') 0.3
+  done 0.14 s 911 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.9, 140.9, 'B.Cu') 0.3
+  done 0.13 s 848 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.9, 140.9, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.5, 142.1, 'B.Cu') 0.3
+  done 0.13 s 1179 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.5, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.6, 142.4, 'B.Cu') 0.3
+  done 0.13 s 1292 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.6, 142.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.5, 'B.Cu') 0.3
+  done 0.17 s 902 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.6, 140.4, 'B.Cu') 0.3
+  done 0.15 s 678 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.6, 140.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.4, 139.9, 'B.Cu') 0.3
+  done 0.15 s 798 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.4, 139.9, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.0, 142.3, 'B.Cu') 0.3
+  done 0.13 s 1176 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.0, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.7, 142.0, 'B.Cu') 0.3
+  done 0.14 s 1180 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.7, 142.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.7, 140.6, 'B.Cu') 0.3
+  done 0.14 s 765 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.7, 140.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.3, 142.2, 'B.Cu') 0.3
+  done 0.14 s 1163 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.3, 142.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.5, 140.2, 'B.Cu') 0.3
+  done 0.14 s 680 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.5, 140.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.2, 141.3, 'B.Cu') 0.3
+  done 0.15 s 870 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.2, 141.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.1, 141.2, 'B.Cu') 0.3
+  done 0.16 s 878 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.1, 141.2, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.7, 142.4, 'B.Cu') 0.3
+  done 0.15 s 1275 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.7, 142.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.6, 'B.Cu') 0.3
+  done 0.15 s 887 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.6, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.8, 140.8, 'B.Cu') 0.3
+  done 0.14 s 821 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.8, 140.8, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.4, 140.0, 'B.Cu') 0.3
+  done 0.15 s 775 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.4, 140.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.1, 142.3, 'B.Cu') 0.3
+  done 0.15 s 1157 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.1, 142.3, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (112.0, 141.1, 'B.Cu') 0.3
+  done 0.16 s 878 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (112.0, 141.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.2, 138.9, 'B.Cu') 0.3
+  done 0.15 s 940 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.2, 138.9, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.2, 139.0, 'B.Cu') 0.3
+  done 0.15 s 942 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.2, 139.0, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.8, 142.4, 'B.Cu') 0.3
+  done 0.15 s 1247 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.8, 142.4, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.3, 139.7, 'B.Cu') 0.3
+  done 0.16 s 870 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.3, 139.7, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (116.6, 142.1, 'B.Cu') 0.3
+  done 0.14 s 1190 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (116.6, 142.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (115.2, 142.5, 'B.Cu') 0.3
+  done 0.14 s 1355 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (115.2, 142.5, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.2, 139.1, 'B.Cu') 0.3
+  done 0.15 s 946 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.2, 139.1, 'F.Cu') 0.3
+Route PROTECTED_RAW (117.0, 136.3, 'B.Cu') (111.6, 140.5, 'B.Cu') 0.3
+  done 0.13 s 717 nodes
+Route PROTECTED_RAW (117.0, 136.3, 'F.Cu') (111.6, 140.5, 'F.Cu') 0.3

@@ -1,0 +1,18 @@
+{
+  "Rev_C_native_files_unchanged": true,
+  "checked_files": [
+    "battery_protection.kicad_sch",
+    "camera.kicad_sch",
+    "charging.kicad_sch",
+    "controller.kicad_sch",
+    "interlock.kicad_sch",
+    "motors.kicad_sch",
+    "omni_ugv.kicad_dru",
+    "omni_ugv.kicad_pcb",
+    "omni_ugv.kicad_pro",
+    "omni_ugv.kicad_sch",
+    "regulator.kicad_sch",
+    "UGV.kicad_sym"
+  ],
+  "original_zip_sha256": "b98c896f4cad7e2c9cc6c30c1111b8cb07aa9229da0994c1721cee39b67e5380"
+}

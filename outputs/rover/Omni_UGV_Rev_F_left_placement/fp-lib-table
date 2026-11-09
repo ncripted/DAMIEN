@@ -1,0 +1,3 @@
+(fp_lib_table
+(lib (name "UGV")(type "KiCad")(uri "${KIPRJMOD}/UGV.pretty")(options "")(descr "Bundled footprints"))
+)

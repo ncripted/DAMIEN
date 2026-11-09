@@ -1,0 +1,41 @@
+{
+  "reviewed_utc_date": "2026-11-06",
+  "urls": {
+    "bq2980": "https://www.ti.com/lit/ds/symlink/bq2980.pdf",
+    "bq24074": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "tps63802": "https://www.ti.com/lit/ds/symlink/tps63802.pdf",
+    "drv8833": "https://www.ti.com/lit/ds/symlink/drv8833.pdf",
+    "csd17308q3": "https://www.ti.com/lit/ds/symlink/csd17308q3.pdf",
+    "ao3401a": "https://www.aosmd.com/pdfs/datasheet/AO3401A.pdf",
+    "semitec": "https://www.semitec-global.com/uploads/2022/01/P12-13-AT-Thermistor.pdf",
+    "dmp2035u": "https://www.diodes.com/datasheet/download/DMP2035U.pdf",
+    "wsl": "https://www.vishay.com/docs/30100/wsl.pdf",
+    "xfl4015": "https://www.coilcraft.com/getmedia/84927b8b-f089-421b-a7f4-a0fa23afe908/xfl4015.pdf",
+    "molex": "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/436/43650/436500215_sd.pdf",
+    "tps3840": "https://www.ti.com/lit/ds/symlink/tps3840.pdf",
+    "tlv6700": "https://www.ti.com/lit/ds/symlink/tlv6700.pdf",
+    "tlv755p": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+    "sn74lvc1g14": "https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf",
+    "sn74lvc1g17": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+    "mmbt3904": "https://www.diodes.com/datasheet/download/MMBT3904.pdf",
+    "mmbt3906": "https://www.diodes.com/datasheet/download/MMBT3906.pdf",
+    "pololu3065": "https://www.pololu.com/product/3065/specs",
+    "esp32_s3_wroom": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf"
+  },
+  "download_limitations": "Diodes direct downloads returned HTTP403; exact current official PDFs were inspected through browser research. URLs retained. No distributor substitute used as electrical authority.",
+  "sha256": {
+    "ao3401a.pdf": "0d8e3261ae280e007b5837fff60c55142f2d92af71edc4d02aee6f7a760a785c",
+    "bq24074.pdf": "4fe4e4f9855501f83b400c6932e3098439e51c50539e40dc45b44a8d509e8db1",
+    "bq2980.pdf": "3e8c71a647af50637071b74358839b5bb7b18a4f471d3f2d4fe78b339a278c52",
+    "csd17308q3.pdf": "8be74e36edc0d28d609e68790860d91d8b66eb3f4052763edd2e6efef8dcb10e",
+    "drv8833.pdf": "3e400e333f08f1b93ec99a2d52a6af2a864e88462cc892282208548d9e9f0de4",
+    "semitec.pdf": "389dc527ed8d783cbbf94db460504e26d17993020d8d3627056499a9264b3262",
+    "sn74lvc1g14.pdf": "3d59568b16a2b7abb63d33ebe6f8ddd37e12dd3ca2616dd803872c509a583283",
+    "tlv6700.pdf": "b97ac5c46caafd69bb762ee3da123e7906fb68394f552455a51b41385890c2fc",
+    "tlv755p.pdf": "96e2706d4b13656d2d550fdbb5be9861c56b058822109bb39a906d4ad1beb019",
+    "tps3840.pdf": "bc66e11c84e5f3be2cded37ee6935c1b69d2b26e8fbc5f194099df6569381685",
+    "tps63802.pdf": "be07deca1231c5493957bc64c2dc1cad5543bff330e49ae41caf3286fd80dca6",
+    "wsl.pdf": "96c2dc89ae1e3039815ed6c41f566a6e9f6b53035f8e45ea2ada1697935a44dc",
+    "sn74lvc1g17.pdf": "74ff979da5dcaf2b3695cf9a500b46962bb8489033db989b5537ec5cef88c61d"
+  }
+}

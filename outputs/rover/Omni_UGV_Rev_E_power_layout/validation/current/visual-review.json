@@ -1,0 +1,24 @@
+{
+  "revision": "E",
+  "native_3D_views": [
+    "preview/board-top.png",
+    "preview/board-bottom.png"
+  ],
+  "copper_views": "preview/copper-layer-overview.png",
+  "schematic_pages": 11,
+  "visually_inspected": [
+    "root overview",
+    "four-terminal protection",
+    "operating undervoltage",
+    "discharge cutoff",
+    "motor driver sheet",
+    "top and bottom board",
+    "all four copper layers"
+  ],
+  "limitations": [
+    "Custom 3D bodies and offboard mechanical assembly are incomplete.",
+    "No physical fit, thermal, transient or RF test.",
+    "Source-pad vias require filled/copper-capped processing or layout change."
+  ],
+  "fabrication_gate": "BLOCKED"
+}

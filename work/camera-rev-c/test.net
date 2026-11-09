@@ -1,0 +1,1250 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\nates\\Documents\\Codex\\2026-11-03\\continue-developing-my-miniature-three-wheel\\outputs\\rover\\Omni_UGV_Rev_C_flex_camera\\camera.kicad_sch")
+		(date "2026-11-06T12:57:31")
+		(tool "Eeschema 10.0.8")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title "OV2640 M0031 flex interface")
+				(company)
+				(rev "C-DRAFT")
+				(date)
+				(source "camera.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C26")
+			(value "2.2u/10V X7R")
+			(footprint "UGV:Capacitor_SMD__C_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "UGV:Capacitor_SMD__C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Device__C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "aa9a5317-763a-4132-a71a-4770436d7bd6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C27")
+			(value "2.2u/10V X7R")
+			(footprint "UGV:Capacitor_SMD__C_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "UGV:Capacitor_SMD__C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Device__C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8e9b3396-c1ab-467d-8ff4-1f5888124d48")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C28")
+			(value "2.2u/10V X7R")
+			(footprint "UGV:Capacitor_SMD__C_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "UGV:Capacitor_SMD__C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Device__C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d8a84ce1-50e7-4d17-b92b-274317e557fc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C29")
+			(value "2.2u/10V X7R")
+			(footprint "UGV:Capacitor_SMD__C_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "UGV:Capacitor_SMD__C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Device__C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1ab1383d-de0a-42e3-b53a-9f86204c79d2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J3")
+			(value "M0031 CAMERA FPC24")
+			(footprint "UGV:Camera_FH12_24")
+			(fields
+				(field
+					(name "Footprint") "UGV:Camera_FH12_24")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Camera_FPC24")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a30207ef-c817-4775-a655-5f0a1eb9bfd9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R44")
+			(value "4.7k")
+			(footprint "UGV:Resistor_SMD__R_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "UGV:Resistor_SMD__R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Device__R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "082266a1-997d-4701-98ff-ba733ae97bdd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R45")
+			(value "4.7k")
+			(footprint "UGV:Resistor_SMD__R_0603_1608Metric")
+			(fields
+				(field
+					(name "Footprint") "UGV:Resistor_SMD__R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Device__R")
+				(description "Resistor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fa43b1fe-b58f-45d4-9763-bd86022d0b3e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U8")
+			(value "TLV75513PDBVR")
+			(footprint "UGV:Camera_SOT23_5")
+			(fields
+				(field
+					(name "Footprint") "UGV:Camera_SOT23_5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "TLV755P_DBV")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c77d4e6d-2a12-4786-914c-62187b9b9e53")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U9")
+			(value "TLV75528PDBVR")
+			(footprint "UGV:Camera_SOT23_5")
+			(fields
+				(field
+					(name "Footprint") "UGV:Camera_SOT23_5")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "TLV755P_DBV")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "outputs/rover/Omni_UGV_Rev_C_flex_camera/camera.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6d2745e9-25f7-4367-963b-58d239d205db")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "UGV")
+			(part "Camera_FPC24")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "Camera_FPC24")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "STROBE")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "AGND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "AVDD")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "RESET")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "VSYNC")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "PWDN")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "HREF")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "DVDD")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "DOVDD")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "Y9")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "XCLK")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "Y8")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "DGND")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "Y7")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "PCLK")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "Y6")
+					(type "passive")
+				)
+				(pin
+					(num "19")
+					(name "Y2")
+					(type "passive")
+				)
+				(pin
+					(num "20")
+					(name "Y5")
+					(type "passive")
+				)
+				(pin
+					(num "21")
+					(name "Y3")
+					(type "passive")
+				)
+				(pin
+					(num "22")
+					(name "Y4")
+					(type "passive")
+				)
+				(pin
+					(num "23")
+					(name "Y1")
+					(type "passive")
+				)
+				(pin
+					(num "24")
+					(name "Y0")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "UGV")
+			(part "Device__C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "UGV")
+			(part "Device__R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "UGV")
+			(part "TLV755P_DBV")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "TLV755P_DBV")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "IN")
+					(type "power_in")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "power_in")
+				)
+				(pin
+					(num "3")
+					(name "EN")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "NC")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "OUT")
+					(type "power_out")
+				)
+			)
+		)
+	)
+	(libraries)
+	(nets
+		(net
+			(code "1")
+			(name "+3V3")
+			(class "Default")
+			(node
+				(ref "C26")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "11")
+				(pinfunction "DOVDD_11")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U8")
+				(pin "1")
+				(pinfunction "IN_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U8")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "input")
+			)
+			(node
+				(ref "U9")
+				(pin "1")
+				(pinfunction "IN_1")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U9")
+				(pin "3")
+				(pinfunction "EN_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "2")
+			(name "CAM_1V3")
+			(class "Default")
+			(node
+				(ref "C27")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "10")
+				(pinfunction "DVDD_10")
+				(pintype "passive")
+			)
+			(node
+				(ref "U8")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "3")
+			(name "CAM_2V8")
+			(class "Default")
+			(node
+				(ref "C29")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "4")
+				(pinfunction "AVDD_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U9")
+				(pin "5")
+				(pinfunction "OUT_5")
+				(pintype "power_out")
+			)
+		)
+		(net
+			(code "4")
+			(name "CAM_D0")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "19")
+				(pinfunction "Y2_19")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "CAM_D1")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "21")
+				(pinfunction "Y3_21")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "CAM_D2")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "22")
+				(pinfunction "Y4_22")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "CAM_D3")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "20")
+				(pinfunction "Y5_20")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "CAM_D4")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "18")
+				(pinfunction "Y6_18")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "CAM_D5")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "16")
+				(pinfunction "Y7_16")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "CAM_D6")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "14")
+				(pinfunction "Y8_14")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "CAM_D7")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "12")
+				(pinfunction "Y9_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "CAM_HREF")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "9")
+				(pinfunction "HREF_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "CAM_PCLK")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "17")
+				(pinfunction "PCLK_17")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "CAM_RESET")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "6")
+				(pinfunction "RESET_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "CAM_SCL")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "5")
+				(pinfunction "SCL_5")
+				(pintype "passive")
+			)
+			(node
+				(ref "R45")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "CAM_SDA")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "3")
+				(pinfunction "SDA_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "R44")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "CAM_VSYNC")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "7")
+				(pinfunction "VSYNC_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "CAM_XCLK")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "13")
+				(pinfunction "XCLK_13")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "GND")
+			(class "Default")
+			(node
+				(ref "C26")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C27")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C28")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C29")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "15")
+				(pinfunction "DGND_15")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "2")
+				(pinfunction "AGND_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "8")
+				(pinfunction "PWDN_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "U8")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U9")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "power_in")
+			)
+		)
+		(net
+			(code "20")
+			(name "unconnected-(J3-STROBE-Pad1)")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "STROBE_1")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "21")
+			(name "unconnected-(J3-Y0-Pad24)")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "24")
+				(pinfunction "Y0_24")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "22")
+			(name "unconnected-(J3-Y1-Pad23)")
+			(class "Default")
+			(node
+				(ref "J3")
+				(pin "23")
+				(pinfunction "Y1_23")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "23")
+			(name "unconnected-(U8-NC-Pad4)")
+			(class "Default")
+			(node
+				(ref "U8")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "passive+no_connect")
+			)
+		)
+		(net
+			(code "24")
+			(name "unconnected-(U9-NC-Pad4)")
+			(class "Default")
+			(node
+				(ref "U9")
+				(pin "4")
+				(pinfunction "NC_4")
+				(pintype "passive+no_connect")
+			)
+		)
+	)
+)

@@ -1,0 +1,59 @@
+Loading board
+Adding U7
+loaded
+positioned
+path
+Adding Q7
+loaded
+positioned
+path
+Adding Q8
+loaded
+positioned
+path
+Adding R36
+loaded
+positioned
+path
+Adding R37
+loaded
+positioned
+path
+Adding R38
+loaded
+positioned
+path
+Adding R39
+loaded
+positioned
+path
+Adding C24
+loaded
+positioned
+path
+Adding R40
+loaded
+positioned
+path
+Adding R41
+loaded
+positioned
+path
+Adding J5
+loaded
+positioned
+path
+Adding R42
+loaded
+positioned
+path
+Adding R43
+loaded
+positioned
+path
+Adding C25
+loaded
+positioned
+path
+Added 14 footprints; removed 21 old connector/GPIO track segments
+{'J2': [('1', (116.0, 132.0), 'CELL_P'), ('2', (116.0, 129.0), 'CELL_N')], 'U7': [('1', (118.325, 123.5), 'PROT_BAT'), ('2', (118.325, 123.0), 'PROT_VDD'), ('3', (118.325, 122.5), 'CELL_N'), ('7', (119.675, 123.5), 'PROT_DSG'), ('6', (119.675, 123.0), 'PROT_PACK'), ('5', (119.675, 122.5), 'CELL_N'), ('8', (119.0, 123.65), 'PROT_CHG'), ('4', (119.0, 122.35), 'GND')], 'Q7': [('1', (122.435, 137.025), 'CELL_P'), ('2', (122.435, 137.675), 'CELL_P'), ('3', (122.435, 138.325), 'CELL_P'), ('4', (122.435, 138.975), 'PROT_CHG'), ('8', (119.565, 137.025), 'PROT_DRAIN'), ('7', (119.565, 137.675), 'PROT_DRAIN'), ('6', (119.565, 138.325), 'PROT_DRAIN'), ('5', (119.565, 138.975), 'PROT_DRAIN'), ('9', (120.61, 138.0), 'PROT_DRAIN')], 'Q8': [('1', (114.615, 138.975), 'VBAT'), ('2', (114.615, 138.325), 'VBAT'), ('3', (114.615, 137.675), 'VBAT'), ('4', (114.615, 137.025), 'PROT_DSG'), ('8', (117.485, 138.975), 'PROT_DRAIN'), ('7', (117.485, 138.325), 'PROT_DRAIN'), ('6', (117.485, 137.675), 'PROT_DRAIN'), ('5', (117.485, 137.025), 'PROT_DRAIN'), ('9', (116.44, 138.0), 'PROT_DRAIN')], 'R36': [('1', (115.9625, 126.25), 'CELL_N'), ('2', (110.0375, 126.25), 'GND')], 'J5': [('1', (138.0, 80.0), 'CELL_TEMP_DIV'), ('2', (140.0, 80.0), 'GND')]}

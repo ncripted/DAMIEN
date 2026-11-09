@@ -1,0 +1,8 @@
+Route PROT_DSG (122.675, 130.6, 'In2.Cu') (114.615, 137.025, 'B.Cu') 0.15
+Traceback (most recent call last):
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\final_controls.py", line 111, in <module>
+    route(net,(*pt,'In2.Cu'),endpoint(ref,pin),.15,True,12);save()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\final_controls.py", line 88, in route
+    raise RuntimeError('No route '+str((net,start,end,width,len(cost))))
+RuntimeError: No route ('PROT_DSG', (122.675, 130.6, 'In2.Cu'), (114.615, 137.025, 'B.Cu'), 0.15, 159696)

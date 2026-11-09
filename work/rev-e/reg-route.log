@@ -1,0 +1,7 @@
+Route REG_L1 (97.4, 113.5, 'F.Cu') (99.75, 112.4, 'F.Cu') 0.4
+  done 0.21 s 154 nodes
+Route REG_L2 (97.4, 114.5, 'F.Cu') (99.75, 115.6, 'F.Cu') 0.4
+  done 0.2 s 166 nodes
+Ground return via C18 1
+Ground return via C19 1
+Ground return via C20 1

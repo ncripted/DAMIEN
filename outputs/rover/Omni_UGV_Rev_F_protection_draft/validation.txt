@@ -1,0 +1,1 @@
+54 pin-to-net assignments matched. Six critical net memberships and two deliberate open pins verified. Zero ERC violations.

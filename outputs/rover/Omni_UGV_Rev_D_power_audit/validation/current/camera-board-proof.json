@@ -1,0 +1,19 @@
+{
+  "existing_component_pad_changes_except_J3_J5": [],
+  "outline_unchanged_from_solid_perimeter_Rev_B": true,
+  "new_In1_tracks": 0,
+  "intentional_changes": [
+    "J3 replaced by 24-pin FPC connector",
+    "J5 relocated",
+    "U8/U9 and camera support added",
+    "Camera signals and support routed on F/B/In2; through-vias present",
+    "Old header stubs removed",
+    "Silkscreen revision/camera label corrected"
+  ],
+  "not_proven": [
+    "camera timing/eye margin",
+    "exact flex fit/orientation",
+    "assembled mechanical clearance",
+    "power and thermal qualification"
+  ]
+}

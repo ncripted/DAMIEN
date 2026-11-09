@@ -1,0 +1,130 @@
+{
+  "CELL_P": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.15": 57.79065884097473,
+      "0.2": 26.239712552782503,
+      "0.45": 2.549999999999983,
+      "0.6": 1.299999999999983,
+      "1.2": 9.92448526806494
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 11,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "CELL_N": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.15": 123.5058816034132,
+      "0.2": 3.043134518630708,
+      "1.2": 2.862500200015671
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 16,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "VBAT": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.15": 24.01842464909883,
+      "0.2": 77.34818077281832,
+      "0.2502": 0.5,
+      "0.45": 2.549999999999983,
+      "0.5": 8.662741699797046,
+      "0.6": 1.299999999999983,
+      "1.0": 82.23230007821174,
+      "1.2": 2.208695656313421
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 17,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "VMOTOR": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 36.814768677265604,
+      "0.601": 0.14589999999999748,
+      "1.0": 77.61812320741792
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 9,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "SYS_RAW": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 27.917110370561552,
+      "0.2502": 0.5371332596179642,
+      "0.5": 66.52983353887655
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 11,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "M1_A": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 28.055999176923716,
+      "0.6": 8.127238280485384
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 2,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "M1_B": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 22.139619875617665,
+      "0.25": 1.5375000000000085,
+      "0.6": 6.575309375740103
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 3,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "M2_A": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 73.41463870017961,
+      "0.6": 0.07071067811865073
+    },
+    "In1_total_track_length_mm": 11.048275605729687,
+    "via_count": 6,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "M2_B": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 42.977346138861265,
+      "0.6": 6.124988399466354
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 4,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "M3_A": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 24.88139393567537,
+      "0.6": 9.421542262600106
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 2,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "M3_B": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.2": 28.942036029370243,
+      "0.6": 0.5815000000000055
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 6,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "REG_L1": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.4": 4.705634918610402
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 0,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  },
+  "REG_L2": {
+    "width_mm_to_total_segment_length_mm": {
+      "0.4": 4.705634918610402
+    },
+    "In1_total_track_length_mm": 0,
+    "via_count": 0,
+    "limitation": "Segment inventory, not a serial power path, current-density solution, Kelvin proof or ampacity qualification."
+  }
+}

@@ -1,0 +1,106 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-04T13:50:37",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0953 mm)",
+            "items": [
+                {
+                    "description": "Track [CELL_TEMP_ADC] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 126.899999,
+                        "y": 87.6
+                    },
+                    "uuid": "a5a99a32-ca5d-4daf-8838-a286c28f7fe7"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of R42 on B.Cu",
+                    "pos": {
+                        "x": 126.325,
+                        "y": 88.0
+                    },
+                    "uuid": "cb872339-bb9a-4d7a-89c4-0e145daa586c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1500 mm; actual 0.0953 mm)",
+            "items": [
+                {
+                    "description": "Track [CELL_TEMP_ADC] on B.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 126.899999,
+                        "y": 87.4
+                    },
+                    "uuid": "24c94ce3-d8db-4cc9-a6f0-16ccb719cccb"
+                },
+                {
+                    "description": "Pad 1 [+3V3] of R42 on B.Cu",
+                    "pos": {
+                        "x": 126.325,
+                        "y": 88.0
+                    },
+                    "uuid": "cb872339-bb9a-4d7a-89c4-0e145daa586c"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Footprint 'RF_Module__ESP32-S3-WROOM-1' does not match copy in library 'UGV'",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 68.0
+                    },
+                    "uuid": "b2afd499-484d-4bc0-b5fb-04e86092b77a"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

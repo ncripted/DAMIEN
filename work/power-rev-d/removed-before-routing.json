@@ -1,0 +1,874 @@
+[
+  {
+    "uuid": "0b7166c6-81d1-4d88-b135-76ef7386dea3",
+    "net": "GND"
+  },
+  {
+    "uuid": "5c69790b-5ddd-4aa1-a76a-6cde11632513",
+    "net": "GND"
+  },
+  {
+    "uuid": "70e18199-204d-472d-a804-299be6a7cbb1",
+    "net": "GND"
+  },
+  {
+    "uuid": "37191d14-40ff-413b-8ace-3544f05c9ac9",
+    "net": "GND"
+  },
+  {
+    "uuid": "81fae19e-de05-43f5-8719-5a9367fde624",
+    "net": "GND"
+  },
+  {
+    "uuid": "ea91d340-510b-4057-ad20-61195dbaa244",
+    "net": "GND"
+  },
+  {
+    "uuid": "7333303c-1ae8-49ef-a4b9-f74ec65b6b45",
+    "net": "BAT_NTC"
+  },
+  {
+    "uuid": "80a0d910-b08d-4f15-b028-93e121100d93",
+    "net": "BAT_NTC"
+  },
+  {
+    "uuid": "ec6792d8-9e61-4666-a555-429cd5b331d3",
+    "net": "BAT_NTC"
+  },
+  {
+    "uuid": "afe1571f-9973-4a60-be18-ea5a0afb06f7",
+    "net": "BAT_NTC"
+  },
+  {
+    "uuid": "cb407734-e435-4306-9853-a0de2dffa87f",
+    "net": "BAT_NTC"
+  },
+  {
+    "uuid": "f36e3c1e-63ec-47e9-87fe-46ccf763453a",
+    "net": "BAT_NTC"
+  },
+  {
+    "uuid": "0030bd08-b569-4b49-844a-6676079449af",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "028dcc6c-b4e6-49f1-97f7-1687858c6174",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "02cde242-da36-4084-ab95-a31bf8337222",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0af7d9d1-e461-4e8f-9e9e-01ad15744fd6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "107a60b8-28e3-4e4c-9e15-0c1275262725",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "107dc0f9-9ed2-4297-ba4d-39933bce9249",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "11157cc0-636f-4f7b-860c-34e92004238c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "11cf786c-aa24-49ee-a93e-71d7d2291ab3",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "208dc9ad-7324-47b9-87aa-0344b1a457c4",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "20d7b45c-c8fb-4b14-8df1-4c553acb7ea8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "23472e3d-649b-4c34-b9de-d2591b958d22",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "297088dc-b14a-4f19-aedc-53b6cfa8d231",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "33bfc2a8-febd-4423-b3f7-a0433fa86474",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "34798a5c-ac62-4bbe-935c-afb394bb13af",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "34f36509-495f-416c-bd78-233cc98bc2e8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "390b0db7-e346-4acf-afeb-e74a83508ea3",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3d9b752d-1e89-4455-a581-bdc0b4983d9e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "45145638-e272-49aa-b7cc-6a37417037e2",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "45f377f8-5d17-4149-824b-d0b7870fced1",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "46161bbf-fb3a-4730-9a5a-82f7df1390a3",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "46b933ee-27c1-4719-95e2-bb2e3d89a22e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4757a927-1bf9-4d5f-a2ed-84925bc5d727",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4d336318-d1e7-4004-8b94-a76077979d60",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4d4027a7-1b9b-44f2-9e04-b72f7cb6c75e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4f7b9310-a1db-42a2-a978-c86d1f3dde68",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4f9a1ee5-5862-46b8-8f7a-2fa1142c8568",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "59b67343-f252-488f-b5c9-01a13234862f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "5e77aff3-e3ed-401c-876d-807e14998bd9",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "661431f4-a5f0-4073-b162-9dd388bd8229",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "6f0bb3a9-abca-47a1-a4ee-dd62c9c0083c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7089274d-3c09-421b-86e9-3fa0a9d89633",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "727592b3-2728-4e1a-b4e3-780d9aeaafb0",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "734e178b-747b-477a-8bd8-63e6747cfbaf",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "770e0f9a-5220-45d5-9287-343bb59e522f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "77291abf-7657-419b-986b-d484716afc0b",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "791766d9-4070-4e31-9ef2-96c10f48e518",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7ad3ab24-2b8b-4d66-ba53-98fdb15c4869",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7b818d20-97aa-4af1-946a-61f154e70f3a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7f0b29ee-d03b-464a-a51b-d81cfdc8b2c2",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "80d9a362-85b4-41fd-ba16-82939529638b",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "87f545bc-5232-45f6-8277-a86c9c82c505",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8d30f482-fb3e-4387-961a-0186f3c2a708",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "925d23f9-756f-46c8-b367-a8c272226660",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "92aca61f-e960-4fda-8bf7-41c7222c8d7c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "94d8a4bf-44ab-4d47-8b3c-94ccd4698d89",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "974e1fca-36bb-42f9-b9a2-86e6bccb6ff1",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9911324a-2002-4fe7-bf82-dcc28d22f8ff",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "99455f2c-109f-45ff-bf0a-8a5cd83557dc",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "99fb0012-9f9e-40e5-9ca2-2fe687f1e0af",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9d394d6f-c50e-4804-901d-d02dec786cd8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "a4468b28-7ed1-4682-bda2-6f7cbf548580",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "a6b2abb5-55d1-49e0-88a8-e8b3090c0a20",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "a8b337fc-ec6b-49d9-893a-424f28bad66f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "a99c0daa-05cc-48b9-925c-8f24149777ed",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "aa19db1f-5570-4230-8174-ce1b04762b6c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "add97868-c0e4-444b-ae31-b0dce65feba8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "b0e22122-1913-4d49-9688-af157423be03",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "b379b6d3-1c25-4d80-8fd4-1ab4f4392dca",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "bb2b0973-1d24-4313-b897-aa05af24f09f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "cd9d53c7-c275-4c50-b976-5cd3f374ffd0",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "d1db7aff-9579-4761-ad21-d8b4ab45e2be",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "d3622117-b85a-47d7-a213-052cc53ea532",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "d78c6353-b7cd-4356-82da-fe7c25afa17f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "dab5313c-af99-4c71-9abb-377de66c041d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ddc0c12c-44ad-4b82-94f4-c19047637faa",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e15bb2cf-c7bf-4897-93a4-f984d9423593",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e74f2000-2eba-43c7-a1a7-1c13e0d116f7",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ea79a448-cc67-4e58-892d-7888ad95109a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ede12a9e-f37d-4540-b5a7-a4289f083559",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f4a1b1e3-b3bc-4ce3-a54b-dcfe59ca20ec",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f6477f9c-7151-4171-ab7f-e3647331aa3b",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "fa16cb6a-dd30-40e6-b105-7a10efdfd12c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "fa5ac29c-454a-452d-9478-165571e02b00",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "faa9592c-e17c-409c-a258-c7337ee5bb18",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "fab4421a-a1f5-4b79-a6f5-6d608be6ebb5",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "fbd788b5-2f00-460f-b27b-84ab7df1c910",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "16b14057-dafc-43fa-a0d6-f41a6a307b0f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "52fac866-11f0-493d-9794-5b0816e001db",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "637d055d-902e-4cd8-8a3b-e9a3ae6d8af4",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7b5852bc-3a80-4ab4-8bd8-f3300dff64b3",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "004ffb02-da7f-4cc8-a83d-0a011b92dfd6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "013d19ff-e12e-4270-881b-63cfe284e2b8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0158c847-fefd-450f-abfe-f2ef4249ebe1",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "06634f08-8fa0-4fb1-b4b1-7272525dcf72",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0690260d-851e-4c2d-bb4c-c0b26eff8c61",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "06bf4fcd-192a-4a55-913c-11e252f77e47",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "091dff04-e578-49c7-9e16-4ce74f3c0444",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0a5dade7-2663-4ec7-b940-f71c03cdea4d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0d37e4e7-8dd9-46d8-a960-b8337938ec9b",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0d8eb6d8-c564-4f33-afdb-c6e836079a82",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0d9b89e2-5fa3-4ec8-b38a-525275a838cc",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "0e350981-2f22-4474-a38d-72827b227b6e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "147762dd-b1e2-4203-bba2-7858cf15a267",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "152ae41f-f326-4db1-aac5-81b559b7ea99",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "15e4e33d-6161-4fd4-a2ee-789aabd42f38",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "1c8e8ec6-b36f-4a36-945f-b49ea4dfd6ec",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "20fa2a2b-d1b8-4021-8d13-68fd2802c498",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "2f0ceb58-1fd8-49e6-8682-e6c235489cbe",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "2f2e3cdb-0fac-4e63-aca9-89ccf7a1cee8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "2f4da77b-ad38-4d75-a260-edde42f37a5f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "2fc24d29-334d-4489-a89d-8cfbc8fc6c58",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3035a7d9-e129-4623-a6bf-89998ece94b4",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "305fb329-c4c4-4df8-b967-de9cb9c98aa7",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "30909c13-9f95-42c4-b80f-9b84d10dccde",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "31135d46-7622-48ef-8cdf-a92dcd6c4466",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3232f1b4-e330-4671-9399-28b6157154ee",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "358e8e9e-db1a-46eb-b8f9-1d27b4292768",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "35c1075a-5f9f-4e3d-b5e5-81ceae156529",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "388d830c-6f93-4004-914b-437bcebe7ed0",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "38a36f62-ad86-42bc-850c-a7898a079db5",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3c39b659-453f-4b87-ad28-2e1d1476c830",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3c4bb8dc-de84-438d-86e6-ea292ef85456",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3cf75831-bc24-412b-b8da-1efa627b1bf6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3d318fd5-e82b-47fd-86bb-55cd1154b8a2",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3d840854-40f4-4520-bb8a-b29a3f4dbe6d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3d885462-ce91-4d40-ad79-5834c9bdd259",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "3e74a785-1ba3-4956-9506-223d1acfd54f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "451b4288-3e24-44a0-804e-5cd0f4f2fdb1",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4afe34aa-8145-4a66-a762-8f4e14ea1b14",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "4dabdb11-067d-42b6-a45a-2d55f60210d0",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "52d23362-461c-4869-af35-81f6a1732607",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "53014095-8efb-4e94-b146-3b6f1619b214",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "541270b0-7f51-4916-a709-bfa9a484f793",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "54ef9084-6896-4323-a2a0-40f67f485372",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "5645a796-1f08-4c9f-a447-6905b8783714",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "57535b8a-f275-4c9c-ad74-17a3e3341343",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "57f02232-d100-4458-a4b4-5a4fbc272611",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "5820e9ea-72d8-40ed-997b-930117c3708c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "5c55130a-f6a9-4250-bbea-bfccadaab3f2",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "5ebadbe9-dbb1-4fe2-8675-635d3c5b4235",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "60e90375-0954-44e1-97e6-9b626c7255f8",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "6396c3bb-a20f-4952-9b6b-66774799fb30",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "63bd79c3-ce81-4c98-8b01-48c0a374292b",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "63c3cc8c-1d9f-41ae-a399-09efe0bfbc69",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "6636e2af-a966-49f2-820f-f59b54204cce",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "6836eec5-0d4b-48bc-8f0b-54b19a92c42d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "71eabd13-70a7-4bc1-a4bc-182b38e14e03",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "73e86190-7076-4eff-9c9c-c9d82eebcf42",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "75fc6b17-62d8-4491-b651-53ca574c7497",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7c204b35-1ce5-4e26-bd7a-e72bbe65b558",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7f871673-c049-4067-8961-b18ffeec709e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "7ffa4e89-84ce-4257-9eb1-0329f183e036",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8449331e-4020-4164-97b5-2c433d767888",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "84d9220c-70a1-40dd-98d3-df23e1029a58",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8a0c6189-0f3b-461d-be7d-58f0703ccfec",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8aa9b266-84c3-45d7-a134-410d92fb173e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8aae4dc7-a483-4b38-a828-d1923c0c1a96",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8e76ecd1-04ee-4440-bcc6-71171234fec7",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "8e826c59-e14f-446e-bd7b-5f2765fe206b",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "931160d1-9a6b-4b1c-984e-6c55ffe18713",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "935ab999-1886-44d0-93ae-d19648566683",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "94b71738-0157-47a1-9fb0-1c285eca6318",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "957eea5b-7fc2-4c51-8e39-92e83358dc4a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "95cd957d-a5e2-40db-9b76-c9c7a1986109",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "96622881-f11f-4150-b469-9b27bfc84bf6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "997e6326-f0a7-4bee-bcb1-e021981ed3aa",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "99bdf104-e23c-4acf-ba54-a7b3a60298a1",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9adce7b0-731b-4e19-8589-2c82a6c0871e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9bc6be12-7da7-48a2-a095-747606b0fa9f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9c732ad3-14e0-4e6a-90f5-ab987de820f7",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9d80669b-540f-4251-92f3-859edee65b52",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9e2be2d9-ccfe-41a9-bacc-4d831eb8e5e4",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9e8156bc-6c46-4414-99cb-12f5de3d7a2c",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "9f2160ac-815d-491f-bbf2-895d85eea016",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "a9375da5-33fa-457e-b218-33b8cb6d12a4",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "aa04cb01-691e-4fd2-bfea-907ed29fd14a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "adce8480-b38f-48a7-8701-05e7fdd89e51",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "b9d0b223-05c4-4a0b-b41e-2656a84ac1a6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "c183d0ec-b9d6-43c9-8010-938b94daf47d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "c1f21317-b2f4-4cad-a154-9049adae1edf",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "c59a887f-c499-44d4-848c-0875bf8cbc9a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "c8318e2b-61bb-44b6-b564-5313d3f70be3",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "c9c6b042-b64b-4b43-840d-5c6abb9ca55e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ca5cf0f7-d465-4aee-ae94-ebe6c7eb69cd",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "d6a5176c-e72c-4b74-a7ad-294439b855c0",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "d71c23d8-93c5-42b0-9cad-146e8eba0612",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "dc4908b2-b85e-4890-aad8-d5cc38ea8758",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "de66c516-f1b0-4e70-9921-e22cd48bfd43",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "df8b44e4-278d-4441-92b7-6ae425883e9e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e3cb1304-7849-4501-a9ed-ca106af6024d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e4a6b63e-617c-484c-be5f-694807a86832",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e4a9483c-bd5a-4ca5-bca2-e3202de8a1d6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e500d7f9-bb03-4edb-ac2c-197e92773d6d",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e63a03fa-49f2-4784-9cd5-da4bc104f184",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e6aa410d-c4f4-45cb-8f57-94e3faf77fc9",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e7b394f5-5e8b-4076-8df9-66a90910d22f",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "e91b03bd-b336-4ef4-8110-00d78a4e5152",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "eabe7703-69c4-40ee-8088-81db472e95c2",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ec93798f-f82e-4e45-a6ff-f90cf6aab0ab",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ece4060c-e9db-4bcd-908a-e0357d17ae26",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ee5499a0-9384-4abf-aa79-86256fbed710",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "eebbcc57-7e21-4341-b097-80028c282c5a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ef0f3e3c-7eeb-4dbf-9c73-b6ff9d395852",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ef58a5bd-5af2-4167-91e9-fbc0d11a4449",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f02e652d-7e00-4b97-8e96-318df601e458",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f1e8f097-706a-4119-8a7a-e241c2e43886",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f2d9454a-0543-485a-bbb2-5f47754e0abc",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f3d6aedf-82e0-468a-8b82-16f69061b34a",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f7f600c0-78d0-469c-b1a5-53d0101a3bb2",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f818e9fe-cfb7-40c2-8cb6-4db6b89eb1c5",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "f9856e9b-a12f-4da3-9762-03c13f360863",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "faa8635e-757c-4fe2-86c2-5873ef2379d6",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "fdcd99c1-e3f2-4da9-94a7-be31236f9a59",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "febedd00-5cda-4b80-a028-649f31c9abd9",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ff5738bc-5f69-45d0-af66-201bddb35b4e",
+    "net": "SYS_ON"
+  },
+  {
+    "uuid": "ffae3ac6-6b89-4ba2-af41-51401760dec0",
+    "net": "SYS_ON"
+  }
+]

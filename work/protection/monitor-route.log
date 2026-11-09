@@ -1,0 +1,6 @@
+Route CELL_TEMP_DIV (124.675, 88.0, 'B.Cu') (130.575, 92.0, 'B.Cu') 0.2
+  done 0.81 s 3071 nodes
+Route CELL_TEMP_DIV (130.575, 92.0, 'B.Cu') (138.0, 80.0, 'B.Cu') 0.2
+  done 0.62 s 8280 nodes
+Route +3V3 (126.325, 88.0, 'B.Cu') (116.175, 86.0, 'F.Cu') 0.2
+  done 1.14 s 8187 nodes

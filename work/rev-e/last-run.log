@@ -1,0 +1,15 @@
+Route PROT_DSG (115.825, 133.5, 'B.Cu') (114.615, 137.025, 'B.Cu') 0.15
+  done 1.78 s 1450 nodes
+Route PROT_CHG (122.825, 134.0, 'B.Cu') (122.435, 138.975, 'B.Cu') 0.15
+  done 1.21 s 9831 nodes
+Route CELL_N (119.675, 122.5, 'B.Cu') (116.135, 125.615, 'B.Cu') 0.15
+Traceback (most recent call last):
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\step3_last.py", line 109, in <module>
+    rr(net,r1,p1,r2,p2,.15,True);save()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\step3_last.py", line 104, in rr
+    def rr(net,r1,p1,r2,p2,w=.2,via=True):route(net,endpoint(r1,p1),endpoint(r2,p2),w,via)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\work\rev-e\step3_last.py", line 88, in route
+    raise RuntimeError('No route '+str((net,start,end,width,len(cost))))
+RuntimeError: No route ('CELL_N', (119.675, 122.5, 'B.Cu'), (116.135, 125.615, 'B.Cu'), 0.15, 81)

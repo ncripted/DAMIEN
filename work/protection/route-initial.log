@@ -1,0 +1,6 @@
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (116.44, 138.0, 'B.Cu') 1.6
+  done 0.07 s 132 nodes
+Route CELL_N (116.0, 129.0, 'B.Cu') (115.9625, 126.25, 'B.Cu') 1.2
+  done 0.07 s 90 nodes
+Route CELL_P (116.0, 132.0, 'B.Cu') (123.285, 137.675, 'B.Cu') 1.2
+  done 0.11 s 1217 nodes

@@ -1,0 +1,168 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-07T01:00:54",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 113.899999,
+                        "y": 136.799999
+                    },
+                    "uuid": "57e88b9a-fda4-4ed7-9f6f-b734c56b8da7"
+                },
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 115.599999,
+                        "y": 136.399999
+                    },
+                    "uuid": "09ffdb86-ab73-465b-93be-ab8001afba35"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 113.899999,
+                        "y": 136.799999
+                    },
+                    "uuid": "57e88b9a-fda4-4ed7-9f6f-b734c56b8da7"
+                },
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 114.199999,
+                        "y": 140.999999
+                    },
+                    "uuid": "3523cefa-227e-4fdf-b3b1-8f5bb155a87f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 115.599999,
+                        "y": 136.399999
+                    },
+                    "uuid": "09ffdb86-ab73-465b-93be-ab8001afba35"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 114.399999,
+                        "y": 130.699999
+                    },
+                    "uuid": "dcd1585c-6047-404b-a0da-fddeb7535e76"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on F.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 72.9,
+                        "y": 106.899999
+                    },
+                    "uuid": "f0c05850-9a82-4a39-8609-960db1c14989"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.1414 mm",
+                    "pos": {
+                        "x": 113.899999,
+                        "y": 136.799999
+                    },
+                    "uuid": "57e88b9a-fda4-4ed7-9f6f-b734c56b8da7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VBAT] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 113.099999,
+                        "y": 134.399999
+                    },
+                    "uuid": "80a44295-b567-4275-be76-092cfc54ad8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+  "model": "Static nodal / beta-equation engineering estimates; no physical measurements",
+  "temperature_assertion_corners_C": {
+    "hot": [
+      36.70306149009855,
+      43.59331486582772
+    ],
+    "cold": [
+      1.7767411132520579,
+      11.159555467778432
+    ]
+  },
+  "nominal_temperature_assertion_C": {
+    "hot": 40.00118684572561,
+    "cold": 6.679991523258138
+  },
+  "corner_evaluations": 4096,
+  "resistor_envelope": "+/-1.5% including provisional TCR budget",
+  "NTC": "103AT-2 R25 +/-1%, B3435 +/-1%; full R-T curve and mounting not guaranteed by beta model",
+  "reference_envelope": "+/-1.5%",
+  "comparator_bias_A": {
+    "hot": 2.5e-08,
+    "cold": 1.5e-08
+  },
+  "charger_current_A": {
+    "nominal": 0.24929971988795518,
+    "minimum": 0.22103891061375047,
+    "maximum": 0.27586792292674645
+  },
+  "uv_supervisor_falling_V": [
+    3.0535,
+    3.1464999999999996
+  ],
+  "uv_supervisor_recovery_V": [
+    3.2285,
+    3.3714999999999997
+  ],
+  "uv_delay_nominal_s": 0.0619437,
+  "U7_OCD_A": [
+    5.445544554455446,
+    6.565656565656566
+  ],
+  "U7_OCC_A": [
+    3.2673267326732676,
+    3.939393939393939
+  ],
+  "U7_SCD_A": [
+    18.613861386138616,
+    21.41414141414141
+  ],
+  "motor_chopping_A": [
+    0.6336633663366337,
+    0.9696969696969697
+  ],
+  "Q1_Q2_pair_W_at_2p4A": {
+    "old_85mohm_each": 0.9792000000000001,
+    "new_45mohm_each_at_VGS_2p5": 0.5184,
+    "new_62mohm_each_at_VGS_1p8": 0.71424
+  },
+  "harness_budget_A": {
+    "three_motor_static_upper": 2.909090909090909,
+    "logic_0p5A_at3p3V_from3p1V_assumed85pct": 0.6261859582542695
+  },
+  "C90_energy_J_4p2_to6V": 0.0020196,
+  "drive_buffer": {
+    "supply_test_envelope_V": [
+      3.2,
+      3.6
+    ],
+    "max_static_output_load_A_using_VBE_0p4_R25_min_1pct": 9.335642135642136e-05,
+    "VOH_bound_V_at_3p2V_and_100uA": 3.0,
+    "DRIVE_ENABLE_bound_V_after1k_at100uA": 2.9,
+    "required_nSLEEP_high_V": 2.5,
+    "nSLEEP_input_current_engineering_envelope_A_each": 1.6e-05,
+    "gate_pull_current_A_bound": 0.0002128374655647383,
+    "Q3_base_current_A_bound": 2.488070235594988e-05,
+    "Q3_forced_beta_bound": 8.554319026843755
+  },
+  "limitations": [
+    "Threshold endpoint calculations do not include measured contamination/leakage, mechanical thermal lag or the complete NTC R-T curve.",
+    "Current thresholds are static; include blanking, protection timing tolerance, overshoot, copper/TCR and fault recovery.",
+    "0.5A logic allocation and 85% efficiency are assumptions; 4A/5A harness targets are not a PCB rating.",
+    "U7 factory UV 2.6V remains an emergency-backstop compatibility blocker against an absolute assumed 3.0V cell minimum. U10 removes operating loads earlier, but does not make storage leakage zero."
+  ]
+}

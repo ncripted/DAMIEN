@@ -1,0 +1,582 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\nates\\Documents\\Codex\\2026-11-03\\continue-developing-my-miniature-three-wheel\\work\\camera-rev-c\\isolate.kicad_sch")
+		(date "2026-11-06T12:57:01")
+		(tool "Eeschema 10.0.8")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "isolate.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "U?")
+			(value "~")
+			(fields
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "UGV")
+				(part "Camera_FPC24")
+				(description "")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "work/camera-rev-c/isolate.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a30207ef-c817-4775-a655-5f0a1eb9bfd9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "17")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "24")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "UGV")
+			(part "Camera_FPC24")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "Camera_FPC24")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "STROBE")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "AGND")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "SDA")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "AVDD")
+					(type "passive")
+				)
+				(pin
+					(num "5")
+					(name "SCL")
+					(type "passive")
+				)
+				(pin
+					(num "6")
+					(name "RESET")
+					(type "passive")
+				)
+				(pin
+					(num "7")
+					(name "VSYNC")
+					(type "passive")
+				)
+				(pin
+					(num "8")
+					(name "PWDN")
+					(type "passive")
+				)
+				(pin
+					(num "9")
+					(name "HREF")
+					(type "passive")
+				)
+				(pin
+					(num "10")
+					(name "DVDD")
+					(type "passive")
+				)
+				(pin
+					(num "11")
+					(name "DOVDD")
+					(type "passive")
+				)
+				(pin
+					(num "12")
+					(name "Y9")
+					(type "passive")
+				)
+				(pin
+					(num "13")
+					(name "XCLK")
+					(type "passive")
+				)
+				(pin
+					(num "14")
+					(name "Y8")
+					(type "passive")
+				)
+				(pin
+					(num "15")
+					(name "DGND")
+					(type "passive")
+				)
+				(pin
+					(num "16")
+					(name "Y7")
+					(type "passive")
+				)
+				(pin
+					(num "17")
+					(name "PCLK")
+					(type "passive")
+				)
+				(pin
+					(num "18")
+					(name "Y6")
+					(type "passive")
+				)
+				(pin
+					(num "19")
+					(name "Y2")
+					(type "passive")
+				)
+				(pin
+					(num "20")
+					(name "Y5")
+					(type "passive")
+				)
+				(pin
+					(num "21")
+					(name "Y3")
+					(type "passive")
+				)
+				(pin
+					(num "22")
+					(name "Y4")
+					(type "passive")
+				)
+				(pin
+					(num "23")
+					(name "Y1")
+					(type "passive")
+				)
+				(pin
+					(num "24")
+					(name "Y0")
+					(type "passive")
+				)
+			)
+		)
+	)
+	(libraries)
+	(nets
+		(net
+			(code "1")
+			(name "unconnected-(U?-64712c0f-Pad1)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "1")
+				(pinfunction "STROBE_1")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "2")
+			(name "unconnected-(U?-64712c0f-Pad2)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "2")
+				(pinfunction "AGND_2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "3")
+			(name "unconnected-(U?-64712c0f-Pad3)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "3")
+				(pinfunction "SDA_3")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "4")
+			(name "unconnected-(U?-64712c0f-Pad4)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "4")
+				(pinfunction "AVDD_4")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "5")
+			(name "unconnected-(U?-64712c0f-Pad5)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "5")
+				(pinfunction "SCL_5")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "6")
+			(name "unconnected-(U?-64712c0f-Pad6)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "6")
+				(pinfunction "RESET_6")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "7")
+			(name "unconnected-(U?-64712c0f-Pad7)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "7")
+				(pinfunction "VSYNC_7")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "8")
+			(name "unconnected-(U?-64712c0f-Pad8)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "8")
+				(pinfunction "PWDN_8")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
+			(name "unconnected-(U?-64712c0f-Pad9)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "9")
+				(pinfunction "HREF_9")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "10")
+			(name "unconnected-(U?-64712c0f-Pad10)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "10")
+				(pinfunction "DVDD_10")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "11")
+			(name "unconnected-(U?-64712c0f-Pad11)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "11")
+				(pinfunction "DOVDD_11")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "12")
+			(name "unconnected-(U?-64712c0f-Pad12)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "12")
+				(pinfunction "Y9_12")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "13")
+			(name "unconnected-(U?-64712c0f-Pad13)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "13")
+				(pinfunction "XCLK_13")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "14")
+			(name "unconnected-(U?-64712c0f-Pad14)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "14")
+				(pinfunction "Y8_14")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "15")
+			(name "unconnected-(U?-64712c0f-Pad15)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "15")
+				(pinfunction "DGND_15")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "16")
+			(name "unconnected-(U?-64712c0f-Pad16)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "16")
+				(pinfunction "Y7_16")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "17")
+			(name "unconnected-(U?-64712c0f-Pad17)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "17")
+				(pinfunction "PCLK_17")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "18")
+			(name "unconnected-(U?-64712c0f-Pad18)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "18")
+				(pinfunction "Y6_18")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "19")
+			(name "unconnected-(U?-64712c0f-Pad19)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "19")
+				(pinfunction "Y2_19")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "20")
+			(name "unconnected-(U?-64712c0f-Pad20)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "20")
+				(pinfunction "Y5_20")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "21")
+			(name "unconnected-(U?-64712c0f-Pad21)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "21")
+				(pinfunction "Y3_21")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "22")
+			(name "unconnected-(U?-64712c0f-Pad22)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "22")
+				(pinfunction "Y4_22")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "23")
+			(name "unconnected-(U?-64712c0f-Pad23)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "23")
+				(pinfunction "Y1_23")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "24")
+			(name "unconnected-(U?-64712c0f-Pad24)")
+			(class "Default")
+			(node
+				(ref "U?")
+				(pin "24")
+				(pinfunction "Y0_24")
+				(pintype "passive")
+			)
+		)
+	)
+)

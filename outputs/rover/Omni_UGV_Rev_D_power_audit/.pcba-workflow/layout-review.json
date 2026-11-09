@@ -1,0 +1,9 @@
+{
+  "revision": "D",
+  "status": "BLOCKED",
+  "configured_checks": "PASS as recorded in validation/current",
+  "new_In1_signal_tracks": 0,
+  "mechanical_status": "UNVERIFIED",
+  "release_blockers": "engineering/UNRESOLVED.md",
+  "review": "engineering/POWER_AUDIT.md"
+}

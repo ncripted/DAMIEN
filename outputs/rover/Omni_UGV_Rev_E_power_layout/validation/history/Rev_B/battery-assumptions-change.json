@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-06",
+  "native_schematic_board_project_unchanged": true,
+  "native_sha256": {
+    "battery_protection.kicad_sch": "55f0ef9d5b92a244d2f5b75b5d4a8c28a3217ebbbef85c9ff494bd81f52b0e71",
+    "charging.kicad_sch": "001f4563db39426ca37736ddd36d7d6a20ec2bf06ea832ccd54f47361afefd73",
+    "controller.kicad_sch": "2358538c702df8198aec039e933f870a0acc133d890d73ae08122769f9496320",
+    "interlock.kicad_sch": "1c2c858507f0fcfdc4ca6c2c8716ebd36d5171e3476c3003b6055bb415eed2cd",
+    "motors.kicad_sch": "a802bc25675e0709041f7e4eb96b8f8f523cd780f5598b3c5b55213200691881",
+    "omni_ugv.kicad_sch": "b8c4a6a4b788a07247cfa89146579b9a121ad035cd8471ff284c9ae1072aa32c",
+    "regulator.kicad_sch": "616350fe14b7d14cedce2bd2efa9a73e7f56deadd1e9e6dc41bbd9ce6eeda9bc",
+    "omni_ugv.kicad_pcb": "01b94d838e71f19aa8707eb172c0c6f0f93c7d5306be42ed2a1d780ffd0b958c",
+    "omni_ugv.kicad_pro": "b18842a6a76ccce4255b5afcd2f4954ba39445c5ed0514290adf57d604cf3864"
+  },
+  "changes": [
+    "BOM external BAT1",
+    "mechanical design basis",
+    "parametric cradle envelope",
+    "engineering assumption record"
+  ],
+  "checks": "JSON parsed; BOM round-tripped; native file hashes identical. CAD not rendered: OpenSCAD unavailable. No physical tests."
+}

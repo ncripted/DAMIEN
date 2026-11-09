@@ -1,0 +1,9 @@
+(version 1)
+
+# GCT USB4105 recommended land pattern places alignment bores 0.1944 mm
+# from the combined GND contact lands. Keep the manufacturer geometry.
+# Local exception only: require fabricator approval for >=0.19 mm here.
+# Source: https://gct.co/files/drawings/usb4105.pdf (B4, PCB layout).
+(rule "J1 manufacturer alignment hole geometry - fab approval required"
+  (condition "A.memberOfFootprint('J1') && B.memberOfFootprint('J1')")
+  (constraint hole_clearance (min 0.19mm)))

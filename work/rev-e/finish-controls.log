@@ -1,0 +1,16 @@
+Route PROT_CHG (121, 131.65, 'In2.Cu') (123.5, 140.1, 'In2.Cu') 0.15
+  done 1.19 s 13887 nodes
+Route PROT_CHG (124, 134, 'In2.Cu') (123.5, 140.1, 'In2.Cu') 0.15
+  done 0.69 s 8127 nodes
+Route CELL_P (133.9375, 130.95, 'B.Cu') (122.435, 137.025, 'B.Cu') 0.15
+  done 1.21 s 37646 nodes
+Route CELL_P (137.825, 128.0, 'B.Cu') (133.9375, 130.95, 'B.Cu') 0.15
+  done 0.23 s 795 nodes
+Route CUT_PNP_B (134.175, 126.0, 'B.Cu') (133.9375, 129.05, 'B.Cu') 0.15
+  done 0.31 s 255 nodes
+Route CUT_PNP_B (136.175, 128.0, 'B.Cu') (133.9375, 129.05, 'B.Cu') 0.15
+  done 0.23 s 291 nodes
+Route CUT_GATE (132.0625, 130.0, 'B.Cu') (129.5, 136.475, 'B.Cu') 0.15
+  done 0.53 s 10753 nodes
+Route CUT_GATE (132.825, 133.5, 'B.Cu') (129.5, 136.475, 'B.Cu') 0.15
+  done 0.39 s 310 nodes

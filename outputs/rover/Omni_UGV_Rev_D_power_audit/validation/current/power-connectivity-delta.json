@@ -1,0 +1,651 @@
+{
+  "changed_existing_pins": [
+    {
+      "ref": "J4",
+      "pin": "1",
+      "before": {
+        "Net": "BAT_NTC",
+        "Pin_function": "Pin_1_1"
+      },
+      "after": {
+        "Net": "CELL_CHG_TEMP",
+        "Pin_function": "Pin_1_1"
+      }
+    },
+    {
+      "ref": "TH1",
+      "pin": "1",
+      "before": {
+        "Net": "BAT_NTC",
+        "Pin_function": ""
+      },
+      "after": {
+        "Net": "CELL_CHG_TEMP",
+        "Pin_function": ""
+      }
+    },
+    {
+      "ref": "U5",
+      "pin": "1",
+      "before": {
+        "Net": "BAT_NTC",
+        "Pin_function": "TS_1"
+      },
+      "after": {
+        "Net": "CHG_TS_BIAS",
+        "Pin_function": "TS_1"
+      }
+    },
+    {
+      "ref": "U1",
+      "pin": "35",
+      "before": {
+        "Net": "DRIVE_REQ",
+        "Pin_function": "IO42_35"
+      },
+      "after": {
+        "Net": "DRIVE_REQ_RAW",
+        "Pin_function": "IO42_35"
+      }
+    },
+    {
+      "ref": "U5",
+      "pin": "4",
+      "before": {
+        "Net": "GND",
+        "Pin_function": "~{CE}_4"
+      },
+      "after": {
+        "Net": "CHG_DISABLE",
+        "Pin_function": "~{CE}_4"
+      }
+    },
+    {
+      "ref": "SW3",
+      "pin": "2",
+      "before": {
+        "Net": "SYS_ON",
+        "Pin_function": "B_2"
+      },
+      "after": {
+        "Net": "SYS_ON_REQ",
+        "Pin_function": "B_2"
+      }
+    }
+  ],
+  "added_pins": [
+    {
+      "ref": "C37",
+      "pin": "1",
+      "Net": "+3V3",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U14",
+      "pin": "5",
+      "Net": "+3V3",
+      "Pin_function": "VCC_5"
+    },
+    {
+      "ref": "R55",
+      "pin": "2",
+      "Net": "CELL_CHG_TEMP",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R56",
+      "pin": "1",
+      "Net": "CELL_CHG_TEMP",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R58",
+      "pin": "1",
+      "Net": "CELL_CHG_TEMP",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C30",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C31",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "Q10",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": "E_2"
+    },
+    {
+      "ref": "Q11",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": "E_2"
+    },
+    {
+      "ref": "R49",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R51",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R53",
+      "pin": "2",
+      "Net": "CELL_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U10",
+      "pin": "3",
+      "Net": "CELL_N",
+      "Pin_function": "GND_3"
+    },
+    {
+      "ref": "C30",
+      "pin": "1",
+      "Net": "CELL_P",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U10",
+      "pin": "2",
+      "Net": "CELL_P",
+      "Pin_function": "VDD_2"
+    },
+    {
+      "ref": "U10",
+      "pin": "4",
+      "Net": "CELL_P",
+      "Pin_function": "MR_N_4"
+    },
+    {
+      "ref": "C31",
+      "pin": "1",
+      "Net": "CELL_UV_CT",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U10",
+      "pin": "5",
+      "Net": "CELL_UV_CT",
+      "Pin_function": "CT_5"
+    },
+    {
+      "ref": "Q10",
+      "pin": "1",
+      "Net": "CELL_UV_EN_B",
+      "Pin_function": "B_1"
+    },
+    {
+      "ref": "R50",
+      "pin": "2",
+      "Net": "CELL_UV_EN_B",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R51",
+      "pin": "1",
+      "Net": "CELL_UV_EN_B",
+      "Pin_function": ""
+    },
+    {
+      "ref": "Q9",
+      "pin": "3",
+      "Net": "CELL_UV_FAULT",
+      "Pin_function": "C_3"
+    },
+    {
+      "ref": "R49",
+      "pin": "1",
+      "Net": "CELL_UV_FAULT",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R50",
+      "pin": "1",
+      "Net": "CELL_UV_FAULT",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R52",
+      "pin": "1",
+      "Net": "CELL_UV_FAULT",
+      "Pin_function": ""
+    },
+    {
+      "ref": "Q11",
+      "pin": "1",
+      "Net": "CELL_UV_MOTOR_B",
+      "Pin_function": "B_1"
+    },
+    {
+      "ref": "R52",
+      "pin": "2",
+      "Net": "CELL_UV_MOTOR_B",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R53",
+      "pin": "1",
+      "Net": "CELL_UV_MOTOR_B",
+      "Pin_function": ""
+    },
+    {
+      "ref": "Q9",
+      "pin": "1",
+      "Net": "CELL_UV_PNP_B",
+      "Pin_function": "B_1"
+    },
+    {
+      "ref": "R47",
+      "pin": "2",
+      "Net": "CELL_UV_PNP_B",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R48",
+      "pin": "2",
+      "Net": "CELL_UV_PNP_B",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R46",
+      "pin": "2",
+      "Net": "CELL_UV_RESET_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R47",
+      "pin": "1",
+      "Net": "CELL_UV_RESET_N",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U10",
+      "pin": "1",
+      "Net": "CELL_UV_RESET_N",
+      "Pin_function": "RESET_N_1"
+    },
+    {
+      "ref": "C33",
+      "pin": "1",
+      "Net": "CHG_3V3",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R55",
+      "pin": "1",
+      "Net": "CHG_3V3",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U11",
+      "pin": "5",
+      "Net": "CHG_3V3",
+      "Pin_function": "OUT_5"
+    },
+    {
+      "ref": "R58",
+      "pin": "2",
+      "Net": "CHG_COLD_SENSE",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R59",
+      "pin": "1",
+      "Net": "CHG_COLD_SENSE",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U12",
+      "pin": "4",
+      "Net": "CHG_COLD_SENSE",
+      "Pin_function": "INB-_4"
+    },
+    {
+      "ref": "R63",
+      "pin": "2",
+      "Net": "CHG_DISABLE",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U13",
+      "pin": "4",
+      "Net": "CHG_DISABLE",
+      "Pin_function": "Y_4"
+    },
+    {
+      "ref": "R56",
+      "pin": "2",
+      "Net": "CHG_HOT_SENSE",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R57",
+      "pin": "1",
+      "Net": "CHG_HOT_SENSE",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U12",
+      "pin": "3",
+      "Net": "CHG_HOT_SENSE",
+      "Pin_function": "INA+_3"
+    },
+    {
+      "ref": "C35",
+      "pin": "1",
+      "Net": "CHG_TEMP_ALLOW_RC",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R61",
+      "pin": "2",
+      "Net": "CHG_TEMP_ALLOW_RC",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R62",
+      "pin": "2",
+      "Net": "CHG_TEMP_ALLOW_RC",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U13",
+      "pin": "2",
+      "Net": "CHG_TEMP_ALLOW_RC",
+      "Pin_function": "A_2"
+    },
+    {
+      "ref": "R62",
+      "pin": "1",
+      "Net": "CHG_TEMP_OK_OD",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U12",
+      "pin": "1",
+      "Net": "CHG_TEMP_OK_OD",
+      "Pin_function": "OUTA_1"
+    },
+    {
+      "ref": "U12",
+      "pin": "6",
+      "Net": "CHG_TEMP_OK_OD",
+      "Pin_function": "OUTB_6"
+    },
+    {
+      "ref": "R60",
+      "pin": "1",
+      "Net": "CHG_TS_BIAS",
+      "Pin_function": ""
+    },
+    {
+      "ref": "Q11",
+      "pin": "3",
+      "Net": "DRIVE_ENABLE",
+      "Pin_function": "C_3"
+    },
+    {
+      "ref": "U14",
+      "pin": "4",
+      "Net": "DRIVE_REQ",
+      "Pin_function": "Y_4"
+    },
+    {
+      "ref": "R64",
+      "pin": "1",
+      "Net": "DRIVE_REQ_RAW",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U14",
+      "pin": "2",
+      "Net": "DRIVE_REQ_RAW",
+      "Pin_function": "A_2"
+    },
+    {
+      "ref": "C32",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C33",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C34",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C35",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C36",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C37",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R57",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R59",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R60",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R64",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U11",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": "GND_2"
+    },
+    {
+      "ref": "U12",
+      "pin": "2",
+      "Net": "GND",
+      "Pin_function": "GND_2"
+    },
+    {
+      "ref": "U13",
+      "pin": "3",
+      "Net": "GND",
+      "Pin_function": "GND_3"
+    },
+    {
+      "ref": "U14",
+      "pin": "3",
+      "Net": "GND",
+      "Pin_function": "GND_3"
+    },
+    {
+      "ref": "Q10",
+      "pin": "3",
+      "Net": "SYS_ON",
+      "Pin_function": "C_3"
+    },
+    {
+      "ref": "R54",
+      "pin": "2",
+      "Net": "SYS_ON",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R54",
+      "pin": "1",
+      "Net": "SYS_ON_REQ",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C32",
+      "pin": "1",
+      "Net": "USB_5V",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C34",
+      "pin": "1",
+      "Net": "USB_5V",
+      "Pin_function": ""
+    },
+    {
+      "ref": "C36",
+      "pin": "1",
+      "Net": "USB_5V",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R61",
+      "pin": "1",
+      "Net": "USB_5V",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R63",
+      "pin": "1",
+      "Net": "USB_5V",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U11",
+      "pin": "1",
+      "Net": "USB_5V",
+      "Pin_function": "IN_1"
+    },
+    {
+      "ref": "U11",
+      "pin": "3",
+      "Net": "USB_5V",
+      "Pin_function": "EN_3"
+    },
+    {
+      "ref": "U12",
+      "pin": "5",
+      "Net": "USB_5V",
+      "Pin_function": "VDD_5"
+    },
+    {
+      "ref": "U13",
+      "pin": "5",
+      "Net": "USB_5V",
+      "Pin_function": "VCC_5"
+    },
+    {
+      "ref": "Q9",
+      "pin": "2",
+      "Net": "VBAT",
+      "Pin_function": "E_2"
+    },
+    {
+      "ref": "R46",
+      "pin": "1",
+      "Net": "VBAT",
+      "Pin_function": ""
+    },
+    {
+      "ref": "R48",
+      "pin": "1",
+      "Net": "VBAT",
+      "Pin_function": ""
+    },
+    {
+      "ref": "U11",
+      "pin": "4",
+      "Net": "unconnected-(U11-NC-Pad4)",
+      "Pin_function": "NC_4"
+    },
+    {
+      "ref": "U13",
+      "pin": "1",
+      "Net": "unconnected-(U13-NC-Pad1)",
+      "Pin_function": "NC_1"
+    },
+    {
+      "ref": "U14",
+      "pin": "1",
+      "Net": "unconnected-(U14-NC-Pad1)",
+      "Pin_function": "NC_1"
+    }
+  ],
+  "removed_pins": [],
+  "new_parts": [
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "Q10",
+    "Q11",
+    "Q9",
+    "R46",
+    "R47",
+    "R48",
+    "R49",
+    "R50",
+    "R51",
+    "R52",
+    "R53",
+    "R54",
+    "R55",
+    "R56",
+    "R57",
+    "R58",
+    "R59",
+    "R60",
+    "R61",
+    "R62",
+    "R63",
+    "R64",
+    "U10",
+    "U11",
+    "U12",
+    "U13",
+    "U14"
+  ],
+  "intent": "U5 CE/TS and J4 charging probe; SW3 request separated from EN; GPIO42 buffered; remaining existing pin memberships must match Rev C."
+}

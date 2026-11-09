@@ -1,0 +1,8 @@
+(footprint "L_XFL4015" (version 20221018) (generator pcbnew) (layer "F.Cu") (descr "Coilcraft XFL4015 envelope; compare chosen inductor land pattern before ordering")
+(fp_text reference "REF**" (at 0 -3.2) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12))))
+(fp_text value "L_XFL4015" (at 0 3.2) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.12))))
+(fp_rect (start -2 -2) (end 2 2) (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab"))
+(fp_rect (start -2.3 -2.3) (end 2.3 2.3) (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd"))
+(pad "1" smd roundrect (at -1.6 0) (size 1.3 3.7) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15))
+(pad "2" smd roundrect (at 1.6 0) (size 1.3 3.7) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.15))
+)

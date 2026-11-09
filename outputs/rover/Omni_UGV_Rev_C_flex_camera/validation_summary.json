@@ -1,0 +1,47 @@
+{
+  "review_date": "2026-11-06",
+  "revision": "C flex camera",
+  "status": "RULE_CHECKS_PASS_HARDWARE_QUALIFICATION_PENDING",
+  "kicad_version": "10.0.8",
+  "erc_violations": 0,
+  "drc": {
+    "errors": 0,
+    "warnings": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0
+  },
+  "connectivity": "All existing non-J3 pin/net assignments match Rev B; J3 intentionally remapped; eight support parts added. See camera-connectivity-delta.json.",
+  "ignored_drc_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "PTH inside courtyard",
+      "key": "pth_inside_courtyard"
+    },
+    {
+      "description": "NPTH inside courtyard",
+      "key": "npth_inside_courtyard"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "physical_testing": "none",
+  "release_blockers": "engineering/UNRESOLVED.md",
+  "native_source": "omni_ugv.kicad_pro"
+}

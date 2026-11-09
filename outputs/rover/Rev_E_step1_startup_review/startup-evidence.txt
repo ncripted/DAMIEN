@@ -1,0 +1,14 @@
+Native pin connections, component values and rule checks verified.
+PCB differs from archived release only in 3D model path lines.
+Board rules, net settings and schematic settings match the archive.
+Voltage headroom in V, optimistic zero-drop charger path
+Cell   BAT=4.16    BAT=4.20    BAT=4.23
+2.60      +1.560      +1.600      +1.630
+3.00      +1.160      +1.200      +1.230
+3.10      +1.060      +1.100      +1.130
+3.50      +0.660      +0.700      +0.730
+3.70      +0.460      +0.500      +0.530
+4.00      +0.160      +0.200      +0.230
+4.20      -0.040      +0.000      +0.030
+Full-cell typical wake comparison fails even at the maximum regulated BAT voltage.
+6 V isolated fixture, 1 kOhm and modeled 100 kOhm UV pull: 5.941 V at PACK

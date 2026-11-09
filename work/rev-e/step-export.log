@@ -1,0 +1,5 @@
+01:20:19: Error: Can't create registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+01:20:19: Error: Can't open registry key 'HKCU\Software\kicad-cli' (error 5: Access is denied.)
+STEP file 'outputs/rover/Omni_UGV_Rev_E_power_layout/mechanics/Rev_E_Bare_PCB.step' created.
+
+Export time 0.998 s

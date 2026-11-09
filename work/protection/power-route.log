@@ -1,0 +1,54 @@
+Route VBAT (113.765, 138.975, 'B.Cu') (114.2, 141.0, 'B.Cu') 1.2
+  done 0.06 s 130 nodes
+Route VBAT (114.2, 141.0, 'B.Cu') (113.4, 141.0, 'B.Cu') 0.5
+  done 0.02 s 30 nodes
+Route VBAT (114.2, 141.0, 'F.Cu') (113.4, 141.0, 'F.Cu') 0.5
+  done 0.01 s 30 nodes
+Route VBAT (114.2, 141.0, 'B.Cu') (115.0, 141.0, 'B.Cu') 0.5
+  done 0.02 s 30 nodes
+Route VBAT (114.2, 141.0, 'F.Cu') (115.0, 141.0, 'F.Cu') 0.5
+  done 0.02 s 30 nodes
+Route VBAT (114.2, 141.0, 'B.Cu') (114.2, 140.2, 'B.Cu') 0.5
+  done 0.01 s 30 nodes
+Route VBAT (114.2, 141.0, 'F.Cu') (114.2, 140.2, 'F.Cu') 0.5
+  done 0.01 s 30 nodes
+Route VBAT (114.2, 141.0, 'B.Cu') (114.2, 141.8, 'B.Cu') 0.5
+  done 0.02 s 30 nodes
+Route VBAT (114.2, 141.0, 'F.Cu') (114.2, 141.8, 'F.Cu') 0.5
+  done 0.02 s 30 nodes
+Route VBAT (114.2, 141.0, 'B.Cu') (113.4, 140.2, 'B.Cu') 0.5
+  done 0.02 s 44 nodes
+Route VBAT (114.2, 141.0, 'F.Cu') (113.4, 140.2, 'F.Cu') 0.5
+  done 0.02 s 44 nodes
+Route VBAT (114.2, 141.0, 'F.Cu') (120.67, 125, 'F.Cu') 1.0
+  done 1.93 s 6803 nodes
+Route VBAT (120.67, 125, 'F.Cu') (108, 124.551, 'F.Cu') 1.0
+  done 1.88 s 6583 nodes
+Route GND (110.0375, 126.25, 'B.Cu') (109.8, 127.8, 'B.Cu') 1.2
+  done 0.01 s 71 nodes
+Route GND (109.8, 127.8, 'B.Cu') (109.0, 127.8, 'B.Cu') 0.5
+  done 0.03 s 30 nodes
+Route GND (109.8, 127.8, 'B.Cu') (109.8, 127.0, 'B.Cu') 0.5
+  done 0.03 s 30 nodes
+Route GND (109.8, 127.8, 'B.Cu') (109.8, 128.6, 'B.Cu') 0.5
+  done 0.01 s 30 nodes
+Route GND (109.8, 127.8, 'B.Cu') (110.6, 127.8, 'B.Cu') 0.5
+  done 0.02 s 30 nodes
+Route GND (109.8, 127.8, 'B.Cu') (109.0, 127.0, 'B.Cu') 0.5
+  done 0.04 s 44 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.2, 137, 'B.Cu') 0.5
+  done 0.05 s 234 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.2, 137.8, 'B.Cu') 0.5
+  done 0.04 s 100 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.2, 138.6, 'B.Cu') 0.5
+  done 0.05 s 192 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.2, 139.4, 'B.Cu') 0.5
+  done 0.04 s 240 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.9, 137, 'B.Cu') 0.5
+  done 0.03 s 137 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.9, 137.8, 'B.Cu') 0.5
+  done 0.03 s 75 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.9, 138.6, 'B.Cu') 0.5
+  done 0.03 s 128 nodes
+Route PROT_DRAIN (120.61, 138.0, 'B.Cu') (118.9, 139.4, 'B.Cu') 0.5
+  done 0.02 s 114 nodes

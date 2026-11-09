@@ -1,0 +1,64 @@
+Route PROT_VDD (118.325, 123.0, 'B.Cu') (117.1, 123.0, 'B.Cu') 0.15
+  done 0.02 s 42 nodes
+Route PROT_PACK (119.675, 123.0, 'B.Cu') (121.7, 122.9, 'B.Cu') 0.15
+  done 0.02 s 68 nodes
+Route PROT_BAT (118.325, 123.5, 'B.Cu') (117.2, 124.0, 'B.Cu') 0.15
+  done 0.02 s 71 nodes
+Route PROT_DSG (119.675, 123.5, 'B.Cu') (121.69999999999999, 123.7, 'B.Cu') 0.15
+  done 0.03 s 86 nodes
+Route CELL_N (118.325, 122.5, 'B.Cu') (117.1, 122.0, 'B.Cu') 0.15
+  done 0.02 s 78 nodes
+Route CELL_N (119.675, 122.5, 'B.Cu') (121.7, 121.0, 'B.Cu') 0.15
+  done 0.05 s 158 nodes
+Route PROT_CHG (119.0, 123.65, 'B.Cu') (119.0, 124.5, 'B.Cu') 0.15
+  done 0.04 s 33 nodes
+Route GND (119.0, 122.35, 'B.Cu') (110.0375, 126.25, 'B.Cu') 0.15
+  done 0.32 s 7647 nodes
+Route PROT_CHG (122.825, 134.0, 'B.Cu') (122.435, 138.975, 'B.Cu') 0.2
+  done 0.6 s 2358 nodes
+Route PROT_CHG (122.825, 134.0, 'B.Cu') (119.0, 123.65, 'B.Cu') 0.15
+  done 1.34 s 19733 nodes
+Route PROT_DSG (114.615, 137.025, 'B.Cu') (115.825, 133.5, 'B.Cu') 0.2
+  done 0.81 s 375 nodes
+Route PROT_DSG (115.825, 133.5, 'B.Cu') (119.675, 123.5, 'B.Cu') 0.15
+  done 1.51 s 17209 nodes
+Route PROT_VDD (113.675, 122.0, 'B.Cu') (118.325, 123.0, 'B.Cu') 0.15
+  done 0.97 s 390 nodes
+Route PROT_VDD (118.325, 123.0, 'B.Cu') (119.775, 125.5, 'B.Cu') 0.15
+  done 0.87 s 5907 nodes
+Route PROT_BAT (118.325, 123.5, 'B.Cu') (116.675, 120.75, 'B.Cu') 0.15
+  done 0.94 s 2435 nodes
+Route PROT_PACK (119.675, 123.0, 'B.Cu') (122.675, 124.5, 'B.Cu') 0.15
+  done 0.85 s 221 nodes
+Route CELL_TEMP_DIV (138.0, 80.0, 'B.Cu') (130.575, 92.0, 'B.Cu') 0.2
+  done 0.45 s 10364 nodes
+Route CELL_TEMP_DIV (130.575, 92.0, 'B.Cu') (121.175, 94.75, 'B.Cu') 0.2
+  done 0.66 s 2258 nodes
+Route CELL_TEMP_ADC (119.75, 65.28, 'F.Cu') (128.925, 92.0, 'B.Cu') 0.2
+  done 1.8 s 45750 nodes
+Route CELL_TEMP_ADC (128.925, 92.0, 'B.Cu') (134.025, 92.0, 'B.Cu') 0.2
+  done 0.36 s 5271 nodes
+Route LED_STATUS (119.175, 82.5, 'F.Cu') (121.0, 93.5, 'F.Cu') 0.2
+  done 1.09 s 12896 nodes
+Route LED_STATUS (119.175, 82.5, 'F.Cu') (119.75, 66.55, 'F.Cu') 0.2
+  done 0.98 s 10823 nodes
+Route CELL_N (118.325, 122.5, 'B.Cu') (115.9625, 126.25, 'B.Cu') 0.15
+  done 0.91 s 3915 nodes
+Route CELL_N (119.675, 122.5, 'B.Cu') (115.9625, 126.25, 'B.Cu') 0.15
+  done 0.9 s 2813 nodes
+Route CELL_N (118.225, 125.5, 'B.Cu') (115.9625, 126.25, 'B.Cu') 0.2
+  done 0.82 s 1196 nodes
+Route CELL_P (115.325, 122.0, 'B.Cu') (116.0, 132.0, 'B.Cu') 0.2
+  done 1.19 s 7497 nodes
+Route CELL_P (118.325, 120.75, 'B.Cu') (116.0, 132.0, 'B.Cu') 0.2
+  done 1.42 s 7401 nodes
+Route CELL_P (121.175, 134.0, 'B.Cu') (116.0, 132.0, 'B.Cu') 0.2
+  done 0.95 s 1165 nodes
+Route VBAT (124.325, 124.5, 'B.Cu') (114.175, 133.5, 'B.Cu') 0.2
+  done 1.81 s 28405 nodes
+Route VBAT (114.175, 133.5, 'B.Cu') (114.615, 138.325, 'B.Cu') 0.2
+  done 0.68 s 597 nodes
+Route +3V3 (122.825, 94.75, 'B.Cu') (116.175, 86.0, 'F.Cu') 0.2
+  done 1.52 s 15736 nodes
+Route GND (132.475, 92.0, 'B.Cu') (140.0, 80.0, 'B.Cu') 0.2
+  done 0.56 s 9299 nodes

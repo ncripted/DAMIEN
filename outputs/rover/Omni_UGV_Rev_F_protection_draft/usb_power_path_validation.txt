@@ -1,0 +1,4 @@
+53 physical pin checks matched, with PG deliberately open. ERC zero.
+USB OVLO pin 1.2333 to 1.4943 V over 4.35 to 5.25 V. With VBUS at zero: <= 0.0007 V.
+Estimated reset delay lower bound 28.6 ms versus arm filter bound 2.7 ms.
+Static bounds only. Hardware reset timing and qualification are open.

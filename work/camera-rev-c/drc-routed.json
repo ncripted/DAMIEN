@@ -1,0 +1,219 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-06T13:10:42",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.8",
+    "schematic_parity": [],
+    "source": "omni_ugv.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 0.0000 mm",
+                    "pos": {
+                        "x": 137.099999,
+                        "y": 86.499999
+                    },
+                    "uuid": "1d667356-cb34-4008-8d3e-2122d463908e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on B.Cu, length 1.2017 mm",
+                    "pos": {
+                        "x": 113.32,
+                        "y": 85.96
+                    },
+                    "uuid": "97d3e7fc-aff9-4944-a1c0-3ef39bf1765f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on In2.Cu, length 0.6009 mm",
+                    "pos": {
+                        "x": 113.32,
+                        "y": 85.96
+                    },
+                    "uuid": "a3f72cbf-e5e3-44f3-91ec-b3f0205abc33"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CELL_TEMP_DIV] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 137.999999,
+                        "y": 80.099999
+                    },
+                    "uuid": "76c39c56-33f1-4d07-a661-ad55e622204c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CELL_TEMP_DIV] on B.Cu, length 0.0000 mm",
+                    "pos": {
+                        "x": 137.899999,
+                        "y": 80.199999
+                    },
+                    "uuid": "ccc2cc62-5e4a-458a-824c-e6321bf4c1cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CAM_D2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 73.1
+                    },
+                    "uuid": "6ed12e1b-84ea-4f30-99ed-a97381b7b825"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [CAM_D4] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 133.5,
+                        "y": 73.1
+                    },
+                    "uuid": "066ca596-f4e4-4db3-94b2-4e2daab556db"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of U9",
+                    "pos": {
+                        "x": 140.25,
+                        "y": 84.6
+                    },
+                    "uuid": "44dbb2c6-e7f1-42e0-bd80-c652561aafc1"
+                },
+                {
+                    "description": "Segment of J5 on F.Silkscreen",
+                    "pos": {
+                        "x": 139.19,
+                        "y": 84.41
+                    },
+                    "uuid": "543ce353-903b-48f1-83b3-28d715b2618a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "Reference field of R44",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 85.07
+                    },
+                    "uuid": "084cefaf-f45a-4694-9eb0-d762f7bbfbd3"
+                },
+                {
+                    "description": "Segment of SW2 on F.Silkscreen",
+                    "pos": {
+                        "x": 125.8,
+                        "y": 85.05
+                    },
+                    "uuid": "81a41024-f05b-48f6-8c76-549327b48f69"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Reference field of R44",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 85.07
+                    },
+                    "uuid": "084cefaf-f45a-4694-9eb0-d762f7bbfbd3"
+                },
+                {
+                    "description": "Pad 2 [GND] of SW2 on F.Cu",
+                    "pos": {
+                        "x": 130.05,
+                        "y": 84.3
+                    },
+                    "uuid": "d7ad62d3-9378-41fb-b591-781cb4c66a14"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

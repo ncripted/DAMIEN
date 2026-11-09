@@ -1,0 +1,6 @@
+(footprint "Pololu_HPCB_Solder" (version 20221018) (generator pcbnew) (layer "F.Cu") (descr "HPCB terminals on 6 mm centers; plated slots 0.8 x 2.2 mm; mechanical fit requires physical verification")
+(fp_text reference "REF**" (at 0 -3.2) (layer "F.SilkS") (effects (font (size 0.8 0.8) (thickness 0.12))))
+(fp_text value "Pololu_HPCB_Solder" (at 0 3.2) (layer "F.Fab") (effects (font (size 0.8 0.8) (thickness 0.12))))
+(pad "1" thru_hole oval (at 0 -3) (size 3.0 3.1) (drill oval 0.8 2.2) (layers "*.Cu" "*.Mask"))
+(pad "2" thru_hole oval (at 0 3) (size 3.0 3.1) (drill oval 0.8 2.2) (layers "*.Cu" "*.Mask"))
+)

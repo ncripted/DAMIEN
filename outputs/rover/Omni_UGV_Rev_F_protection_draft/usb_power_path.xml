@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\outputs\rover\Omni_UGV_Rev_F_protection_draft\rev_f_usb_power_path.kicad_sch</source>
+    <date>2026-11-09T12:19:40</date>
+    <tool>Eeschema 10.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Omni rover | USB and drive isolation</title>
+        <company>Nate</company>
+        <rev>F draft</rev>
+        <date/>
+        <source>rev_f_usb_power_path.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C10">
+      <value>2.2n 25V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>35aec1aa-506d-5f47-b890-9e5c33539959</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>1n 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc45b5fc-5b0a-52f1-b8ee-19eab28ba822</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>935ca673-0f63-5331-9842-c47bc8604a79</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>1u 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2b4ef083-5f50-553e-b2ec-229f10ea4aa7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17254f24-6890-58c6-b621-ef7b9589a595</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4510a708-8141-54a3-bbe5-a66973e165ba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73c4d09c-6d4a-5321-bf49-7a56bbd335e5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6df24dc3-952f-567e-af0b-abed3e3a2eed</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>286451f0-c276-5aaa-a9ac-86518249776a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bfe885fe-d65a-50cf-93f4-9eba055a7650</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D10">
+      <value>PMEG3020ER</value>
+      <footprint>Diode_SMD:Nexperia_CFP3_SOD-123W</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:Nexperia_CFP3_SOD-123W</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Schottky" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83bd03ba-886d-545c-9e0f-6c7f1de8018e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D11">
+      <value>PMEG3020ER</value>
+      <footprint>Diode_SMD:Nexperia_CFP3_SOD-123W</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:Nexperia_CFP3_SOD-123W</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Schottky" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a36479f8-d826-5374-97a2-595ec8f80f53</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D12">
+      <value>PMEG3020ER</value>
+      <footprint>Diode_SMD:Nexperia_CFP3_SOD-123W</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Diode_SMD:Nexperia_CFP3_SOD-123W</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Schottky" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c2dbf9f-10ff-5cec-91b1-a815f217a457</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J10">
+      <value>Charger and USB</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn4" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58fff264-f384-57d3-a755-9df5981a1345</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J11">
+      <value>Rover loads</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn4" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37a2a37b-00fd-5381-b098-3f0cc5e2e5d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J12">
+      <value>Open-drain fault input</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn2" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5549ac5f-f5dc-5e5a-9b4f-b4d5c7662c0b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>25.2k 0.1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c987506e-bd65-5904-9b01-4dd9ddccaa4c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k 0.1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1bacc9b4-65d7-52f0-a776-92b26cc536b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ab3dda6-83eb-5e52-b33e-779f1290bb3c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>750R 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f92d80a0-b2e7-5678-ab0b-275fb2090ed1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa866ee9-6b98-5170-9b1a-e30eaa777a84</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R16">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3de5b935-c9f3-5d3b-8885-203428c93408</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R17">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58d088bb-c7a4-5eb2-922d-8a3e9c090649</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW10">
+      <value>Momentary rearm</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Switch" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44c5df1a-27ac-588a-a005-2bcdff6cc174</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>TPS259474LRPW</value>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps25947.pdf</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps25947.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="TPS259474L" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08bde9ac-6499-50df-8047-30be078a2460</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="9"/>
+            <pin num="8"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="10"/>
+            <pin num="4"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>SN74LVC1G14DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g14.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="LVC1G14" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96157b58-1077-595e-93a0-5bbd070f5be7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>TPS3840PL31DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps3840.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3840.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="TPS3840PL31" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5765833-a626-5a78-bf7f-a57cd0934371</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U13">
+      <value>SN74LVC1G74DCUR</value>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="LVC1G74" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11a89bab-147c-5398-a18d-99c6fe3cd3b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="8"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="4"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U14">
+      <value>SN74LVC1G17DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="LVC1G17" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_usb_power_path.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>afa10807-4635-5039-b160-12d6980e8078</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RevF" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Conn2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Conn4">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="LVC1G14">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LVC1G14</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="LVC1G17">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LVC1G17</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="LVC1G74">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LVC1G74</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="CLK" type="input"/>
+        <pin num="2" name="D" type="input"/>
+        <pin num="3" name="Q_N" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="Q" type="output"/>
+        <pin num="6" name="CLR_N" type="input"/>
+        <pin num="7" name="PRE_N" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Schottky">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Schottky</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Switch">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Switch</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="TPS259474L">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS259474L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="EN/UVLO" type="input"/>
+        <pin num="2" name="OVLO" type="input"/>
+        <pin num="3" name="PG" type="open_collector"/>
+        <pin num="4" name="PGTH" type="input"/>
+        <pin num="5" name="IN" type="power_in"/>
+        <pin num="6" name="OUT" type="power_out"/>
+        <pin num="7" name="DVDT" type="passive"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="ILM" type="passive"/>
+        <pin num="10" name="ITIMER" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="TPS3840PL31">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3840PL31</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="RESET_N" type="output"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="MR_N" type="input"/>
+        <pin num="5" name="CT" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="RevF">
+      <uri>${KIPRJMOD}/RevF.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/ARM_CLK" class="Default">
+      <node ref="U13" pin="1" pinfunction="CLK_1" pintype="input"/>
+      <node ref="U14" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="2" name="/ARM_CLR_N" class="Default">
+      <node ref="U12" pin="1" pinfunction="RESET_N_1" pintype="output"/>
+      <node ref="U13" pin="6" pinfunction="CLR_N_6" pintype="input"/>
+    </net>
+    <net code="3" name="/ARM_FILTER" class="Default">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="U14" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="4" name="/ARM_RESET_N" class="Default">
+      <node ref="J12" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="U12" pin="4" pinfunction="MR_N_4" pintype="input"/>
+    </net>
+    <net code="5" name="/ARM_SWITCH" class="Default">
+      <node ref="R16" pin="1" pintype="passive"/>
+      <node ref="SW10" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/CHG_BAT" class="Default">
+      <node ref="D10" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J10" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="/CHG_OUT" class="Default">
+      <node ref="D11" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J10" pin="3" pintype="passive"/>
+    </net>
+    <net code="8" name="/DRIVE_RAW" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="D12" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="J11" pin="2" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="OUT_6" pintype="power_out"/>
+    </net>
+    <net code="9" name="/EF_EN" class="Default">
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="U10" pin="1" pinfunction="EN/UVLO_1" pintype="input"/>
+      <node ref="U13" pin="5" pinfunction="Q_5" pintype="output"/>
+    </net>
+    <net code="10" name="/EF_ILM" class="Default">
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="U10" pin="9" pinfunction="ILM_9" pintype="passive"/>
+    </net>
+    <net code="11" name="/EF_SLEW" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="U10" pin="7" pinfunction="DVDT_7" pintype="passive"/>
+    </net>
+    <net code="12" name="/EF_TIMER" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="U10" pin="10" pinfunction="ITIMER_10" pintype="passive"/>
+    </net>
+    <net code="13" name="/PACK_GND" class="Default">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="J10" pin="4" pintype="passive"/>
+      <node ref="J11" pin="3" pintype="passive"/>
+      <node ref="J12" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="PGTH_4" pintype="input"/>
+      <node ref="U10" pin="8" pinfunction="GND_8" pintype="power_in"/>
+      <node ref="U11" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U12" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U13" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U14" pin="3" pinfunction="GND_3" pintype="power_in"/>
+    </net>
+    <net code="14" name="/PROTECTED_RAW" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="D10" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J11" pin="4" pintype="passive"/>
+      <node ref="SW10" pin="1" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="IN_5" pintype="power_in"/>
+      <node ref="U11" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U12" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="U13" pin="2" pinfunction="D_2" pintype="input"/>
+      <node ref="U13" pin="7" pinfunction="PRE_N_7" pintype="input"/>
+      <node ref="U13" pin="8" pinfunction="VCC_8" pintype="power_in"/>
+      <node ref="U14" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="15" name="/RESET_CT" class="Default">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="U12" pin="5" pinfunction="CT_5" pintype="passive"/>
+    </net>
+    <net code="16" name="/SYS_RAW" class="Default">
+      <node ref="D11" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D12" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J11" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="/USB_5V" class="Default">
+      <node ref="J10" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U11" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="18" name="/USB_ABSENT" class="Default">
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="U11" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="19" name="/USB_INHIBIT" class="Default">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="U10" pin="2" pinfunction="OVLO_2" pintype="input"/>
+    </net>
+    <net code="20" name="unconnected-(U10-PG-Pad3)" class="Default">
+      <node ref="U10" pin="3" pinfunction="PG_3" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="21" name="unconnected-(U11-NC-Pad1)" class="Default">
+      <node ref="U11" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="22" name="unconnected-(U13-Q_N-Pad3)" class="Default">
+      <node ref="U13" pin="3" pinfunction="Q_N_3" pintype="output+no_connect"/>
+    </net>
+    <net code="23" name="unconnected-(U14-NC-Pad1)" class="Default">
+      <node ref="U14" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

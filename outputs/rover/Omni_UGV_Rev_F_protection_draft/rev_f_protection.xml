@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\nates\Documents\Codex\2026-11-03\continue-developing-my-miniature-three-wheel\outputs\rover\Omni_UGV_Rev_F_protection_draft\rev_f_protection.kicad_sch</source>
+    <date>2026-11-08T23:23:24</date>
+    <tool>Eeschema 10.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Omni rover | battery protection</title>
+        <company>Nate</company>
+        <rev>F draft</rev>
+        <date/>
+        <source>rev_f_protection.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>17b49ec7-bba1-53aa-849b-d78c74b1fecb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>100n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d6fd0b19-fa0e-534c-b626-fb1107183cdd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>470n X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="C" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d121b41-6a2e-5ba4-ac6b-277446a5c0f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>1S raw cell</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn2" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5aa4e364-f540-5bc6-a82c-1174bd5a583c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>Rev E interface</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn2" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>162af4ec-76cc-57ce-9ac2-0a3494376563</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>Fixture I2C</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn3" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1ff0b362-9ec5-51b0-9051-abc9cbd9878f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>Cell NTC 10k</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Conn2" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>736dfd33-722f-5249-afe4-387183c4528e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>CSD17308Q3</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="FetCharge" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2dfb9a19-b2cf-584a-adba-1b79d67a354d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q2">
+      <value>CSD17308Q3</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="FetDischarge" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>493f3547-617f-560f-883e-a0627fb68b9d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>10m 1% Kelvin draft</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Shunt" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc5f7c9b-3fbb-5393-bcd7-78ddc2ea1ab7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="R" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9d23895-5cda-5bda-a831-59dfc1d8a00d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>Momentary wake</value>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="Switch" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a34678af-2a4c-5693-a884-87df7fce7861</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>MAX17301G+T</value>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/max17300-max17313.pdf</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/max17300-max17313.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="RevF" part="MAX17301" description=""/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="rev_f_protection.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45e42d9a-b48c-556a-83da-a84a4d9cb7e6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="7"/>
+            <pin num="1"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="15"/>
+            <pin num="14"/>
+            <pin num="12"/>
+            <pin num="11"/>
+            <pin num="10"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="RevF" part="C">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Conn2">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Conn3">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="FetCharge">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FetCharge</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+        <pin num="9" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="FetDischarge">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FetDischarge</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="S" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+        <pin num="4" name="G" type="input"/>
+        <pin num="5" name="D" type="passive"/>
+        <pin num="6" name="D" type="passive"/>
+        <pin num="7" name="D" type="passive"/>
+        <pin num="8" name="D" type="passive"/>
+        <pin num="9" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="MAX17301">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX17301</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="TH" type="input"/>
+        <pin num="2" name="CP" type="power_out"/>
+        <pin num="3" name="BATT" type="power_in"/>
+        <pin num="4" name="PFAIL" type="output"/>
+        <pin num="5" name="CSP" type="power_in"/>
+        <pin num="6" name="CSN" type="input"/>
+        <pin num="7" name="REG" type="power_out"/>
+        <pin num="8" name="SDA" type="bidirectional"/>
+        <pin num="9" name="SCL" type="input"/>
+        <pin num="10" name="ALRT/PIO" type="bidirectional"/>
+        <pin num="11" name="PCKP" type="passive"/>
+        <pin num="12" name="DIS" type="output"/>
+        <pin num="13" name="ZVC" type="input"/>
+        <pin num="14" name="CHG" type="output"/>
+        <pin num="15" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Shunt">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Shunt</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="K+" type="passive"/>
+        <pin num="4" name="K-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="RevF" part="Switch">
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Switch</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="RevF">
+      <uri>${KIPRJMOD}/RevF.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BATT_F" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="BATT_3" pintype="power_in"/>
+    </net>
+    <net code="2" name="/CELL_N" class="Default">
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="/CELL_P" class="Default">
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/CHG_GATE" class="Default">
+      <node ref="Q1" pin="4" pinfunction="G_4" pintype="input"/>
+      <node ref="U1" pin="14" pinfunction="CHG_14" pintype="output"/>
+    </net>
+    <net code="5" name="/CP" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="CP_2" pintype="power_out"/>
+    </net>
+    <net code="6" name="/CSN_K" class="Default">
+      <node ref="R1" pin="4" pinfunction="K-_4" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="CSN_6" pintype="input"/>
+    </net>
+    <net code="7" name="/CSP_K" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="J3" pin="3" pintype="passive"/>
+      <node ref="J4" pin="2" pintype="passive"/>
+      <node ref="R1" pin="3" pinfunction="K+_3" pintype="passive"/>
+      <node ref="SW1" pin="2" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="EP_15" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="CSP_5" pintype="power_in"/>
+    </net>
+    <net code="8" name="/DIS_GATE" class="Default">
+      <node ref="Q2" pin="4" pinfunction="G_4" pintype="input"/>
+      <node ref="U1" pin="12" pinfunction="DIS_12" pintype="output"/>
+    </net>
+    <net code="9" name="/FET_DRAIN" class="Default">
+      <node ref="Q1" pin="5" pinfunction="D_5" pintype="passive"/>
+      <node ref="Q1" pin="6" pinfunction="D_6" pintype="passive"/>
+      <node ref="Q1" pin="7" pinfunction="D_7" pintype="passive"/>
+      <node ref="Q1" pin="8" pinfunction="D_8" pintype="passive"/>
+      <node ref="Q1" pin="9" pinfunction="D_9" pintype="passive"/>
+      <node ref="Q2" pin="5" pinfunction="D_5" pintype="passive"/>
+      <node ref="Q2" pin="6" pinfunction="D_6" pintype="passive"/>
+      <node ref="Q2" pin="7" pinfunction="D_7" pintype="passive"/>
+      <node ref="Q2" pin="8" pinfunction="D_8" pintype="passive"/>
+      <node ref="Q2" pin="9" pinfunction="D_9" pintype="passive"/>
+    </net>
+    <net code="10" name="/NTC_TH" class="Default">
+      <node ref="J4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="TH_1" pintype="input"/>
+    </net>
+    <net code="11" name="/PACK_GND" class="Default">
+      <node ref="J2" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/PROG_SCL" class="Default">
+      <node ref="J3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="SCL_9" pintype="input"/>
+    </net>
+    <net code="13" name="/PROG_SDA" class="Default">
+      <node ref="J3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="SDA_8" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/PROTECTED_RAW" class="Default">
+      <node ref="J2" pin="1" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="S_1" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S_3" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PCKP_11" pintype="passive"/>
+    </net>
+    <net code="15" name="/REG_1V8" class="Default">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="REG_7" pintype="power_out"/>
+    </net>
+    <net code="16" name="/WAKE" class="Default">
+      <node ref="SW1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="ALRT/PIO_10" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="unconnected-(U1-PFAIL-Pad4)" class="Default">
+      <node ref="U1" pin="4" pinfunction="PFAIL_4" pintype="output+no_connect"/>
+    </net>
+    <net code="18" name="unconnected-(U1-ZVC-Pad13)" class="Default">
+      <node ref="U1" pin="13" pinfunction="ZVC_13" pintype="input+no_connect"/>
+    </net>
+  </nets>
+</export>

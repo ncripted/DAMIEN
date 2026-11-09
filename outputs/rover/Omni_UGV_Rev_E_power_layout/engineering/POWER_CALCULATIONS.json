@@ -1,0 +1,72 @@
+{
+  "model": "Engineering estimates; no bench measurements",
+  "UV_falling_V": [
+    3.0535,
+    3.1464999999999996
+  ],
+  "UV_recovery_V": [
+    3.2285,
+    3.3714999999999997
+  ],
+  "UV_release_delay_nominal_s": 0.0619437,
+  "shunt_ohm": 0.01,
+  "shunt_dissipation_W": {
+    "4": 0.16,
+    "5": 0.25,
+    "6": 0.36
+  },
+  "Q13_loss_W_at_25C_max_Rds_2p5V": {
+    "4": 0.1568,
+    "5": 0.245
+  },
+  "Q13_loss_W_assuming_2x_hot_Rds": {
+    "4": 0.3136,
+    "5": 0.49
+  },
+  "shunt_current_thresholds_1pct_only_A": {
+    "OCD": [
+      5.445544554455446,
+      6.565656565656566
+    ],
+    "OCC": [
+      3.2673267326732676,
+      3.939393939393939
+    ],
+    "SCD": [
+      18.613861386138616,
+      21.41414141414141
+    ]
+  },
+  "shunt_TCR_budget_ohm": [
+    0.009865,
+    0.010135000000000002
+  ],
+  "OCD_with_1p35pct_resistance_budget_A": [
+    5.4267390231869745,
+    6.588950836289913
+  ],
+  "copper_assumptions": {
+    "rho_ohm_m": 1.724e-08,
+    "thickness_m": 3.5e-05,
+    "resistance_mohm_per_10mm": {
+      "0.2": 24.628571428571433,
+      "0.4": 12.314285714285717,
+      "0.6": 8.209523809523812,
+      "0.8": 6.157142857142858,
+      "1.5": 3.283809523809525
+    },
+    "via_barrel_mohm_assuming_1p6mm_length_0p3mm_finished_hole_20um_plating": 1.4633766500822807
+  },
+  "cutoff_standby_estimate_uA": {
+    "R46_at_3p1V_reset_low": 31.0,
+    "Q12_base_R65_assuming_0p7V_BE_0p2V_reset": 46.808510638297875,
+    "Q12_collector_R67_assuming_gate_2p9V": 51.785714285714285,
+    "additional": "U7/U10, leakage, R66, gate pulls and residual protected loads must be measured; budget about 0.15mA, not a guaranteed maximum"
+  },
+  "limitations": [
+    "Copper segment sums include branches/parallel copper; they are not a serial path resistance or IPC-2152 ampacity rating.",
+    "Gate and UV thresholds are static; startup, dip response, MOSFET off leakage and recovery remain bench tests.",
+    "22uF is nominal. No guaranteed effective capacitance at DC bias/temperature/aging has been established.",
+    "Protection fault timing and short-circuit pulse energy require measured verification."
+  ]
+}

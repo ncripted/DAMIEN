@@ -1,0 +1,18 @@
+No local via U15 5 PROTECTED_RAW
+No local via U15 6 VBAT
+No local via U15 8 GND
+No local via U15 9 EF_ILM
+No local via U7 1 NTC_TH
+Local via U7 14 PROT_CHG (129.2875, 130.84)
+No local via U7 6 PROT_CS_SENSE
+No local via U7 7 REG_1V8
+No local via U7 8 PROG_SDA
+No local via U7 9 PROG_SCL
+No local via U7 10 WAKE
+No local via U7 11 PROTECTED_RAW
+No local via U7 12 PROT_DSG
+No local via U7 3 BATT_F
+No local via U18 2 PROTECTED_RAW
+No local via U18 8 PROTECTED_RAW
+No local via U17 3 GND
+No local via C46 2 GND

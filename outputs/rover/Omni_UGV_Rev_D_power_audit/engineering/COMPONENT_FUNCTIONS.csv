@@ -1,0 +1,155 @@
+Reference,Value,Functional_block,Role,Nets
+U1,ESP32-S3-WROOM-1-N8R8,Controller,See native functional schematic,1:GND; 2:+3V3; 3:ESP_EN; 4:CAM_D0; 5:CAM_D1; 6:CAM_D2; 7:CAM_D3; 8:CAM_XCLK; 9:CAM_SDA; 10:CAM_SCL; 11:M1_IN1; 12:CAM_D4; 13:USB_DM; 14:USB_DP; 15:None; 16:None; 17:CAM_D5; 18:CAM_D6; 19:CAM_D7; 20:CAM_PCLK; 21:CAM_VSYNC; 22:CAM_HREF; 23:M1_IN2; 24:FAULT_U2; 25:FAULT_U3; 26:None; 27:ESP_BOOT; 28:None; 29:None; 30:None; 31:M2_IN1; 32:M2_IN2; 33:M3_IN1; 34:M3_IN2; 35:DRIVE_REQ_RAW; 36:USB_500_ENABLE; 37:LED_STATUS; 38:CELL_TEMP_ADC; 39:VBAT_ADC; 40:GND; 41:GND
+R1,10k,Controller,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:ESP_EN
+C1,1u/10V,Controller,Local bypass/filter capacitor,1:ESP_EN; 2:GND
+R2,10k,Controller,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:ESP_BOOT
+C2,10u/10V,Controller,Local bypass/filter capacitor,1:+3V3; 2:GND
+C3,100n/16V,Controller,Local bypass/filter capacitor,1:+3V3; 2:GND
+SW1,RESET,Controller,See native functional schematic,1:ESP_EN; 2:GND
+SW2,BOOT,Controller,See native functional schematic,1:ESP_BOOT; 2:GND
+R3,1k,Controller,Bias/limit/sense resistor; exact pin nets provided,1:LED_STATUS; 2:LED_A
+D1,STATUS GREEN,Controller,See native functional schematic,1:GND; 2:LED_A
+R4,10k,Controller,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:CAM_RESET
+C4,100n/16V,Controller,Local bypass/filter capacitor,1:CAM_RESET; 2:GND
+C5,10u/10V,Controller,Local bypass/filter capacitor,1:+3V3; 2:GND
+U2,DRV8833PWP,Motors,Two active motor bridges,3:M1_SENSE; 4:M1_B; 5:M2_B; 6:M2_SENSE; 7:M2_A; 8:FAULT_U2; 9:M2_IN1; 10:M2_IN2; 11:U2_VCP; 12:VMOTOR; 13:GND; 14:U2_VINT; 15:M1_IN2; 16:M1_IN1; 1:DRIVE_ENABLE; 2:M1_A; 17:GND
+C6,10u/10V,Motors,Local bypass/filter capacitor,1:VMOTOR; 2:GND
+C7,2.2u/10V,Motors,Local bypass/filter capacitor,1:U2_VINT; 2:GND
+C8,10n/25V,Motors,Local bypass/filter capacitor,1:U2_VCP; 2:VMOTOR
+R5,10k,Motors,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:FAULT_U2
+R6,0.25R/0.5W,Motors,Bias/limit/sense resistor; exact pin nets provided,1:M1_SENSE; 2:GND
+R7,0.25R/0.5W,Motors,Bias/limit/sense resistor; exact pin nets provided,1:M2_SENSE; 2:GND
+U3,DRV8833PWP,Motors,One active motor bridge; unused bridge grounded/NC as documented,3:M3_SENSE; 4:M3_B; 5:None; 6:GND; 7:None; 8:FAULT_U3; 9:GND; 10:GND; 11:U3_VCP; 12:VMOTOR; 13:GND; 14:U3_VINT; 15:M3_IN2; 16:M3_IN1; 1:DRIVE_ENABLE; 2:M3_A; 17:GND
+C9,10u/10V,Motors,Local bypass/filter capacitor,1:VMOTOR; 2:GND
+C10,2.2u/10V,Motors,Local bypass/filter capacitor,1:U3_VINT; 2:GND
+C11,10n/25V,Motors,Local bypass/filter capacitor,1:U3_VCP; 2:VMOTOR
+R8,10k,Motors,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:FAULT_U3
+R9,0.25R/0.5W,Motors,Bias/limit/sense resistor; exact pin nets provided,1:M3_SENSE; 2:GND
+M1,POLOLU 3065 MOTOR 1,Motors,See native functional schematic,1:M1_A; 2:M1_B
+C12,100n/25V,Motors,Local bypass/filter capacitor,1:M1_A; 2:M1_B
+M2,POLOLU 3065 MOTOR 2,Motors,See native functional schematic,1:M2_A; 2:M2_B
+C13,100n/25V,Motors,Local bypass/filter capacitor,1:M2_A; 2:M2_B
+M3,POLOLU 3065 MOTOR 3,Motors,See native functional schematic,1:M3_A; 2:M3_B
+C14,100n/25V,Motors,Local bypass/filter capacitor,1:M3_A; 2:M3_B
+C90,220u/10V,Motors,Local bypass/filter capacitor,1:VMOTOR; 2:GND
+J1,USB-C,Charging,See native functional schematic,A1:GND; A4:USB_5V; A5:USB_CC1; A6:USB_DP_EXT; A7:USB_DM_EXT; A8:None; A9:USB_5V; A12:GND; B1:GND; B4:USB_5V; B5:USB_CC2; B6:USB_DP_EXT; B7:USB_DM_EXT; B8:None; B9:USB_5V; B12:GND; S1:GND
+R10,5.1k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:USB_CC1; 2:GND
+R11,5.1k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:USB_CC2; 2:GND
+U6,USBLC6-2SC6,Charging,See native functional schematic,1:USB_DM_EXT; 2:GND; 3:USB_DP_EXT; 4:USB_DP_EXT; 5:USB_5V; 6:USB_DM_EXT
+R12,22R,Charging,Bias/limit/sense resistor; exact pin nets provided,1:USB_DM_EXT; 2:USB_DM
+R13,22R,Charging,Bias/limit/sense resistor; exact pin nets provided,1:USB_DP_EXT; 2:USB_DP
+U5,BQ24074RGT,Charging,USB charger and logic power path,1:CHG_TS_BIAS; 2:VBAT; 3:VBAT; 4:CHG_DISABLE; 5:GND; 6:USB_500_ENABLE; 7:CHG_PGOOD; 8:GND; 9:CHG_STATUS; 10:SYS_RAW; 11:SYS_RAW; 12:CHG_ILIM; 13:USB_5V; 14:CHG_TIMER; 15:None; 16:CHG_ISET; 17:GND
+R14,3.57k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:CHG_ISET; 2:GND
+R15,3.24k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:CHG_ILIM; 2:GND
+R16,46.4k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:CHG_TIMER; 2:GND
+R17,100k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:USB_500_ENABLE; 2:GND
+C15,1u/10V,Charging,Local bypass/filter capacitor,1:USB_5V; 2:GND
+C16,10u/10V,Charging,Local bypass/filter capacitor,1:VBAT; 2:GND
+C17,10u/10V,Charging,Local bypass/filter capacitor,1:SYS_RAW; 2:GND
+J2,RAW 1S CELL 4.2V MAX,Charging,Raw cell connector,1:CELL_P; 2:CELL_N
+J4,CELL NTC - CHARGER,Charging,Off-board TH1 cell charge-temperature probe,1:CELL_CHG_TEMP; 2:GND
+D2,CHARGE AMBER,Charging,See native functional schematic,1:CHG_STATUS; 2:CHG_LED_A
+R18,2.2k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:SYS_RAW; 2:CHG_LED_A
+R19,100k,Charging,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:CHG_PGOOD
+U4,TPS63802DLA,Regulator,Main buck-boost regulator,1:SYS_ON; 2:GND; 3:GND; 4:REG_FB; 5:REG_PG; 6:+3V3; 7:REG_L2; 8:GND; 9:REG_L1; 10:SYS_RAW
+L1,0.47uH/5.4A,Regulator,See native functional schematic,1:REG_L1; 2:REG_L2
+C18,10u/10V,Regulator,Local bypass/filter capacitor,1:SYS_RAW; 2:GND
+C19,22u/10V,Regulator,Local bypass/filter capacitor,1:+3V3; 2:GND
+C20,22u/10V,Regulator,Local bypass/filter capacitor,1:+3V3; 2:GND
+R20,511k,Regulator,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:REG_FB
+R21,91k,Regulator,Bias/limit/sense resistor; exact pin nets provided,1:REG_FB; 2:GND
+R22,100k,Regulator,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:REG_PG
+R23,100k,Regulator,Bias/limit/sense resistor; exact pin nets provided,1:SYS_ON; 2:GND
+SW3,POWER,Regulator,See native functional schematic,1:GND; 2:SYS_ON_REQ; 3:SYS_RAW
+Q1,DMP2035U-7,Interlock,Motor rail reverse-blocking P-FET pair,1:MOTOR_GATE; 2:MOTOR_MID; 3:VBAT
+Q2,DMP2035U-7,Interlock,Motor rail reverse-blocking P-FET pair,1:MOTOR_GATE; 2:MOTOR_MID; 3:VMOTOR
+Q5,AO3401A,Interlock,See native functional schematic,1:MEAS_GATE; 2:VBAT; 3:VBAT_MEAS
+Q3,MMBT3904,Interlock,Motor switch gate pull-down,1:MOTOR_BASE; 2:GND; 3:MOTOR_GATE
+Q4,MMBT3904,Interlock,USB-driven hardware motor inhibit,1:USB_DETECT_BASE; 2:GND; 3:DRIVE_ENABLE
+Q6,MMBT3904,Interlock,See native functional schematic,1:MEAS_BASE; 2:GND; 3:MEAS_GATE
+R24,22k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:MOTOR_MID; 2:MOTOR_GATE
+R25,56k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:DRIVE_ENABLE; 2:MOTOR_BASE
+R26,100k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:MOTOR_BASE; 2:GND
+R27,1k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:DRIVE_REQ; 2:DRIVE_ENABLE
+R28,1M,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:DRIVE_ENABLE; 2:GND
+R29,10k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:USB_5V; 2:USB_DETECT_BASE
+R30,100k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:USB_DETECT_BASE; 2:GND
+C21,1u/10V,Interlock,Local bypass/filter capacitor,1:VBAT; 2:GND
+C22,100n/16V,Interlock,Local bypass/filter capacitor,1:VMOTOR; 2:GND
+R31,100k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:VBAT; 2:MEAS_GATE
+R32,47k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:MEAS_BASE
+R33,100k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:MEAS_BASE; 2:GND
+R34,100k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:VBAT_MEAS; 2:VBAT_ADC
+R35,100k,Interlock,Bias/limit/sense resistor; exact pin nets provided,1:VBAT_ADC; 2:GND
+C23,100n/16V,Interlock,Local bypass/filter capacitor,1:VBAT_ADC; 2:GND
+TP1,GND,Controller,See native functional schematic,1:GND
+TP2,+3V3,Controller,See native functional schematic,1:+3V3
+TP3,VBAT,Controller,See native functional schematic,1:VBAT
+TP4,VMOTOR,Controller,See native functional schematic,1:VMOTOR
+TP5,SYS_RAW,Controller,See native functional schematic,1:SYS_RAW
+TP6,ESP_EN,Controller,See native functional schematic,1:ESP_EN
+TP7,LED_STATUS,Controller,See native functional schematic,1:LED_STATUS
+TP8,DRIVE_ENABLE,Controller,See native functional schematic,1:DRIVE_ENABLE
+TP9,FAULT_U2,Controller,See native functional schematic,1:FAULT_U2
+TP10,FAULT_U3,Controller,See native functional schematic,1:FAULT_U3
+TP11,REG_PG,Controller,See native functional schematic,1:REG_PG
+U7,BQ298217RUGR,Battery protection,Emergency cell fault protection controller,1:PROT_BAT; 2:PROT_VDD; 3:CELL_N; 4:GND; 5:CELL_N; 6:PROT_PACK; 7:PROT_DSG; 8:PROT_CHG
+Q7,CSD17308Q3,Battery protection,Charge protection FET,1:CELL_P; 2:CELL_P; 3:CELL_P; 4:PROT_CHG; 5:PROT_DRAIN; 6:PROT_DRAIN; 7:PROT_DRAIN; 8:PROT_DRAIN; 9:PROT_DRAIN
+Q8,CSD17308Q3,Battery protection,Discharge protection FET,1:VBAT; 2:VBAT; 3:VBAT; 4:PROT_DSG; 5:PROT_DRAIN; 6:PROT_DRAIN; 7:PROT_DRAIN; 8:PROT_DRAIN; 9:PROT_DRAIN
+R36,10m 1% 1W,Battery protection,Main cell-current shunt,1:CELL_N; 2:GND
+R37,100R 1%,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:CELL_P; 2:PROT_VDD
+R38,20R 1%,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:CELL_P; 2:PROT_BAT
+R39,1k 1%,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:VBAT; 2:PROT_PACK
+C24,100n/16V X7R,Battery protection,Local bypass/filter capacitor,1:PROT_VDD; 2:CELL_N
+R40,10M,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:PROT_CHG; 2:CELL_P
+R41,10M,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:PROT_DSG; 2:VBAT
+J5,CELL NTC - DRIVE,Battery protection,Off-board TH2 drive-temperature probe,1:CELL_TEMP_DIV; 2:GND
+R42,10k 1%,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:CELL_TEMP_DIV
+R43,1k 1%,Battery protection,Bias/limit/sense resistor; exact pin nets provided,1:CELL_TEMP_DIV; 2:CELL_TEMP_ADC
+C25,100n/16V X7R,Battery protection,Local bypass/filter capacitor,1:CELL_TEMP_ADC; 2:GND
+J3,M0031 CAMERA FPC24,Flex camera,See native functional schematic,1:None; 2:GND; 3:CAM_SDA; 4:CAM_2V8; 5:CAM_SCL; 6:CAM_RESET; 7:CAM_VSYNC; 8:GND; 9:CAM_HREF; 10:CAM_1V3; 11:+3V3; 12:CAM_D7; 13:CAM_XCLK; 14:CAM_D6; 15:GND; 16:CAM_D5; 17:CAM_PCLK; 18:CAM_D4; 19:CAM_D0; 20:CAM_D3; 21:CAM_D1; 22:CAM_D2; 23:None; 24:None
+U8,TLV75513PDBVR,Flex camera,See native functional schematic,1:+3V3; 2:GND; 3:+3V3; 4:None; 5:CAM_1V3
+U9,TLV75528PDBVR,Flex camera,See native functional schematic,1:+3V3; 2:GND; 3:+3V3; 4:None; 5:CAM_2V8
+C26,2.2u/10V X7R,Flex camera,Local bypass/filter capacitor,1:+3V3; 2:GND
+C27,2.2u/10V X7R,Flex camera,Local bypass/filter capacitor,1:CAM_1V3; 2:GND
+C28,2.2u/10V X7R,Flex camera,Local bypass/filter capacitor,1:+3V3; 2:GND
+C29,2.2u/10V X7R,Flex camera,Local bypass/filter capacitor,1:CAM_2V8; 2:GND
+R44,4.7k,Flex camera,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:CAM_SDA
+R45,4.7k,Flex camera,Bias/limit/sense resistor; exact pin nets provided,1:+3V3; 2:CAM_SCL
+U10,TPS3840DL31DBVR,Cell undervoltage shutdown,Raw-cell UV supervisor,1:CELL_UV_RESET_N; 2:CELL_P; 3:CELL_N; 4:CELL_P; 5:CELL_UV_CT
+Q9,MMBT3906,Cell undervoltage shutdown,Protected-rail inversion of UV reset,1:CELL_UV_PNP_B; 2:VBAT; 3:CELL_UV_FAULT
+Q10,MMBT3904,Cell undervoltage shutdown,UV clamp on regulator enable,1:CELL_UV_EN_B; 2:CELL_N; 3:SYS_ON
+Q11,MMBT3904,Cell undervoltage shutdown,UV clamp on driver/motor enable,1:CELL_UV_MOTOR_B; 2:CELL_N; 3:DRIVE_ENABLE
+R46,100k,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:VBAT; 2:CELL_UV_RESET_N
+R47,22k,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:CELL_UV_RESET_N; 2:CELL_UV_PNP_B
+R48,100k,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:VBAT; 2:CELL_UV_PNP_B
+R49,1M,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:CELL_UV_FAULT; 2:CELL_N
+R50,33k,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:CELL_UV_FAULT; 2:CELL_UV_EN_B
+R51,1M,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:CELL_UV_EN_B; 2:CELL_N
+R52,3.3k,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:CELL_UV_FAULT; 2:CELL_UV_MOTOR_B
+R53,1M,Cell undervoltage shutdown,Bias/limit/sense resistor; exact pin nets provided,1:CELL_UV_MOTOR_B; 2:CELL_N
+R54,10k,Cell undervoltage shutdown,Isolates switch request from clamped EN,1:SYS_ON_REQ; 2:SYS_ON
+C30,100n/10V X7R,Cell undervoltage shutdown,Local bypass/filter capacitor,1:CELL_P; 2:CELL_N
+C31,100n/10V X7R,Cell undervoltage shutdown,Local bypass/filter capacitor,1:CELL_UV_CT; 2:CELL_N
+U11,TLV75533PDBVR,Independent charging temperature,USB-powered temperature reference LDO,1:USB_5V; 2:GND; 3:USB_5V; 4:None; 5:CHG_3V3
+U12,TLV6700DDCR,Independent charging temperature,Cell hot/cold window comparator,1:CHG_TEMP_OK_OD; 2:GND; 3:CHG_HOT_SENSE; 4:CHG_COLD_SENSE; 5:USB_5V; 6:CHG_TEMP_OK_OD
+U13,SN74LVC1G14DBVR,Independent charging temperature,Fail-disabled charger CE inversion,1:None; 2:CHG_TEMP_ALLOW_RC; 3:GND; 4:CHG_DISABLE; 5:USB_5V
+R55,10k 1%,Independent charging temperature,Cell thermistor excitation,1:CHG_3V3; 2:CELL_CHG_TEMP
+R56,200k 1%,Independent charging temperature,Hot divider top,1:CELL_CHG_TEMP; 2:CHG_HOT_SENSE
+R57,100k 1%,Independent charging temperature,Hot divider bottom,1:CHG_HOT_SENSE; 2:GND
+R58,442k 1%,Independent charging temperature,Cold divider top,1:CELL_CHG_TEMP; 2:CHG_COLD_SENSE
+R59,100k 1%,Independent charging temperature,Cold divider bottom,1:CHG_COLD_SENSE; 2:GND
+R60,10k 1%,Independent charging temperature,Fixed BQ TS bias; TH1 monitoring moved to U12,1:CHG_TS_BIAS; 2:GND
+R61,100k,Independent charging temperature,Delayed permission pullup,1:USB_5V; 2:CHG_TEMP_ALLOW_RC
+R62,1k,Independent charging temperature,Limits comparator capacitor-discharge current,1:CHG_TEMP_OK_OD; 2:CHG_TEMP_ALLOW_RC
+R63,100k,Independent charging temperature,CE startup pullup,1:USB_5V; 2:CHG_DISABLE
+C32,2.2u/10V X7R,Independent charging temperature,Local bypass/filter capacitor,1:USB_5V; 2:GND
+C33,2.2u/10V X7R,Independent charging temperature,Local bypass/filter capacitor,1:CHG_3V3; 2:GND
+C34,100n/10V X7R,Independent charging temperature,Local bypass/filter capacitor,1:USB_5V; 2:GND
+C35,220n/10V X7R,Independent charging temperature,Charge-enable startup delay,1:CHG_TEMP_ALLOW_RC; 2:GND
+C36,100n/10V X7R,Independent charging temperature,Local bypass/filter capacitor,1:USB_5V; 2:GND
+U14,SN74LVC1G17DBVR,Cell undervoltage shutdown,Drive request logic buffer,1:None; 2:DRIVE_REQ_RAW; 3:GND; 4:DRIVE_REQ; 5:+3V3
+R64,100k,Cell undervoltage shutdown,Default-low buffer input,1:DRIVE_REQ_RAW; 2:GND
+C37,100n/10V X7R,Cell undervoltage shutdown,Local bypass/filter capacitor,1:+3V3; 2:GND
+TH1,103AT-2 CELL-MOUNTED,Off-board cell probes,Insulated probe bonded to actual cell; independent two-wire connection,CELL_CHG_TEMP; GND
+TH2,103AT-2 CELL-MOUNTED,Off-board cell probes,Insulated probe bonded to actual cell; independent two-wire connection,CELL_TEMP_DIV; GND

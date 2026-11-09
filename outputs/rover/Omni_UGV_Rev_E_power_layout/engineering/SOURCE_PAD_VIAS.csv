@@ -1,0 +1,3 @@
+Reference,Pad,Via_UUID,X_mm,Y_mm,Diameter_mm,Drill_mm,Requirement
+Q8,1,2187a600-0b00-458c-bf8c-aea0675c044a,114.899999,138.799999,0.6,0.3,"Filled and copper-capped via-in-pad process, or reroute before standard assembly"
+Q13,1,16b9183a-32ab-48a7-88be-f34b132c3188,129.499999,134.499999,0.6,0.3,"Filled and copper-capped via-in-pad process, or reroute before standard assembly"

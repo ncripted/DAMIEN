@@ -1,0 +1,12 @@
+Case,Simulated cell,USB condition,Fault or load,Expected evidence,Status,Config file,Trace files,Measured result,Reviewer
+START_FULL,4.20 V,Absent,50 mA after wake,Three cold starts support the load,NOT RUN,,,,
+START_PART,3.10 V,Absent,50 mA after wake,Three cold starts support the load,NOT RUN,,,,
+START_USB,4.20 V and 3.10 V,Attached before insertion,50 mA after startup,Document startup and stable operation,NOT RUN,,,,
+PCKP_USB_OFF,Healthy,Absent,Held fault at PCKP,No unwanted cell discharge re-enable for 60 s including wake press,NOT RUN,,,,
+PCKP_USB_ON,Healthy,Attached before fault,Held fault at PCKP,No unwanted cell discharge re-enable for 60 s including wake press,NOT RUN,,,,
+PCKP_USB_EDGE,Healthy,Attach after trip,Held fault at PCKP,No unwanted cell discharge re-enable for 60 s including wake press,NOT RUN,,,,
+VBAT_USB_OFF,Healthy,Absent,Held fault at VBAT,No unwanted cell discharge re-enable for 60 s including wake press,NOT RUN,,,,
+VBAT_USB_ON,Healthy,Attached before fault,Held fault at VBAT,No unwanted cell discharge re-enable for 60 s including wake press,NOT RUN,,,,
+VBAT_USB_EDGE,Healthy,Attach after trip,Held fault at VBAT,No unwanted cell discharge re-enable for 60 s including wake press,NOT RUN,,,,
+FAULT_CLEAR,Healthy,Repeat applicable USB states,Remove previously tripped load,Stable recovery with 50 mA load,NOT RUN,,,,
+UV_RECOVERY,Sweep configured limits,Absent then attached,Simulated undervoltage,Discharge inhibited while UV persists and bounded charger recovery,NOT RUN,,,,

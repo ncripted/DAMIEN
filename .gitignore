@@ -1,0 +1,13 @@
+# KiCad editor state
+*.kicad_prl
+*.lck
+~*.lck
+*-backups/
+
+# Local tooling and caches
+__pycache__/
+*.pyc
+work/protection/deps/
+work/kicad-config/
+work/kicad-documents/
+.history/

@@ -1,0 +1,24 @@
+Route PROT_BAT (119.525, 130.7, 'In2.Cu') (116.675, 120.75, 'B.Cu') 0.15
+  done 2.13 s 6277 nodes
+Route PROT_VDD (117.825, 128.4, 'In2.Cu') (113.675, 122.0, 'B.Cu') 0.15
+  done 2.24 s 2469 nodes
+Route PROT_VSS_SENSE (120.125, 129.4, 'In2.Cu') (116.43, 127.52, 'B.Cu') 0.15
+  done 1.65 s 544 nodes
+Route PROT_CS_SENSE (121.1, 128.45, 'In2.Cu') (109.87, 124.98, 'B.Cu') 0.15
+  done 2.95 s 16826 nodes
+Route CELL_N (122.675, 129.4, 'In2.Cu') (116.135, 125.615, 'B.Cu') 0.15
+  done 1.87 s 1494 nodes
+Route PROT_PACK (123.175, 130.0, 'In2.Cu') (122.675, 124.5, 'B.Cu') 0.15
+  done 1.35 s 3053 nodes
+Route PROT_DSG (122.675, 130.6, 'In2.Cu') (114.615, 137.025, 'B.Cu') 0.15
+  done 1.89 s 6809 nodes
+Route PROT_CHG (121.0, 131.65, 'In2.Cu') (122.435, 138.975, 'B.Cu') 0.15
+  done 1.21 s 6288 nodes
+Route PROT_DSG (115.825, 133.5, 'B.Cu') (114.615, 137.025, 'B.Cu') 0.15
+  done 0.59 s 400 nodes
+Route PROT_CHG (122.825, 134.0, 'B.Cu') (122.435, 138.975, 'B.Cu') 0.15
+  done 0.39 s 2283 nodes
+Route PROT_VSS_SENSE (122.225, 132.0, 'B.Cu') (116.43, 127.52, 'B.Cu') 0.15
+  done 0.87 s 3029 nodes
+Route PROT_VDD (123.775, 132.0, 'B.Cu') (113.675, 122.0, 'B.Cu') 0.15
+  done 1.31 s 16458 nodes

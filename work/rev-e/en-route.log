@@ -1,0 +1,6 @@
+Route SYS_ON (95.1, 113.0, 'F.Cu') (109.825, 119.5, 'F.Cu') 0.15
+  done 3.34 s 4188 nodes
+Route SYS_ON (71.4375, 120.25, 'F.Cu') (86.675, 115.0, 'F.Cu') 0.15
+  done 1.24 s 10753 nodes
+Route SYS_ON (86.675, 115.0, 'F.Cu') (95.1, 113.0, 'F.Cu') 0.15
+  done 1.2 s 8117 nodes

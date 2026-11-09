@@ -1,0 +1,25 @@
+# Rev F USB power-path fixture
+
+Open `rev_f_usb_power_path.kicad_pro` and select Schematic Editor. This standalone circuit connects to the existing BQ24074 charger, MAX17301 protector, and rover regulator at the named ports. It preserves the same USB data path to the ESP32. Reference numbers are local to this fixture sheet. The sheets must be reconciled when merged.
+
+## What changed
+
+- Three Schottky diodes separate the charge feed, USB logic feed, and battery logic feed. D10 passes charger BAT current toward PROTECTED_RAW. D11 and D12 feed SYS_RAW independently. Their reverse leakage, cold voltage drop, heat and charge termination require measurement. The voltage drop in D10 lowers cell voltage while charging. [Nexperia PMEG3020ER datasheet](https://assets.nexperia.com/documents/data-sheet/PMEG3020ER.pdf)
+- The TPS259474LRPW circuit breaker supplies DRIVE_RAW from PROTECTED_RAW. USB pulls **OVLO** high through R10/R11. It does not pull **EN/UVLO** into shutdown, which TI lists as a fault reset mechanism. With a driven 4.35–5.25 V USB rail, 0.1% resistors and ±0.1 µA input leakage, OVLO is approximately 1.2333–1.4943 V. The maximum rising trip threshold is 1.223 V. The static margin at the low end is about 10 mV. Verify noise, slow VBUS ramps and the remaining original motor-enable interlock. [TI TPS25947 datasheet, §§6.5, 7.3.3 and 7.3.9](https://www.ti.com/lit/ds/symlink/tps25947.pdf)
+- The eFuse uses a provisional 750 Ω ILM setting. TI specifies 3.96–4.84 A for this setting under the stated test conditions. The 1 nF ITIMER and 2.2 nF DVDT capacitors give approximately 0.84 ms nominal overcurrent blanking and 0.91 V/ms nominal ramp by the datasheet equations. Measure both at the rover voltage and load. EF_EN is now driven by the hardware rearm latch, with a pull-down when the latch is unpowered. [TI TPS25947 datasheet, §§6.5 and 7.3.5](https://www.ti.com/lit/ds/symlink/tps25947.pdf)
+
+## Hardware rearm
+
+U12 monitors PROTECTED_RAW and asynchronously clears the U13 flip-flop on undervoltage. The U11 Schmitt inverter pulls U12 MR low when USB is connected. An open-drain fault signal on J12 can also assert MR. R15 limits contention current against U11 when the external fault is asserted. J12 requires a pack-ground-referenced sink rated for at least 1 mA at 4.2 V with a low level under 0.6 V. U10 OVLO remains the separate USB inhibit. Clearing the arm state keeps the drive path off even if the eFuse's own latch was reset.
+
+After the fault, undervoltage, or USB condition clears, U12 delays reset release. A new rising edge at U13 CLK is needed to re-enable U10. SW10 and U14 generate that edge. The MAX17301 wake control remains separate. On battery, wake the protector, wait for reset to release, and press SW10. SW10 enables the battery power path, while a separate motor-drive command is still required. 
+
+With a nominal 100 nF CT capacitor, U12 release delay is about 62 ms. An 80 nF effective capacitance and the datasheet lower-bound equation give approximately 28.6 ms. A conservative arm RC estimate for a settled rail is below 2.7 ms. This margin is a timing estimate for a button held at power-on. Verify slow ramps, brownout pulse width, capacitor bias and button bounce on the fixture. The 3.1 V supervisor threshold is falling. Its nominal rising threshold is 3.30 V, so the new fixture can reject a 3.10 V rearm even if the primary protector can wake at that voltage. [TI TPS3840 datasheet](https://www.ti.com/lit/ds/symlink/tps3840.pdf) · [TI SN74LVC1G74 datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf) · [TI Schmitt buffer datasheet](https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf)
+
+## Remaining gates before layout
+
+1. **Verify actual latching.** Persistent overcurrent is listed as latched for the 474L circuit breaker. TI distinguishes hard-short fast trip followed by current limiting from that event. Test those separately. For a collapse that the supervisor detects, the rearm circuit defaults to disarmed even after power returns. For a fault that does not collapse PROTECTED_RAW, qualify the eFuse behavior or add the external detector that drives J12. The fixture does not implement that detector.
+2. **Verify both startup and recovery.** With the actual programmed MAX17301, repeat cold insertion, then hold a fault while inserting and removing USB. Capture PCKP, USB VBUS, OVLO, EF_EN, DRIVE_RAW and signed cell current. The original procedure's Q13 branch is replaced by this fixture circuit for these runs. Repeat directly on PROTECTED_RAW to qualify the upstream protector.
+3. **Qualify integration.** Verify the new cutoff on the protected rail against the raw-cell operating requirement and test recovery with SW10 held, released, and pressed again. Size the motor regeneration clamp, validate the SYS_RAW diode drops at ESP32 startup, and review the eFuse package land pattern before placement.
+
+This is a schematic for desktop review and lab qualification. The full rover PCB still uses the Rev E1 layout and has no fabrication release.
